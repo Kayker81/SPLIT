@@ -1,0 +1,365 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, em center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, select, input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: top;
+  font-weight: normal; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none; }
+
+input:focus {
+  outline: none; }
+
+select:focus {
+  outline: none; }
+
+textarea {
+  border: 0px;
+  padding: 0px; }
+  textarea:focus {
+    outline: none; }
+
+header, section, footer {
+  width: 100%; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.res_line {
+  text-align: justify; }
+
+.line_block {
+  display: inline-block;
+  float: none; }
+
+.after {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin-left: 100%; }
+
+.wraper {
+  width: 100%; }
+
+.content {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto; }
+
+.header {
+  width: 100%;
+  min-height: 180px;
+  border-bottom: 1px solid #e0e0e0;
+  background: url("../img/header.jpg") left top repeat-x, #f3fafa; }
+  .header__top_line {
+    width: 100%;
+    min-height: 35px; }
+  .header_nav {
+    display: inline-block;
+    width: 36.06%; }
+    .header_nav nav {
+      float: right; }
+      .header_nav nav ul {
+        float: left;
+        font: 12px/35px Verdana;
+        color: #023d98; }
+        .header_nav nav ul li {
+          display: inline-block;
+          padding: 0px 9.5px; }
+          .header_nav nav ul li:nth-last-child(1) {
+            padding-right: 0px;
+            margin-left: 45.5px; }
+          .header_nav nav ul li a {
+            color: #023d98;
+            text-decoration: underline;
+            font-weight: bold; }
+    .header_nav_sandwich {
+      display: inline-block;
+      width: 26px;
+      height: 26px;
+      border: 1px solid #023d98;
+      margin-top: 4px;
+      box-sizing: border-box; }
+      .header_nav_sandwich span {
+        display: block;
+        width: 18px;
+        height: 1px;
+        margin-bottom: 6px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #023d98; }
+        .header_nav_sandwich span:nth-child(1) {
+          margin-top: 4px; }
+    .header_nav_logo_line {
+      width: 100%;
+      min-height: 81px;
+      background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: -webkit-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1); }
+      .header_nav_logo_line_logo {
+        float: left; }
+        .header_nav_logo_line_logo a {
+          display: block;
+          position: relative;
+          font: 28px/40px 'Georgia-Bold';
+          padding-left: 15px;
+          margin-top: 15px;
+          letter-spacing: 0.7px; }
+          .header_nav_logo_line_logo a:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: -10px;
+            width: 16px;
+            height: 20px;
+            background: url("../img/t.png") center no-repeat; }
+        .header_nav_logo_line_logo i {
+          color: #ff0000; }
+        .header_nav_logo_line_logo p {
+          display: block;
+          font: 16px/10px Verdana;
+          font-weight: bold;
+          padding-left: 15px; }
+          .header_nav_logo_line_logo p b {
+            font-size: 11px; }
+      .header_nav_logo_line_sity {
+        float: right;
+        font: 11px/40px Verdana;
+        color: #363636; }
+      .header_nav_logo_line_schem {
+        display: block;
+        font: 14px/30px 'Georgia-BoldItalic';
+        font-weight: bold;
+        font-style: italic;
+        margin-top: 10px;
+        color: #5d7489;
+        float: right; }
+        .header_nav_logo_line_schem span {
+          text-decoration: underline; }
+    .header_nav_kataloog_line {
+      width: 100%;
+      background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: -webkit-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
+      padding-bottom: 3px; }
+    .header_nav_kaalog {
+      width: 100%;
+      min-height: 60px;
+      border: 1px solid #ff9900;
+      box-sizing: border-box;
+      background: #FFFFFF;
+      padding-left: 14px;
+      margin-top: 5px; }
+      .header_nav_kaalog_all {
+        width: 100%;
+        font: 11px/30px Verdana;
+        text-decoration: underline;
+        color: #023d98; }
+      .header_nav_kaalog_categories {
+        width: 100%;
+        min-height: 21px; }
+        .header_nav_kaalog_categories .button {
+          display: block;
+          float: left;
+          width: 125px;
+          height: 21px;
+          border-radius: 2px;
+          -moz-border-radius: 2px;
+          -webkit-border-radius: 2px;
+          border: 1px solid #a6b6c4;
+          background: #daeded;
+          font: 11px/21px Verdana;
+          font-weight: bold;
+          color: #014366;
+          padding-left: 8px;
+          box-sizing: border-box;
+          margin-right: 10px;
+          position: relative; }
+          .header_nav_kaalog_categories .button i {
+            display: block;
+            float: right;
+            margin-right: 9px;
+            margin-top: 7px;
+            width: 8px;
+            height: 6px;
+            background: url("../img/arow_header_kat.png") center no-repeat; }
+  .header_kontakt {
+    display: inline-block;
+    width: 17.1%;
+    margin-left: 6.6%;
+    padding-left: 4px;
+    box-sizing: border-box; }
+    .header_kontakt_action {
+      float: left;
+      font: 12px/35px Verdana;
+      color: #840000; }
+      .header_kontakt_action li a {
+        text-decoration: underline;
+        font-weight: bold; }
+    .header_kontakt_line {
+      width: 100%;
+      min-height: 104px;
+      background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: -webkit-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
+      float: left; }
+      .header_kontakt_line .meil {
+        font: 14px/40px Verdana;
+        padding-left: 33px;
+        background: url("../img/mail_header.png") left center no-repeat;
+        color: #024753; }
+      .header_kontakt_line .ring {
+        width: 100%; }
+        .header_kontakt_line .ring p {
+          font: 13px/30px Verdana;
+          font-weight: bold;
+          color: #363636; }
+        .header_kontakt_line .ring a {
+          font: 16px/25px Verdana;
+          font-weight: bold;
+          color: #840000; }
+          .header_kontakt_line .ring a i {
+            display: inline-block;
+            width: 8px;
+            height: 6px;
+            background: url("../img/arow_header_kat.png");
+            margin-top: 9.5px;
+            margin-left: 10.1px; }
+          .header_kontakt_line .ring a span {
+            font-size: 13px;
+            font-weight: normal; }
+      .header_kontakt_line_button_line {
+        width: 100%;
+        padding-bottom: 3px;
+        float: left; }
+        .header_kontakt_line_button_line .button {
+          display: block;
+          width: 182px;
+          height: 37px;
+          box-sizing: border-box;
+          border: 1px solid #ff9900;
+          border-radius: 3px;
+          -moz-border-radius: 3px;
+          -webkit-border-radius: 3px;
+          font: 12px/37px Verdana;
+          font-weight: bold;
+          color: #ff9900;
+          text-decoration: underline;
+          text-align: center;
+          background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+          background: -webkit-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+          background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
+          color: #840000; }
+  .header__user_info {
+    float: right;
+    width: 34.18%; }
+    .header__user_info_product_line {
+      width: 100%;
+      float: left; }
+      .header__user_info_product_line .compare {
+        float: left;
+        padding-left: 35px;
+        font: 13px/35px 'Georgia-Italic';
+        padding-left: 36.5px;
+        background: url("../img/compare.png") left center no-repeat;
+        color: #5d7489; }
+        .header__user_info_product_line .compare a {
+          text-decoration: underline; }
+        .header__user_info_product_line .compare span {
+          font-family: Verdana;
+          font-size: 11px;
+          color: #b12b16;
+          text-decoration: none;
+          margin-left: 10px; }
+      .header__user_info_product_line .basket {
+        float: right;
+        margin-right: 18px; }
+        .header__user_info_product_line .basket i {
+          display: inline-block;
+          width: 22px;
+          height: 22px;
+          background: url("../img/basket.png");
+          margin-top: 6.5px;
+          margin-right: 7px; }
+        .header__user_info_product_line .basket a {
+          display: inline-block;
+          font: 13px/35px Verdana;
+          font-style: italic;
+          color: #003c95;
+          text-decoration: underline; }
+        .header__user_info_product_line .basket span {
+          font: 14px/35px 'Georgia-Italic';
+          color: #662211; }
+    .header__user_info_info {
+      width: 100%;
+      background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: -webkit-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
+      float: left; }
+      .header__user_info_info .time {
+        float: left;
+        margin-top: 12px; }
+        .header__user_info_info .time .icon {
+          display: inline-block;
+          width: 59px;
+          height: 58px;
+          background: url("../img/time.png");
+          float: left; }
+        .header__user_info_info .time_text {
+          float: left;
+          text-align: right; }
+          .header__user_info_info .time_text p {
+            font: 14px/15px Verdana;
+            font-weight: bold; }
+            .header__user_info_info .time_text p i {
+              font-size: 11px;
+              font-weight: normal;
+              margin: 0 4px; }
+            .header__user_info_info .time_text p span {
+              font-size: 11px;
+              color: #ff0000; }
+          .header__user_info_info .time_text h3 {
+            font: 14px/40px 'Georgia-BoldItalic';
+            text-decoration: underline;
+            color: #5d7489;
+            text-align: left;
+            margin-left: 10px; }

@@ -1,0 +1,817 @@
+@import "reset";
+.help {
+  position: absolute;
+  padding: 15px 22px;
+  font:14px/20px 'Roboto-Medium';
+  background: #FFFFFF;
+  border: 1px solid #ff0000;
+  @include radius(5px);
+  width: 98%;
+  left:1%;
+  display: none;
+  z-index: 99;
+  box-sizing: border-box;
+  .arow_help{
+    position: absolute;
+    z-index: 99;
+    width: 30px;
+    height: 14px;
+    background-image: url("../img/sprite_section.png");
+    background-position: -46px -170px;
+    top: -14px;
+    left:20%;
+  }
+
+}
+.power_calculator {
+  position: absolute;
+  width: 100%;
+  max-width: 809px;
+  display: none;
+  top: 0px;
+  left: 0px;
+  box-sizing: border-box;
+  z-index: 999;
+  background: #FFFFFF;
+  .close{
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    @include radius(50%);
+    background: #FFFFFF;
+    text-align: center;
+    @media(max-width: 809px){
+      right: 15px;
+    }
+    @media(max-height: 912px){
+      top: 15px;
+    }
+    i{
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px;
+    }
+  }
+  &_header {
+    width: 100%;
+    min-height: 88px;
+    background: url("../img/calcul_header.jpg") center top no-repeat;
+    padding: 0px 24px;
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.21);
+    @media(max-width: 746px){
+      background-size: cover;
+      text-align: center;
+      padding: 0px;
+      padding-bottom: 15px;
+    }
+    i {
+      width: 109px;
+      height: 104px;
+      background-image: url("../img/sprite_section.png");
+      background-position: 0px 0px;
+      display: inline-block;
+      margin-top: 5px;
+    }
+    h3 {
+      display: inline-block;
+      font: 17px/24px Verdana;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-left: 15px;
+
+      span {
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
+  &_coontent {
+    width: 100%;
+    float: left;
+
+    &_form {
+      display: block;
+      width: 100%;
+      float: left;
+      &_zag {
+        width: 100%;
+        float: left;
+      }
+      form {
+        padding: 0px 24px;
+        box-sizing: border-box;
+        float: left;
+        width: 100%;
+        background: #f8f8f8;
+        @media(max-width: 355px){
+          padding: 0px 10px;
+        }
+        .power_calculator_coontent_form_base {
+          border-right: 1px solid #dedede;
+        }
+        .power_calculator_coontent_form_more {
+          padding-left: 24px;
+          box-sizing: border-box;
+        }
+      }
+      &_base {
+        display: inline-block;
+        width: 50%;
+        float: left;
+
+        &_zag {
+          width: 100%;
+          padding-left: 24px;
+          box-sizing: border-box;
+          font: 16px/66px Verdana;
+          border-bottom: 1px solid #dedede;
+          float: left;
+          margin-top: 1px;
+@media(max-width: 406px){
+  line-height: 20px;
+  padding: 12.8px;
+}
+        }
+        &_line {
+          float: left;
+          width: 100%;
+          min-height: 49px;
+          &:nth-child(1) {
+            margin-top: 18px;
+          }
+          &:nth-last-child(1) {
+            margin-bottom: 21px;
+          }
+          .name {
+            float: left;
+            width: 51.31%;
+            line-height: 49px;
+            @media(max-width: 619px){
+              width: 100%;
+              text-align: center;
+            }
+            p {
+              width: 100%;
+              font-family: Verdana;
+              font-size: 13px;
+             @media(max-width: 331px){
+               line-height: 20px;
+               margin-bottom: 15px;
+             }
+            }
+            span {
+              font-family: Verdana;
+              font-size: 11px;
+              color: #8c8c8c;
+            }
+            i {
+              display: inline-block;
+              width: 13px;
+              height: 13px;
+              @include radius(50%);
+              background: #FFFFFF;
+              margin-top: 19px;
+              margin-left: 5px;
+              font-family: Verdana;
+              font-size: 10px;
+              color: #024753;
+              border: 1px solid #024753;
+              box-sizing: border-box;
+              text-align: center;
+              line-height: 10px;
+              font-weight: bold;
+              cursor: pointer;
+             &:hover{
+               color: #ff0000;
+               border-color: #ff0000;
+             }
+            }
+            .help_activ{
+              color: #ff0000;
+              border-color: #ff0000;
+            }
+          }
+
+          .big {
+            line-height: 20px;
+            p{
+              i{
+                margin-top: 7px;
+              }
+            }
+          }
+          .very_big {
+            line-height: 13px;
+            p{
+              i{
+                margin-top: 7px;
+              }
+            }
+          }
+          .input_block {
+            float: left;
+            width: 48.60%;
+            @media(max-width: 619px){
+              width: 100%;
+              text-align: center;
+            }
+            input[type='text'] {
+              text-align: right;
+              padding-right: 18px;
+              height: 42px;
+              width: 75%;
+              border: 1px solid #3b6e8b;
+              @include radius(5px);
+              font: 16px/20px Arial;
+              font-weight: bold;
+              float: left;
+              box-sizing: border-box;
+              color: #4b4b4b;
+              min-width: 130px;
+            }
+            .select {
+              text-align: left;
+              height: 42px;
+              width: 75%;
+              border: 1px solid #3b6e8b;
+              position: relative;
+              background: #FFFFFF;
+              @include radius(5px);
+              font: 16px/20px Arial;
+              font-weight: bold;
+              float: left;
+              box-sizing: border-box;
+              min-width: 130px;
+              input[type='text'] {
+                border: none;
+                float: left;
+                width: 84.84%;
+                box-sizing: border-box;
+                font: 14px/20px Arial;
+                letter-spacing: -0.6px;
+                font-weight: bold;
+                background: none;
+                color: #4b4b4b;
+                min-width: 0px
+              }
+              .arow {
+                float: left;
+                width: 11px;
+                height: 7px;
+                background-image: url("../img/sprite_section.png");
+                background-position: -122px -96px;
+                margin-top: 17.5px;
+              }
+              .option {
+                position: absolute;
+                top: 38px;
+                left: -1px;
+                width: 100%;
+                border: 1px solid #3b6e8b;
+                border-top: 0px;
+                font: 16px/40px 'robotobold';
+                font-weight: bold;
+                color: #4b4b4b;
+                background: #FFFFFF;
+                padding-bottom: 10px;
+                -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.21);
+                -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.21);
+                box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.21);
+                display: none;
+                z-index: 99;
+                li {
+                  width: 100%;
+                  padding-left: 18px;
+                  box-sizing: border-box;
+                  min-height: 40px;
+                  span {
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 11px;
+                    line-height: 14px;
+                    color: #9a9a9a;
+                  }
+                  &:nth-child(even){
+                    background-color: #f8f8f8;
+                  }
+                  a {
+                    width: 100%;
+                    display: inline-block;
+                  }
+                }
+                .big{
+                  font-size: 12px;
+                  line-height: 14px;
+                  margin-bottom: 4px;
+                  span{
+                    display: inline-block;
+                    width: 100%;
+                    font-size: 11px;
+                    line-height: 14px;
+                    color: #9a9a9a;
+                  }
+                }
+              }
+            }
+            .open{
+              .arow{
+                background-image: url("../img/sprite_section.png");
+                background-position: -133px -96px;
+              }
+            }
+            .unit {
+              float: left;
+              font: 12px/42px 'Georgia-BoldItalic';
+              color: #662211;
+              margin-left: 8px;
+              @media(max-width: 355px){
+                display: inline-block;
+                float: none;
+              }
+              sup {
+                font-size: 8px;
+                vertical-align: super;
+              }
+            }
+          }
+        }
+      }
+      &_more {
+        display: inline-block;
+        width: 49%;
+        float: left;
+        box-sizing: border-box;
+
+        &_zag {
+          width: 100%;
+          padding-left: 24px;
+          box-sizing: border-box;
+          font: 16px/66px Verdana;
+          border: 1px solid #dedede;
+          border-right: none;
+          float: left;
+@media(max-width: 535px){
+  line-height: 20px;
+  padding: 12.8px;
+}
+          @media(max-width: 341px){
+            padding-right: 0px;
+            padding-left: 0px;
+
+          }
+        }
+        &_line {
+          width: 100%;
+          margin-top: 19px;
+          .checkbox_line {
+            width: 100%;
+            position: relative;
+            .value{
+              position: absolute;
+              right: 0px;
+              top: 0px;
+            }
+            .check {
+              display: inline-block;
+              width: 26px;
+              height: 26px;
+              border: 1px solid #024753;
+              @include radius(4px);
+              text-align: center;
+              margin-right: 12px;
+              span {
+                display: inline-block;
+                width: 17px;
+                height: 16px;
+                margin-top: 4px;
+              }
+            }
+            .activ {
+              span {
+                background-image: url("../img/sprite_section.png");
+                background-position: -34px -192px;
+              }
+            }
+            p {
+              display: inline-block;
+              font: 13px/26px Verdana;
+              letter-spacing: -0.3px;
+              i {
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                @include radius(50%);
+                background: #FFFFFF;
+                margin-top: 8px;
+                margin-left: 5px;
+                font-family: Verdana;
+                font-size: 10px;
+                color: #024753;
+                border: 1px solid #024753;
+                box-sizing: border-box;
+                text-align: center;
+                line-height: 10px;
+                font-weight: bold;
+                cursor: pointer;
+              }
+            }
+          }
+          .text {
+            width: 100%;
+            font: 11px/16px Verdana;
+            color: #8c8c8c;
+            margin-top: 3px;
+          }
+        }
+
+      }
+      .button_line {
+        width: 100%;
+        padding-left: 6px;
+        min-height: 81px;
+        background: #FFFFFF;
+        float: left;
+        box-sizing: border-box;
+        border-bottom: 1px solid #c3c3c3;
+        padding: 0px 24px;
+        box-sizing: border-box;
+        a {
+          font: 14px/22px Verdana;
+          font-weight: bold;
+          color: #015968;
+          margin-top: 32px;
+          float: left;
+          @media(max-width: 703px){
+            display: inline-block;
+            float: none;
+          }
+          span {
+            background: url("../img/line.jpg") left bottom repeat-x;
+            font-weight: bold;
+
+          }
+          i {
+            display: inline-block;
+            width: 19px;
+            height: 22px;
+            background-image: url("../img/sprite_section.png");
+            background-position: -164px -70px;
+            margin-right: 12px;
+          }
+        }
+        .selected_block{
+          float: right;
+          font: 12px/81px Verdana;
+          @include opacity(0.5);
+          @media(max-width: 703px){
+            display: inline-block;
+            float: none;
+          }
+          p{
+            float: left;
+          }
+          a{
+            float: left;
+            text-decoration: underline;
+            color: #2f61a8;
+            margin-top: 0px;
+            line-height: 81px;
+            font-weight: normal;
+            margin-left: 5px;
+            pointer-events: none;
+            cursor: default;
+
+
+          }
+        }
+        .selected_activ{
+          @include opacity(1);
+          a{
+            pointer-events: auto;
+            cursor: pointer;
+          }
+        }
+        .power_calculator_coontent_form_base {
+          min-height: 81px;
+          padding: 0px;
+          border: none;
+          box-sizing: border-box;
+          @media(max-width: 703px){
+            width: 100%;
+            text-align: center;
+          }
+        }
+        .power_calculator_coontent_form_more {
+          min-height: 81px;
+          padding-left: 27px;
+          border: none;
+          box-sizing: border-box;
+          @media(max-width: 703px){
+            width: 100%;
+            text-align: center;
+          }
+
+
+        }
+      }
+    }
+    &_rezult {
+      width: 100%;
+      float: left;
+      min-height: 182px;
+      padding-left: 27px;
+      padding-right: 12px;
+      box-sizing: border-box;
+      @include opacity(0.5);
+      @media(max-width: 629px){
+        padding-bottom: 20px;
+      }
+      &_zag_block{
+        float: left;
+        width:100%;
+        @media(max-width: 703px){
+          text-align: center;
+        }
+
+        .logo{
+          float: right;
+          display: block;
+          position: relative;
+          font: 28px/40px 'Georgia-Bold';
+          padding-left: 15px;
+          margin-top: 15px;
+          letter-spacing: 0.7px;
+          margin-right: 25%;
+          &:before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0px;
+            top: -10px;
+            width: 16px;
+            height: 20px;
+            background-image: url("../img/sprite_header.png");
+            background-position: 0px -155px;
+          }
+          i {
+            color: #ff0000;
+          }
+          @media(max-width: 703px){
+            display: inline-block;
+            float: none;
+            margin-right: 0px;
+          }
+        }
+        h3{
+          float: left;
+          font: 14px/66px Verdana;
+          color: #f30808;
+          font-weight: bold;
+          @media(max-width: 703px){
+            display: inline-block;
+            float: none;
+          }
+        }
+
+      }
+      .power{
+        text-align: left;
+        @media(max-width: 629px){
+          text-align: center;
+        }
+        .power_calculator_coontent_rezult_block_input_line{
+          text-align: left;
+          @media(max-width: 629px){
+            text-align: center;
+          }
+        }
+      }
+      &_block{
+        float: left;
+        width: 50%;
+        @media(max-width: 629px){
+          text-align: center;
+          width: 100%;
+        }
+       h4{
+          float: left;
+          width: 100%;
+          font: 14px/42px Verdana;
+          font-weight: normal;
+          color: #212121;
+          font-weight: bold;
+          margin-bottom: 7px;
+          i{
+            display: inline-block;
+            width: 13px;
+            height: 13px;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            background: #FFFFFF;
+            margin-top: 15px;
+            margin-left: 5px;
+            font-family: Verdana;
+            font-size: 10px;
+            color: #024753;
+            border: 1px solid #024753;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 10px;
+            font-weight: bold;
+            cursor: pointer;
+
+          }
+        }
+       &_input_line{
+         float: left;
+         width:100%;
+         text-align: center;
+
+         .power_block{
+           display: inline-block;
+           margin-top: 10px;
+           display: none;
+           .namber {
+             float: right;
+             display: block;
+             text-align: center;
+             font: 15px/26px Verdana;
+             font-weight: normal;
+             font-weight: bold;
+             width: 26px;
+             color: #024753;
+             border: 1px solid #024753;
+             border-radius: 50%;
+             -moz-border-radius: 50%;
+             -webkit-border-radius: 50%;
+             margin-left: 7px;
+           }
+           .text {
+             float: right;
+             font: 12px/26px Verdana;
+             color: #3b3b3b;
+             background: none;
+             border: none;
+             padding: 0px;
+           }
+         }
+         p{
+           display: inline-block;
+           width: 39.8%;
+           font: 18px/42px 'robotobold';
+           color: #4c4c4c;
+           text-align: center;
+           border: 1px solid #aaaaaa;
+           border-radius: 5px;
+           -moz-border-radius: 5px;
+           -webkit-border-radius: 5px;
+           box-sizing: border-box;
+           background: #f8f8f8;
+           min-width: 153px;
+           span{
+             font: 14px/20px 'Georgia-BoldItalic';
+             margin-top: 14px;
+             color: #662211;
+             display: none;
+           }
+           .namber{
+             font: 18px/44px Arial;
+             font-weight: bold;
+             color: #662211;
+             display: none;
+           }
+           .no_namber{
+             display: inline-block;
+           }
+         }
+
+
+
+       }
+      }
+
+    }
+    .active{
+      @include opacity(1);
+      .power_calculator_coontent_rezult_block{
+
+       .namber{
+         display: inline-block;
+         margin-right: 5px;
+       }
+        .no_namber{
+          display: none;
+        }
+        p{
+          padding-right: 24px;
+          text-align: right;
+          span{
+            display: inline-block;
+          }
+        }
+        .power_block{
+          display: inline-block;
+        }
+
+
+
+      }
+    }
+  }
+  &_footer{
+    width: 100%;
+    min-height: 88px;
+    background: url("../img/calcul_footer.jpg") center top no-repeat;
+    clear: both;
+    background-size: cover;
+    padding-left: 21.5px;
+    padding-right: 23px;
+    box-sizing: border-box;
+    background-size: cover;
+    @media(max-width: 742px){
+      padding-bottom: 20px;
+      overflow: hidden;
+    }
+    &_block{
+      float: left;
+      width: 50%;
+      box-sizing: border-box;
+      @media(max-width: 742px){
+        width: 100%;
+        text-align: center;
+        padding: 0px;
+      }
+      a{
+        display: block;
+        width: 100%;
+        height: 42px;
+        background: #FFFFFF;
+        font: 12px/42px Verdana;
+        font-weight: bold;
+        text-decoration: underline;
+        color: #074c96;
+        text-align: left;
+        @include radius(5px);
+        margin-top: 23px;
+        @media(max-width: 742px){
+          display: inline-block;
+          max-width: 100%;
+          width: 320px;
+        }
+      }
+    }
+    &_calcul{
+      padding-right: 11px;
+      padding-left: 32px;
+      @media(max-width: 742px){
+        padding: 0;
+      }
+      i{
+
+        display: inline-block;
+        width: 74px;
+        height: 70px;
+        background-image: url('../img/sprite_section.png');
+        background-position: -109px 0px;
+        margin-top: -15px;
+        margin-left: -30px;
+      }
+    }
+    &_article{
+      padding-left: 45px;
+      @media(max-width: 742px){
+        padding: 0;
+      }
+      @media(max-width: 348px){
+       a{
+         text-align: center;
+       }
+      }
+      i{
+        display: inline-block;
+        width: 56px;
+        height: 66px;
+        background-image: url("../img/sprite_section.png");
+        background-position: 0px -104px;
+        margin-top: -15px;
+        margin-left: -33px;
+        margin-right: 17px;
+        @media(max-width: 348px){
+          display: none;
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,17 @@
+.serch_modal {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  max-width: 920px;
+  min-height: 289px;
+  background: #FFFFFF;
+  z-index: 99; }
+  .serch_modal__serch_block {
+    float: left;
+    width: 63.36%;
+    padding: 0px 14px;
+    padding-top: 16px;
+    box-sizing: border-box; }
+    .serch_modal__serch_block form {
+      width: 100%; }
