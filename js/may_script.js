@@ -602,7 +602,8 @@ $('#close_power').click(function () {
     /*******************************************SERCH*******************************************************************/
     $('.header__user_info_info_serch_input,.black_panel_header_serch').click(function () {
         var win_widtch=$(window).width();
-        var top= $(this).offset().top;
+        var scroll_top=$(window).scrollTop();
+        var top= $(this).offset().top-scroll_top;
         var left=$(this).offset().left;
         if(left>win_widtch/2){
             var right=10;
