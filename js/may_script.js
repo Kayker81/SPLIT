@@ -4,12 +4,23 @@ $('.ring').find('a').attr('href','tel:+7 (863) 221 16 87')
     }
     $('.modal_fon').click(function () {
         if($('.black_panel').is(":visible")){
+            $('.serch_modal').hide(300);
+        }
+        if($('.black_panel').is(":visible")&&$('.serch_modal').is(":hidden")){
+            $('.black_panel').hide(300);
+            setTimeout(function () {
+                $('.modal_fon').fadeOut(500)
+            },700)
+        }
+        if($('.black_panel').is(":visible")&&$('.serch_modal').is(':visible')){
             return false;
         }
-        $(this).children().hide(500);
-        setTimeout(function () {
-            $(this).fadeOut(500)
-        },1500)
+      else{
+            $(this).children('.modal').hide(500);
+            setTimeout(function () {
+                $(this).fadeOut(500)
+            },700)
+        }
     })
     $('.modal').click(function (e) {
         e.stopPropagation();
@@ -651,21 +662,7 @@ $('#close_power').click(function () {
             },800)
         }
     })
-    $('.modal_fon').click(function () {
-        if($('.black_panel').is(":visible")){
-            $('.serch_modal').hide(300);
-        }
-        else{
-            $('.modal_fon').fadeOut(500)
-            setTimeout(function () {
-                $('.serch_modal').hide(500);
-            },800)
-        }
-   $('.modal_fon').children().click(function (e) {
-       e.stopPropagation();
-            
-        })
-    })
+
 
     /******************************************************************************************************************/
     /*********************************************Форма ввода номера телефона*******************************************/
