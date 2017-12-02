@@ -19,12 +19,13 @@ $('.ring').find('a').attr('href','tel:+7 (863) 221 16 87')
             },700)
         }
         if($('.black_panel').is(":visible")&&$('.serch_modal').is(':visible')){
-            return false;
+            $('.serch_modal').hide(500);
+            return false
         }
       else{
             $(this).children('.modal').hide(500);
             setTimeout(function () {
-                $(this).fadeOut(500)
+                $('.modal_fon').fadeOut(500)
             },700)
         }
     })

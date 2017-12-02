@@ -1986,7 +1986,8 @@ table {
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     background: #FFFFFF;
-    text-align: center; }
+    text-align: center;
+    z-index: 999; }
     .schem_big_block .scheme_close i, .schem_big_block .map_close i {
       display: inline-block;
       width: 15px;
@@ -1994,6 +1995,12 @@ table {
       margin-top: 9px;
       background-image: url("../img/sprite_section.png");
       background-position: -85px -192px; }
+    @media (max-width: 800px) {
+      .schem_big_block .scheme_close, .schem_big_block .map_close {
+        right: 15px; } }
+    @media (max-height: 600px) {
+      .schem_big_block .scheme_close, .schem_big_block .map_close {
+        top: 15px; } }
 
 .map_block #map {
   width: 100%;

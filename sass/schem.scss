@@ -149,6 +149,7 @@
     -webkit-border-radius: 50%;
     background: #FFFFFF;
     text-align: center;
+    z-index: 999;
     i {
       display: inline-block;
       width: 15px;
@@ -156,6 +157,12 @@
       margin-top: 9px;
       background-image: url("../img/sprite_section.png");
       background-position: -85px -192px;
+    }
+    @media(max-width: 800px){
+      right: 15px;
+    }
+    @media(max-height: 600px){
+      top: 15px;
     }
   }
 }
