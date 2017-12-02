@@ -73,6 +73,238 @@ table {
   height: 0px;
   margin-left: 100%; }
 
+/*************************************************Модальные окна*******************************************************/
+.modal_fon {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999999;
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  .modal_fon .modal {
+    cursor: pointer; }
+  .modal_fon .black_panel {
+    position: absolute;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    background: #323232;
+    display: none;
+    box-sizing: border-box; }
+    .modal_fon .black_panel_content {
+      width: 100%;
+      padding-left: 6px;
+      padding-right: 11px;
+      box-sizing: border-box;
+      float: left; }
+    .modal_fon .black_panel_header {
+      width: 100%;
+      padding-top: 6px;
+      float: left; }
+      .modal_fon .black_panel_header_kalkul {
+        font: 13px/16px Verdana;
+        font-style: italic;
+        color: #FFFFFF;
+        text-decoration: underline;
+        letter-spacing: 0.6px;
+        float: left; }
+        .modal_fon .black_panel_header_kalkul:hover {
+          color: #b80000; }
+        .modal_fon .black_panel_header_kalkul i {
+          display: inline-block;
+          width: 25px;
+          height: 33px;
+          background: url("../img/sprite_header.png");
+          background-position: 0px -122px;
+          margin-right: 10px;
+          float: left; }
+      .modal_fon .black_panel_header_close {
+        display: block;
+        float: right;
+        width: 76px;
+        height: 76px;
+        background: #1b1b1b;
+        text-align: center;
+        border-radius: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px; }
+        .modal_fon .black_panel_header_close i {
+          display: inline-block;
+          width: 51px;
+          height: 51px;
+          background: url("../img/sprite_header.png");
+          background-position: -59px -64px;
+          margin-top: 12.5px; }
+      .modal_fon .black_panel_header_serch {
+        float: left;
+        width: 192px;
+        height: 33px;
+        border: 1px solid #e51c1c;
+        margin-top: 8px; }
+        .modal_fon .black_panel_header_serch input[type='text'] {
+          float: left;
+          width: 157px;
+          height: 100%;
+          font: 13px/16px Verdana;
+          padding-left: 13px;
+          box-sizing: border-box; }
+        .modal_fon .black_panel_header_serch input[type='submit'] {
+          float: right;
+          width: 35px;
+          height: 100%;
+          background: url("../img/sprite_header.png") -188px -64px, #FFFFFF;
+          cursor: pointer; }
+    .modal_fon .black_panel_coneiner_menu {
+      float: left;
+      width: 100%; }
+      .modal_fon .black_panel_coneiner_menu_zag {
+        width: 100%;
+        font: 15px/16px Verdana;
+        font-weight: bold;
+        color: #ffffc8;
+        padding-left: 20px;
+        box-sizing: border-box;
+        letter-spacing: 1.1px;
+        margin-top: 33px; }
+      .modal_fon .black_panel_coneiner_menu ul {
+        float: left;
+        width: 50%;
+        text-align: right;
+        padding-right: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px; }
+        .modal_fon .black_panel_coneiner_menu ul li {
+          margin-top: 10px; }
+          .modal_fon .black_panel_coneiner_menu ul li a {
+            font: 14px/18px Verdana;
+            font-weight: bold;
+            color: #ffff20;
+            text-decoration: underline; }
+            .modal_fon .black_panel_coneiner_menu ul li a:hover {
+              color: #b80000; }
+            .modal_fon .black_panel_coneiner_menu ul li a:visited {
+              color: #7a0505; }
+          .modal_fon .black_panel_coneiner_menu ul li p {
+            font: 11px/18px Verdana;
+            font-style: italic;
+            color: #c8c8c8; }
+    .modal_fon .black_panel_servises {
+      float: left;
+      width: 100%;
+      background: #1b1b1b;
+      padding-left: 6.56%;
+      padding-right: 17.1%;
+      box-sizing: border-box;
+      padding-bottom: 20px; }
+      .modal_fon .black_panel_servises_zag {
+        float: left;
+        width: 100%;
+        font: 15px/16px Verdana;
+        font-weight: bold;
+        color: #ffffc8;
+        margin-top: 13px; }
+      .modal_fon .black_panel_servises ul {
+        width: 100%;
+        float: right;
+        text-align: right; }
+        .modal_fon .black_panel_servises ul li {
+          margin-bottom: 10px; }
+          .modal_fon .black_panel_servises ul li a {
+            font: 16px/22px Verdana;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-decoration: underline; }
+            .modal_fon .black_panel_servises ul li a:hover {
+              color: #ffff20; }
+            .modal_fon .black_panel_servises ul li a:visited {
+              color: #7a0505; }
+    .modal_fon .black_panel_actions {
+      float: left;
+      width: 100%; }
+      .modal_fon .black_panel_actions_zag {
+        float: left;
+        width: 100%;
+        font: 18px/49px 'Georgia-BoldItalic';
+        color: #ff0000;
+        text-decoration: underline;
+        background: #FFFFFF;
+        padding-left: 18px;
+        box-sizing: border-box;
+        margin-top: 10px; }
+        .modal_fon .black_panel_actions_zag:hover {
+          color: #074e23;
+          text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52); }
+      .modal_fon .black_panel_actions_pod_zag {
+        width: 100%;
+        font: 15px/16px Verdana;
+        font-weight: normal;
+        font-weight: bold;
+        color: #ffffc8;
+        padding-left: 20px;
+        box-sizing: border-box;
+        letter-spacing: 1.1px;
+        margin-top: 13px;
+        margin-bottom: 15px;
+        float: left; }
+      .modal_fon .black_panel_actions ul {
+        float: left;
+        width: 100%;
+        text-align: right;
+        padding-right: 13.8%;
+        box-sizing: border-box; }
+        .modal_fon .black_panel_actions ul li {
+          margin-bottom: 15px; }
+          .modal_fon .black_panel_actions ul li a {
+            font: 18px/18px Verdana;
+            font-weight: bold;
+            text-decoration: underline;
+            color: #ffff20; }
+            .modal_fon .black_panel_actions ul li a:hover {
+              color: #b80000; }
+            .modal_fon .black_panel_actions ul li a:visited {
+              color: #7a0505; }
+          .modal_fon .black_panel_actions ul li p {
+            font: 12px/20px Verdana;
+            color: #c8c8c8; }
+    .modal_fon .black_panel_kategories {
+      width: 100%;
+      background: #1b1b1b;
+      float: left; }
+      .modal_fon .black_panel_kategories_zag {
+        width: 100%;
+        font: 15px/16px Verdana;
+        font-weight: normal;
+        font-weight: bold;
+        color: #ffffc8;
+        padding-left: 20px;
+        box-sizing: border-box;
+        letter-spacing: 1.1px;
+        margin-top: 13px;
+        margin-bottom: 15px;
+        float: left; }
+      .modal_fon .black_panel_kategories ul {
+        float: left;
+        width: 100%;
+        text-align: right; }
+        .modal_fon .black_panel_kategories ul li {
+          width: 100%; }
+          .modal_fon .black_panel_kategories ul li a {
+            font: 16px/36px Verdana;
+            font-weight: bold;
+            color: #ffff20;
+            display: inline-block; }
+            .modal_fon .black_panel_kategories ul li a:hover {
+              color: #b80000; }
+          .modal_fon .black_panel_kategories ul li p {
+            font: 14px/36px 'Georgia-BoldItalic';
+            color: #afafaf;
+            display: inline-block; }
+
+/**********************************************************************************************************************/
 /**************************************************Калькулятор мощности************************************************/
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -2047,219 +2279,6 @@ html, body {
       padding: 0px 7px;
       box-sizing: border-box; } }
 
-.modal_fon {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 999999;
-  display: none;
-  overflow-y: auto;
-  overflow-x: hidden; }
-  .modal_fon .modal {
-    cursor: pointer; }
-  .modal_fon .black_panel {
-    position: absolute;
-    width: 100%;
-    max-width: 350px;
-    height: 100%;
-    background: #323232;
-    display: none;
-    box-sizing: border-box; }
-    .modal_fon .black_panel_content {
-      width: 100%;
-      padding-left: 6px;
-      padding-right: 11px;
-      box-sizing: border-box;
-      float: left; }
-    .modal_fon .black_panel_header {
-      width: 100%;
-      padding-top: 6px;
-      float: left; }
-      .modal_fon .black_panel_header_kalkul {
-        font: 13px/16px Verdana;
-        font-style: italic;
-        color: #FFFFFF;
-        text-decoration: underline;
-        letter-spacing: 0.6px;
-        float: left; }
-        .modal_fon .black_panel_header_kalkul:hover {
-          color: #b80000; }
-        .modal_fon .black_panel_header_kalkul i {
-          display: inline-block;
-          width: 25px;
-          height: 33px;
-          background: url("../img/sprite_header.png");
-          background-position: 0px -122px;
-          margin-right: 10px;
-          float: left; }
-      .modal_fon .black_panel_header_close {
-        display: block;
-        float: right;
-        width: 76px;
-        height: 76px;
-        background: #1b1b1b;
-        text-align: center;
-        border-radius: 5px;
-        -moz-border-radius: 5px;
-        -webkit-border-radius: 5px; }
-        .modal_fon .black_panel_header_close i {
-          display: inline-block;
-          width: 51px;
-          height: 51px;
-          background: url("../img/sprite_header.png");
-          background-position: -59px -64px;
-          margin-top: 12.5px; }
-      .modal_fon .black_panel_header_serch {
-        float: left;
-        width: 192px;
-        height: 33px;
-        border: 1px solid #e51c1c;
-        margin-top: 8px; }
-        .modal_fon .black_panel_header_serch input[type='text'] {
-          float: left;
-          width: 157px;
-          height: 100%;
-          font: 13px/16px Verdana;
-          padding-left: 13px;
-          box-sizing: border-box; }
-        .modal_fon .black_panel_header_serch input[type='submit'] {
-          float: right;
-          width: 35px;
-          height: 100%;
-          background: url("../img/sprite_header.png") -188px -64px, #FFFFFF;
-          cursor: pointer; }
-    .modal_fon .black_panel_coneiner_menu {
-      float: left;
-      width: 100%; }
-      .modal_fon .black_panel_coneiner_menu_zag {
-        width: 100%;
-        font: 15px/16px Verdana;
-        font-weight: bold;
-        color: #ffffc8;
-        padding-left: 20px;
-        box-sizing: border-box;
-        letter-spacing: 1.1px;
-        margin-top: 33px; }
-      .modal_fon .black_panel_coneiner_menu ul {
-        float: left;
-        width: 50%;
-        text-align: right;
-        padding-right: 20px;
-        box-sizing: border-box;
-        margin-bottom: 20px; }
-        .modal_fon .black_panel_coneiner_menu ul li {
-          margin-top: 10px; }
-          .modal_fon .black_panel_coneiner_menu ul li a {
-            font: 14px/18px Verdana;
-            font-weight: bold;
-            color: #ffff20;
-            text-decoration: underline; }
-          .modal_fon .black_panel_coneiner_menu ul li p {
-            font: 11px/18px Verdana;
-            font-style: italic;
-            color: #c8c8c8; }
-    .modal_fon .black_panel_servises {
-      float: left;
-      width: 100%;
-      background: #1b1b1b;
-      padding-left: 6.56%;
-      padding-right: 17.1%;
-      box-sizing: border-box;
-      padding-bottom: 20px; }
-      .modal_fon .black_panel_servises_zag {
-        float: left;
-        width: 100%;
-        font: 15px/16px Verdana;
-        font-weight: bold;
-        color: #ffffc8;
-        margin-top: 13px; }
-      .modal_fon .black_panel_servises ul {
-        width: 100%;
-        float: right;
-        text-align: right; }
-        .modal_fon .black_panel_servises ul li {
-          margin-bottom: 10px; }
-          .modal_fon .black_panel_servises ul li a {
-            font: 16px/22px Verdana;
-            font-weight: bold;
-            color: #FFFFFF;
-            text-decoration: underline; }
-    .modal_fon .black_panel_actions {
-      float: left;
-      width: 100%; }
-      .modal_fon .black_panel_actions_zag {
-        float: left;
-        width: 100%;
-        font: 18px/49px 'Georgia-BoldItalic';
-        color: #ff0000;
-        text-decoration: underline;
-        background: #FFFFFF;
-        padding-left: 18px;
-        box-sizing: border-box;
-        margin-top: 10px; }
-      .modal_fon .black_panel_actions_pod_zag {
-        width: 100%;
-        font: 15px/16px Verdana;
-        font-weight: normal;
-        font-weight: bold;
-        color: #ffffc8;
-        padding-left: 20px;
-        box-sizing: border-box;
-        letter-spacing: 1.1px;
-        margin-top: 13px;
-        margin-bottom: 15px;
-        float: left; }
-      .modal_fon .black_panel_actions ul {
-        float: left;
-        width: 100%;
-        text-align: right;
-        padding-right: 13.8%;
-        box-sizing: border-box; }
-        .modal_fon .black_panel_actions ul li {
-          margin-bottom: 15px; }
-          .modal_fon .black_panel_actions ul li a {
-            font: 18px/18px Verdana;
-            font-weight: bold;
-            text-decoration: underline;
-            color: #ffff20; }
-          .modal_fon .black_panel_actions ul li p {
-            font: 12px/20px Verdana;
-            color: #c8c8c8; }
-    .modal_fon .black_panel_kategories {
-      width: 100%;
-      background: #1b1b1b;
-      float: left; }
-      .modal_fon .black_panel_kategories_zag {
-        width: 100%;
-        font: 15px/16px Verdana;
-        font-weight: normal;
-        font-weight: bold;
-        color: #ffffc8;
-        padding-left: 20px;
-        box-sizing: border-box;
-        letter-spacing: 1.1px;
-        margin-top: 13px;
-        margin-bottom: 15px;
-        float: left; }
-      .modal_fon .black_panel_kategories ul {
-        float: left;
-        width: 100%;
-        text-align: right; }
-        .modal_fon .black_panel_kategories ul li {
-          width: 100%; }
-          .modal_fon .black_panel_kategories ul li a {
-            font: 16px/36px Verdana;
-            font-weight: bold;
-            color: #ffff20;
-            display: inline-block; }
-          .modal_fon .black_panel_kategories ul li p {
-            font: 14px/36px 'Georgia-BoldItalic';
-            color: #afafaf;
-            display: inline-block; }
-
 header {
   transition: 2s;
   -moz-transition: 2s;
@@ -3129,6 +3148,8 @@ header {
   min-height: 180px;
   border-bottom: 1px solid #e0e0e0;
   background: url("../img/header.jpg") left top repeat-x, #f3fafa; }
+  .header .miniature_block {
+    top: 20px; }
   @media (max-width: 636px) {
     .header {
       background-image: none;
@@ -3171,6 +3192,8 @@ header {
       border: 1px solid #023d98;
       margin-top: 4px;
       box-sizing: border-box; }
+      .header .header_nav_sandwich:hover span {
+        background: #4e070c; }
       @media (max-width: 636px) {
         .header .header_nav_sandwich {
           display: none; } }
@@ -3261,6 +3284,9 @@ header {
         margin-top: 10px;
         color: #5d7489;
         float: right; }
+        .header .header_nav_logo_line_schem:hover {
+          color: #074e23;
+          text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52); }
         .header .header_nav_logo_line_schem span {
           text-decoration: underline; }
         @media (max-width: 886px) {

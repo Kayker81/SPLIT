@@ -1,0 +1,284 @@
+@mixin radius($r) {
+  border-radius: $r;
+  -moz-border-radius: $r;
+  -webkit-border-radius: $r;
+}
+.modal_fon {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999999;
+  display: none;
+  overflow-y: auto;
+  overflow-x: hidden;
+  .modal{
+    cursor: pointer;
+  }
+  .black_panel {
+    position: absolute;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    background: #323232;
+    display: none;
+
+    box-sizing: border-box;
+    &_content {
+      width: 100%;
+      padding-left: 6px;
+      padding-right: 11px;
+      box-sizing: border-box;
+      float: left;
+    }
+    &_header {
+      width: 100%;
+      padding-top: 6px;
+      float: left;
+      &_kalkul {
+        font: 13px/16px Verdana;
+        font-style: italic;
+        color: #FFFFFF;
+        text-decoration: underline;
+        letter-spacing: 0.6px;
+        float: left;
+        &:hover{
+          color: #b80000;
+        }
+        i {
+          display: inline-block;
+          width: 25px;
+          height: 33px;
+          background: url("../img/sprite_header.png");
+          background-position: 0px -122px;
+          margin-right: 10px;
+          float: left;
+        }
+      }
+      &_close {
+        display: block;
+        float: right;
+        width: 76px;
+        height: 76px;
+        background: #1b1b1b;
+        text-align: center;
+        @include radius(5px);
+        i {
+          display: inline-block;
+          width: 51px;
+          height: 51px;
+          background: url("../img/sprite_header.png");
+          background-position: -59px -64px;
+          margin-top: 12.5px;
+        }
+      }
+      &_serch {
+        float: left;
+        width: 192px;
+        height: 33px;
+        border: 1px solid #e51c1c;
+        margin-top: 8px;
+        input[type='text'] {
+          float: left;
+          width: 157px;
+          height: 100%;
+          font: 13px/16px Verdana;
+          padding-left: 13px;
+          box-sizing: border-box;
+        }
+        input[type='submit'] {
+          float: right;
+          width: 35px;
+          height: 100%;
+          background: url("../img/sprite_header.png") -188px -64px, #FFFFFF;
+
+          cursor: pointer;
+        }
+      }
+    }
+    &_coneiner_menu {
+      float: left;
+      width: 100%;
+      &_zag {
+        width: 100%;
+        font: 15px/16px Verdana;
+        font-weight: bold;
+        color: #ffffc8;
+        padding-left: 20px;
+        box-sizing: border-box;
+        letter-spacing: 1.1px;
+        margin-top: 33px;
+      }
+      ul {
+        float: left;
+        width: 50%;
+        text-align: right;
+        padding-right: 20px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        li {
+          margin-top: 10px;
+          a {
+            font: 14px/18px Verdana;
+            font-weight: bold;
+            color: #ffff20;
+            text-decoration: underline;
+            &:hover{
+              color: #b80000;
+            }
+            &:visited{
+              color: #7a0505;
+            }
+          }
+          p {
+            font: 11px/18px Verdana;
+            font-style: italic;
+            color: #c8c8c8;
+
+          }
+        }
+      }
+    }
+    &_servises {
+      float: left;
+      width: 100%;
+      background: #1b1b1b;
+      padding-left: 6.56%;
+      padding-right: 17.1%;
+      box-sizing: border-box;
+      padding-bottom: 20px;
+      &_zag {
+        float: left;
+        width: 100%;
+        font: 15px/16px Verdana;
+        font-weight: bold;
+        color: #ffffc8;
+        margin-top: 13px;
+      }
+      ul {
+        width: 100%;
+        float: right;
+        text-align: right;
+        li {
+          margin-bottom: 10px;
+          a {
+            font: 16px/22px Verdana;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-decoration: underline;
+            &:hover{
+              color: #ffff20;
+            }
+            &:visited{
+              color: #7a0505;
+            }
+          }
+        }
+      }
+    }
+    &_actions {
+      float: left;
+      width: 100%;
+
+      &_zag {
+        float: left;
+        width: 100%;
+        font: 18px/49px 'Georgia-BoldItalic';
+        color: #ff0000;
+        text-decoration: underline;
+        background: #FFFFFF;
+        padding-left: 18px;
+        box-sizing: border-box;
+        margin-top: 10px;
+        &:hover{
+          color: #074e23;
+          text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52)
+        }
+      }
+      &_pod_zag {
+        width: 100%;
+        font: 15px/16px Verdana;
+        font-weight: normal;
+        font-weight: bold;
+        color: #ffffc8;
+        padding-left: 20px;
+        box-sizing: border-box;
+        letter-spacing: 1.1px;
+        margin-top: 13px;
+        margin-bottom: 15px;
+        float: left;
+      }
+
+      ul {
+        float: left;
+        width: 100%;
+        text-align: right;
+        padding-right: 13.8%;
+        box-sizing: border-box;
+        li {
+          margin-bottom: 15px;
+          a {
+            font: 18px/18px Verdana;
+            font-weight: bold;
+            text-decoration: underline;
+            color: #ffff20;
+            &:hover{
+              color: #b80000;
+            }
+            &:visited{
+              color: #7a0505;
+            }
+          }
+          p {
+            font: 12px/20px Verdana;
+            color: #c8c8c8;
+          }
+        }
+      }
+    }
+    &_kategories {
+      width: 100%;
+      background: #1b1b1b;
+      float: left;
+      &_zag {
+        width: 100%;
+        font: 15px/16px Verdana;
+        font-weight: normal;
+        font-weight: bold;
+        color: #ffffc8;
+        padding-left: 20px;
+        box-sizing: border-box;
+        letter-spacing: 1.1px;
+        margin-top: 13px;
+        margin-bottom: 15px;
+        float: left;
+      }
+      ul {
+        float: left;
+        width: 100%;
+        text-align: right;
+
+        li {
+          width: 100%;
+          a {
+            font: 16px/36px Verdana;
+            font-weight: bold;
+            color: #ffff20;
+            display: inline-block;
+            &:hover{
+              color: #b80000;
+            }
+          }
+          p {
+            font: 14px/36px 'Georgia-BoldItalic';
+            color: #afafaf;
+            display: inline-block;
+          }
+        }
+      }
+
+    }
+  }
+}
