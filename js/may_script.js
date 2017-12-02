@@ -12,6 +12,12 @@ $('.ring').find('a').attr('href','tel:+7 (863) 221 16 87')
                 $('.modal_fon').fadeOut(500)
             },700)
         }
+        if($('.black_panel').is(":hidden")&&$('.serch_modal').is(":visible")){
+            $('.serch_modal').hide(300);
+            setTimeout(function () {
+                $('.modal_fon').fadeOut(500)
+            },700)
+        }
         if($('.black_panel').is(":visible")&&$('.serch_modal').is(':visible')){
             return false;
         }
