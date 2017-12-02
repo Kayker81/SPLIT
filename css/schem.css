@@ -3,9 +3,17 @@
   top: -22px;
   left: 10%;
   padding: 35.5px;
+  width: 100%;
+  max-width: 632px;
   background: #FFFFFF;
   z-index: 9;
   display: none; }
+  @media (max-width: 778px) {
+    .miniature_block {
+      left: 0px;
+      min-width: 100%;
+      padding: 20px 10px;
+      box-sizing: border-box; } }
   .miniature_block .close_mini {
     position: absolute;
     width: 15px;
@@ -18,10 +26,14 @@
   .miniature_block .img {
     float: left;
     display: block;
-    margin-right: 24px;
+    width: 31%;
+    margin-right: 3.3%;
     -webkit-box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14);
     -moz-box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14);
     box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14); }
+    @media (max-width: 778px) {
+      .miniature_block .img {
+        text-align: center; } }
     .miniature_block .img:nth-last-child(1) {
       margin-right: 0px; }
 
@@ -82,9 +94,13 @@
         .schem_big_block__schem_block_nav a .activ {
           color: #dc5c1d;
           border-color: #dc5c1d; }
+    .schem_big_block__schem_block_table {
+      width: 100%;
+      height: 100%;
+      display: table; }
     .schem_big_block__schem_block_img_block {
       width: 770px;
-      height: 565px;
+      height: 100%;
       display: table-cell;
       vertical-align: middle;
       background: #C0C0C0; }
