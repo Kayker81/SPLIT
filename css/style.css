@@ -3375,6 +3375,8 @@ header {
           box-sizing: border-box;
           margin-right: 2.36%;
           position: relative; }
+          .header .header_nav_katalog_categories .button:hover {
+            color: #074e23; }
           @media (max-width: 1070px) {
             .header .header_nav_katalog_categories .button {
               padding: 0px;
@@ -3752,6 +3754,8 @@ header {
           box-sizing: border-box;
           margin-right: 7px;
           text-align: center; }
+          .header__user_info_info_select_line_select:hover {
+            color: #074e23; }
           .header__user_info_info_select_line_select:nth-last-child(1) {
             margin-right: 0px; }
           .header__user_info_info_select_line_select p {
@@ -4737,6 +4741,8 @@ header {
               margin-bottom: 12px; }
               .section_product_wrap_price_wrap .aside_action_block ul li a {
                 font: 12px/15px Verdana; }
+                .section_product_wrap_price_wrap .aside_action_block ul li a:hover {
+                  color: #074e23; }
                 .section_product_wrap_price_wrap .aside_action_block ul li a sup {
                   font-size: 8px;
                   vertical-align: super; }
@@ -5164,6 +5170,8 @@ header {
                 text-align: right;
                 font-size: 10px;
                 color: #82000c; }
+                .section_product_wrap__manufactures__factory_block__brend_text .description .read_m:hover {
+                  color: #25613c; }
             .section_product_wrap__manufactures__factory_block__brend_text .adres {
               width: 100%;
               margin-bottom: 15px; }
@@ -5213,6 +5221,9 @@ header {
                 margin-right: 8px;
                 float: left;
                 box-sizing: border-box; }
+                .section_product_wrap__manufactures__factory_block__brend_link_line a:hover {
+                  color: #25613c;
+                  border-color: #25613c; }
                 @media (max-width: 1062px) {
                   .section_product_wrap__manufactures__factory_block__brend_link_line a {
                     display: inline-block;
@@ -5488,6 +5499,10 @@ header {
           font: 13px/20px 'robotobold';
           color: #024753;
           margin-left: 42px; }
+          .section__recommended_header_zag .mail:hover {
+            color: #25613c; }
+            .section__recommended_header_zag .mail:hover span {
+              background: none; }
           .section__recommended_header_zag .mail span {
             background: url("../img/dotted.png") left bottom repeat-x; }
       .section__recommended_header_info {
@@ -5500,6 +5515,8 @@ header {
           text-decoration: underline;
           margin-right: 30px;
           margin-top: 35px; }
+          .section__recommended_header_info a:hover {
+            color: #25613c; }
           .section__recommended_header_info a:nth-child(1) {
             margin-right: 0px; }
           .section__recommended_header_info a .see {
@@ -5626,6 +5643,8 @@ header {
             font-style: italic;
             color: #003c95;
             text-decoration: underline; }
+            .footer_info_header_logo_block_logo .comment:hover {
+              color: #25613c; }
     .footer_info__section {
       width: 100%;
       float: left; }
@@ -5710,6 +5729,8 @@ header {
             color: #003c95;
             text-decoration: underline;
             display: block; }
+            .footer_info__section_parcing_schem a:hover {
+              color: #25613c; }
       .footer_info__section_tel {
         float: left;
         width: 51%;
@@ -5768,6 +5789,8 @@ header {
                 text-decoration: underline;
                 margin-left: 4px;
                 font-weight: bold; }
+                .footer_info__section_tel_block_mobile p a:hover {
+                  color: #25613c; }
         .footer_info__section_tel_mail_block {
           width: 100%;
           float: left;
@@ -5784,6 +5807,8 @@ header {
             font-style: italic;
             text-decoration: underline;
             color: #0151bd; }
+            .footer_info__section_tel_mail_block a:hover {
+              color: #25613c; }
         .footer_info__section_tel_form_block {
           float: left;
           width: 100%;
@@ -5815,6 +5840,7 @@ header {
             .footer_info__section_tel_form_block .input_wrap .popup-left-corner {
               background: #fc0000;
               border-radius: 5px;
+              color: #ffffff;
               -moz-border-radius: 5px;
               position: absolute;
               padding: 5px;
@@ -5863,8 +5889,11 @@ header {
             opacity: 1;
             -khtml-opacity: 1;
             pointer-events: auto;
-            cursor: pointer;
-            /**/ }
+            cursor: pointer; }
+            .footer_info__section_tel_form_block .active:hover {
+              color: #25613c; }
+              .footer_info__section_tel_form_block .active:hover span {
+                background: none; }
           .footer_info__section_tel_form_block span {
             background: url("../img/dotted.png") left bottom repeat-x; }
   .footer_help {
@@ -5911,6 +5940,11 @@ header {
         color: #0151bd;
         display: block;
         margin-bottom: 15px; }
+        .footer_help_link_line a:hover {
+          color: #25613c; }
+          .footer_help_link_line a:hover span {
+            background: none;
+            color: #b80000; }
       .footer_help_link_line_left {
         float: left;
         width: 50%;
