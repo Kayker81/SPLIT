@@ -3,31 +3,38 @@ $(document).ready(function () {
 $('.ring').find('a').attr('href','tel:+7 (863) 221 16 87')
     }
     $('.modal_fon').click(function () {
-        if($('.black_panel').is(":visible")){
-            $('.serch_modal').hide(300);
+        if($('.black_panel').is(":visible")) {
+            if ($('.black_panel').is(":visible") && $('.serch_modal').is(":hidden") && $('#power_calcul').is(":hidden")) {
+                $('.black_panel').hide(300);
+                setTimeout(function () {
+                    $('.modal_fon').fadeOut(500)
+                }, 700)
+            }
+            if ($('.black_panel').is(":hidden") && $('.serch_modal').is(":visible")) {
+                $('.serch_modal').hide(300);
+                setTimeout(function () {
+                    $('.modal_fon').fadeOut(500)
+                }, 700)
+            }
+            if ($('.black_panel').is(":visible") && $('.serch_modal').is(':visible')) {
+                $('.serch_modal').hide(500);
+                return false
+            }
+            if ($('.black_panel').is(":visible") && $('#power_calcul').is(':visible')) {
+                $('#power_calcul').hide(500);
+                return false
+            }
         }
-        if($('.black_panel').is(":visible")&&$('.serch_modal').is(":hidden")){
-            $('.black_panel').hide(300);
-            setTimeout(function () {
-                $('.modal_fon').fadeOut(500)
-            },700)
-        }
-        if($('.black_panel').is(":hidden")&&$('.serch_modal').is(":visible")){
-            $('.serch_modal').hide(300);
-            setTimeout(function () {
-                $('.modal_fon').fadeOut(500)
-            },700)
-        }
-        if($('.black_panel').is(":visible")&&$('.serch_modal').is(':visible')){
-            $('.serch_modal').hide(500);
-            return false
-        }
-      else{
+        else {
+
+
             $(this).children('.modal').hide(500);
             setTimeout(function () {
                 $('.modal_fon').fadeOut(500)
-            },700)
+            }, 700)
         }
+
+        return;
     })
     $('.modal').click(function (e) {
         e.stopPropagation();
@@ -401,7 +408,7 @@ $('.question_button').hover(
         var val=$(this).find('i').html();
         $(this).parents('.select').find('input').val(val);
     })
-    $('#power_block').click(function () {
+    $('#power_block,.calcul_footer,.black_panel_header_kalkul').click(function () {
         var win_widtch=$(window).width();
         var win_height=$(window).height();
      $('.modal_fon,#power_calcul').css({
@@ -434,9 +441,14 @@ $('.question_button').hover(
     })
 $('#close_power').click(function () {
     $('#power_calcul').hide(500);
-    setTimeout(function () {
-        $('.modal_fon').fadeOut(500)
-    },600)
+   if($('.black_panel').is(":visible")){
+       return false
+   }
+   else{
+       setTimeout(function () {
+           $('.modal_fon').fadeOut(500)
+       },600)
+   }
 })
     $('#cline_power').click(function () {
         $('.power_calculator_coontent_form_base').find('input').val('');
