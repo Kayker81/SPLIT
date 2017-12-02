@@ -376,12 +376,12 @@ header {
     }
   }
 }
-
 .brend_block {
   position: absolute;
   top: 0px;
   left: 0px;
-  width: 56.49%;
+  width: 100%;
+  max-width: 660px;
   background: rgb(245, 246, 250);
   background: -moz-linear-gradient(top, rgba(245, 246, 250, 1) 0%, rgba(245, 233, 207, 1) 100%);
   background: -webkit-linear-gradient(top, rgba(245, 246, 250, 1) 0%, rgba(245, 233, 207, 1) 100%);
@@ -405,6 +405,10 @@ header {
     border-right: 1px solid #783938;
     box-sizing: border-box;
     padding: 0px 9px;
+    @media(max-width: 405px){
+      width: 100%;
+      border-bottom:1px solid #783938;;
+    }
     &:last-child {
       border: none;
       padding-right: 0px;
@@ -475,6 +479,9 @@ header {
       width: 65.67%;
       box-sizing: border-box;
       min-height: 69px;
+      @media(max-width: 597px){
+        width: 100%;
+      }
       &_text {
         float: left;
         h5 {
@@ -516,6 +523,10 @@ header {
         display: block;
         font-weight: bold;
         margin-top: 15px;
+      }
+      @media(max-width: 597px){
+        width: 100%;
+        text-align: center;
       }
     }
   }
@@ -2120,6 +2131,9 @@ header {
       box-sizing: border-box;
       background: #010206;
       padding: 1px;
+      @media(max-width: 405px){
+        float: right;
+      }
       &:hover{
         background: none;
         border: 2px solid #b80000;
@@ -2163,6 +2177,12 @@ header {
       width: auto;
       float: left;
       background: none;
+      @media(max-width: 405px){
+        float: left;
+        a{
+          margin-left: 0px;
+        }
+      }
       .header_nav_logo_line_sity {
         display: none;
       }
@@ -2170,6 +2190,7 @@ header {
         display: none;
       }
       .header_nav_logo_line_logo {
+
 
         a {
           width: 26px;
@@ -2181,6 +2202,9 @@ header {
           display: block;
           margin-top: 7px;
           margin-left: 27px;
+          @media(max-width: 405px){
+            margin-left: 0px;
+          }
           &:hover{
             background-image: url("../img/sprite_header.png");
             background-position: -31px -175px;
@@ -2239,6 +2263,9 @@ header {
           right: 7px;
           margin-left: 10.1px;
         }
+        @media(max-width: 405px){
+          display: none;
+        }
       }
       .open {
         &:before {
@@ -2280,6 +2307,9 @@ header {
     width: 100%;
     min-height: 0;
     background: none;
+    @media(max-width: 405px){
+      text-align: center;
+    }
     .ring {
       float: left;
       width: auto;
@@ -2288,6 +2318,10 @@ header {
       font-weight: normal;
       font-weight: bold;
       color: #840000;
+      @media(max-width: 405px){
+        float: none;
+        display: inline-block;
+      }
       span {
         font-size: 12px;
       }
@@ -2310,6 +2344,10 @@ header {
       float: right;
       font: 14px/38px Verdana;
       color: #024753;
+      @media(max-width: 405px){
+        float: none;
+        display: inline-block;
+      }
       p {
         display: none;
       }

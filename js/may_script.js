@@ -92,6 +92,10 @@ $('.ring').find('a').attr('href','tel:+7 (863) 221 16 87')
 
             var top = 42
             var left = $(this).offset().left - $('.content').offset().left;
+            var win_widtch=$(window).width();
+            if(left>win_widtch/2){
+                var left=0
+            }
             $('#brend').css({
                 left: left,
                 top: top,
