@@ -2035,6 +2035,8 @@ html, body {
   display: none;
   overflow-y: auto;
   overflow-x: hidden; }
+  .modal_fon .modal {
+    cursor: pointer; }
   .modal_fon .black_panel {
     position: absolute;
     width: 100%;

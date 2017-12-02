@@ -3,10 +3,16 @@ $(document).ready(function () {
 $('.ring').find('a').attr('href','tel:+7 (863) 221 16 87')
     }
     $('.modal_fon').click(function () {
+        if($('.black_panel').is(":visible")){
+            return false;
+        }
         $(this).children().hide(500);
         setTimeout(function () {
             $(this).fadeOut(500)
         },1500)
+    })
+    $('.modal').click(function (e) {
+        e.stopPropagation();
     })
     $('.header_nav_sandwich').click(function () {
         $('.modal_fon').fadeIn(300);
