@@ -285,7 +285,8 @@ $('.ring').find('a').attr('href','tel:+7 (863) 221 16 87')
 
 
     })
-    $('.header_nav_logo_line_logo').click(function (e) {
+    $('.header_nav_logo_line_logo').hover(
+        function (e) {
         e.preventDefault();
         var left=$(this).offset().left-$('.content').offset().left+$(this).width();
         var top=$(this).offset().top-23.5+$(this).height()/2;
@@ -312,7 +313,11 @@ $('.ring').find('a').attr('href','tel:+7 (863) 221 16 87')
            return false
        }
 
-    })
+    },
+        function () {
+            $('.logo_modal').hide(300);
+        }
+    )
     $('html').click(function () {
         $('.logo_modal').hide(500)
     })
@@ -673,7 +678,7 @@ $('#close_power').click(function () {
             },500)
         }
 
-        
+
     })
     $('.close_search').click(function () {
         if($('.black_panel').is(":visible")){
@@ -755,6 +760,12 @@ $('#close_power').click(function () {
 
     /******************************************************************************************************************/
     /********************************************SHEMA*****************************************************************/
+    $('#schem_time').click(function () {
+        $('.modal_fon').fadeIn(500)
+        setTimeout(function () {
+            $('#schem_big').show(500);
+        }, 600)
+    })
     $('#schema,#schem_header').click(function() {
         $('.miniature_block').show(500)
     })

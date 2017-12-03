@@ -240,6 +240,9 @@ header {
         text-decoration: underline;
         color: #5d7489;
         text-transform: uppercase;
+        &:hover{
+          color: #003b98;
+        }
         @media(max-width: 1099px) {
           display: inline-block;
           float: none;

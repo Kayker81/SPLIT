@@ -49,6 +49,9 @@
             color: #023d98;
             text-decoration: underline;
             font-weight: bold;
+            &:hover{
+              color: #620909;
+            }
           }
         }
       }
@@ -172,6 +175,7 @@
         font-style: italic;
         color: #5d7489;
         float: right;
+        margin-right: 5px;
         &:hover{
           color: #074e23;
           text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52);
@@ -215,7 +219,10 @@
         width: 100%;
         font: 11px/30px Verdana;
         text-decoration: underline;
-        color: #023d98;
+        color: #023d98;&:hover{
+        color: #620909;
+
+      }
         @media(max-width: 880px) {
           display: none;
         }
@@ -330,6 +337,9 @@
         a {
           text-decoration: underline;
           font-weight: bold;
+          &:hover{
+            color: #074e23;
+          }
         }
       }
     }
@@ -408,6 +418,11 @@
         font: 16px/25px Verdana;
         font-weight: bold;
         color: #840000;
+        &:hover{
+          i{
+            background: url("../img/temp_hover/arow_hover.png");
+          }
+        }
         i {
           display: inline-block;
           width: 8px;
@@ -500,6 +515,9 @@
           background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
           color: #840000;
+          &:hover{
+            border-color: #620909;
+          }
         }
 
       }
@@ -636,6 +654,11 @@
             color: #5d7489;
             text-align: left;
             margin-left: 10px;
+            cursor: pointer;
+            &:hover{
+              color: #074e23;
+              text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52);
+            }
             @media(max-width: 636px) {
               font-size: 12px;
               line-height: 20px;
@@ -662,6 +685,7 @@
           font-weight: bold;
           text-align: center;
           box-sizing: border-box;
+          background: #ffffff;
           span {
             font-weight: normal;
             font-size: 20px;

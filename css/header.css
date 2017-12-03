@@ -40,6 +40,8 @@
             color: #023d98;
             text-decoration: underline;
             font-weight: bold; }
+            .header .header_nav nav ul li a:hover {
+              color: #620909; }
     .header .header_nav_sandwich {
       display: inline-block;
       width: 26px;
@@ -138,7 +140,8 @@
         font-weight: bold;
         font-style: italic;
         color: #5d7489;
-        float: right; }
+        float: right;
+        margin-right: 5px; }
         .header .header_nav_logo_line_schem:hover {
           color: #074e23;
           text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52); }
@@ -175,6 +178,8 @@
         font: 11px/30px Verdana;
         text-decoration: underline;
         color: #023d98; }
+        .header .header_nav_katalog_all:hover {
+          color: #620909; }
         @media (max-width: 880px) {
           .header .header_nav_katalog_all {
             display: none; } }
@@ -276,6 +281,8 @@
       .header .header_kontakt_action li a {
         text-decoration: underline;
         font-weight: bold; }
+        .header .header_kontakt_action li a:hover {
+          color: #074e23; }
     .header .header_kontakt_line {
       width: 100%;
       min-height: 104px;
@@ -345,6 +352,8 @@
         font: 16px/25px Verdana;
         font-weight: bold;
         color: #840000; }
+        .header .header_kontakt_line .ring:hover i {
+          background: url("../img/temp_hover/arow_hover.png"); }
         .header .header_kontakt_line .ring i {
           display: inline-block;
           width: 8px;
@@ -427,6 +436,8 @@
           background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
           color: #840000; }
+          .header .header_kontakt_line_button_line .button:hover {
+            border-color: #620909; }
   .header__user_info {
     float: right;
     width: 34.18%; }
@@ -536,7 +547,11 @@
             text-decoration: underline;
             color: #5d7489;
             text-align: left;
-            margin-left: 10px; }
+            margin-left: 10px;
+            cursor: pointer; }
+            .header__user_info_info .time_text h3:hover {
+              color: #074e23;
+              text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52); }
             @media (max-width: 636px) {
               .header__user_info_info .time_text h3 {
                 font-size: 12px;
@@ -558,7 +573,8 @@
           color: #5d7489;
           font-weight: bold;
           text-align: center;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+          background: #ffffff; }
           .header__user_info_info_serch_input span {
             font-weight: normal;
             font-size: 20px;
