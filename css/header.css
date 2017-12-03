@@ -127,7 +127,8 @@
       .header .header_nav_logo_line_sity {
         float: right;
         font: 11px/40px Verdana;
-        color: #363636; }
+        color: #363636;
+        margin-top: 5px; }
         @media (max-width: 886px) {
           .header .header_nav_logo_line_sity {
             display: none; } }
@@ -136,7 +137,6 @@
         font: 14px/30px 'Georgia-BoldItalic';
         font-weight: bold;
         font-style: italic;
-        margin-top: 10px;
         color: #5d7489;
         float: right; }
         .header .header_nav_logo_line_schem:hover {
@@ -231,7 +231,8 @@
           margin-right: 2.36%;
           position: relative; }
           .header .header_nav_katalog_categories .button:hover {
-            color: #074e23; }
+            color: #074e23;
+            border-color: #074e23; }
           @media (max-width: 1070px) {
             .header .header_nav_katalog_categories .button {
               padding: 0px;
@@ -610,7 +611,8 @@
           margin-right: 7px;
           text-align: center; }
           .header__user_info_info_select_line_select:hover {
-            color: #074e23; }
+            color: #074e23;
+            border-color: #620909; }
           .header__user_info_info_select_line_select:nth-last-child(1) {
             margin-right: 0px; }
           .header__user_info_info_select_line_select p {
