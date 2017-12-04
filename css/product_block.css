@@ -163,6 +163,8 @@
         margin-left: 5px;
         margin-bottom: 11px;
         text-decoration: underline; }
+        .product__all_info_header_zag:hover {
+          color: #003c95; }
     .product__all_info__price_line {
       float: left;
       width: 100%;
@@ -271,6 +273,8 @@
             float: left;
             color: #0151bd;
             text-decoration: underline; }
+            .product__all_info_info_line_row .name a:hover {
+              color: #003c95; }
         .product__all_info_info_line_row .info {
           float: left;
           width: 46.76%;
