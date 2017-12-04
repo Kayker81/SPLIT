@@ -71,6 +71,28 @@ table {
   height: 0px;
   margin-left: 100%; }
 
+.top_help {
+  position: absolute;
+  padding: 15px 22px;
+  font: 14px/20px 'Roboto-Medium';
+  background: #FFFFFF;
+  border: 1px solid #ff0000;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 98%;
+  left: 1%;
+  display: none;
+  z-index: 999;
+  box-sizing: border-box; }
+  .top_help .arow_help {
+    bottom: -14px;
+    position: absolute;
+    z-index: 99;
+    width: 30px;
+    height: 14px;
+    background-image: url("../img/temp_sprite/help_arow_b.png"); }
+
 .help {
   position: absolute;
   padding: 15px 22px;

@@ -365,6 +365,14 @@ $('.question_button').hover(
            display:'block',
            opacity:0
        })
+        var height_help=$(id).height();
+        var offset_bottom=$('#power_calcul').offset().top-$(window).scrollTop()+$('#power_calcul').height()
+        if(top_help+$(id).height()>offset_bottom){
+            var test=$(this).offset().top;
+            $(id).removeClass('help');
+            $(id).addClass('top_help');
+            var top_help=$(this).offset().top-top_parent+28-height_help-70;
+        }
         var left_blokc=$(id).offset().left-left_parent;
         var left_help=$('.help_activ').offset().left-left_parent+7.5-18-left_blokc;
         $(id).css({
@@ -377,6 +385,7 @@ $('.question_button').hover(
             display:'none',
             opacity:1
         })
+        $(id).slideDown(300)
         $(id).slideDown(300)
     },
     function () {
