@@ -341,7 +341,8 @@ $('.ring').find('a').attr('href','tel:+7 (863) 221 16 87')
     })
     $(window).scroll(function () {
         var s_top=$(window).scrollTop();
-        if(s_top>0){
+        var  cr_top=$('.section_crumbs').offset().top+$('.section_crumbs').height()+50;
+        if(s_top>cr_top){
             $('.header').removeClass('header')
             $('header').addClass('header_mini');
         }

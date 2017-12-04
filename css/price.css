@@ -1353,7 +1353,8 @@
         .section__recommended_header_zag .mail {
           font: 13px/20px 'robotobold';
           color: #024753;
-          margin-left: 42px; }
+          margin-left: 36px;
+          padding: 3px; }
           .section__recommended_header_zag .mail:hover {
             color: #25613c; }
             .section__recommended_header_zag .mail:hover span {
