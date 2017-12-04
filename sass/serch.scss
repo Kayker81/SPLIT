@@ -26,6 +26,14 @@
     @include radius(50%);
     background: #FFFFFF;
     text-align: center;
+    @media(max-width: 920px){
+      right: 10px;
+      background: #c3c3c3;
+    }
+    @media(max-width: 600px){
+      top: 10px;
+      background: #c3c3c3;
+    }
     i {
       display: inline-block;
       width: 15px;
