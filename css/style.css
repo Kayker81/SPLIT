@@ -79,11 +79,15 @@ table {
   width: 100%;
   min-height: 180px;
   border-bottom: 1px solid #e0e0e0;
-  background: url("../img/header.jpg") left top repeat-x, #f3fafa; }
+  background: url("../img/header.jpg") left top repeat-x, #f3fafa;
+  overflow: hidden; }
   @media (max-width: 1009px) {
     .header {
       min-height: 0px;
-      background: #f3fafa; } }
+      background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: -webkit-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1); } }
   .header .miniature_block {
     top: 20px; }
   @media (max-width: 636px) {
@@ -95,7 +99,8 @@ table {
       width: 96%;
       margin-left: 2%;
       border: 1px solid #bcbcbc;
-      background: #f3f8f9; } }
+      overflow: hidden;
+      padding-bottom: 10px; } }
   .header .header_nav {
     display: inline-block;
     width: 36.06%; }
@@ -385,6 +390,11 @@ table {
         .header .header_kontakt_line {
           min-height: 0px;
           margin-top: 15px; } }
+      @media (max-width: 770px) {
+        .header .header_kontakt_line {
+          margin-top: 0px; }
+          .header .header_kontakt_line a {
+            margin-top: 10px; } }
       .header .header_kontakt_line .meil {
         font: 14px/40px Verdana;
         color: #024753; }
@@ -435,7 +445,8 @@ table {
         width: 100%;
         font: 16px/25px Verdana;
         font-weight: bold;
-        color: #840000; }
+        color: #840000;
+        cursor: default; }
         @media (max-width: 1009px) {
           .header .header_kontakt_line .ring {
             display: block;
@@ -454,7 +465,8 @@ table {
         @media (max-width: 770px) {
           .header .header_kontakt_line .ring {
             max-width: 160px;
-            font-size: 11px; } }
+            font-size: 11px;
+            cursor: pointer; } }
         @media (max-width: 355px) {
           .header .header_kontakt_line .ring {
             display: block;
@@ -904,7 +916,8 @@ table {
         text-align: center; }
         .header_mini .header_kontakt .ring {
           display: inline-block;
-          float: none; } }
+          float: none;
+          text-decoration: underline; } }
   .header_mini .header_kontakt_action {
     display: none; }
   .header_mini .header_kontakt_line_button_line {
@@ -923,6 +936,7 @@ table {
       font: 16px/38px Verdana;
       font-weight: normal;
       font-weight: bold;
+      cursor: default;
       color: #840000; }
       @media (max-width: 405px) {
         .header_mini .header_kontakt_line .ring {
@@ -944,7 +958,8 @@ table {
     .header_mini .header_kontakt_line .meil {
       float: right;
       font: 14px/38px Verdana;
-      color: #024753; }
+      color: #024753;
+      text-decoration: underline; }
       @media (max-width: 405px) {
         .header_mini .header_kontakt_line .meil {
           float: none;
@@ -2145,7 +2160,7 @@ table {
   width: 98%;
   left: 1%;
   display: none;
-  z-index: 99;
+  z-index: 999;
   box-sizing: border-box; }
   .help .arow_help {
     position: absolute;
@@ -2206,8 +2221,7 @@ table {
       .power_calculator_header {
         background-size: cover;
         text-align: center;
-        padding: 0px;
-        padding-bottom: 15px; } }
+        padding: 0px; } }
     .power_calculator_header i {
       width: 109px;
       height: 104px;
@@ -2215,6 +2229,9 @@ table {
       background-position: 0px 0px;
       display: inline-block;
       margin-top: 5px; }
+      @media (max-width: 746px) {
+        .power_calculator_header i {
+          display: none; } }
     .power_calculator_header h3 {
       display: inline-block;
       font: 17px/24px Verdana;
@@ -2346,7 +2363,7 @@ table {
               float: left;
               box-sizing: border-box;
               color: #4b4b4b;
-              min-width: 130px; }
+              min-width: 100px; }
             .power_calculator_coontent_form_base_line .input_block .select {
               text-align: left;
               height: 42px;
@@ -2361,7 +2378,7 @@ table {
               font-weight: bold;
               float: left;
               box-sizing: border-box;
-              min-width: 130px; }
+              min-width: 100px; }
               .power_calculator_coontent_form_base_line .input_block .select input[type='text'] {
                 border: none;
                 float: left;
@@ -2413,6 +2430,8 @@ table {
                   .power_calculator_coontent_form_base_line .input_block .select .option li a {
                     width: 100%;
                     display: inline-block; }
+                    .power_calculator_coontent_form_base_line .input_block .select .option li a:hover {
+                      color: #620909; }
                 .power_calculator_coontent_form_base_line .input_block .select .option .big {
                   font-size: 12px;
                   line-height: 14px;
@@ -2530,7 +2549,10 @@ table {
           font-weight: bold;
           color: #015968;
           margin-top: 32px;
-          float: left; }
+          float: left;
+          padding: 3px; }
+          .power_calculator_coontent_form .button_line a:hover {
+            outline: 1px solid #b80000; }
           @media (max-width: 703px) {
             .power_calculator_coontent_form .button_line a {
               display: inline-block;
@@ -2559,6 +2581,7 @@ table {
             float: left; }
           .power_calculator_coontent_form .button_line .selected_block a {
             float: left;
+            padding: 0px;
             text-decoration: underline;
             color: #2f61a8;
             margin-top: 0px;
@@ -2567,6 +2590,9 @@ table {
             margin-left: 5px;
             pointer-events: none;
             cursor: default; }
+            .power_calculator_coontent_form .button_line .selected_block a:hover {
+              color: #620909;
+              outline: none; }
         .power_calculator_coontent_form .button_line .selected_activ {
           -moz-opacity: 1;
           opacity: 1;
@@ -3546,6 +3572,8 @@ table {
         margin-left: 5px;
         margin-bottom: 11px;
         text-decoration: underline; }
+        .product__all_info_header_zag:hover {
+          color: #003c95; }
     .product__all_info__price_line {
       float: left;
       width: 100%;
@@ -3654,6 +3682,8 @@ table {
             float: left;
             color: #0151bd;
             text-decoration: underline; }
+            .product__all_info_info_line_row .name a:hover {
+              color: #003c95; }
         .product__all_info_info_line_row .info {
           float: left;
           width: 46.76%;
@@ -4584,11 +4614,15 @@ table {
             margin-top: 5px; }
             .section_product_wrap_price_wrap .aside_action_block ul li {
               width: 100%;
-              margin-bottom: 12px; }
+              margin-bottom: 8px; }
               .section_product_wrap_price_wrap .aside_action_block ul li a {
-                font: 12px/15px Verdana; }
+                font: 12px/15px Verdana;
+                padding: 2px;
+                display: block; }
                 .section_product_wrap_price_wrap .aside_action_block ul li a:hover {
-                  color: #074e23; }
+                  color: #003b98;
+                  outline: 1px solid #003b98;
+                  text-decoration: underline; }
                 .section_product_wrap_price_wrap .aside_action_block ul li a sup {
                   font-size: 8px;
                   vertical-align: super; }

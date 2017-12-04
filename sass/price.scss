@@ -726,11 +726,15 @@
             margin-top: 5px;
             li {
               width: 100%;
-              margin-bottom: 12px;
+              margin-bottom: 8px;
               a {
                 font: 12px/15px Verdana;
+                padding: 2px;
+                display: block;
                 &:hover{
-                  color: #074e23;
+                  color: #003b98;
+                  outline: 1px solid #003b98;
+                  text-decoration: underline;
                 }
                 sup {
                   font-size: 8px;

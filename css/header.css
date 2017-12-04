@@ -2,11 +2,15 @@
   width: 100%;
   min-height: 180px;
   border-bottom: 1px solid #e0e0e0;
-  background: url("../img/header.jpg") left top repeat-x, #f3fafa; }
+  background: url("../img/header.jpg") left top repeat-x, #f3fafa;
+  overflow: hidden; }
   @media (max-width: 1009px) {
     .header {
       min-height: 0px;
-      background: #f3fafa; } }
+      background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: -webkit-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1); } }
   .header .miniature_block {
     top: 20px; }
   @media (max-width: 636px) {
@@ -18,7 +22,8 @@
       width: 96%;
       margin-left: 2%;
       border: 1px solid #bcbcbc;
-      background: #f3f8f9; } }
+      overflow: hidden;
+      padding-bottom: 10px; } }
   .header .header_nav {
     display: inline-block;
     width: 36.06%; }
@@ -308,6 +313,11 @@
         .header .header_kontakt_line {
           min-height: 0px;
           margin-top: 15px; } }
+      @media (max-width: 770px) {
+        .header .header_kontakt_line {
+          margin-top: 0px; }
+          .header .header_kontakt_line a {
+            margin-top: 10px; } }
       .header .header_kontakt_line .meil {
         font: 14px/40px Verdana;
         color: #024753; }
@@ -358,7 +368,8 @@
         width: 100%;
         font: 16px/25px Verdana;
         font-weight: bold;
-        color: #840000; }
+        color: #840000;
+        cursor: default; }
         @media (max-width: 1009px) {
           .header .header_kontakt_line .ring {
             display: block;
@@ -377,7 +388,8 @@
         @media (max-width: 770px) {
           .header .header_kontakt_line .ring {
             max-width: 160px;
-            font-size: 11px; } }
+            font-size: 11px;
+            cursor: pointer; } }
         @media (max-width: 355px) {
           .header .header_kontakt_line .ring {
             display: block;
@@ -827,7 +839,8 @@
         text-align: center; }
         .header_mini .header_kontakt .ring {
           display: inline-block;
-          float: none; } }
+          float: none;
+          text-decoration: underline; } }
   .header_mini .header_kontakt_action {
     display: none; }
   .header_mini .header_kontakt_line_button_line {
@@ -846,6 +859,7 @@
       font: 16px/38px Verdana;
       font-weight: normal;
       font-weight: bold;
+      cursor: default;
       color: #840000; }
       @media (max-width: 405px) {
         .header_mini .header_kontakt_line .ring {
@@ -867,7 +881,8 @@
     .header_mini .header_kontakt_line .meil {
       float: right;
       font: 14px/38px Verdana;
-      color: #024753; }
+      color: #024753;
+      text-decoration: underline; }
       @media (max-width: 405px) {
         .header_mini .header_kontakt_line .meil {
           float: none;

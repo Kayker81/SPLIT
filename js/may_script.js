@@ -456,8 +456,22 @@ $('#close_power').click(function () {
    }
 })
     $('#cline_power').click(function () {
-        $('.power_calculator_coontent_form_base').find('input').val('');
-        $('.power_calculator_coontent_form_more').find('.activ').removeClass('activ')
+        var S=20;
+        var H='Средние'
+        var I='Средняя'
+        var P=1
+        var P_D=0;
+        var T=0
+        var K='Нормальная'
+        $('#S').val(S);
+        $('#H').val(H);
+        $('#I').val(I);
+        $('#T').val(T);
+        $('#P').val(P);
+        $('#P_d').val(P_D);
+        $('#K').val(K);
+        $('.power_calculator_coontent_form_more').find('.activ').removeClass('activ');
+        $('#B').addClass('activ');
     })
     $('#submit1').click(function () {
         var S=parseInt($('#S').val());
@@ -476,11 +490,12 @@ $('#close_power').click(function () {
             'Сильная':27
         }
         var T_array={
-            '1-2':0,
-            '2-3':1,
-            '3-4':2,
-            '4-5':3,
-            'Более 5':4
+            '0':0,
+            '1-2':1,
+            '2-3':2,
+            '3-4':3,
+            '4-5':4,
+            'Более 5':5
         }
         var K_array={
             'Медленно':-25,

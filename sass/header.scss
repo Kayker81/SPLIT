@@ -9,9 +9,13 @@
   min-height: 180px;
   border-bottom: 1px solid #e0e0e0;
   background: url("../img/header.jpg") left top repeat-x, #f3fafa;
+  overflow: hidden;
   @media(max-width: 1009px){
     min-height: 0px;
-    background: #f3fafa;
+    background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+    background: -webkit-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+    background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
   }
   .miniature_block{
     top:20px;
@@ -24,7 +28,8 @@
     width: 96%;
     margin-left: 2%;
     border: 1px solid #bcbcbc;
-    background: #f3f8f9;
+    overflow: hidden;
+    padding-bottom: 10px;
   }
   .header_nav {
     display: inline-block;
@@ -380,6 +385,12 @@ span{
         min-height: 0px;
         margin-top: 15px;
       }
+      @media(max-width: 770px){
+        margin-top: 0px;
+        a{
+          margin-top: 10px;
+        }
+      }
       .meil {
         font: 14px/40px Verdana;
         color: #024753;
@@ -440,6 +451,7 @@ span{
         font: 16px/25px Verdana;
         font-weight: bold;
         color: #840000;
+        cursor: default;
         @media(max-width: 1009px){
           display: block;
           width: 49%;
@@ -458,6 +470,7 @@ span{
         @media(max-width: 770px){
           max-width: 160px;
           font-size: 11px;
+          cursor: pointer;
         }
         @media(max-width: 355px){
           display: block;
@@ -1016,6 +1029,7 @@ span{
       .ring {
         display: inline-block;
         float: none;
+        text-decoration: underline;
       }
     }
   }
@@ -1039,6 +1053,7 @@ span{
       font: 16px/38px Verdana;
       font-weight: normal;
       font-weight: bold;
+      cursor: default;
       color: #840000;
       @media(max-width: 405px){
         float: none;
@@ -1066,6 +1081,7 @@ span{
       float: right;
       font: 14px/38px Verdana;
       color: #024753;
+      text-decoration: underline;
       @media(max-width: 405px){
         float: none;
         display: inline-block;

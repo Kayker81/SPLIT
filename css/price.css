@@ -588,11 +588,15 @@
             margin-top: 5px; }
             .section_product_wrap_price_wrap .aside_action_block ul li {
               width: 100%;
-              margin-bottom: 12px; }
+              margin-bottom: 8px; }
               .section_product_wrap_price_wrap .aside_action_block ul li a {
-                font: 12px/15px Verdana; }
+                font: 12px/15px Verdana;
+                padding: 2px;
+                display: block; }
                 .section_product_wrap_price_wrap .aside_action_block ul li a:hover {
-                  color: #074e23; }
+                  color: #003b98;
+                  outline: 1px solid #003b98;
+                  text-decoration: underline; }
                 .section_product_wrap_price_wrap .aside_action_block ul li a sup {
                   font-size: 8px;
                   vertical-align: super; }
