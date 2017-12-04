@@ -538,7 +538,7 @@ $('#close_power').click(function () {
             var G=1;
         }
 
-        var power=((((S*H/26.251)+((S*H/26.251)/100*I)+(P*0.21+P_d/1000)+(T*0.16)+((S*H/26.251)/100*K)+B+((S*H/26.251)*Hei))*G)).toFixed(2)
+        var power=((((S*H/30.54)+((S*H/30.54)/100*I)+(P*0.21+P_d/1000)+(T*0.16)+((S*H/30.54)/100*K)+B+((S*H/30.54)*Hei))*G)).toFixed(2)
         $('#rez_block').addClass('active');
         $('.selected_block').addClass('selected_activ')
         $('#power').find('.namber').html(power);
@@ -733,6 +733,7 @@ $('#close_power').click(function () {
         return
     })
     /********************************************timer*****************************************************************/
+    var width_win=$(window).width()
     var data=new Date();
     var h=data.getHours()*60*60;
     var m=data.getMinutes()*60;
@@ -740,40 +741,76 @@ $('#close_power').click(function () {
     var total_sec=h+m+s;
      var close_time=19*60*60;
      var time=close_time-total_sec;
-     if(time<=0){
-         var open_time=10*60*60;
-         var time=open_time+(24*60*60-total_sec);
+     if(time<=0) {
+         var open_time = 10 * 60 * 60;
+         var time = open_time + (24 * 60 * 60 - total_sec);
          $('.footer_info__section_timer_wrap_zag').html('До открытия осталось:')
      }
-    $('#DateCountdown').attr('data-timer',time)
-    $("#DateCountdown").TimeCircles({
-        "animation": "smooth",
-        "bg_width": 0.1,
-        "fg_width": 0.1,
-        "circle_bg_color": "#252525",
-        "time": {
-            "Days": {
-                "text": "Days",
-                "color": "#FFCC66",
-                "show": false
-            },
-            "Hours": {
-                "text": "Hours",
-                "color": "#eb631e",
-                "show": true
-            },
-            "Minutes": {
-                "text": "Minutes",
-                "color": "#2075d8",
-                "show": true
-            },
-            "Seconds": {
-                "text": "Seconds",
-                "color": "#71a712",
-                "show": true
-            }
-        }
-    });
+         if (width_win<750){
+             $('#mini_timer').attr('data-timer',time)
+             $("#mini_timer").TimeCircles({
+                 "animation": "smooth",
+                 "bg_width": 0.1,
+                 "fg_width": 0.1,
+                 "circle_bg_color": "#252525",
+                 "time": {
+                     "Days": {
+                         "text": "Days",
+                         "color": "#FFCC66",
+                         "show": false
+                     },
+                     "Hours": {
+                         "text": "Hours",
+                         "color": "#eb631e",
+                         "show": true
+                     },
+                     "Minutes": {
+                         "text": "Minutes",
+                         "color": "#2075d8",
+                         "show": true
+                     },
+                     "Seconds": {
+                         "text": "Seconds",
+                         "color": "#71a712",
+                         "show": true
+                     }
+                 }
+             });
+
+         }
+         else{
+             $('#DateCountdown').attr('data-timer',time)
+             $("#DateCountdown").TimeCircles({
+                 "animation": "smooth",
+                 "bg_width": 0.1,
+                 "fg_width": 0.1,
+                 "circle_bg_color": "#252525",
+                 "time": {
+                     "Days": {
+                         "text": "Days",
+                         "color": "#FFCC66",
+                         "show": false
+                     },
+                     "Hours": {
+                         "text": "Hours",
+                         "color": "#eb631e",
+                         "show": true
+                     },
+                     "Minutes": {
+                         "text": "Minutes",
+                         "color": "#2075d8",
+                         "show": true
+                     },
+                     "Seconds": {
+                         "text": "Seconds",
+                         "color": "#71a712",
+                         "show": true
+                     }
+                 }
+             });
+         }
+
+
 
     /******************************************************************************************************************/
     /********************************************SHEMA*****************************************************************/
@@ -882,6 +919,7 @@ $('.miniature_block').find('.img').click(function () {
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
+        centerMode: true,
 
         responsive: [
             {
