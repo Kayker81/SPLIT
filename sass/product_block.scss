@@ -332,6 +332,9 @@
             float: left;
             color: #0151bd;
             text-decoration: underline;
+            &:hover{
+              color: #620909;
+            }
           }
         }
         .info {
@@ -459,6 +462,9 @@
           color: #0151bd;
           text-decoration: underline;
           margin-left: 9px;
+          &:hover{
+            color: #620909;
+          }
         }
       }
       &_look_block {
@@ -470,6 +476,9 @@
           text-decoration: underline;
           display: inline-block;
           margin-top: 7px;
+          &:hover{
+            color: #620909;
+          }
         }
         span {
           display: inline-block;

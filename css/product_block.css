@@ -271,6 +271,8 @@
             float: left;
             color: #0151bd;
             text-decoration: underline; }
+            .product__all_info_info_line_row .name a:hover {
+              color: #620909; }
         .product__all_info_info_line_row .info {
           float: left;
           width: 46.76%;
@@ -372,6 +374,8 @@
           color: #0151bd;
           text-decoration: underline;
           margin-left: 9px; }
+          .product__all_info_footer_check_block .link:hover {
+            color: #620909; }
       .product__all_info_footer_look_block {
         float: left;
         width: 45.76%; }
@@ -381,6 +385,8 @@
           text-decoration: underline;
           display: inline-block;
           margin-top: 7px; }
+          .product__all_info_footer_look_block a:hover {
+            color: #620909; }
         .product__all_info_footer_look_block span {
           display: inline-block;
           width: 17px;
