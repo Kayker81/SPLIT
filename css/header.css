@@ -2,8 +2,7 @@
   width: 100%;
   min-height: 180px;
   border-bottom: 1px solid #e0e0e0;
-  background: url("../img/header.jpg") left top repeat-x, #f3fafa;
-  overflow: hidden; }
+  background: url("../img/header.jpg") left top repeat-x, #f3fafa; }
   @media (max-width: 1009px) {
     .header {
       min-height: 0px;

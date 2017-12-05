@@ -1,4 +1,13 @@
-@import "reset";
+@mixin radius($r) {
+  border-radius: $r;
+  -moz-border-radius: $r;
+  -webkit-border-radius: $r;
+}
+@mixin opacity($r){
+  -moz-opacity: $r;
+  opacity: $r;
+  -khtml-opacity: $r
+}
 .top_help{
   position: absolute;
   padding: 15px 22px;

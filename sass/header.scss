@@ -9,7 +9,6 @@
   min-height: 180px;
   border-bottom: 1px solid #e0e0e0;
   background: url("../img/header.jpg") left top repeat-x, #f3fafa;
-  overflow: hidden;
   @media(max-width: 1009px){
     min-height: 0px;
     background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);

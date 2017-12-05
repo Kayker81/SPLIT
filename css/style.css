@@ -79,8 +79,7 @@ table {
   width: 100%;
   min-height: 180px;
   border-bottom: 1px solid #e0e0e0;
-  background: url("../img/header.jpg") left top repeat-x, #f3fafa;
-  overflow: hidden; }
+  background: url("../img/header.jpg") left top repeat-x, #f3fafa; }
   @media (max-width: 1009px) {
     .header {
       min-height: 0px;
@@ -1100,15 +1099,25 @@ table {
           background-image: url("../img/sprite_section.png");
           background-position: -51px -192px; }
     .brend_block_box_logo_block {
-      width: 100%;
-      overflow: hidden; }
+      width: 100%; }
       .brend_block_box_logo_block a {
         display: block;
         float: left;
         width: 50%;
-        text-align: center; }
+        text-align: center;
+        transition: 1s;
+        -moz-transition: 1s;
+        -webkit-transition: 1s;
+        -o-transition: 1s; }
+        .brend_block_box_logo_block a:hover {
+          -moz-transform: scale(1.4);
+          -webkit-transform: scale(1.4);
+          -o-transform: scale(1.4);
+          -ms-transform: scale(1.4);
+          transform: scale(1.4); }
         .brend_block_box_logo_block a img {
-          max-width: 100%; }
+          max-width: 100%;
+          height: 44px; }
   .brend_block_footer {
     float: right;
     width: 100%;
@@ -1154,6 +1163,8 @@ table {
       text-decoration: underline;
       color: #003c95;
       box-sizing: border-box; }
+      .brend_block_footer_brend_all:hover {
+        color: #620909; }
       .brend_block_footer_brend_all span {
         display: block;
         font-weight: bold;
@@ -1331,6 +1342,9 @@ table {
         box-sizing: border-box;
         padding-left: 3px;
         margin: 12px 0px; }
+        .area_block_inverter_block_name:hover {
+          color: #620909;
+          font-weight: bold; }
       .area_block_inverter_block_price {
         width: 100%;
         padding-left: 7px;
@@ -1383,6 +1397,8 @@ table {
       text-align: center;
       display: block;
       box-sizing: border-box; }
+      .price_block_link_block:hover p {
+        color: #620909; }
       .price_block_link_block img {
         max-width: 100%; }
       .price_block_link_block p {
@@ -2075,79 +2091,6 @@ table {
 
 /**********************************************************************************************************************/
 /**************************************************Калькулятор мощности************************************************/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, sub, sup, tt, var,
-b, u, i, em center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video, select, input {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: top;
-  font-weight: normal; }
-
-a {
-  text-decoration: none;
-  color: inherit;
-  outline: none; }
-
-input:focus {
-  outline: none; }
-
-select:focus {
-  outline: none; }
-
-textarea {
-  border: 0px;
-  padding: 0px; }
-  textarea:focus {
-    outline: none; }
-
-header, section, footer {
-  width: 100%; }
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
-
-ol, ul {
-  list-style: none; }
-
-blockquote, q {
-  quotes: none; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-.res_line {
-  text-align: justify; }
-
-.line_block {
-  display: inline-block;
-  float: none; }
-
-.after {
-  display: inline-block;
-  width: 0px;
-  height: 0px;
-  margin-left: 100%; }
-
 .top_help {
   position: absolute;
   padding: 15px 22px;

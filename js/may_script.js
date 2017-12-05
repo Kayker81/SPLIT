@@ -255,21 +255,29 @@ $('.ring').find('a').attr('href','tel:+7 (863) 221 16 87')
             $('#question').hide(500)
         }
     })
-    $('.price_block_nav').find('a').click(function (e) {
+    $('#brend,#area,#price,#multi,#service,#question').mouseleave(function () {
+        $(this).hide(500);
+        $('.button,.header__user_info_info_select_line_select').removeClass('open');
+    })
+    $('.price_block_nav').find('a').hover(
+        function (e) {
         $('.price_block_nav').find('.activ').removeClass('activ');
         e.preventDefault();
         var id = $(this).attr('href');
         $('.price_block_nav').find('activ').removeClass('activ');
         $(this).addClass('activ')
         $('.price_block_img_block').find('.action').hide(500).removeClass('action');
-
-        setTimeout(function () {
             $(id).slideDown(800)
-            $(id).addClass('action')
-        }, 500)
 
 
-    })
+
+
+    },
+        function () {
+            var id = $(this).attr('href');
+            $(id).hide(500)
+        }
+    )
     $('.services_block_nav').find('a').click(function (e) {
         $('.services_block_nav').find('.activ').removeClass('activ');
         e.preventDefault();
@@ -965,8 +973,6 @@ $('.miniature_block').find('.img').click(function () {
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        centerMode: true,
-
         responsive: [
             {
                 breakpoint: 1148,
