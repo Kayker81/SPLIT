@@ -261,19 +261,28 @@ $(document).ready(function () {
     })
     $('.price_block_nav').find('a').hover(
         function (e) {
+            $('.price_block_img_block').find('.action').css('display','none')
             $('.price_block_nav').find('.activ').removeClass('activ');
             e.preventDefault();
             var id = $(this).attr('href');
             $('.price_block_nav').find('activ').removeClass('activ');
             $(this).addClass('activ')
-            $('.price_block_img_block').find('.action').hide(500).removeClass('action');
+            $('.price_block_img_block').find('.action')
             $(id).slideDown(800)
 
 
         },
         function () {
             var id = $(this).attr('href');
-            $(id).hide(500)
+            $(id).hide(500);
+            $('.price_block_img_block').find('.action').css({
+                    display:'inline-block',
+                    opacity:0
+                }
+            )
+            setTimeout(function () {
+                $('.price_block_img_block').find('.action').css('opacity',1)
+            },500)
         }
     )
     $('.services_block_nav').find('li').hover(

@@ -1031,6 +1031,9 @@
       display: inline-block;
       margin-right: 8%;
       text-decoration: underline;
+      &:hover{
+        color: #620909;
+      }
     }
   }
   &_slider_wrap {

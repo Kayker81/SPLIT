@@ -817,6 +817,8 @@
       display: inline-block;
       margin-right: 8%;
       text-decoration: underline; }
+      .question_block_link a:hover {
+        color: #620909; }
   .question_block_slider_wrap {
     width: 533px;
     height: 231px;
