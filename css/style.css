@@ -6386,7 +6386,8 @@ header {
         position: absolute;
         z-index: 999;
         margin-top: 2px;
-        display: none; }
+        display: none;
+        padding-bottom: 5px; }
         .section_crumbs ul .select_pod_menu li {
           display: block;
           float: none;

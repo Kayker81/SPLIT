@@ -282,7 +282,7 @@ $(document).ready(function () {
             )
             setTimeout(function () {
                 $('.price_block_img_block').find('.action').css('opacity',1)
-            },500)
+            },700)
         }
     )
     $('.services_block_nav').find('li').hover(
