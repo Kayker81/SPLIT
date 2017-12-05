@@ -1,4 +1,25 @@
 @import "reset";
+.top_help{
+  position: absolute;
+  padding: 15px 22px;
+  font:14px/20px 'Roboto-Medium';
+  background: #FFFFFF;
+  border: 1px solid #ff0000;
+  @include radius(5px);
+  width: 98%;
+  left:1%;
+  display: none;
+  z-index: 999;
+  box-sizing: border-box;
+  .arow_help{
+    bottom: -14px;
+    position: absolute;
+    z-index: 99;
+    width: 30px;
+    height: 14px;
+    background-image: url("../img/temp_sprite/help_arow_b.png");
+  }
+}
 .help {
   position: absolute;
   padding: 15px 22px;
@@ -9,7 +30,7 @@
   width: 98%;
   left:1%;
   display: none;
-  z-index: 99;
+  z-index: 999;
   box-sizing: border-box;
   .arow_help{
     position: absolute;
@@ -72,7 +93,10 @@
       background-size: cover;
       text-align: center;
       padding: 0px;
-      padding-bottom: 15px;
+
+    }
+    @media(max-height: 920px){
+      display: none;
     }
     i {
       width: 109px;
@@ -81,6 +105,9 @@
       background-position: 0px 0px;
       display: inline-block;
       margin-top: 5px;
+      @media(max-width: 746px){
+      display: none;
+      }
     }
     h3 {
       display: inline-block;
@@ -137,6 +164,9 @@
           border-bottom: 1px solid #dedede;
           float: left;
           margin-top: 1px;
+          @media(max-height: 920px){
+            line-height: 26px;
+          }
 @media(max-width: 406px){
   line-height: 20px;
   padding: 12.8px;
@@ -237,7 +267,7 @@
               float: left;
               box-sizing: border-box;
               color: #4b4b4b;
-              min-width: 130px;
+              min-width: 100px;
             }
             .select {
               text-align: left;
@@ -251,7 +281,7 @@
               font-weight: bold;
               float: left;
               box-sizing: border-box;
-              min-width: 130px;
+              min-width: 100px;
               input[type='text'] {
                 border: none;
                 float: left;
@@ -307,6 +337,9 @@
                   a {
                     width: 100%;
                     display: inline-block;
+                    &:hover{
+                      color:#620909 ;
+                    }
                   }
                 }
                 .big{
@@ -360,6 +393,9 @@
           border: 1px solid #dedede;
           border-right: none;
           float: left;
+          @media(max-height: 920px){
+            line-height: 26px;
+          }
 @media(max-width: 535px){
   line-height: 20px;
   padding: 12.8px;
@@ -445,12 +481,22 @@
         border-bottom: 1px solid #c3c3c3;
         padding: 0px 24px;
         box-sizing: border-box;
+        @media(max-height: 920px){
+          min-height: 0px;
+        }
         a {
           font: 14px/22px Verdana;
           font-weight: bold;
           color: #015968;
           margin-top: 32px;
           float: left;
+          padding: 3px;
+          @media(max-height: 920px){
+            margin-top: 10px;
+          }
+          &:hover{
+            outline: 1px solid #b80000;
+          }
           @media(max-width: 703px){
             display: inline-block;
             float: none;
@@ -473,15 +519,24 @@
           float: right;
           font: 12px/81px Verdana;
           @include opacity(0.5);
+          @media(max-height: 920px){
+            line-height: 22px;
+
+          }
           @media(max-width: 703px){
             display: inline-block;
             float: none;
           }
           p{
             float: left;
+            @media(max-height: 920px){
+              margin-top: 10px;
+            }
+
           }
           a{
             float: left;
+            padding: 0px;
             text-decoration: underline;
             color: #2f61a8;
             margin-top: 0px;
@@ -490,7 +545,14 @@
             margin-left: 5px;
             pointer-events: none;
             cursor: default;
-
+            @media(max-height: 920px){
+              margin-top: 10px;
+              line-height: 22px;
+            }
+&:hover{
+  color: #620909;
+  outline: none;
+}
 
           }
         }
@@ -510,6 +572,9 @@
             width: 100%;
             text-align: center;
           }
+          @media(max-height: 920px){
+            min-height: 0px;
+          }
         }
         .power_calculator_coontent_form_more {
           min-height: 81px;
@@ -519,6 +584,9 @@
           @media(max-width: 703px){
             width: 100%;
             text-align: center;
+          }
+          @media(max-height: 920px){
+            min-height: 0px;
           }
 
 
@@ -535,6 +603,10 @@
       @include opacity(0.5);
       @media(max-width: 629px){
         padding-bottom: 20px;
+      }
+      @media(max-height: 920px){
+        min-height: 0;
+        padding-bottom: 5px;
       }
       &_zag_block{
         float: left;
@@ -571,6 +643,9 @@
             float: none;
             margin-right: 0px;
           }
+          @media(max-height: 920px){
+            display: none;
+          }
         }
         h3{
           float: left;
@@ -580,6 +655,9 @@
           @media(max-width: 703px){
             display: inline-block;
             float: none;
+          }
+          @media(max-height: 920px){
+            line-height: 26px;
           }
         }
 
@@ -611,6 +689,9 @@
           color: #212121;
           font-weight: bold;
           margin-bottom: 7px;
+         @media(max-height: 920px){
+           line-height: 22px;
+         }
           i{
             display: inline-block;
             width: 13px;
@@ -630,7 +711,9 @@
             line-height: 10px;
             font-weight: bold;
             cursor: pointer;
-
+            @media(max-height: 920px){
+             margin-top:5px;
+            }
           }
         }
        &_input_line{
@@ -642,6 +725,9 @@
            display: inline-block;
            margin-top: 10px;
            display: none;
+           @media(max-height: 920px){
+             margin-top: 5px;
+           }
            .namber {
              float: right;
              display: block;
@@ -679,17 +765,26 @@
            box-sizing: border-box;
            background: #f8f8f8;
            min-width: 153px;
+           @media(max-height: 920px){
+            line-height: 30px;
+           }
            span{
              font: 14px/20px 'Georgia-BoldItalic';
              margin-top: 14px;
              color: #662211;
              display: none;
+             @media(max-height: 920px){
+               margin-top: 8px;
+             }
            }
            .namber{
              font: 18px/44px Arial;
              font-weight: bold;
              color: #662211;
              display: none;
+             @media(max-height: 920px){
+               line-height: 30px;
+             }
            }
            .no_namber{
              display: inline-block;

@@ -1059,6 +1059,36 @@
   }
 
 }
+.enter_block{
+  position: absolute;
+  width: 100%;
+  max-width: 1160px;
+  min-height: 426px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  z-index: 99;
+  .close {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    @include radius(50%);
+    background: #FFFFFF;
+    text-align: center;
+    i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px;
+    }
+  }
+}
 
 /*********************Стили модальных окон окончание*********************************************/
 .modal_fon {
