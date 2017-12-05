@@ -1508,6 +1508,10 @@ table {
       text-align: center;
       margin-top: 44px;
       border: 1px solid #7696bd; }
+      .multi_block_box_zag:hover {
+        color: #840000;
+        border-color: #840000;
+        background: rgba(241, 240, 221, 0.9); }
     .multi_block_box_link_power {
       width: 100%;
       margin-top: 14px;

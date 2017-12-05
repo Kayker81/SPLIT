@@ -668,6 +668,11 @@
       text-align: center;
       margin-top: 44px;
       border: 1px solid #7696bd;
+      &:hover {
+        color: #840000;
+        border-color: #840000;
+        background: rgba(241, 240, 221, 0.9);
+      }
     }
     &_link_power {
       width: 100%;
