@@ -1639,7 +1639,7 @@ table {
   left: 0;
   width: 68.37%;
   min-width: 800px;
-  min-height: 310px;
+  height: 310px;
   background: #FFFFFF;
   border: 1px solid #014366;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -1648,7 +1648,8 @@ table {
   padding-left: 1.7%;
   box-sizing: border-box;
   display: none;
-  z-index: 9; }
+  z-index: 9;
+  overflow: hidden; }
   @media (max-width: 800px) {
     .services_block {
       min-width: 0;
@@ -1691,6 +1692,8 @@ table {
     .services_block_link_box_price {
       display: block;
       min-height: 126px; }
+      .services_block_link_box_price:hover a {
+        color: #620909; }
       .services_block_link_box_price img {
         margin-top: -24px; }
     .services_block_link_box_spec {
@@ -1701,7 +1704,9 @@ table {
   .services_block_img_table {
     width: 38.25%;
     display: table;
-    float: left; }
+    float: left;
+    height: 310px;
+    overflow: hidden; }
   .services_block_img_wrap {
     width: 100%;
     height: 310px;

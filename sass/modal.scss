@@ -832,7 +832,7 @@
   left: 0;
   width: 68.37%;
   min-width: 800px;
-  min-height: 310px;
+  height:310px;
   background: #FFFFFF;
   border: 1px solid #014366;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -842,6 +842,7 @@
   box-sizing: border-box;
   display: none;
   z-index: 9;
+  overflow: hidden;
   @media (max-width: 800px) {
     min-width: 0;
     width: 100%;
@@ -894,6 +895,11 @@
     &_price {
       display: block;
       min-height: 126px;
+      &:hover{
+        a{
+          color: #620909;
+        }
+      }
       img {
         margin-top: -24px;
       }
@@ -910,6 +916,8 @@
     width: 38.25%;
     display: table;
     float: left;
+    height: 310px;
+    overflow: hidden;
   }
   &_img_wrap {
     width: 100%;
