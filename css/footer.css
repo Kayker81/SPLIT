@@ -275,6 +275,8 @@
               font: 14px/16px Verdana;
               box-sizing: border-box;
               background-color: #FFFFFF; }
+            .footer_info__section_tel_form_block .input_wrap .error {
+              border-color: #b80000; }
             .footer_info__section_tel_form_block .input_wrap .popup-left-corner {
               background: #fc0000;
               border-radius: 5px;

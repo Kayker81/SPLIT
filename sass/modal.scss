@@ -1069,6 +1069,7 @@
   -moz-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
   box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
   z-index: 99;
+  display: none;
   .close {
     display: block;
     position: absolute;
@@ -1355,6 +1356,136 @@
           color: #620909;
           border-color: #003c95;
         }
+      }
+    }
+  }
+}
+.thenk_block{
+  position: absolute;
+  top:0px;
+  left:0px;
+  width: 100%;
+  max-width: 1029px;
+  min-height: 435px;
+  background: url("../img/thenk.jpg") right top no-repeat #FFFFFF;
+  z-index: 99;
+  padding-left: 28px;
+  box-sizing: border-box;
+  display: none;
+  .close {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    @include radius(50%);
+    background: #FFFFFF;
+    text-align: center;
+    i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px;
+    }
+  }
+  &__adres{
+    float: left;
+    width: 100%;
+    margin-top: 25px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    p{
+      font:16px/18px 'robotobold';
+      color: #393939;
+      float: left;
+      letter-spacing: 0.3px;
+    }
+    a{
+      font: 15px/18px 'Roboto-Medium';
+      text-decoration: underline;
+      color: #003c95;
+      float: left;
+      margin-left: 30px;
+      i{
+        float: left;
+        margin-right: 12px;
+        width: 13px;
+        height: 18px;
+        background-image: url("../img/temp_sprite/marker.png");
+        background-position: center;
+      }
+    }
+  }
+  &_logo{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+   a{
+     float: left;
+     img{
+       float: left;
+       max-width: 100%;
+     }
+     p{
+       float: left;
+       width: 100%;
+       font:24px/24px 'robotobold';
+       color: #393939;
+       margin-top: 15px;
+       letter-spacing: 0.9px;
+     }
+   }
+  }
+  &_thenk_box{
+    width: 100%;
+    float: left;
+    padding-left: 194.5px;
+    box-sizing: border-box;
+    background: url("../img/logo2.png") left center no-repeat;
+    font-family:  'robotoBlack';
+    color: #393939;
+    min-height: 164px;
+    h3{
+      font-size: 42px;
+      line-height: 42px;
+      margin-top: 70px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: -0.2px;
+      margin-top: 5px;
+      span{
+        color: #990000;
+      }
+    }
+  }
+  &_footer{
+    float: left;
+    width: 100%;
+    margin-top: 28px;
+    padding-right: 29px;
+    box-sizing: border-box;
+    letter-spacing: 0.65px;
+    a{
+      float: left;
+      padding-left: 26px;
+      background: url("../img/tel.jpg") left center no-repeat;
+      font:  15px/16px 'Roboto-Medium';
+      text-decoration: underline;
+      color: #003c95;
+      &:hover{
+        color: #620909;
+      }
+    }
+    p{
+      float: right;
+      font:  18px/16px 'Roboto-Medium';
+      span{
+        color: #990000;
       }
     }
   }

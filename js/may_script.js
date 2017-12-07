@@ -715,12 +715,19 @@ $('#close_power').click(function () {
     $('#tel_footer').bind("change paste keyup", function() {
 
         var nambe=String(parseInt($(this).val().replace(/\D+/g,"")));
+        var first_namber=nambe.substr(1,1);
         var lenght=nambe.length;
         if(lenght==11){
    $('.submit').addClass('active');
         }
         else{
             $('.submit').removeClass('active');
+        }
+        if(first_namber !=9){
+            $('#tel_footer').addClass('error')
+        }
+        else{
+            $('#tel_footer').removeClass('error')
         }
         return
     })
@@ -878,7 +885,8 @@ $('.miniature_block').find('.img').click(function () {
         }
     })
     /******************************************************************************************************************/
-    /*******************************************ACTION****************************************************************/
+
+    /*******************************************ACTION*****************************************************************/
     $("#tel_footer").mask("+7(999) 999 99 99");
     $('.section_product_wrap_slider_block').slick({
         infinite: true,

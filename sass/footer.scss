@@ -3,11 +3,13 @@
   -moz-border-radius: $r;
   -webkit-border-radius: $r;
 }
-@mixin opacity($r){
+
+@mixin opacity($r) {
   -moz-opacity: $r;
   opacity: $r;
   -khtml-opacity: $r
 }
+
 .footer {
   float: left;
   width: 100%;
@@ -16,7 +18,7 @@
   background-size: cover;
   margin-top: 40px;
   padding-top: 23px;
-  .content{
+  .content {
     clear: both;
     position: relative;
   }
@@ -100,7 +102,7 @@
             font-style: italic;
             color: #003c95;
             text-decoration: underline;
-            &:hover{
+            &:hover {
               color: #25613c;
             }
           }
@@ -206,7 +208,7 @@
             color: #003c95;
             text-decoration: underline;
             display: block;
-            &:hover{
+            &:hover {
               color: #25613c;
             }
           }
@@ -278,7 +280,7 @@
                 text-decoration: underline;
                 margin-left: 4px;
                 font-weight: bold;
-                &:hover{
+                &:hover {
                   color: #25613c;
                 }
               }
@@ -303,7 +305,7 @@
             font-style: italic;
             text-decoration: underline;
             color: #0151bd;
-            &:hover{
+            &:hover {
               color: #25613c;
             }
           }
@@ -320,12 +322,12 @@
             font: 13px/16px Verdana;
             color: #2a2a2a;
           }
-          .input_wrap{
+          .input_wrap {
             width: 100%;
             position: relative;
             margin-top: 10px;
             clear: both;
-
+           
             input[type='text'] {
               width: 100%;
               height: 33px;
@@ -336,6 +338,9 @@
               font: 14px/16px Verdana;
               box-sizing: border-box;
               background-color: #FFFFFF;
+            }
+            .error {
+              border-color: #b80000;
             }
             .popup-left-corner {
               background: #fc0000;
@@ -384,13 +389,13 @@
             cursor: default;
 
           }
-          .active{
+          .active {
             @include opacity(1);
             pointer-events: auto;
             cursor: pointer;
-            &:hover{
+            &:hover {
               color: #25613c;
-              span{
+              span {
                 background: none;
               }
             }
@@ -448,9 +453,9 @@
         color: #0151bd;
         display: block;
         margin-bottom: 15px;
-        &:hover{
+        &:hover {
           color: #25613c;
-          span{
+          span {
             background: none;
             color: #b80000;
           }
