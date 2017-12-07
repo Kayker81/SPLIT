@@ -1845,6 +1845,241 @@ table {
       margin-top: 9px;
       background-image: url("../img/sprite_section.png");
       background-position: -85px -192px; }
+  .enter_block_zag {
+    width: 100%;
+    font: 28px/96px 'robotoregular';
+    color: #243739;
+    float: left; }
+  .enter_block_enter {
+    float: left;
+    width: 37.1%;
+    padding-left: 3.4%;
+    padding-right: 2.8%;
+    box-sizing: border-box; }
+    @media (max-width: 688px) {
+      .enter_block_enter {
+        width: 100%;
+        margin-bottom: 20px; } }
+    .enter_block_enter_form {
+      float: left;
+      width: 100%; }
+      .enter_block_enter_form input {
+        width: 100%;
+        height: 46px;
+        font: 14px/20px 'Roboto-Medium';
+        margin-bottom: 10px;
+        border: 1px solid #3b6e8b;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        padding-left: 46px;
+        box-sizing: border-box; }
+      .enter_block_enter_form .meil {
+        background: url("../img/temp_sprite/meil.png") left center no-repeat; }
+      .enter_block_enter_form .password {
+        background: url("../img/temp_sprite/look.png") left center no-repeat;
+        margin-bottom: 0px; }
+      .enter_block_enter_form .recall {
+        float: left;
+        width: 100%;
+        font: 11px/30px 'robotobold';
+        text-align: right;
+        text-decoration: underline;
+        color: #003c95; }
+        .enter_block_enter_form .recall:hover {
+          color: #620909; }
+      .enter_block_enter_form .submit {
+        float: left;
+        width: 100%;
+        height: 44px;
+        font: 18px/42px 'robotobold';
+        text-transform: uppercase;
+        text-align: center;
+        color: #024753;
+        border: 1px solid #e3e3e3;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px; }
+        .enter_block_enter_form .submit:hover {
+          color: #620909;
+          border-color: #003c95; }
+          .enter_block_enter_form .submit:hover span {
+            background: none; }
+        .enter_block_enter_form .submit span {
+          background: url("../img/dotted.png") left bottom repeat-x; }
+    .enter_block_enter .or {
+      width: 100%;
+      margin-top: 9px;
+      font: 18px/47px 'robotobold';
+      text-transform: uppercase;
+      text-align: center;
+      color: #c0c0c0; }
+    .enter_block_enter_soc_line {
+      float: left;
+      width: 100%; }
+      .enter_block_enter_soc_line p {
+        float: left;
+        width: 100%;
+        font: 15px/20px 'robotoregular';
+        text-align: center; }
+      .enter_block_enter_soc_line_block {
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin-top: 10px; }
+        .enter_block_enter_soc_line_block a {
+          display: inline-block;
+          border-radius: 50%;
+          -moz-border-radius: 50%;
+          -webkit-border-radius: 50%;
+          width: 47px;
+          height: 47px;
+          margin-right: 10px; }
+          .enter_block_enter_soc_line_block a:nth-last-child(1) {
+            margin-right: 0px; }
+        .enter_block_enter_soc_line_block .soc1 {
+          background-image: url("../img/sprite_section.png");
+          background-position: -241px 0px; }
+        .enter_block_enter_soc_line_block .soc2 {
+          background-image: url("../img/sprite_section.png");
+          background-position: -241px -47px; }
+        .enter_block_enter_soc_line_block .soc3 {
+          background-image: url("../img/sprite_section.png");
+          background-position: -241px -94px; }
+        .enter_block_enter_soc_line_block .soc4 {
+          background-image: url("../img/sprite_section.png");
+          background-position: -241px -141px;
+          -webkit-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.08);
+          -moz-box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.08); }
+        .enter_block_enter_soc_line_block .soc5 {
+          background-image: url("../img/sprite_section.png");
+          background-position: 0px -210px; }
+  .enter_block_reg {
+    float: left;
+    width: 62.9%;
+    min-height: 426px;
+    background: url("../img/reg.jpg") center top no-repeat;
+    border-left: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.21);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.21);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.21);
+    padding-left: 2.93%;
+    padding-right: 2.8%;
+    background-size: cover;
+    box-sizing: border-box; }
+    @media (max-width: 688px) {
+      .enter_block_reg {
+        width: 100%; } }
+    .enter_block_reg_form {
+      width: 100%; }
+      .enter_block_reg_form_info {
+        float: left;
+        width: 100%; }
+        .enter_block_reg_form_info input {
+          width: 48%;
+          height: 46px;
+          float: left;
+          font: 14px/20px 'Roboto-Medium';
+          margin-bottom: 10px;
+          border: 1px solid #3b6e8b;
+          border-radius: 4px;
+          -moz-border-radius: 4px;
+          -webkit-border-radius: 4px;
+          padding-left: 46px;
+          box-sizing: border-box;
+          margin-bottom: 10px; }
+          .enter_block_reg_form_info input:nth-child(even) {
+            float: right; }
+        .enter_block_reg_form_info .name {
+          background: url("../img/piple.jpg") 17px center no-repeat, url("../img/star.jpg") right top no-repeat, #FFFFFF; }
+        .enter_block_reg_form_info .patronymic {
+          background: url("../img/piple.jpg") 17px center no-repeat, #FFFFFF; }
+        .enter_block_reg_form_info .tel {
+          background: url("../img/tel.jpg") 17px center no-repeat, url("../img/star.jpg") right top no-repeat, #FFFFFF; }
+        .enter_block_reg_form_info .emeil {
+          background: url("../img/temp_sprite/meil.png") left top no-repeat, url("../img/star.jpg") right top no-repeat, #FFFFFF; }
+      .enter_block_reg_form_password {
+        float: left;
+        width: 100%; }
+        .enter_block_reg_form_password_zag {
+          float: left;
+          width: 100%;
+          font: 14px/30px 'robotoregular';
+          text-align: center;
+          margin-bottom: 8px; }
+        .enter_block_reg_form_password input {
+          width: 48%;
+          height: 46px;
+          float: left;
+          font: 14px/20px 'Roboto-Medium';
+          margin-bottom: 10px;
+          border: 1px solid #3b6e8b;
+          border-radius: 4px;
+          -moz-border-radius: 4px;
+          -webkit-border-radius: 4px;
+          padding-left: 46px;
+          box-sizing: border-box;
+          margin-bottom: 10px;
+          background: url("../img/temp_sprite/look.png") left top no-repeat, url("../img/star.jpg") right top no-repeat, #FFFFFF; }
+          .enter_block_reg_form_password input:nth-child(even) {
+            float: right; }
+      .enter_block_reg_form_chek_line {
+        width: 100%;
+        float: left;
+        margin-top: 8px;
+        margin-bottom: 18px; }
+        .enter_block_reg_form_chek_line .check_form {
+          float: left;
+          width: 26px;
+          height: 26px;
+          border: 1px solid #024753;
+          border-radius: 4px;
+          -moz-border-radius: 4px;
+          -webkit-border-radius: 4px;
+          text-align: center;
+          margin-right: 12px; }
+          .enter_block_reg_form_chek_line .check_form span {
+            display: inline-block;
+            width: 17px;
+            height: 16px;
+            margin-top: 4px; }
+        .enter_block_reg_form_chek_line .activ span {
+          background-image: url("../img/sprite_section.png");
+          background-position: -34px -192px; }
+        .enter_block_reg_form_chek_line p {
+          float: left;
+          font: 11px/15px 'robotoregular';
+          color: #272727;
+          width: 94%; }
+      .enter_block_reg_form .submit {
+        clear: both;
+        width: 100%;
+        max-width: 324px;
+        height: 44px;
+        margin: 0 auto;
+        font: 18px/42px 'robotobold';
+        text-transform: uppercase;
+        text-align: center;
+        color: #024753;
+        border: 1px solid #e3e3e3;
+        border-top-color: #e3e3e3;
+        border-right-color: #e3e3e3;
+        border-bottom-color: #e3e3e3;
+        border-left-color: #e3e3e3;
+        margin-bottom: 20px;
+        border-radius: 4px;
+        -moz-border-radius: 4px;
+        -webkit-border-radius: 4px;
+        background: #FFFFFF;
+        display: block; }
+        .enter_block_reg_form .submit span {
+          background: url("../img/dotted.png") left bottom repeat-x; }
+        .enter_block_reg_form .submit:hover {
+          color: #620909;
+          border-color: #003c95; }
 
 /*********************Стили модальных окон окончание*********************************************/
 .modal_fon {

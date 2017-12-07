@@ -14,12 +14,68 @@
 </head>
 <body>
 <div class="wraper">
-    <!--/////////////////////////////////////////Модальное окно вход/регистрация///////////////////////////////// -->
-    <div class="enter_block modal">
-        <a href="javascript:void(0)" class="close close enter_close"><i></i></a>
-    </div>
-    <!--**********************************************************************************************************-->
+
     <div class="modal_fon">
+        <!--/////////////////////////////////////////Модальное окно вход/регистрация///////////////////////////////// -->
+        <div class="enter_block modal">
+            <a href="javascript:void(0)" class="close close enter_close"><i></i></a>
+            <!--Вход на сайт -->
+            <div class="enter_block_enter">
+                <h3 class="enter_block_zag">Вход</h3>
+                <form method="post" action="javascript:void(0)" class="enter_block_enter_form">
+                    <input type="email" placeholder="Введите Ваш E-mail" class="meil">
+                    <input type="password" placeholder="Пароль" class="password">
+                    <a href="javascript:void(0)" class="recall" title="Востановление пароля">Напомнить пароль</a>
+                    <a href="javvascript:void(0)" class="submit"><span>Войти на сайт</span></a>
+                    <p class="or">или</p>
+                </form>
+                <!--Вход через соцсети -->
+                <div class="enter_block_enter_soc_line">
+                    <p>войдите через социальные сети:</p>
+                    <div class="enter_block_enter_soc_line_block">
+                        <a href="javascript:void(0)" class="soc1" title="Контакт"></a>
+                        <a href="javascript:void(0)" class="soc2" title="Фейсбук"></a>
+                        <a href="javascript:void(0)" class="soc3" title="Однокласники"></a>
+                        <a href="javascript:void(0)" class="soc4" title="Яндекс"></a>
+                        <a href="javascript:void(0)" class="soc5" title="Гугл"></a>
+                    </div>
+                </div>
+                <!--/Вход через соцсети -->
+            </div>
+            <!--/Вход на сайт -->
+            <div class="enter_block_reg">
+                <h3 class="enter_block_zag">Регистрация</h3>
+                <form method="post" action="javascript:void(0)" class="enter_block_reg_form">
+                    <!--Данные пользователя -->
+                    <div class="enter_block_reg_form_info">
+                        <input type="text" class="name" placeholder="Введите Ваше Имя">
+                        <input type="text" class="patronymic" placeholder="Отчество">
+                        <input type="tel" class="tel" placeholder="Телефон">
+                        <input type="email" class="emeil" placeholder="E-mail">
+                    </div>
+                    <!--/Данные пользователя -->
+                    <!--Ввод пароля-->
+                    <div class="enter_block_reg_form_password">
+                        <h3 class="enter_block_reg_form_password_zag">Придумайте и напишите свой пароль:</h3>
+                        <input type="password" placeholder="Повторите пароль">
+                        <input type="password" placeholder="Пароль">
+                    </div>
+                    <!--/Ввод пароля-->
+                    <!--Условия регистрации -->
+                    <div class="enter_block_reg_form_chek_line">
+                        <a href="javascript:void(0)" class="check_form activ"><span></span></a>
+                        <p>
+                            Нажимая на кнопку “Зарегистрироваться”, я соглашаюсь на получение информации от “Вимтех” и
+                            уведомлений о состоянии моих заказов, а также принимаю условия политики конфиденциальности и
+                            пользовательского соглашения
+                        </p>
+                    </div>
+                    <!--/Условия регистрации -->
+                    <a href="javvascript:void(0)" class="submit"><span>Зарегистрироваться</span></a>
+                </form>
+            </div>
+        </div>
+        <!--**********************************************************************************************************-->
         <!--/////////////////////////////////////////Модальные окна схема/////////////////////////////////////////// -->
         <!--Карта -->
         <div class="schem_big_block map_block modal" id="map_big">
@@ -35,12 +91,12 @@
                     <a href="#schem1">Схема1</a>
                     <a href="#schem2">Схема2</a>
                 </div>
-               <div class="schem_big_block__schem_block_table">
-                   <div class="schem_big_block__schem_block_img_block">
-                       <img src="img/schema/schem1.png" class="action" alt="schema1" title="schema1" id="schem1">
-                       <img src="img/schema/schem2.png" alt="schema2" title="schema2" id="schem2">
-                   </div>
-               </div>
+                <div class="schem_big_block__schem_block_table">
+                    <div class="schem_big_block__schem_block_img_block">
+                        <img src="img/schema/schem1.png" class="action" alt="schema1" title="schema1" id="schem1">
+                        <img src="img/schema/schem2.png" alt="schema2" title="schema2" id="schem2">
+                    </div>
+                </div>
             </div>
         </div>
         <!--/Схема проезда-->
@@ -376,7 +432,7 @@
         <div class="monufactur_bkock hitachi modal" id="hitachi">
             <a href="javascript:void(0)" class="close close monufacture_close"><i></i></a>
             <div class="hitachi_img">
-               <img src="img/mhi.jpg" alt="mhi" title="mhi">
+                <img src="img/mhi.jpg" alt="mhi" title="mhi">
             </div>
             <div class="hisense_info_line">
                 <p>
@@ -1594,7 +1650,7 @@
                         <ul class="select_pod_menu">
                             <li><a href="#">Цены</a></li>
 
-                         </ul>
+                        </ul>
                     </li>
                     <li class="arow"><span></span></li>
                     <li class="select"><a href="#"> Panasonic</a>
@@ -1614,7 +1670,7 @@
                             <li><a href="#">Потолочные</a></li>
                             <li><a href="#">Касетные</a></li>
                         </ul>
-                     </li>
+                    </li>
                     <li class="arow"><span></span></li>
                     <li><p>Mitsubishi Heavy Industries SRK20GH-S / SRC2-GH-S</p></li>
                 </ul>
