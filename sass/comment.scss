@@ -74,8 +74,37 @@
     &_slide{
       width: 100%;
       float: left;
-      padding: 0px 5.8%;
+      padding: 0px 30px;
       box-sizing: border-box;
+      position: relative;
+    .help_baner{
+      position: absolute;
+      padding: 15px 22px;
+      font: 14px/20px 'Roboto-Medium';
+      background: #FFFFFF;
+      border: 1px solid #ff0000;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+      width: 50%;
+      max-width: 518px;
+      display: none;
+      right: 5.8%;
+      top: 95px;
+
+      z-index: 999;
+      box-sizing: border-box;
+      .arow_help {
+        position: absolute;
+        z-index: 99;
+        width: 30px;
+        height: 14px;
+        background-image: url("../img/sprite_section.png");
+        background-position: -46px -170px;
+        top: -14px;
+        right: 20%;
+      }
+    }
 
       &_header{
         width: 100%;

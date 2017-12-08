@@ -946,6 +946,10 @@ $('.text_wrap').each(function (index) {
         var height_block=$('.big_text').height();
         var left=($(window).width()-$('.big_text').width())/2
         var top=($(window).height()-$('.big_text').height())/2
+        if(top<0){
+            var top=0
+
+        }
         $('.modal_fon').css({
             'display':'none',
             'opacity':1
@@ -961,6 +965,14 @@ $('.text_wrap').each(function (index) {
             $('.big_text').show(500);
         },600);
     })
+    $('.baner_tel').hover(
+        function () {
+        $('.help_baner').show(600)
+    },
+        function () {
+            $('.help_baner').hide(600)
+        }
+    )
     /******************************************************************************************************************/
     $('.enter_block_reg_form_chek_line').click(function () {
         if($(this).find('.check_form').hasClass('activ')){
@@ -1006,5 +1018,6 @@ $('.text_wrap').each(function (index) {
             }
         ]
     });
+    $('.individuals_block').slick({});
     /******************************************************************************************************************/
 });
