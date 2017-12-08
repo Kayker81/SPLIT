@@ -10,6 +10,47 @@
   -o-transition: $s;
 }
 /******************Стили модальных окон без тёмного фона начало**************************************/
+.big_text{
+  position: absolute;
+  width: 100%;
+ max-width: 700px;
+  left:10%;
+  top:10%;
+  -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  background: #FFFFFF;
+  padding: 3%;
+  box-sizing: border-box;
+  z-index: 999;
+  display: none;
+  p{
+    width: 100%;
+    font: 20px/22px 'Georgia-Italic';
+    color: #1b1b1b;
+  }
+  .close {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center;
+    i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px;
+    }
+  }
+}
 .logo_modal {
   position: absolute;
   top: 0px;

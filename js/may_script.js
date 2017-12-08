@@ -2,6 +2,19 @@ $(document).ready(function () {
     if( /Android|AppleWebKit|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 $('.ring').find('a').attr('href','tel:+7 (863) 221 16 87')
     }
+    $('.close').click(function (e) {
+        e.preventDefault();
+        $(this).parents('.modal').hide(500);
+         if(!$('.comment_block').is(':visible')){
+             setTimeout(function () {
+                 $('.modal_fon').fadeOut(500)
+             }, 700)
+         }
+         else{
+             return;
+         }
+
+    })
     $('.modal_fon').click(function () {
         if($('.black_panel').is(":visible")) {
             if ($('.black_panel').is(":visible") && $('.serch_modal').is(":hidden") && $('#power_calcul').is(":hidden")) {
@@ -910,7 +923,45 @@ $('.miniature_block').find('.img').click(function () {
     })
 })
     /******************************************************************************************************************/
-    /*******************************************Enter******************************************************************/
+
+    /*******************************************Comment******************************************************************/
+$('.text_wrap').each(function (index) {
+    var wrap_height=$(this).height();
+    var text_height=$(this).find('p').height();
+    if(wrap_height<text_height){
+      $(this).parent('.text_block').addClass('big');
+    }
+    
+})
+    $('.all_read').click(function (e) {
+        var widtch_b=0;
+        e.preventDefault();
+        var text=$(this).parents('.text_block').find('.text_wrap').find('p').html();
+        $('.modal_fon,.big_text').css({
+            'display':'block',
+            'opacity':0
+        })
+        $('.big_text').find('p').html(text);
+        var widtch_b=$('.big_text').width();
+        var height_block=$('.big_text').height();
+        var left=($(window).width()-$('.big_text').width())/2
+        var top=($(window).height()-$('.big_text').height())/2
+        $('.modal_fon').css({
+            'display':'none',
+            'opacity':1
+        })
+        $('.big_text').css({
+            'display':'none',
+            'opacity':1,
+            'left':left,
+            'top':top,
+        })
+        $('.modal_fon').fadeIn(400);
+        setTimeout(function () {
+            $('.big_text').show(500);
+        },600);
+    })
+    /******************************************************************************************************************/
     $('.enter_block_reg_form_chek_line').click(function () {
         if($(this).find('.check_form').hasClass('activ')){
             $(this).find('.check_form').removeClass('activ');

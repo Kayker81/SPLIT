@@ -960,6 +960,44 @@ table {
 
 /***********************************************************************************************************************/
 /******************Стили модальных окон без тёмного фона начало**************************************/
+.big_text {
+  position: absolute;
+  width: 100%;
+  max-width: 700px;
+  left: 10%;
+  top: 10%;
+  -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  background: #FFFFFF;
+  padding: 3%;
+  box-sizing: border-box;
+  z-index: 999;
+  display: none; }
+  .big_text p {
+    width: 100%;
+    font: 20px/22px 'Georgia-Italic';
+    color: #1b1b1b; }
+  .big_text .close {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center; }
+    .big_text .close i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px; }
+
 .logo_modal {
   position: absolute;
   top: 0px;
@@ -2198,14 +2236,13 @@ table {
 /********************Комментарии**********************************************************/
 .comment_block {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 20px;
   width: 100%;
   max-width: 1170px;
   min-height: 550px;
   background: #ffffff;
   z-index: 99;
-  top: 20px;
   -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
   box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24); }
@@ -2251,11 +2288,15 @@ table {
   .comment_block .individuals_block {
     width: 100%;
     float: left;
-    position: relative; }
+    position: relative;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border: 1px solid #cdcdcd;
+    border-top: none; }
     .comment_block .individuals_block_slide {
       width: 100%;
       float: left;
-      padding: 0px 5.5%;
+      padding: 0px 5.8%;
       box-sizing: border-box; }
       .comment_block .individuals_block_slide_header {
         width: 100%;
@@ -2290,6 +2331,98 @@ table {
               font: 12px/24px 'robotoregular';
               color: #888888;
               margin-top: 20px; }
+        .comment_block .individuals_block_slide_header_yandex_block {
+          float: left;
+          width: 50%;
+          border: 2px solid #024753;
+          box-sizing: border-box;
+          min-height: 110px; }
+          .comment_block .individuals_block_slide_header_yandex_block_comment {
+            float: left;
+            margin-top: 2.5px; }
+          .comment_block .individuals_block_slide_header_yandex_block_baner_yandex {
+            float: right;
+            display: block;
+            width: 40%;
+            margin-top: 15.5px;
+            margin-right: 5%; }
+            .comment_block .individuals_block_slide_header_yandex_block_baner_yandex img {
+              max-width: 100%; }
+      .comment_block .individuals_block_slide_content {
+        float: left;
+        width: 100%;
+        padding-top: 20px; }
+        .comment_block .individuals_block_slide_content p {
+          font: 12px/18px 'robotolight';
+          color: #282828;
+          letter-spacing: 0.5px; }
+        .comment_block .individuals_block_slide_content .text_block {
+          width: 100%;
+          float: left;
+          position: relative; }
+          .comment_block .individuals_block_slide_content .text_block .all_read {
+            font: 10px/20px 'Georgia-BoldItalic';
+            font-style: italic;
+            position: absolute;
+            right: 20px;
+            bottom: 0px;
+            color: #003c95;
+            text-decoration: underline;
+            display: none; }
+            .comment_block .individuals_block_slide_content .text_block .all_read:hover {
+              color: #620909; }
+        .comment_block .individuals_block_slide_content .text_wrap {
+          width: 100%;
+          float: left;
+          overflow: hidden;
+          box-sizing: border-box; }
+        .comment_block .individuals_block_slide_content .big {
+          padding-bottom: 20px; }
+          .comment_block .individuals_block_slide_content .big .all_read {
+            display: block; }
+        .comment_block .individuals_block_slide_content .main_wrap {
+          height: 54px; }
+        .comment_block .individuals_block_slide_content_main {
+          width: 100%; }
+        .comment_block .individuals_block_slide_content_detail {
+          width: 100%;
+          padding: 20px 0px;
+          background: url("../img/line2.png") left bottom repeat-x;
+          float: left; }
+          .comment_block .individuals_block_slide_content_detail h3 {
+            float: left;
+            font: 14px/18px 'robotoBlack'; }
+          .comment_block .individuals_block_slide_content_detail p {
+            float: right;
+            width: 90%; }
+          .comment_block .individuals_block_slide_content_detail .detail_wrap {
+            height: 72px; }
+          .comment_block .individuals_block_slide_content_detail_worth {
+            float: left;
+            width: 100%; }
+            .comment_block .individuals_block_slide_content_detail_worth h3 {
+              color: #1c7d09; }
+          .comment_block .individuals_block_slide_content_detail_limitations {
+            float: left;
+            width: 100%;
+            margin-top: 20px; }
+            .comment_block .individuals_block_slide_content_detail_limitations h3 {
+              color: #e81e1e; }
+        .comment_block .individuals_block_slide_content_quality {
+          float: left;
+          width: 100%; }
+          .comment_block .individuals_block_slide_content_quality_zag {
+            width: 100%;
+            float: left; }
+            .comment_block .individuals_block_slide_content_quality_zag h3 {
+              float: left;
+              width: 100%;
+              font: 20px/40px 'robotobold';
+              color: #2d2d2d;
+              margin: 22px 0px; }
+              .comment_block .individuals_block_slide_content_quality_zag h3 a {
+                display: inline-block;
+                margin-right: 12px; }
 
 /*****************************************************************************************/
 /*********************Стили модальных окон окончание*********************************************/

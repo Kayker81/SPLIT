@@ -11,14 +11,13 @@
 }
 .comment_block{
   position: absolute;
-  top:0;
-  left:0;
+  top:20px;
+  left:20px;
   width: 100%;
   max-width: 1170px;
   min-height: 550px;
   background: #ffffff;
   z-index: 99;
-  top:20px;
   -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
   box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
@@ -68,11 +67,16 @@
     width: 100%;
     float: left;
     position: relative;
+    padding-top: 28px;
+    padding-bottom: 28px;
+    border: 1px solid #cdcdcd;
+    border-top: none;
     &_slide{
       width: 100%;
       float: left;
-      padding: 0px 5.5%;
+      padding: 0px 5.8%;
       box-sizing: border-box;
+
       &_header{
         width: 100%;
         min-height: 110px;
@@ -111,6 +115,129 @@
               font: 12px/24px 'robotoregular';
               color: #888888;
               margin-top: 20px;
+            }
+          }
+        }
+        &_yandex_block{
+          float: left;
+          width: 50%;
+          border:2px solid rgba(2,71,83,1);
+          box-sizing: border-box;
+          min-height: 110px;
+          &_comment{
+            float: left;
+            margin-top: 2.5px;
+          }
+          &_baner_yandex{
+            float: right;
+            display: block;
+            width: 40%;
+            margin-top: 15.5px;
+            margin-right: 5%;
+            img{
+              max-width: 100%;
+            }
+          }
+        }
+      }
+      &_content{
+        float: left;
+        width: 100%;
+        padding-top: 20px;
+        p{
+          font:12px/18px 'robotolight';
+          color: #282828;
+          letter-spacing: 0.5px;
+        }
+        .text_block{
+          width: 100%;
+          float: left;
+          position: relative;
+          .all_read{
+            font: 10px/20px 'Georgia-BoldItalic';
+            font-style: italic;
+            position: absolute;
+            right:20px;
+            bottom:0px;
+            color: #003c95;
+            text-decoration: underline;
+            display: none;
+            &:hover{
+              color: #620909;
+            }
+          }
+        }
+        .text_wrap{
+          width: 100%;
+          float: left;
+          overflow: hidden;
+          box-sizing: border-box;
+
+
+        }
+        .big{
+          padding-bottom: 20px;
+          .all_read{
+            display: block;
+          }
+        }
+        .main_wrap{
+          height: 54px;
+
+        }
+        &_main{
+          width: 100%;
+        }
+        &_detail{
+          width: 100%;
+          padding: 20px 0px;
+          background: url("../img/line2.png") left bottom repeat-x;
+          float: left;
+          h3{
+            float: left;
+            font:14px/18px 'robotoBlack';
+            }
+          p{
+            float: right;
+            width: 90%;
+          }
+          .detail_wrap{
+            height: 72px;
+
+          }
+          &_worth{
+            float: left;
+            width: 100%;
+            h3{
+              color: #1c7d09;
+            }
+          }
+          &_limitations{
+            float: left;
+            width: 100%;
+            margin-top: 20px;
+            h3{
+              color: #e81e1e;
+            }
+          }
+        }
+        &_quality{
+          float: left;
+          width: 100%;
+          &_zag{
+            width: 100%;
+            float: left;
+            h3{
+              float: left;
+              width: 100%;
+              font: 20px/40px 'robotobold';
+              color: #2d2d2d;
+              margin: 22px 0px;
+              a{
+                display: inline-block;
+                margin-right: 12px;
+
+              }
             }
           }
         }
