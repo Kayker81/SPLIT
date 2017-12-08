@@ -1,0 +1,120 @@
+@mixin radius($r) {
+  border-radius: $r;
+  -moz-border-radius: $r;
+  -webkit-border-radius: $r;
+}
+@mixin transit($s) {
+  transition: $s;
+  -moz-transition: $s;
+  -webkit-transition: $s;
+  -o-transition: $s;
+}
+.comment_block{
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  max-width: 1170px;
+  min-height: 550px;
+  background: #ffffff;
+  z-index: 99;
+  top:20px;
+  -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  .close {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+   @include radius(50%);
+    background: #FFFFFF;
+    text-align: center;
+    i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px;
+    }
+  }
+  &_header{
+    width: 100%;
+    min-height: 67px;
+    border: 1px solid #cdcdcd;
+    box-sizing: border-box;
+    padding-left: 22px;
+    h3{
+      float: left;
+      width: 100%;
+      font: 18px/30px 'Roboto-Medium';
+      color: #024753;
+      margin-top: 17px;
+      .comment_icon{
+        width: 26px;
+        height: 22px;
+        display: inline-block;
+        background-image: url("../img/temp_sprite/commennt.png");
+        background-position: center;
+        margin-right: 20px;
+        margin-top: 5px;
+      }
+    }
+  }
+  .individuals_block{
+    width: 100%;
+    float: left;
+    position: relative;
+    &_slide{
+      width: 100%;
+      float: left;
+      padding: 0px 5.5%;
+      box-sizing: border-box;
+      &_header{
+        width: 100%;
+        min-height: 110px;
+        &_men{
+          float: left;
+          width: 50%;
+          &_foto{
+            float: left;
+          }
+          &_info_block{
+            float: right;
+            width: 75%;
+            h3{
+              width: 100%;
+              font: 20px/30px 'robotobold';
+              color: #2d2d2d;
+            }
+            .star_line {
+              width: 100%;
+              height: 17px;
+              margin-top: 22px;
+              a {
+                display: inline-block;
+                width: 16px;
+                height: 17px;
+                background-image: url("../img/sprite_section.png");
+                background-position: -68px -192px;
+              }
+              .activ {
+                background-image: url("../img/sprite_section.png");
+                background-position: -51px -192px;
+              }
+            }
+            .data{
+              width: 100%;
+              font: 12px/24px 'robotoregular';
+              color: #888888;
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

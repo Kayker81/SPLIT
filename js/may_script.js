@@ -724,12 +724,47 @@ $('#close_power').click(function () {
             $('.submit').removeClass('active');
         }
         if(first_namber !=9){
-            $('#tel_footer').addClass('error')
+            $('#tel_footer').css('border','1px solid #840000');
+            $('.popup-left-corner').html('"Первая цифра номера должна быть 9 исправьте ошибку"')
+
         }
         else{
-            $('#tel_footer').removeClass('error')
+            $('#tel_footer').css('border','1px solid #3b6e8b');
+            $('.popup-left-corner').html('"Номер телефона должен состоять из 10 цифр. Пример: (903) 401-16-87"')
         }
         return
+    })
+    $('#submit_ring').click(function (e) {
+        e.preventDefault();
+        var nambe=$('#tel_footer').val();
+        $('.modal_fon,.thenk_block').css({
+            'display':'block',
+            'opacity':0
+        })
+        var width_block= $('.thenk_block').width()
+        var left=($(window).width()-width_block)/2
+        var top=($(window).height()-$('.thenk_block').height())/2
+        $('#tel_thenks').html(nambe);
+        $('.thenk_block').css({
+            'display':'none',
+            'opacity':1,
+            'left':left,
+            'top':top
+        })
+        $('.modal_fon').css({
+            'display':'none',
+            'opacity':1,
+        })
+        $('.modal_fon').fadeIn(300);
+        setTimeout(function () {
+            $('.thenk_block').show(500)
+        },400)
+   })
+    $('.close_thenk').click(function () {
+        $('.thenk_block').hide(500);
+        setTimeout(function () {
+            $('.modal_fon').fadeOut(300)
+        },500)
     })
     /********************************************timer*****************************************************************/
     var data=new Date();
