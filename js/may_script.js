@@ -5,14 +5,25 @@ $(document).ready(function () {
     $('.close').click(function (e) {
         e.preventDefault();
         $(this).parents('.modal').hide(500);
-         if(!$('.comment_block').is(':visible')){
-             setTimeout(function () {
-                 $('.modal_fon').fadeOut(500)
-             }, 700)
-         }
-         else{
-             return;
-         }
+        if ($('.comment_block').is(':visible') && $('.big_text').is(':visible')) {
+            $('.big_text').hide(500);
+            return false
+        }
+        else {
+            setTimeout(function () {
+                $('.modal_fon').fadeOut(500)
+            }, 700)
+        }
+        if ($('.thenk_block').is(':visible') && $('.miniature_block').is(':visible')) {
+            $('.schem_big_block').hide(500);
+            return false;
+        }
+        else {
+            setTimeout(function () {
+                $('.modal_fon').fadeOut(500)
+            }, 700)
+        }
+
 
     })
     $('.modal_fon').click(function () {
@@ -222,7 +233,7 @@ $(document).ready(function () {
             var width_block = $('#service').outerWidth();
             var height_button = $(this).height()
             var top = $(this).offset().top + height_button + 4;
-            var left = $(this).offset().left + width_button - $('.content').offset().left - width_block;
+            var left = $(this).offset().left + width_button - $('.content').offset().left - width_block + 63;
             $('#service').css({
                 left: left,
                 top: top,
@@ -268,68 +279,36 @@ $(document).ready(function () {
             $('#question').hide(500)
         }
     })
-    $('#brend,#area,#price,#multi,#service,#question').mouseleave(function () {
-        $(this).hide(500);
-        $('.button,.header__user_info_info_select_line_select').removeClass('open');
-    })
-    $('.price_block_nav').find('a').hover(
-        function (e) {
-            $('.price_block_img_block').find('.action').css('display','none')
-            $('.price_block_nav').find('.activ').removeClass('activ');
-            e.preventDefault();
-            var id = $(this).attr('href');
-            $('.price_block_nav').find('activ').removeClass('activ');
-            $(this).addClass('activ')
-            $('.price_block_img_block').find('.action')
+    $('.price_block_nav').find('a').click(function (e) {
+        $('.price_block_nav').find('.activ').removeClass('activ');
+        e.preventDefault();
+        var id = $(this).attr('href');
+        $('.price_block_nav').find('activ').removeClass('activ');
+        $(this).addClass('activ')
+        $('.price_block_img_block').find('.action').hide(500).removeClass('action');
+
+        setTimeout(function () {
             $(id).slideDown(800)
+            $(id).addClass('action')
+        }, 500)
 
 
-        },
-        function () {
-            var id = $(this).attr('href');
-            $(id).hide(500);
-            $('.price_block_img_block').find('.action').css({
-                    display:'inline-block',
-                    opacity:0
-                }
-            )
-            setTimeout(function () {
-                $('.price_block_img_block').find('.action').css('opacity',1)
-            },700)
-        }
-    )
-    $('.services_block_nav').find('li').hover(
-        function (e) {
-            $('.services_block_img_wrap').find('.action').css('display','none')
-                $('.services_block_nav').find('.activ').removeClass('activ');
-                e.preventDefault();
-                var id = $(this).find('a').attr('href');
-                $('.services_block_nav').find('activ').removeClass('activ');
-                $(this).addClass('activ')
+    })
+    $('.services_block_nav').find('a').click(function (e) {
+        $('.services_block_nav').find('.activ').removeClass('activ');
+        e.preventDefault();
+        var id = $(this).attr('href');
+        $('.services_block_nav').find('activ').removeClass('activ');
+        $(this).parent('li').addClass('activ')
+        $('.services_block_img_wrap').find('.action').hide(500).removeClass('action');
+
+        setTimeout(function () {
+            $(id).slideDown(800)
+            $(id).addClass('action')
+        }, 500)
 
 
-                $(id).slideDown(500)
-
-
-
-        },
-        function () {
-            var id = $(this).find('a').attr('href');
-
-                $(id).hide(500)
-            $('.services_block_img_wrap').find('.action').css({
-                display:'inline-block',
-                opacity:0
-            }
-            )
-            setTimeout(function () {
-                $('.services_block_img_wrap').find('.action').css('opacity',1)
-            },500)
-
-
-
-        }
-    )
+    })
     $('.header_nav_logo_line_logo').hover(
         function (e) {
             e.preventDefault();
@@ -386,9 +365,7 @@ $(document).ready(function () {
     })
     $(window).scroll(function () {
         var s_top = $(window).scrollTop();
-        var win_widtch = $(window).width()
-        var cr_top = $('.section_crumbs').offset().top + $('.section_crumbs').height() + 50;
-        if (s_top > cr_top && win_widtch > 770) {
+        if (s_top > 0) {
             $('.header').removeClass('header')
             $('header').addClass('header_mini');
         }
@@ -398,49 +375,6 @@ $(document).ready(function () {
             return
         }
     })
-<<<<<<< HEAD
-$('.question_button').hover(
-
-    function () {
-        $(this).addClass('help_activ')
-        var left_parent=$('#power_calcul').offset().left;
-        var top_parent=$('#power_calcul').offset().top;
-        var top_help=$(this).offset().top-top_parent+28;
-        var id=$(this).attr('data-id');
-        $(id).css({
-            display:'block',
-            opacity:0
-        })
-        var height_help=$(id).height();
-        var offset_bottom=$('#power_calcul').offset().top-$(window).scrollTop()+$('#power_calcul').height()
-        if(top_help+$(id).height()>offset_bottom){
-            var test=$(this).offset().top;
-            $(id).removeClass('help');
-            $(id).addClass('top_help');
-            var top_help=$(this).offset().top-top_parent+28-height_help-70;
-        }
-        var left_blokc=$(id).offset().left-left_parent;
-        var left_help=$('.help_activ').offset().left-left_parent+7.5-18-left_blokc;
-        $(id).css({
-            top:top_help
-        })
-        $(id).find('.arow_help').css({
-            left:left_help
-        })
-        $(id).css({
-            display:'none',
-            opacity:1
-        })
-        $(id).slideDown(300)
-        $(id).slideDown(300)
-    },
-    function () {
-        $(this).removeClass('help_activ');
-        var id=$(this).attr('data-id');
-        $(id).slideUp(300);
-
-    }
-=======
     $('.question_button').hover(
         function () {
             $(this).addClass('help_activ')
@@ -479,7 +413,6 @@ $('.question_button').hover(
             $(this).removeClass('help_activ');
             var id = $(this).attr('data-id');
             $(id).slideUp(300);
->>>>>>> new_header
 
         }
     )
@@ -554,22 +487,8 @@ $('.question_button').hover(
         }
     })
     $('#cline_power').click(function () {
-        var S = 20;
-        var H = 'Средние'
-        var I = 'Средняя'
-        var P = 1
-        var P_D = 0;
-        var T = 0
-        var K = 'Нормальная'
-        $('#S').val(S);
-        $('#H').val(H);
-        $('#I').val(I);
-        $('#T').val(T);
-        $('#P').val(P);
-        $('#P_d').val(P_D);
-        $('#K').val(K);
-        $('.power_calculator_coontent_form_more').find('.activ').removeClass('activ');
-        $('#B').addClass('activ');
+        $('.power_calculator_coontent_form_base').find('input').val('');
+        $('.power_calculator_coontent_form_more').find('.activ').removeClass('activ')
     })
     $('#submit1').click(function () {
         var S = parseInt($('#S').val());
@@ -588,12 +507,11 @@ $('.question_button').hover(
             'Сильная': 27
         }
         var T_array = {
-            '0': 0,
-            '1-2': 1,
-            '2-3': 2,
-            '3-4': 3,
-            '4-5': 4,
-            'Более 5': 5
+            '1-2': 0,
+            '2-3': 1,
+            '3-4': 2,
+            '4-5': 3,
+            'Более 5': 4
         }
         var K_array = {
             'Медленно': -25,
@@ -634,7 +552,7 @@ $('.question_button').hover(
             var G = 1;
         }
 
-        var power = ((((S * H / 30.54) + ((S * H / 30.54) / 100 * I) + (P * 0.21 + P_d / 1000) + (T * 0.16) + ((S * H / 30.54) / 100 * K) + B + ((S * H / 30.54) * Hei)) * G)).toFixed(2)
+        var power = ((((S * H / 26.251) + ((S * H / 26.251) / 100 * I) + (P * 0.21 + P_d / 1000) + (T * 0.16) + ((S * H / 26.251) / 100 * K) + B + ((S * H / 26.251) * Hei)) * G)).toFixed(2)
         $('#rez_block').addClass('active');
         $('.selected_block').addClass('selected_activ')
         $('#power').find('.namber').html(power);
@@ -793,43 +711,6 @@ $('.question_button').hover(
 
 
     })
-    $('#mini_serch').click(function () {
-        var win_height = $(window).height();
-        var win_widtch = $(window).width();
-        $('.modal_fon').css({
-            display: 'block',
-            'opacity': 0,
-        })
-        $('.serch_modal').css('display', 'block');
-        var height = $('.serch_modal').height();
-        var widtch = $('.serch_modal').width();
-        if (height >= win_height) {
-            var top = 0
-        }
-        else {
-            var top = (win_height - height) / 2
-        }
-        if (widtch >= win_widtch) {
-            var left = 0
-        }
-        else {
-            var left = (win_widtch - widtch) / 2
-        }
-        $('.serch_modal').css({
-            left: left,
-            top: top,
-            display: 'none'
-        });
-        $('.modal_fon').css({
-            display: 'none',
-            'opacity': 1,
-        })
-        $('.modal_fon').fadeIn(500);
-        setTimeout(function () {
-            $('.serch_modal').show(500)
-        }, 600)
-
-    })
     $('.close_search').click(function () {
         if ($('.black_panel').is(":visible")) {
             $('.serch_modal').hide(300);
@@ -855,67 +736,59 @@ $('.question_button').hover(
     })
     $('#tel_footer').bind("change paste keyup", function () {
 
-<<<<<<< HEAD
-        var nambe=String(parseInt($(this).val().replace(/\D+/g,"")));
-        var first_namber=nambe.substr(1,1);
-        var lenght=nambe.length;
-        if(lenght==11){
-   $('.submit').addClass('active');
-=======
         var nambe = String(parseInt($(this).val().replace(/\D+/g, "")));
+        var first_namber = nambe.substr(1, 1);
         var lenght = nambe.length;
         if (lenght == 11) {
             $('.submit').addClass('active');
->>>>>>> new_header
         }
         else {
             $('.submit').removeClass('active');
         }
-        if(first_namber !=9){
-            $('#tel_footer').css('border','1px solid #840000');
+        if (first_namber != 9) {
+            $('#tel_footer').css('border', '1px solid #840000');
             $('.popup-left-corner').html('"Первая цифра номера должна быть 9 исправьте ошибку"')
 
         }
-        else{
-            $('#tel_footer').css('border','1px solid #3b6e8b');
+        else {
+            $('#tel_footer').css('border', '1px solid #3b6e8b');
             $('.popup-left-corner').html('"Номер телефона должен состоять из 10 цифр. Пример: (903) 401-16-87"')
         }
         return
     })
     $('#submit_ring').click(function (e) {
         e.preventDefault();
-        var nambe=$('#tel_footer').val();
+        var nambe = $('#tel_footer').val();
         $('.modal_fon,.thenk_block').css({
-            'display':'block',
-            'opacity':0
+            'display': 'block',
+            'opacity': 0
         })
-        var width_block= $('.thenk_block').width()
-        var left=($(window).width()-width_block)/2
-        var top=($(window).height()-$('.thenk_block').height())/2
+        var width_block = $('.thenk_block').width()
+        var left = ($(window).width() - width_block) / 2
+        var top = ($(window).height() - $('.thenk_block').height()) / 2
         $('#tel_thenks').html(nambe);
         $('.thenk_block').css({
-            'display':'none',
-            'opacity':1,
-            'left':left,
-            'top':top
+            'display': 'none',
+            'opacity': 1,
+            'left': left,
+            'top': top
         })
         $('.modal_fon').css({
-            'display':'none',
-            'opacity':1,
+            'display': 'none',
+            'opacity': 1,
         })
         $('.modal_fon').fadeIn(300);
         setTimeout(function () {
             $('.thenk_block').show(500)
-        },400)
-   })
+        }, 400)
+    })
     $('.close_thenk').click(function () {
         $('.thenk_block').hide(500);
         setTimeout(function () {
             $('.modal_fon').fadeOut(300)
-        },500)
+        }, 500)
     })
     /********************************************timer*****************************************************************/
-    var width_win = $(window).width()
     var data = new Date();
     var h = data.getHours() * 60 * 60;
     var m = data.getMinutes() * 60;
@@ -926,72 +799,37 @@ $('.question_button').hover(
     if (time <= 0) {
         var open_time = 10 * 60 * 60;
         var time = open_time + (24 * 60 * 60 - total_sec);
-        $('.footer_info__section_timer_wrap_zag,.mini_footer_timer_wrap_zag').html('До открытия осталось:')
+        $('.footer_info__section_timer_wrap_zag').html('До открытия осталось:')
     }
-    if (width_win < 750) {
-        $('#mini_timer').attr('data-timer', time)
-        $("#mini_timer").TimeCircles({
-            "animation": "smooth",
-            "bg_width": 0.1,
-            "fg_width": 0.1,
-            "circle_bg_color": "#252525",
-            "time": {
-                "Days": {
-                    "text": "Days",
-                    "color": "#FFCC66",
-                    "show": false
-                },
-                "Hours": {
-                    "text": "Hours",
-                    "color": "#eb631e",
-                    "show": true
-                },
-                "Minutes": {
-                    "text": "Minutes",
-                    "color": "#2075d8",
-                    "show": true
-                },
-                "Seconds": {
-                    "text": "Seconds",
-                    "color": "#71a712",
-                    "show": true
-                }
+    $('#DateCountdown').attr('data-timer', time)
+    $("#DateCountdown").TimeCircles({
+        "animation": "smooth",
+        "bg_width": 0.1,
+        "fg_width": 0.1,
+        "circle_bg_color": "#252525",
+        "time": {
+            "Days": {
+                "text": "Days",
+                "color": "#FFCC66",
+                "show": false
+            },
+            "Hours": {
+                "text": "Hours",
+                "color": "#eb631e",
+                "show": true
+            },
+            "Minutes": {
+                "text": "Minutes",
+                "color": "#2075d8",
+                "show": true
+            },
+            "Seconds": {
+                "text": "Seconds",
+                "color": "#71a712",
+                "show": true
             }
-        });
-
-    }
-    else {
-        $('#DateCountdown').attr('data-timer', time)
-        $("#DateCountdown").TimeCircles({
-            "animation": "smooth",
-            "bg_width": 0.1,
-            "fg_width": 0.1,
-            "circle_bg_color": "#252525",
-            "time": {
-                "Days": {
-                    "text": "Days",
-                    "color": "#FFCC66",
-                    "show": false
-                },
-                "Hours": {
-                    "text": "Hours",
-                    "color": "#eb631e",
-                    "show": true
-                },
-                "Minutes": {
-                    "text": "Minutes",
-                    "color": "#2075d8",
-                    "show": true
-                },
-                "Seconds": {
-                    "text": "Seconds",
-                    "color": "#71a712",
-                    "show": true
-                }
-            }
-        });
-    }
-
+        }
+    });
 
     /******************************************************************************************************************/
     /********************************************SHEMA*****************************************************************/
@@ -1001,11 +839,51 @@ $('.question_button').hover(
             $('#schem_big').show(500);
         }, 600)
     })
-    $('#schema,#schem_header').click(function () {
-        $('.miniature_block').show(500)
-    })
-    $('.miniature_block').find('.close_mini').click(function () {
-        $('.miniature_block').hide(500);
+    $('#schema_footer,#schem_header,.schem_thenk').click(function () {
+        var width_win = $(window).width();
+        var height_win = $(window).height();
+        if ($('.thenk_block').is(':visible')) {
+
+        }
+        else {
+            $('.modal_fon').css({
+                'display': 'block',
+                'opacity': 0
+            })
+        }
+        $('.miniature_block').css({
+            'display': 'block',
+            'opacity': '0'
+        })
+        var widtch_block = $('.miniature_block').outerWidth();
+        var height_block = $('.miniature_block').outerHeight();
+        var left = (width_win - widtch_block) / 2;
+        var top = (height_win - height_block) / 2;
+        if ($('.thenk_block').is(':visible')) {
+
+        }
+        else {
+            $('.modal_fon').css({
+                'display': 'none',
+                'opacity': 1
+            })
+        }
+        $('.miniature_block').css({
+            'display': 'none',
+            'opacity': 1,
+            'left': left,
+            'top': top
+        })
+        if ($('.thenk_block').is(':visible')) {
+            $('.miniature_block').show(500);
+        }
+        else {
+            $('.modal_fon').fadeIn(300);
+            setTimeout(function () {
+                $('.miniature_block').show(500);
+            }, 600)
+        }
+
 
     })
     $('#may_nav_schem').find('a').click(function (e) {
@@ -1074,90 +952,102 @@ $('.question_button').hover(
                 }, 500)
             }
         }, 500)
-        $('.map_close').click(function () {
-            $('.map_block').hide(500);
-            setTimeout(function () {
-                $('.modal_fon').fadeOut(500);
-            }, 1000)
-        })
-        $('.scheme_close').click(function () {
-            $('#schem_big').hide(500);
-            setTimeout(function () {
-                $('.modal_fon').fadeOut(500);
-            }, 1000)
-        })
     })
     /******************************************************************************************************************/
 
     /*******************************************Comment******************************************************************/
-$('.text_wrap').each(function (index) {
-    var wrap_height=$(this).height();
-    var text_height_i=$(this).find('i').height();
-    var text_height_p=$(this).find('p').height();
-    if(wrap_height<text_height_p||wrap_height<text_height_i){
-      $(this).parent('.text_block').addClass('big').find('.all_read').css('display','block');
-    }
-    
-})
-    $('.all_read').click(function (e) {
-        var widtch_b=0;
+    $('.comment').click(function (e) {
         e.preventDefault();
-        var text=$(this).parents('.text_block').find('.text_wrap').find('p').html();
-        $('.modal_fon,.big_text').css({
-            'display':'block',
-            'opacity':0
+        var win_widtch = $(window).width();
+        $('.modal_fon,.comment_block').css({
+            'display': 'block',
+            'opacity': 0
         })
-        $('.big_text').find('p').html(text);
-        var widtch_b=$('.big_text').width();
-        var height_block=$('.big_text').height();
-        var left=($(window).width()-$('.big_text').outerWidth())/2
-        var top=($(window).height()-$('.big_text').outerHeight())/2
-        if(top<0){
-            var widtch_block=$(window).width()/100*90;
-            $('.big_text').css('width',widtch_block);
-            var left=($(window).outerWidth()-$('.big_text').outerWidth())/2
-            var top=0
-
-        }
-
-        $('.modal_fon').css({
-            'display':'none',
-            'opacity':1
-        })
-        $('.big_text').css({
-            'display':'none',
-            'opacity':1,
-            'left':left,
-            'top':top,
-        })
-        $('.modal_fon').fadeIn(400);
         setTimeout(function () {
-            $('.big_text').show(500);
-        },600);
-    })
-    $('.baner_tel').hover(
+            $('.individuals_block,.entity_wrap_slider').slick({});
+        }, 1000)
+        $('.text_wrap').each(function (index) {
+            var wrap_height = $(this).height();
+            var text_height_i = $(this).find('i').height();
+            var text_height_p = $(this).find('p').height();
+            if (wrap_height < text_height_p || wrap_height < text_height_i) {
+                $(this).parent('.text_block').addClass('big').find('.all_read').css('display', 'block');
+            }
 
-        function () {
-            var top=($(this).offset().top+$(this).height())-$('.individuals_block').offset().top-30;
-
-            $('.help_baner').css({
-                'top':top,
-
-
-
+        })
+        $('.all_read').click(function (e) {
+            var widtch_b = 0;
+            e.preventDefault();
+            var text = $(this).parents('.text_block').find('.text_wrap').find('p').html();
+            $('.big_text').css({
+                'display': 'block',
+                'opacity': 0
             })
-        $('.help_baner').show(600)
-    },
-        function () {
-            $('.help_baner').hide(600)
-        }
-    )
+            $('.big_text').find('p').html(text);
+            var widtch_b = $('.big_text').width();
+            var height_block = $('.big_text').height();
+            var left = ($(window).width() - $('.big_text').outerWidth()) / 2;
+            var test = $('.modal_fon').scrollTop()
+            var top = ($(window).height() - $('.big_text').outerHeight()) / 2 + test
+            if (top < 0) {
+                var widtch_block = $(window).width() / 100 * 90;
+                $('.big_text').css('width', widtch_block);
+                var left = ($(window).outerWidth() - $('.big_text').outerWidth()) / 2
+                var top = 0
+
+            }
+
+
+            $('.big_text').css({
+                'display': 'none',
+                'opacity': 1,
+                'left': left,
+                'top': top,
+            })
+
+            $('.big_text').show(500);
+
+
+        })
+        $('.baner_tel').hover(
+            function () {
+                var top = ($(this).offset().top + $(this).height()) - $('.individuals_block').offset().top - 30;
+
+                $('.help_baner').css({
+                    'top': top,
+
+
+                })
+                $('.help_baner').show(600)
+            },
+            function () {
+                $('.help_baner').hide(600)
+            }
+        )
+
+        var left = (win_widtch - $('.comment_block').outerWidth()) / 2;
+        $('.modal_fon').css({
+            'display': 'none',
+            'opacity': 1
+        })
+        $('.comment_block').css({
+            'display': 'none',
+            'opacity': 1,
+            'left': left,
+            'top': 20
+        })
+        $('.modal_fon').fadeIn(300);
+        setTimeout(function () {
+            $('.comment_block').show(500)
+        }, 500);
+
+    })
     /******************************************************************************************************************/
     $('.enter_block_reg_form_chek_line').click(function () {
-        if($(this).find('.check_form').hasClass('activ')){
+        if ($(this).find('.check_form').hasClass('activ')) {
             $(this).find('.check_form').removeClass('activ');
         }
-        else{
+        else {
             $(this).find('.check_form').addClass('activ');
         }
     })
@@ -1169,6 +1059,7 @@ $('.text_wrap').each(function (index) {
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
+
         responsive: [
             {
                 breakpoint: 1148,
@@ -1196,6 +1087,6 @@ $('.text_wrap').each(function (index) {
             }
         ]
     });
-    $('.individuals_block,.entity_wrap_slider').slick({});
+
     /******************************************************************************************************************/
 });
