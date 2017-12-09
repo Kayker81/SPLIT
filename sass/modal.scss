@@ -13,7 +13,6 @@
 .big_text{
   position: absolute;
   width: 60%;
-
   left:10%;
   top:10%;
   -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
@@ -28,6 +27,11 @@
     width: 100%;
     font: 20px/22px 'Georgia-Italic';
     color: #1b1b1b;
+    img{
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
   }
   .close {
     display: block;

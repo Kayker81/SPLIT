@@ -977,6 +977,10 @@ table {
     width: 100%;
     font: 20px/22px 'Georgia-Italic';
     color: #1b1b1b; }
+    .big_text p img {
+      float: left;
+      margin-right: 15px;
+      margin-bottom: 15px; }
   .big_text .close {
     display: block;
     position: absolute;
@@ -2483,8 +2487,71 @@ table {
               .comment_block .individuals_block_slide_content_quality_zag h3 a {
                 display: inline-block;
                 margin-right: 12px; }
-  .comment_block .entity_block {
-    width: 100%; }
+  .comment_block .entity_wrap {
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+    box-sizing: border-box; }
+    .comment_block .entity_wrap .slick-arrow {
+      background-color: transparent; }
+    .comment_block .entity_wrap .entity_icon {
+      width: 32px;
+      height: 26px;
+      background-image: url("../img/temp_sprite/comment_ur.png");
+      background-position: center;
+      display: inline-block;
+      margin-right: 15px; }
+    .comment_block .entity_wrap .comment_block_header h3 span {
+      color: #e81e1e; }
+    .comment_block .entity_wrap_slider {
+      width: 100%;
+      min-height: 95px;
+      padding-top: 32px;
+      padding-bottom: 38px;
+      border: 1px solid #cdcdcd;
+      border-top: 0px; }
+      .comment_block .entity_wrap_slider_slide {
+        width: 100%;
+        padding: 0px 66.5px;
+        box-sizing: border-box; }
+        .comment_block .entity_wrap_slider_slide img {
+          float: left;
+          margin-right: 22px; }
+        .comment_block .entity_wrap_slider_slide .big {
+          padding-bottom: 20px; }
+          .comment_block .entity_wrap_slider_slide .big .all_read {
+            display: block; }
+        .comment_block .entity_wrap_slider_slide .text_block {
+          width: 100%;
+          float: left;
+          position: relative;
+          margin-top: 15px; }
+          .comment_block .entity_wrap_slider_slide .text_block .all_read {
+            font: 10px/20px 'Georgia-BoldItalic';
+            font-style: normal;
+            font-style: italic;
+            position: absolute;
+            right: 20px;
+            bottom: 0px;
+            color: #003c95;
+            text-decoration: underline;
+            display: none; }
+            .comment_block .entity_wrap_slider_slide .text_block .all_read:hover {
+              color: #620909; }
+        .comment_block .entity_wrap_slider_slide .text_wrap {
+          width: 100%;
+          float: left;
+          overflow: hidden;
+          box-sizing: border-box;
+          height: 95px; }
+          .comment_block .entity_wrap_slider_slide .text_wrap p {
+            width: 100%;
+            float: left;
+            font: 12px/18px  'robotolight';
+            color: #282828;
+            padding-top: 20px; }
+            .comment_block .entity_wrap_slider_slide .text_wrap p img {
+              margin-top: -20px; }
 
 /*****************************************************************************************/
 /*********************Стили модальных окон окончание*********************************************/

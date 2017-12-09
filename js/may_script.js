@@ -927,9 +927,10 @@ $('.miniature_block').find('.img').click(function () {
     /*******************************************Comment******************************************************************/
 $('.text_wrap').each(function (index) {
     var wrap_height=$(this).height();
-    var text_height=$(this).find('p').height();
-    if(wrap_height<text_height){
-      $(this).parent('.text_block').addClass('big');
+    var text_height_i=$(this).find('i').height();
+    var text_height_p=$(this).find('p').height();
+    if(wrap_height<text_height_p||wrap_height<text_height_i){
+      $(this).parent('.text_block').addClass('big').find('.all_read').css('display','block');
     }
     
 })
@@ -1031,6 +1032,6 @@ $('.text_wrap').each(function (index) {
             }
         ]
     });
-    $('.individuals_block').slick({});
+    $('.individuals_block,.entity_wrap_slider').slick({});
     /******************************************************************************************************************/
 });
