@@ -26,6 +26,9 @@
 /****************************************************FOOTER*************************************************************/
 @import "footer";
 /***********************************************************************************************************************/
+/****************************************************FOOTER_mobile*************************************************************/
+@import "mini_footer";
+/***********************************************************************************************************************/
 
 html, body {
   height: 100%;
@@ -54,11 +57,19 @@ html, body {
     right: -19.5px;
     background-image: url("../img/sprite_header.png");
     background-position: -110px -64px;
+    &:hover{
+      background-image: url("../img/temp_hover/next_hover.png");
+      background-position: center;
+    }
   }
   .slick-prev {
     left: -19.5px;
     background-image: url("../img/sprite_header.png");
     background-position: -149px -64px;
+    &:hover{
+      background-image: url("../img/temp_hover/prev_hover.png");
+      background-position: center;
+    }
   }
 }
 
@@ -90,7 +101,7 @@ header {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ffffff',GradientType=0 );
 
 
-    @media(max-width: 700px) {
+    @media(max-width: 1020px) {
       display: none;
     }
     ul {
@@ -117,6 +128,7 @@ header {
           z-index: 999;
           margin-top: 2px;
           display: none;
+          padding-bottom: 5px;
           li{
             display: block;
             float: none;
@@ -207,15 +219,9 @@ header {
       width: 19.57%;
       margin-left: 3.93%;
       @media(max-width: 1099px) {
-        width: 100%;
-        margin-left: 0px;
-        text-align: center;
-        border-bottom: 2px solid #990301;
-
-        i {
-          display: none;
-        }
+        display: none;
       }
+
 
       span {
         float: left;

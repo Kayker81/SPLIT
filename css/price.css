@@ -588,11 +588,15 @@
             margin-top: 5px; }
             .section_product_wrap_price_wrap .aside_action_block ul li {
               width: 100%;
-              margin-bottom: 12px; }
+              margin-bottom: 8px; }
               .section_product_wrap_price_wrap .aside_action_block ul li a {
-                font: 12px/15px Verdana; }
+                font: 12px/15px Verdana;
+                padding: 2px;
+                display: block; }
                 .section_product_wrap_price_wrap .aside_action_block ul li a:hover {
-                  color: #074e23; }
+                  color: #003b98;
+                  outline: 1px solid #003b98;
+                  text-decoration: underline; }
                 .section_product_wrap_price_wrap .aside_action_block ul li a sup {
                   font-size: 8px;
                   vertical-align: super; }
@@ -1349,9 +1353,11 @@
         .section__recommended_header_zag .mail {
           font: 13px/20px 'robotobold';
           color: #024753;
-          margin-left: 42px; }
+          margin-left: 36px;
+          padding: 3px; }
           .section__recommended_header_zag .mail:hover {
-            color: #25613c; }
+            color: #25613c;
+            outline: 1px solid #b80000; }
             .section__recommended_header_zag .mail:hover span {
               background: none; }
           .section__recommended_header_zag .mail span {
@@ -1364,10 +1370,12 @@
           font: 13px/22px 'robotobold';
           color: #0151bd;
           text-decoration: underline;
-          margin-right: 30px;
-          margin-top: 35px; }
+          margin-right: 24px;
+          margin-top: 29px;
+          padding: 3px; }
           .section__recommended_header_info a:hover {
-            color: #25613c; }
+            color: #25613c;
+            outline: 1px solid #b80000; }
           .section__recommended_header_info a:nth-child(1) {
             margin-right: 0px; }
           .section__recommended_header_info a .see {

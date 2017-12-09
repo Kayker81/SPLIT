@@ -1,4 +1,17 @@
+<<<<<<< HEAD
 @import "reset";
+=======
+@mixin radius($r) {
+  border-radius: $r;
+  -moz-border-radius: $r;
+  -webkit-border-radius: $r;
+}
+@mixin opacity($r){
+  -moz-opacity: $r;
+  opacity: $r;
+  -khtml-opacity: $r
+}
+>>>>>>> new_header
 .top_help{
   position: absolute;
   padding: 15px 22px;
@@ -712,7 +725,11 @@
             font-weight: bold;
             cursor: pointer;
             @media(max-height: 920px){
+<<<<<<< HEAD
              margin-top:5px;
+=======
+             display: none;
+>>>>>>> new_header
             }
           }
         }
