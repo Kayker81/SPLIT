@@ -944,12 +944,16 @@ $('.text_wrap').each(function (index) {
         $('.big_text').find('p').html(text);
         var widtch_b=$('.big_text').width();
         var height_block=$('.big_text').height();
-        var left=($(window).width()-$('.big_text').width())/2
-        var top=($(window).height()-$('.big_text').height())/2
+        var left=($(window).width()-$('.big_text').outerWidth())/2
+        var top=($(window).height()-$('.big_text').outerHeight())/2
         if(top<0){
+            var widtch_block=$(window).width()/100*90;
+            $('.big_text').css('width',widtch_block);
+            var left=($(window).outerWidth()-$('.big_text').outerWidth())/2
             var top=0
 
         }
+
         $('.modal_fon').css({
             'display':'none',
             'opacity':1
@@ -966,7 +970,16 @@ $('.text_wrap').each(function (index) {
         },600);
     })
     $('.baner_tel').hover(
+
         function () {
+            var top=($(this).offset().top+$(this).height())-$('.individuals_block').offset().top-30;
+
+            $('.help_baner').css({
+                'top':top,
+
+
+
+            })
         $('.help_baner').show(600)
     },
         function () {

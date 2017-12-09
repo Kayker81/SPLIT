@@ -71,6 +71,18 @@
     padding-bottom: 28px;
     border: 1px solid #cdcdcd;
     border-top: none;
+    .slick-arrow{
+      margin-top: 0px;
+      top:60px;
+      background-color: transparent;
+    }
+    .slick-prev{
+      left: -5px;
+    }
+    .slick-next{
+      right: -5px;
+      right: -5px;
+    }
     &_slide{
       width: 100%;
       float: left;
@@ -88,12 +100,19 @@
       -webkit-border-radius: 5px;
       width: 50%;
       max-width: 518px;
-      display: none;
       right: 5.8%;
       top: 95px;
-
       z-index: 999;
+      display: none;
       box-sizing: border-box;
+      @media(max-width: 978px){
+        right: 22%;
+
+      }
+      @media(max-width: 700px){
+        right: 10%;
+
+      }
       .arow_help {
         position: absolute;
         z-index: 99;
@@ -102,7 +121,7 @@
         background-image: url("../img/sprite_section.png");
         background-position: -46px -170px;
         top: -14px;
-        right: 20%;
+        right: 15%;
       }
     }
 
@@ -112,6 +131,17 @@
         &_men{
           float: left;
           width: 50%;
+          @media(max-width: 978px){
+            width: 60%;
+            margin: 0 auto;
+            float: none;
+            margin-bottom: 10px;
+            clear: both;
+            overflow: hidden;
+          }
+          @media(max-width: 700px){
+            width: 100%;
+          }
           &_foto{
             float: left;
           }
@@ -143,7 +173,7 @@
               width: 100%;
               font: 12px/24px 'robotoregular';
               color: #888888;
-              margin-top: 20px;
+              margin-top: 10px;
             }
           }
         }
@@ -153,6 +183,15 @@
           border:2px solid rgba(2,71,83,1);
           box-sizing: border-box;
           min-height: 110px;
+          @media(max-width: 978px){
+            width: 60%;
+            margin: 0 auto;
+            float: none;
+            clear: both;
+          }
+          @media(max-width: 700px){
+            width: 100%;
+          }
           &_comment{
             float: left;
             margin-top: 2.5px;
@@ -272,5 +311,8 @@
         }
       }
     }
+  }
+  .entity_block{
+    width: 100%;
   }
 }
