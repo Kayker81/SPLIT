@@ -843,8 +843,8 @@ $(document).ready(function () {
             $('.miniature_block').css({
                 'display': 'none',
                 'opacity': 1,
-                'left':left,
-                'top':top
+                'left': left,
+                'top': top
             })
         }
         else {
@@ -856,25 +856,25 @@ $(document).ready(function () {
             var height_block = $('.miniature_block').outerHeight();
             var left = (widtch_win - widtch_block) / 2;
             var top = (height_win - height_block) / 2;
-           $('.modal_fon').css({
-               'display':'none',
-               'opacity':1
-           })
+            $('.modal_fon').css({
+                'display': 'none',
+                'opacity': 1
+            })
             $('.miniature_block').css({
                 'display': 'none',
                 'opacity': 1,
-                'left':left,
-                'top':top
+                'left': left,
+                'top': top
             })
-            }
+        }
         if ($('.modal_fon').is(':visible')) {
             $('.miniature_block').show(500);
         }
-        else{
+        else {
             $('.modal_fon').fadeIn(300);
             setTimeout(function () {
                 $('.miniature_block').show(500);
-            },400)
+            }, 400)
         }
 
 
@@ -897,6 +897,16 @@ $(document).ready(function () {
 
 
     })
+    $('.schem_img').click(function () {
+        $(this).slideUp(300);
+var nambe=$('.schem_img').length;
+        if ($(this).is(':last-child')) {
+            $('.schem_img').first().slideDown(500)
+        }
+        else {
+            $(this).next('.schem_img').slideDown(500)
+        }
+    })
 
 
     $('.balun_close').click(function (e) {
@@ -904,55 +914,55 @@ $(document).ready(function () {
     });
     $('.miniature_block').find('.img').click(function () {
         var id = $(this).attr('href');
-          $(id).show(500);
-            if (id === '#map_big') {
-                setTimeout(function () {
+        $(id).show(500);
+        if (id === '#map_big') {
+            setTimeout(function () {
 
-                    ymaps.ready(function init() {
-                        var myMap = new ymaps.Map('map', {
-                            center: [47.24749835534764, 39.77342495767211],
-                            zoom: 14,
-                            controls: [],
-                        });
-                        myMap.controls.add('zoomControl');
-                        myMap.controls.add('searchControl');
-                        myMap.controls.add('routeEditor');
-                        // Масштабирование с помощью колесика мышки
-                        myMap.behaviors.enable('scrollZoom');
-                        // изменение масштаба
-
-
-                        var mark = new ymaps.Placemark([47.24749835534764, 39.77342495767211], {//создание маркера
-                            iconContent: 'Метка',
-                            balloonContent: 'г. Ростов-на-Дону, пр. Шолохова, д. 101'
-                        }, {
-                            preset: 'twirl#blueStretchyIcon',
-                            // Опции.
-                            // Необходимо указать данный тип макета.
-                            iconLayout: 'default#image',
-                            // Своё изображение иконки метки.
-                            iconImageHref: 'img/map_m.png',
-                            // Размеры метки.
-                            iconImageSize: [20, 32],
-                            // Смещение левого верхнего угла иконки относительно
-                            // её "ножки" (точки привязки).
-                            iconImageOffset: [-5, -25]
-                        });
+                ymaps.ready(function init() {
+                    var myMap = new ymaps.Map('map', {
+                        center: [47.24749835534764, 39.77342495767211],
+                        zoom: 14,
+                        controls: [],
+                    });
+                    myMap.controls.add('zoomControl');
+                    myMap.controls.add('searchControl');
+                    myMap.controls.add('routeEditor');
+                    // Масштабирование с помощью колесика мышки
+                    myMap.behaviors.enable('scrollZoom');
+                    // изменение масштаба
 
 
-                        myMap.geoObjects.add(mark);//добавление маркера
+                    var mark = new ymaps.Placemark([47.24749835534764, 39.77342495767211], {//создание маркера
+                        iconContent: 'Метка',
+                        balloonContent: 'г. Ростов-на-Дону, пр. Шолохова, д. 101'
+                    }, {
+                        preset: 'twirl#blueStretchyIcon',
+                        // Опции.
+                        // Необходимо указать данный тип макета.
+                        iconLayout: 'default#image',
+                        // Своё изображение иконки метки.
+                        iconImageHref: 'img/map_m.png',
+                        // Размеры метки.
+                        iconImageSize: [20, 32],
+                        // Смещение левого верхнего угла иконки относительно
+                        // её "ножки" (точки привязки).
+                        iconImageOffset: [-5, -25]
+                    });
 
 
-                    })
-                }, 500)
-            }
+                    myMap.geoObjects.add(mark);//добавление маркера
+
+
+                })
+            }, 500)
+        }
 
         $('.map_close').click(function () {
             $('.map_block').hide(500);
-            if($('.thenk_block').is(':visible')){
+            if ($('.thenk_block').is(':visible') || $('.miniature_block').is(':visible')) {
                 return false
             }
-            else{
+            else {
                 setTimeout(function () {
                     $('.modal_fon').fadeOut(500);
                 }, 1000)
@@ -960,10 +970,10 @@ $(document).ready(function () {
         })
         $('.scheme_close').click(function () {
             $('#schem_big').hide(500);
-            if($('.thenk_block').is(':visible')){
+            if ($('.thenk_block').is(':visible') || $('.miniature_block').is(':visible')) {
                 return false
             }
-            else{
+            else {
                 setTimeout(function () {
                     $('.modal_fon').fadeOut(500);
                 }, 1000)
