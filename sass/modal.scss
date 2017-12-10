@@ -1564,6 +1564,10 @@
     display: none;
 
     box-sizing: border-box;
+    &_wrap{
+      width: 100%;
+      float: left;
+    }
     &_content {
       width: 100%;
       padding-left: 6px;

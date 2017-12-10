@@ -10,6 +10,9 @@
   max-width: 716px; }
   .monufactur_bkock .autor, .monufactur_bkock .data, .monufactur_bkock .section {
     display: none; }
+  .monufactur_bkock .descript_wrap {
+    width: 100%;
+    overflow: hidden; }
   .monufactur_bkock .close {
     display: block;
     position: absolute;
@@ -63,6 +66,9 @@
       .midea_text_info span {
         font-weight: bold;
         color: #010101; }
+    .midea_text .descript_wrap {
+      height: 284px;
+      position: relative; }
     .midea_text_text {
       width: 100%;
       background: #dbe8ce;
@@ -114,6 +120,8 @@
         color: #010101; }
       .aux_info_line p:nth-child(even) {
         float: right; }
+  .aux .descript_wrap {
+    height: 123px; }
   .aux_text {
     width: 100%;
     background: #dbe8ce;
@@ -166,6 +174,8 @@
         color: #010101; }
       .chigo_info_line p:nth-child(even) {
         float: right; }
+  .chigo .descript_wrap {
+    height: 123px; }
   .chigo_text {
     width: 100%;
     background: #dbe8ce;
@@ -255,6 +265,8 @@
         color: #010101; }
       .gree_info_line p:nth-child(even) {
         float: right; }
+  .gree .descript_wrap {
+    height: 123px; }
   .gree_text {
     width: 100%;
     background: #dbe8ce;
@@ -329,7 +341,8 @@
       width: 49.25%;
       background: #dbe8ce;
       border: 2px solid #ced3ce;
-      font: 16px/24px Verdana;
+      font: 14px/24px Verdana;
+      letter-spacing: -0.6px;
       color: #7a8075;
       margin-bottom: 19px;
       padding-left: 15px;
@@ -344,6 +357,8 @@
         color: #010101; }
       .hisense_info_line p:nth-child(even) {
         float: right; }
+  .hisense .descript_wrap {
+    height: 123px; }
   .hisense_text {
     width: 100%;
     background: #dbe8ce;
@@ -467,7 +482,8 @@
       width: 49.25%;
       background: #dbe8ce;
       border: 2px solid #ced3ce;
-      font: 16px/24px Verdana;
+      font: 14px/24px Verdana;
+      letter-spacing: -0.6px;
       color: #7a8075;
       margin-bottom: 19px;
       padding-left: 15px;

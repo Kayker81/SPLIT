@@ -1328,6 +1328,60 @@
               width: 100%;
               text-align: center;
             }
+            .no_link{
+              width: 16%;
+              margin-right: 0px;
+              li{
+                margin-bottom: 4px;
+              }
+            }
+            .right{
+              float: right;
+            }
+            ul{
+              float: left;
+              width: 23.8%;
+              margin-right: 8px;
+              li{
+                width: 100%;
+                margin-bottom: 9px;
+                overflow: hidden;
+                span {
+                  display: inline-block;
+                  font-size: 9px;
+                  line-height: 11px;
+                  width: 100%;
+                }
+                .big {
+                  line-height: 20px;
+                }
+              }
+              a {
+                display: block;
+                width: 100%;
+                min-height: 38px;
+                padding-left: 10px;
+                font: 14px/38px Verdana;
+                font-weight: bold;
+                text-decoration: underline;
+                border: 1px solid #dbdbdb;
+                background: #f5f8fb;
+                color: #193333;
+                margin-right: 8px;
+                float: left;
+                box-sizing: border-box;
+                &:hover {
+                  color: #25613c;
+                  border-color: #25613c;
+                }
+              }
+              p{
+                width: 100%;
+                font: 14px/16px Verdana;
+                font-weight: normal;
+                font-weight: bold;
+              }
+            }
             &_line {
               width: 100%;
               margin-bottom: 9px;
@@ -1399,6 +1453,15 @@
           }
           &_smal_line {
             width: 28.95%;
+            ul{
+              width: 47.9%;
+              &:nth-last-child(1){
+                margin-right: 0px;
+              }
+            }
+            .no_link{
+              width: 30%;
+            }
 
             float: right;
             @media(max-width: 1062px) {

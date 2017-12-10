@@ -2627,6 +2627,9 @@ table {
     background: #323232;
     display: none;
     box-sizing: border-box; }
+    .modal_fon .black_panel_wrap {
+      width: 100%;
+      float: left; }
     .modal_fon .black_panel_content {
       width: 100%;
       padding-left: 6px;
@@ -3720,6 +3723,9 @@ table {
   max-width: 716px; }
   .monufactur_bkock .autor, .monufactur_bkock .data, .monufactur_bkock .section {
     display: none; }
+  .monufactur_bkock .descript_wrap {
+    width: 100%;
+    overflow: hidden; }
   .monufactur_bkock .close {
     display: block;
     position: absolute;
@@ -3773,6 +3779,9 @@ table {
       .midea_text_info span {
         font-weight: bold;
         color: #010101; }
+    .midea_text .descript_wrap {
+      height: 284px;
+      position: relative; }
     .midea_text_text {
       width: 100%;
       background: #dbe8ce;
@@ -3824,6 +3833,8 @@ table {
         color: #010101; }
       .aux_info_line p:nth-child(even) {
         float: right; }
+  .aux .descript_wrap {
+    height: 123px; }
   .aux_text {
     width: 100%;
     background: #dbe8ce;
@@ -3876,6 +3887,8 @@ table {
         color: #010101; }
       .chigo_info_line p:nth-child(even) {
         float: right; }
+  .chigo .descript_wrap {
+    height: 123px; }
   .chigo_text {
     width: 100%;
     background: #dbe8ce;
@@ -3965,6 +3978,8 @@ table {
         color: #010101; }
       .gree_info_line p:nth-child(even) {
         float: right; }
+  .gree .descript_wrap {
+    height: 123px; }
   .gree_text {
     width: 100%;
     background: #dbe8ce;
@@ -4039,7 +4054,8 @@ table {
       width: 49.25%;
       background: #dbe8ce;
       border: 2px solid #ced3ce;
-      font: 16px/24px Verdana;
+      font: 14px/24px Verdana;
+      letter-spacing: -0.6px;
       color: #7a8075;
       margin-bottom: 19px;
       padding-left: 15px;
@@ -4054,6 +4070,8 @@ table {
         color: #010101; }
       .hisense_info_line p:nth-child(even) {
         float: right; }
+  .hisense .descript_wrap {
+    height: 123px; }
   .hisense_text {
     width: 100%;
     background: #dbe8ce;
@@ -4177,7 +4195,8 @@ table {
       width: 49.25%;
       background: #dbe8ce;
       border: 2px solid #ced3ce;
-      font: 16px/24px Verdana;
+      font: 14px/24px Verdana;
+      letter-spacing: -0.6px;
       color: #7a8075;
       margin-bottom: 19px;
       padding-left: 15px;
@@ -4773,7 +4792,6 @@ table {
   margin-left: -400px;
   width: 100%;
   max-width: 800px;
-  height: 100vh;
   max-height: 600px;
   background: #FFFFFF;
   padding: 15px;
@@ -4795,7 +4813,8 @@ table {
     overflow: hidden; }
   .schem_big_block__schem_block {
     width: 100%;
-    height: 100%; }
+    height: 100%;
+    max-height: 550px; }
     .schem_big_block__schem_block_nav {
       position: absolute;
       width: 100%;
@@ -4803,6 +4822,9 @@ table {
       text-align: center;
       top: 25px;
       left: 0px; }
+      @media (max-height: 540px) {
+        .schem_big_block__schem_block_nav {
+          display: none; } }
       .schem_big_block__schem_block_nav a {
         display: inline-block;
         padding: 0px 10px;
@@ -4831,12 +4853,14 @@ table {
       height: 100%;
       display: table-cell;
       vertical-align: middle;
-      background: #C0C0C0; }
+      background: #C0C0C0;
+      text-align: center; }
       .schem_big_block__schem_block_img_block #schem1 {
         display: inline-block; }
       .schem_big_block__schem_block_img_block img {
         max-width: 100%;
-        display: none; }
+        display: none;
+        max-height: 90vh; }
   .schem_big_block .scheme_close, .schem_big_block .map_close {
     display: block;
     position: absolute;
@@ -5924,6 +5948,50 @@ table {
               .section_product_wrap__manufactures__factory_block__brend_link {
                 width: 100%;
                 text-align: center; } }
+            .section_product_wrap__manufactures__factory_block__brend_link .no_link {
+              width: 16%;
+              margin-right: 0px; }
+              .section_product_wrap__manufactures__factory_block__brend_link .no_link li {
+                margin-bottom: 4px; }
+            .section_product_wrap__manufactures__factory_block__brend_link .right {
+              float: right; }
+            .section_product_wrap__manufactures__factory_block__brend_link ul {
+              float: left;
+              width: 23.8%;
+              margin-right: 8px; }
+              .section_product_wrap__manufactures__factory_block__brend_link ul li {
+                width: 100%;
+                margin-bottom: 9px;
+                overflow: hidden; }
+                .section_product_wrap__manufactures__factory_block__brend_link ul li span {
+                  display: inline-block;
+                  font-size: 9px;
+                  line-height: 11px;
+                  width: 100%; }
+                .section_product_wrap__manufactures__factory_block__brend_link ul li .big {
+                  line-height: 20px; }
+              .section_product_wrap__manufactures__factory_block__brend_link ul a {
+                display: block;
+                width: 100%;
+                min-height: 38px;
+                padding-left: 10px;
+                font: 14px/38px Verdana;
+                font-weight: bold;
+                text-decoration: underline;
+                border: 1px solid #dbdbdb;
+                background: #f5f8fb;
+                color: #193333;
+                margin-right: 8px;
+                float: left;
+                box-sizing: border-box; }
+                .section_product_wrap__manufactures__factory_block__brend_link ul a:hover {
+                  color: #25613c;
+                  border-color: #25613c; }
+              .section_product_wrap__manufactures__factory_block__brend_link ul p {
+                width: 100%;
+                font: 14px/16px Verdana;
+                font-weight: normal;
+                font-weight: bold; }
             .section_product_wrap__manufactures__factory_block__brend_link_line {
               width: 100%;
               margin-bottom: 9px;
@@ -5986,6 +6054,12 @@ table {
           .section_product_wrap__manufactures__factory_block__brend_smal_line {
             width: 28.95%;
             float: right; }
+            .section_product_wrap__manufactures__factory_block__brend_smal_line ul {
+              width: 47.9%; }
+              .section_product_wrap__manufactures__factory_block__brend_smal_line ul:nth-last-child(1) {
+                margin-right: 0px; }
+            .section_product_wrap__manufactures__factory_block__brend_smal_line .no_link {
+              width: 30%; }
             @media (max-width: 1062px) {
               .section_product_wrap__manufactures__factory_block__brend_smal_line {
                 width: 50%; } }

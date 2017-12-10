@@ -17,7 +17,11 @@
   .autor, .data, .section {
     display: none;
   }
+  .descript_wrap{
+    width: 100%;
+    overflow: hidden;
 
+  }
   .close {
     display: block;
     position: absolute;
@@ -75,6 +79,10 @@
         color: #010101;
       }
     }
+.descript_wrap{
+  height: 284px;
+  position: relative;
+}
     &_text {
       width: 100%;
       background: #dbe8ce;
@@ -136,6 +144,9 @@
       }
     }
   }
+  .descript_wrap{
+    height: 123px;
+  }
   &_text {
     width: 100%;
     background: #dbe8ce;
@@ -196,6 +207,9 @@
         float: right;
       }
     }
+  }
+  .descript_wrap{
+    height: 123px;
   }
   &_text {
     width: 100%;
@@ -301,6 +315,9 @@
       }
     }
   }
+  .descript_wrap{
+    height: 123px;
+  }
   &_text {
     width: 100%;
     background: #dbe8ce;
@@ -386,7 +403,8 @@
       width: 49.25%;
       background: #dbe8ce;
       border: 2px solid #ced3ce;
-      font: 16px/24px Verdana;
+      font: 14px/24px Verdana;
+      letter-spacing: -0.6px;
       color: #7a8075;
       margin-bottom: 19px;
       padding-left: 15px;
@@ -404,6 +422,9 @@
         float: right;
       }
     }
+  }
+  .descript_wrap{
+    height: 123px;
   }
   &_text {
     width: 100%;
@@ -551,7 +572,8 @@
       width: 49.25%;
       background: #dbe8ce;
       border: 2px solid #ced3ce;
-      font: 16px/24px Verdana;
+      font: 14px/24px Verdana;
+      letter-spacing: -0.6px;
       color: #7a8075;
       margin-bottom: 19px;
       padding-left: 15px;

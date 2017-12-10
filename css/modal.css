@@ -1667,6 +1667,9 @@
     background: #323232;
     display: none;
     box-sizing: border-box; }
+    .modal_fon .black_panel_wrap {
+      width: 100%;
+      float: left; }
     .modal_fon .black_panel_content {
       width: 100%;
       padding-left: 6px;
