@@ -2558,15 +2558,15 @@ table {
           float: left;
           overflow: hidden;
           box-sizing: border-box;
-          height: 95px; }
+          height: 87px; }
           .comment_block .entity_wrap_slider_slide .text_wrap p {
             width: 100%;
             float: left;
             font: 12px/18px  'robotolight';
             color: #282828;
-            padding-top: 20px; }
+            padding-top: 10px; }
             .comment_block .entity_wrap_slider_slide .text_wrap p img {
-              margin-top: -20px; }
+              margin-top: -10px; }
 
 /*****************************************************************************************/
 /*********************Стили модальных окон окончание*********************************************/
