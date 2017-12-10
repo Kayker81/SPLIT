@@ -95,6 +95,58 @@
     }
   }
 }
+.kelon {
+  max-width: 716px;
+  min-height: 569px;
+  background: url("../img/kelon.jpg") center top;
+  padding-top: 25px;
+  padding-right: 20px;
+  box-sizing: border-box;
+  display: none;
+  @media(max-width: 458px) {
+    padding: 0px;
+  }
+  &_text {
+    float: right;
+    width: 50.95%;
+    @media(max-width: 622px) {
+      width: 70%;
+    }
+    @media(max-width: 458px) {
+      width: 100%;
+    }
+    &_info {
+      width: 100%;
+      background: #dbe8ce;
+      border: 2px solid #ced3ce;
+      font: 16px/24px Verdana;
+      color: #7a8075;
+      margin-bottom: 19px;
+      padding-left: 15px;
+      padding-right: 14px;
+      box-sizing: border-box;
+
+      span {
+        font-weight: bold;
+        color: #010101;
+      }
+    }
+    .descript_wrap{
+      height: 284px;
+      position: relative;
+    }
+    &_text {
+      width: 100%;
+      background: #dbe8ce;
+      border: 2px solid #ced3ce;
+      font: 14px/20px Verdana;
+      color: #7a8075;
+      padding-left: 15px;
+      padding-right: 14px;
+      box-sizing: border-box;
+    }
+  }
+}
 
 .aux {
   padding: 21px;
