@@ -6,7 +6,7 @@
   width: 100%;
   max-width: 632px;
   background: #FFFFFF;
-  z-index: 9;
+  z-index: 9999;
   display: none; }
   @media (max-width: 778px) {
     .miniature_block {
@@ -50,7 +50,7 @@
   background: #FFFFFF;
   padding: 15px;
   box-sizing: border-box;
-  z-index: 99;
+  z-index: 99999;
   display: none; }
   @media (max-width: 800px) {
     .schem_big_block {

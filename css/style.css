@@ -2248,7 +2248,8 @@ table {
   z-index: 99;
   -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
-  box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24); }
+  box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+  display: none; }
   .comment_block .close {
     display: block;
     position: absolute;
@@ -4733,7 +4734,7 @@ table {
   width: 100%;
   max-width: 632px;
   background: #FFFFFF;
-  z-index: 9;
+  z-index: 9999;
   display: none; }
   @media (max-width: 778px) {
     .miniature_block {
@@ -4777,7 +4778,7 @@ table {
   background: #FFFFFF;
   padding: 15px;
   box-sizing: border-box;
-  z-index: 99;
+  z-index: 99999;
   display: none; }
   @media (max-width: 800px) {
     .schem_big_block {
