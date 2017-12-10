@@ -1314,12 +1314,18 @@
     border: 1px solid #cdcdcd;
     box-sizing: border-box;
     padding-left: 22px; }
+    @media (max-height: 550px) {
+      .comment_block_header {
+        min-height: 47px; } }
     .comment_block_header h3 {
       float: left;
       width: 100%;
       font: 18px/30px 'Roboto-Medium';
       color: #024753;
       margin-top: 17px; }
+      @media (max-height: 550px) {
+        .comment_block_header h3 {
+          margin-top: 8.5px; } }
       .comment_block_header h3 .comment_icon {
         width: 26px;
         height: 22px;
@@ -1390,6 +1396,9 @@
       .comment_block .individuals_block_slide_header {
         width: 100%;
         min-height: 110px; }
+        @media (max-height: 550px) {
+          .comment_block .individuals_block_slide_header {
+            min-height: 0px; } }
         .comment_block .individuals_block_slide_header_men {
           float: left;
           width: 50%; }
@@ -1406,6 +1415,11 @@
               width: 100%; } }
           .comment_block .individuals_block_slide_header_men_foto {
             float: left; }
+            @media (max-height: 550px) {
+              .comment_block .individuals_block_slide_header_men_foto {
+                height: 95px; }
+                .comment_block .individuals_block_slide_header_men_foto img {
+                  max-height: 100%; } }
           .comment_block .individuals_block_slide_header_men_info_block {
             float: right;
             width: 75%; }
@@ -1417,6 +1431,9 @@
               width: 100%;
               height: 17px;
               margin-top: 22px; }
+              @media (max-height: 550px) {
+                .comment_block .individuals_block_slide_header_men_info_block .star_line {
+                  margin-top: 12px; } }
               .comment_block .individuals_block_slide_header_men_info_block .star_line a {
                 display: inline-block;
                 width: 16px;
@@ -1431,12 +1448,21 @@
               font: 12px/24px 'robotoregular';
               color: #888888;
               margin-top: 10px; }
+              @media (max-height: 550px) {
+                .comment_block .individuals_block_slide_header_men_info_block .data {
+                  margin-top: 15px; } }
         .comment_block .individuals_block_slide_header_yandex_block {
           float: left;
           width: 50%;
           border: 2px solid #024753;
           box-sizing: border-box;
           min-height: 110px; }
+          @media (max-height: 550px) {
+            .comment_block .individuals_block_slide_header_yandex_block {
+              min-height: 0px; }
+              .comment_block .individuals_block_slide_header_yandex_block img {
+                height: 91px;
+                margin-top: 2px; } }
           @media (max-width: 978px) {
             .comment_block .individuals_block_slide_header_yandex_block {
               width: 60%;
@@ -1455,6 +1481,9 @@
             width: 40%;
             margin-top: 15.5px;
             margin-right: 5%; }
+            @media (max-height: 550px) {
+              .comment_block .individuals_block_slide_header_yandex_block_baner_yandex {
+                margin-top: 5.5px; } }
             .comment_block .individuals_block_slide_header_yandex_block_baner_yandex img {
               max-width: 100%; }
       .comment_block .individuals_block_slide_content {
@@ -1491,6 +1520,9 @@
             display: block; }
         .comment_block .individuals_block_slide_content .main_wrap {
           height: 54px; }
+          @media (max-height: 550px) {
+            .comment_block .individuals_block_slide_content .main_wrap {
+              height: 34px; } }
         .comment_block .individuals_block_slide_content_main {
           width: 100%; }
         .comment_block .individuals_block_slide_content_detail {
@@ -1506,6 +1538,9 @@
             width: 90%; }
           .comment_block .individuals_block_slide_content_detail .detail_wrap {
             height: 72px; }
+            @media (max-height: 550px) {
+              .comment_block .individuals_block_slide_content_detail .detail_wrap {
+                height: 52px; } }
           .comment_block .individuals_block_slide_content_detail_worth {
             float: left;
             width: 100%; }

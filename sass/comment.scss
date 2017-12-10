@@ -46,12 +46,18 @@
     border: 1px solid #cdcdcd;
     box-sizing: border-box;
     padding-left: 22px;
+    @media(max-height: 550px){
+      min-height: 47px;
+    }
     h3{
       float: left;
       width: 100%;
       font: 18px/30px 'Roboto-Medium';
       color: #024753;
       margin-top: 17px;
+      @media(max-height: 550px){
+        margin-top: 8.5px;
+      }
       .comment_icon{
         width: 26px;
         height: 22px;
@@ -136,6 +142,9 @@
       &_header{
         width: 100%;
         min-height: 110px;
+        @media(max-height: 550px){
+          min-height:0px
+        }
         &_men{
           float: left;
           width: 50%;
@@ -152,6 +161,12 @@
           }
           &_foto{
             float: left;
+            @media(max-height: 550px){
+              height: 95px;
+              img{
+                max-height: 100%;
+              }
+            }
           }
           &_info_block{
             float: right;
@@ -165,6 +180,9 @@
               width: 100%;
               height: 17px;
               margin-top: 22px;
+              @media(max-height: 550px){
+                margin-top: 12px;
+              }
               a {
                 display: inline-block;
                 width: 16px;
@@ -182,6 +200,9 @@
               font: 12px/24px 'robotoregular';
               color: #888888;
               margin-top: 10px;
+              @media(max-height: 550px){
+                margin-top: 15px;
+              }
             }
           }
         }
@@ -191,6 +212,13 @@
           border:2px solid rgba(2,71,83,1);
           box-sizing: border-box;
           min-height: 110px;
+          @media(max-height: 550px){
+            min-height: 0px;
+            img{
+              height: 91px;
+              margin-top: 2px;
+            }
+          }
           @media(max-width: 978px){
             width: 60%;
             margin: 0 auto;
@@ -210,6 +238,10 @@
             width: 40%;
             margin-top: 15.5px;
             margin-right: 5%;
+            @media(max-height: 550px){
+              margin-top: 5.5px;
+            }
+
             img{
               max-width: 100%;
             }
@@ -259,6 +291,9 @@
         }
         .main_wrap{
           height: 54px;
+         @media(max-height: 550px){
+           height: 34px;
+         }
 
         }
         &_main{
@@ -279,6 +314,9 @@
           }
           .detail_wrap{
             height: 72px;
+            @media(max-height: 550px){
+              height: 52px;
+            }
 
           }
           &_worth{
