@@ -515,7 +515,38 @@
           background: none; } }
       .header__user_info_info .time {
         float: left;
-        margin-top: 12px; }
+        margin-top: 12px;
+        position: relative; }
+        .header__user_info_info .time .timer {
+          position: absolute;
+          width: 270px;
+          height: 78px;
+          float: left;
+          top: 0px;
+          left: 100%;
+          z-index: 99;
+          background: #252525;
+          -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
+          display: none; }
+          .header__user_info_info .time .timer .zag {
+            width: 100%;
+            box-sizing: border-box;
+            font: 13px/25px Verdana;
+            color: #2a2a2a;
+            background: #FFFFFF;
+            padding-left: 10px; }
+          .header__user_info_info .time .timer .timer_line {
+            width: 100%;
+            text-align: center; }
+            .header__user_info_info .time .timer .timer_line .timer_block {
+              display: inline-block;
+              width: 100%;
+              max-width: 156px;
+              height: 100%;
+              color: #ffffff;
+              font-weight: bold; }
         .header__user_info_info .time .icon {
           display: inline-block;
           width: 59px;

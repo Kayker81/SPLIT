@@ -618,6 +618,41 @@
       .time {
         float: left;
         margin-top: 12px;
+        position: relative;
+        .timer{
+          position: absolute;
+          width: 270px;
+          height: 78px;
+          float: left;
+          top: 0px;
+          left:100%;
+          z-index: 99;
+          background: #252525;
+          -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
+          display: none;
+          .zag{
+            width: 100%;
+            box-sizing: border-box;
+            font: 13px/25px Verdana;
+            color: #2a2a2a;
+            background: #FFFFFF;
+            padding-left: 10px;
+          }
+          .timer_line{
+            width: 100%;
+            text-align: center;
+            .timer_block{
+              display: inline-block;
+              width: 100%;
+              max-width: 156px;
+              height: 100%;
+              color: #ffffff;
+              font-weight: bold;
+            }
+          }
+        }
         .icon {
           display: inline-block;
           width: 59px;
