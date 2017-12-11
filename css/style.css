@@ -1050,6 +1050,9 @@ table {
       letter-spacing: -0.8px;
       margin-top: 8px; }
 
+.podmenu {
+  width: 100%; }
+
 .brend_block {
   position: absolute;
   top: 0px;

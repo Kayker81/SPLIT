@@ -180,7 +180,7 @@ $(document).ready(function () {
             $('#price').hide(500)
         }
     })
-    $('#multi_bottom').click(function () {
+    $('#multi_button').click(function () {
         if (!$(this).hasClass('open')) {
             $('#brend,#area,#service,#price,#question').hide(500);
             $('.open').removeClass('open');
@@ -224,7 +224,7 @@ $(document).ready(function () {
             var width_block = $('#service').outerWidth();
             var height_button = $(this).height()
             var top = $(this).offset().top + height_button + 4;
-            var left = $(this).offset().left + width_button - $('.content').offset().left - width_block + 63;
+            var left = $(this).offset().left + width_button - $('.content').offset().left - width_block;
             $('#service').css({
                 left: left,
                 top: top,
@@ -269,6 +269,12 @@ $(document).ready(function () {
             $(this).removeClass('open');
             $('#question').hide(500)
         }
+    })
+    $('.podmenu').mouseleave(function () {
+        var button='#'+$(this).attr('id')+'_button'
+        $(this).hide(400)
+        $(button).removeClass('open');
+
     })
     $('.price_block_nav').find('a').hover(
         function (e) {
