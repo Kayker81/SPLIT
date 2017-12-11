@@ -819,7 +819,8 @@
   left: 0;
   width: 68.37%;
   min-width: 800px;
-  min-height: 310px;
+  height: 310px;
+  overflow: hidden;
   background: #FFFFFF;
   border: 1px solid #014366;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
