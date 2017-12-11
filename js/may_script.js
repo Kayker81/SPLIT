@@ -790,6 +790,7 @@ $(document).ready(function () {
         }, 500)
     })
     /********************************************timer*****************************************************************/
+    var widtch_win=$(window).width()
     var data = new Date();
     var h = data.getHours() * 60 * 60;
     var m = data.getMinutes() * 60;
@@ -801,36 +802,71 @@ $(document).ready(function () {
         var open_time = 10 * 60 * 60;
         var time = open_time + (24 * 60 * 60 - total_sec);
         $('.footer_info__section_timer_wrap_zag').html('До открытия осталось:')
+
     }
-    $('#DateCountdown').attr('data-timer', time)
-    $("#DateCountdown").TimeCircles({
-        "animation": "smooth",
-        "bg_width": 0.1,
-        "fg_width": 0.1,
-        "circle_bg_color": "#252525",
-        "time": {
-            "Days": {
-                "text": "Days",
-                "color": "#FFCC66",
-                "show": false
-            },
-            "Hours": {
-                "text": "Hours",
-                "color": "#eb631e",
-                "show": true
-            },
-            "Minutes": {
-                "text": "Minutes",
-                "color": "#2075d8",
-                "show": true
-            },
-            "Seconds": {
-                "text": "Seconds",
-                "color": "#71a712",
-                "show": true
+    if(widtch_win<=700){
+        $('#mini_timer').attr('data-timer', time)
+        $("#mini_timer").TimeCircles({
+            "animation": "smooth",
+            "bg_width": 0.1,
+            "fg_width": 0.1,
+            "circle_bg_color": "#252525",
+            "time": {
+                "Days": {
+                    "text": "Days",
+                    "color": "#FFCC66",
+                    "show": false
+                },
+                "Hours": {
+                    "text": "Hours",
+                    "color": "#eb631e",
+                    "show": true
+                },
+                "Minutes": {
+                    "text": "Minutes",
+                    "color": "#2075d8",
+                    "show": true
+                },
+                "Seconds": {
+                    "text": "Seconds",
+                    "color": "#71a712",
+                    "show": true
+                }
             }
-        }
-    });
+        });
+    }
+    else{
+        $('#DateCountdown').attr('data-timer', time)
+        $("#DateCountdown").TimeCircles({
+            "animation": "smooth",
+            "bg_width": 0.1,
+            "fg_width": 0.1,
+            "circle_bg_color": "#252525",
+            "time": {
+                "Days": {
+                    "text": "Days",
+                    "color": "#FFCC66",
+                    "show": false
+                },
+                "Hours": {
+                    "text": "Hours",
+                    "color": "#eb631e",
+                    "show": true
+                },
+                "Minutes": {
+                    "text": "Minutes",
+                    "color": "#2075d8",
+                    "show": true
+                },
+                "Seconds": {
+                    "text": "Seconds",
+                    "color": "#71a712",
+                    "show": true
+                }
+            }
+        });
+    }
+
 
     /******************************************************************************************************************/
     /********************************************SHEMA*****************************************************************/
