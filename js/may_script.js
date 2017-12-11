@@ -513,8 +513,22 @@ $(document).ready(function () {
         }
     })
     $('#cline_power').click(function () {
-        $('.power_calculator_coontent_form_base').find('input').val('');
-        $('.power_calculator_coontent_form_more').find('.activ').removeClass('activ')
+        var S=20;
+        var H='Средние'
+        var I='Средняя'
+        var P=1
+        var P_D=0;
+        var T=0
+        var K='Нормальная'
+        $('#S').val(S);
+        $('#H').val(H);
+        $('#I').val(I);
+        $('#T').val(T);
+        $('#P').val(P);
+        $('#P_d').val(P_D);
+        $('#K').val(K);
+        $('.power_calculator_coontent_form_more').find('.activ').removeClass('activ');
+        $('#B').addClass('activ');
     })
     $('#submit1').click(function () {
         var S = parseInt($('#S').val());
