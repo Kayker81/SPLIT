@@ -258,6 +258,9 @@
       text-decoration: underline;
       color: #003c95;
       box-sizing: border-box;
+      &:hover{
+        color: #620909;
+      }
       span {
         display: block;
         font-weight: bold;
@@ -458,6 +461,12 @@
       margin-right: 9px;
       box-sizing: border-box;
       padding: 0px 8px;
+      &:hover{
+        border-color: #003c95;
+        a{
+          color: #620909;
+        }
+      }
       &_name {
         width: 100%;
         font: 12px/14px Arial;
@@ -542,7 +551,12 @@
         letter-spacing: 0.4px;
         margin-top: 14px;
       }
-    }
+      &:hover {
+        p{
+          color: #620909;
+        }
+      }
+   }
     &_retail {
       display: block;
       img {
@@ -663,6 +677,11 @@
       text-align: center;
       margin-top: 44px;
       border: 1px solid #7696bd;
+      &:hover {
+        color: #840000;
+        border-color: #840000;
+        background: rgba(241, 240, 221, 0.9);
+      }
     }
     &_link_power {
       width: 100%;
@@ -867,6 +886,7 @@
         font-weight: bold;
         color: #023d98;
         margin-top: 10px;
+
         span {
           display: block;
           b {
@@ -885,6 +905,11 @@
     &_price {
       display: block;
       min-height: 126px;
+      &:hover{
+        a{
+          color: #620909;
+        }
+      }
       img {
         margin-top: -24px;
       }
@@ -1014,6 +1039,9 @@
       display: inline-block;
       margin-right: 8%;
       text-decoration: underline;
+      &:hover{
+        color: #620909;
+      }
     }
   }
   &_slider_wrap {

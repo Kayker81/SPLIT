@@ -212,6 +212,8 @@
       text-decoration: underline;
       color: #003c95;
       box-sizing: border-box; }
+      .brend_block_footer_brend_all:hover {
+        color: #620909; }
       .brend_block_footer_brend_all span {
         display: block;
         font-weight: bold;
@@ -379,6 +381,10 @@
       margin-right: 9px;
       box-sizing: border-box;
       padding: 0px 8px; }
+      .area_block_inverter_block:hover {
+        border-color: #003c95; }
+        .area_block_inverter_block:hover a {
+          color: #620909; }
       .area_block_inverter_block_name {
         width: 100%;
         font: 12px/14px Arial;
@@ -450,6 +456,8 @@
         text-decoration: underline;
         letter-spacing: 0.4px;
         margin-top: 14px; }
+      .price_block_link_block:hover p {
+        color: #620909; }
     .price_block_link_retail {
       display: block; }
       .price_block_link_retail img {
@@ -550,6 +558,10 @@
       text-align: center;
       margin-top: 44px;
       border: 1px solid #7696bd; }
+      .multi_block_box_zag:hover {
+        color: #840000;
+        border-color: #840000;
+        background: rgba(241, 240, 221, 0.9); }
     .multi_block_box_link_power {
       width: 100%;
       margin-top: 14px;
@@ -730,6 +742,8 @@
     .services_block_link_box_price {
       display: block;
       min-height: 126px; }
+      .services_block_link_box_price:hover a {
+        color: #620909; }
       .services_block_link_box_price img {
         margin-top: -24px; }
     .services_block_link_box_spec {
@@ -836,6 +850,8 @@
       display: inline-block;
       margin-right: 8%;
       text-decoration: underline; }
+      .question_block_link a:hover {
+        color: #620909; }
   .question_block_slider_wrap {
     width: 533px;
     height: 231px;
