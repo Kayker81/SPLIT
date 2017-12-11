@@ -683,6 +683,43 @@
         .multi_block_multi_kalcul:hover a {
           color: #840000; }
 
+.foto_block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 700px;
+  background: #FFFFFF;
+  border: 1px solid #014366;
+  -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
+  padding: 18px;
+  box-sizing: border-box;
+  z-index: 99999;
+  display: none; }
+  .foto_block img {
+    width: 100%; }
+  .foto_block .close_foto {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center;
+    z-index: 999; }
+    .foto_block .close_foto i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px; }
+
 .services_block {
   position: absolute;
   top: 0;

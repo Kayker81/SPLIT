@@ -37,15 +37,19 @@ $(document).ready(function () {
                 $('#power_calcul').hide(500);
                 return false
             }
+
         }
         else {
-
-
+            if($('.miniature_block').is(':visible')&&$('.schem_big_block').is(':visible')){
+                $('.schem_big_block').hide(500);
+                return false
+            }
             $(this).children('.modal').hide(500);
             setTimeout(function () {
                 $('.modal_fon').fadeOut(500)
             }, 700)
         }
+
 
         return;
     })
@@ -1054,7 +1058,26 @@ $(document).ready(function () {
     });
     $('.miniature_block').find('.img').click(function () {
         var id = $(this).attr('href');
+        $(id).css({
+            display:'block',
+            'opacity':0
+        })
+        var left=($(window).width()-$(id).outerWidth())/2;
+        var top=($(window).height()-$(id).outerHeight())/2;
+        if(top<0){
+            var top=0;
+        }
+        $(id).css({
+            display:'none',
+            opacity:1,
+            left:left,
+            top:top
+        })
+        $('.schem_big_block').hide(400)
         $(id).show(500);
+        setTimeout(function () {
+            $('.modal_fon').fadeIn(300)
+        },600)
         if (id === '#map_big') {
             setTimeout(function () {
 
