@@ -6099,6 +6099,7 @@ table {
           float: left;
           width: 100%;
           padding-left: 21px;
+          padding-right: 21px;
           background: #ebf0f7;
           margin-top: 12px;
           box-sizing: border-box; }
