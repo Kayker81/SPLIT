@@ -2464,13 +2464,11 @@ table {
     .comment_block .individuals_block .slick-prev {
       left: -5px; }
       .comment_block .individuals_block .slick-prev:hover {
-        background-image: url("../img/temp_hover/prev_hover.png");
-        background-position: center; }
+        background-position: -39px -202px; }
     .comment_block .individuals_block .slick-next {
       right: -5px; }
       .comment_block .individuals_block .slick-next:hover {
-        background-image: url("../img/temp_hover/next_hover.png");
-        background-position: center; }
+        background-position: 0px -202px; }
     .comment_block .individuals_block_slide {
       width: 100%;
       float: left;
@@ -2692,13 +2690,11 @@ table {
     .comment_block .entity_wrap .slick-prev {
       left: -5px; }
       .comment_block .entity_wrap .slick-prev:hover {
-        background-image: url("../img/temp_hover/prev_hover.png");
-        background-position: center; }
+        background-position: -39px -202px; }
     .comment_block .entity_wrap .slick-next {
       right: -5px; }
       .comment_block .entity_wrap .slick-next:hover {
-        background-image: url("../img/temp_hover/next_hover.png");
-        background-position: center; }
+        background-position: 0px -202px; }
     .comment_block .entity_wrap .entity_icon {
       width: 32px;
       height: 26px;
@@ -7425,15 +7421,13 @@ html, body {
     background-image: url("../img/sprite_header.png");
     background-position: -110px -64px; }
     .wraper .slick-next:hover {
-      background-image: url("../img/temp_hover/next_hover.png");
-      background-position: center; }
+      background-position: 0px -202px; }
   .wraper .slick-prev {
     left: -19.5px;
     background-image: url("../img/sprite_header.png");
     background-position: -149px -64px; }
     .wraper .slick-prev:hover {
-      background-image: url("../img/temp_hover/prev_hover.png");
-      background-position: center; }
+      background-position: -39px -202px; }
 
 .content {
   width: 100%;

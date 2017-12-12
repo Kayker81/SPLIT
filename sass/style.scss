@@ -58,8 +58,7 @@ html, body {
     background-image: url("../img/sprite_header.png");
     background-position: -110px -64px;
     &:hover{
-      background-image: url("../img/temp_hover/next_hover.png");
-      background-position: center;
+      background-position: 0px -202px;
     }
   }
   .slick-prev {
@@ -67,8 +66,7 @@ html, body {
     background-image: url("../img/sprite_header.png");
     background-position: -149px -64px;
     &:hover{
-      background-image: url("../img/temp_hover/prev_hover.png");
-      background-position: center;
+      background-position: -39px -202px;
     }
   }
 }
@@ -157,6 +155,7 @@ header {
           background-image: url("../img/sprite_header.png");
           background-position: -354px -70px;
         }
+
       }
       li {
         float: left;
