@@ -9,6 +9,15 @@
   min-height: 180px;
   border-bottom: 1px solid #e0e0e0;
   background: url("../img/header.jpg") left top repeat-x, #f3fafa;
+  @media(max-width: 1009px) {
+    min-height: 0px;
+    background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+    background: -webkit-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+    background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
+    overflow: hidden;
+    padding-bottom: 10px;
+  }
   .miniature_block{
     top:20px;
   }
@@ -25,13 +34,19 @@
   .header_nav {
     display: inline-block;
     width: 36.06%;
-    @media(max-width: 1170px) {
-      width: 45%;
+    @media(max-width: 1009px) {
+      float: left;
+      width: 20%;
     }
+    @media(max-width: 770px){
+      width: 50%;
+    }
+
+
 
     nav {
       float: right;
-      @media(max-width: 859px) {
+      @media(max-width: 1009px) {
         display: none;
       }
       ul {
@@ -69,7 +84,7 @@
           background:#4e070c;
         }
       }
-      @media(max-width: 636px) {
+      @media(max-width: 1009px) {
         display: none;
       }
       span {
@@ -109,19 +124,28 @@
         span {
           display: none;
         }
-        a {
+        .logo_mini{
+          display: none;
+          float: left;
+          width: 100%;
+          img{
+            max-width: 100%;
+          }
+          @media(max-width: 1009px){
+            display: block;
+          }
+        }
+        .logo_big{
           display: block;
           position: relative;
           font: 28px/40px 'Georgia-Bold';
           padding-left: 15px;
           margin-top: 15px;
           letter-spacing: 0.7px;
-          @media(max-width: 636px) {
-            font-size: 22px;
+          @media(max-width: 1009px){
+            display: none;
           }
-          @media(max-width: 391px) {
-            padding-left: 5px;
-          }
+
 
           &:before {
             content: '';
@@ -133,9 +157,7 @@
             height: 20px;
             background-image: url('../img/sprite_header.png');
             background-position: 0px -155px;
-            @media(max-width: 391px) {
-              left: -5px;
-            }
+
           }
         }
         i {
@@ -146,12 +168,9 @@
           font: 16px/10px Verdana;
           font-weight: bold;
           padding-left: 15px;
-          @media(max-width: 636px) {
-            font-size: 13px;
-          }
-          @media(max-width: 391px) {
-            font-size: 10px;
-            padding-left: 5px;
+
+          @media(max-width: 1009px){
+            display: none;
           }
           b {
             font-size: 11px;
@@ -163,7 +182,7 @@
         font: 11px/40px Verdana;
         color: #363636;
         margin-top: 5px;
-        @media(max-width: 886px) {
+        @media(max-width: 1009px){
           display: none;
         }
 
@@ -176,6 +195,9 @@
         color: #5d7489;
         float: right;
         margin-right: 5px;
+        @media(max-width: 1009px){
+          display: none;
+        }
         &:hover{
           color: #074e23;
           text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52);
@@ -184,9 +206,7 @@
           text-decoration: underline;
         }
 
-        @media(max-width: 886px) {
-          display: none;
-        }
+
       }
     }
     &_katalog_line {
@@ -197,7 +217,7 @@
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
       padding-bottom: 3px;
       float: left;
-      @media(max-width: 898px) {
+      @media(max-width: 1009px){
         display: none;
       }
 
@@ -319,17 +339,20 @@
     margin-left: 6.6%;
     padding-left: 4px;
     box-sizing: border-box;
-    @media(max-width: 1170px) {
-      width: 100%;
+    @media(max-width: 1009px){
+      float: right;
       margin-left: 0px;
-      margin-top: 10px;
+      width: 52%;
+    }
+    @media(max-width: 770px){
+      width: 100%;
     }
 
     &_action {
       float: left;
       font: 12px/35px Verdana;
       color: #840000;
-      @media(max-width: 1170px) {
+      @media(max-width: 1009px) {
         display: none;
       }
       li {
@@ -352,47 +375,39 @@
       background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
       float: left;
-      @media(max-width: 1170px) {
-        width: 45%;
-        margin-left: 0px;
-      }
-      @media(max-width: 840px) {
-        width: 100%;
+      @media(max-width: 1009px){
         min-height: 0px;
+        margin-top: 15px;
         background: none;
-        margin-bottom: 8px;
       }
+
       .meil {
         font: 14px/40px Verdana;
         color: #024753;
-        @media(max-width: 1170px) {
-          float: right;
-          width: auto;
-        }
-
-        @media(max-width: 840px) {
+        @media(max-width: 1009px) {
           display: block;
           width: 49%;
           padding: 0px 11px;
+          padding-left: 11px;
+          padding-left: 11px;
           color: #004191;
           border: 1px solid #004191;
           box-sizing: border-box;
           min-height: 48px;
           line-height: 20px;
-          text-align: left;
-          float: left;
-          @media(max-width: 423px) {
-            font-size: 13px;
-            letter-spacing: -1.2px;
-          }
+          float: right;
+          text-align: right;
+          max-width: 180px;
         }
+
+
         p {
           width: 100%;
           font: 13px/20px Verdana;
           font-weight: bold;
           color: #840000;
           display: none;
-          @media(max-width: 964px) {
+          @media(max-width: 1009px) {
             display: block;
           }
           @media(max-width: 423px) {
@@ -418,6 +433,27 @@
         font: 16px/25px Verdana;
         font-weight: bold;
         color: #840000;
+        @media(max-width: 1009px){
+          display: block;
+          width: 49%;
+          padding: 0px 11px;
+          padding-left: 11px;
+          padding-left: 11px;
+          color: #004191;
+          border: 1px solid #004191;
+          box-sizing: border-box;
+          min-height: 48px;
+          line-height: 20px;
+          float: left;
+          text-align: left;
+          max-width: 180px;
+          font-size: 15px;
+        }
+        @media(max-width: 770px){
+          max-width: 160px;
+          font-size: 11px;
+          cursor: pointer;
+        }
         &:hover{
           i{
             background: url("../img/temp_hover/arow_hover.png");
@@ -437,26 +473,7 @@
           }
         }
 
-        @media(max-width: 840px) {
-          display: block;
-          width: 49%;
-          padding: 0px 11px;
-          color: #004191;
-          border: 1px solid #004191;
-          box-sizing: border-box;
-          min-height: 48px;
-          line-height: 20px;
-          float: right;
-          text-align: right;
-        }
-        @media(max-width: 423px) {
-          font-size: 13px;
-          letter-spacing: -1.3px;
-          padding-left: 0px;
-          i {
-            display: none;
-          }
-        }
+
 
         p {
           font: 13px/20px Verdana;
@@ -490,13 +507,10 @@
         width: 100%;
         padding-bottom: 3px;
         float: left;
-        @media(max-width: 1170px) {
-          float: right;
-          width: 45%;
+        @media(max-width: 1009px) {
+       display: none;
         }
-        @media(max-width: 840px) {
-          display: none;
-        }
+
         .button {
           display: block;
           width: 92.85%;
@@ -527,12 +541,20 @@
   &__user_info {
     float: right;
     width: 34.18%;
-    @media(max-width: 1170px) {
-      width: 45%;
+    @media(max-width: 1009px) {
+      float: left;
+      width: 25%;
+      text-align: right;
+    }
+    @media(max-width: 770px){
+      width: 50%;
     }
     &_product_line {
       width: 100%;
       float: left;
+      @media(max-width: 1009px){
+        display: none;
+      }
       .compare {
         float: left;
         font: 13px/35px 'Georgia-Italic';
@@ -551,9 +573,7 @@
           width: 31px;
           height: 27px;
         }
-        @media(max-width: 636px) {
-          display: none;
-        }
+
         a {
           text-decoration: underline;
         }
@@ -579,9 +599,6 @@
             background-image: url("../img/sprite_header.png");
             background-position: -57px -175px;
           }
-        }
-        @media(max-width: 636px) {
-          display: none;
         }
         i {
           display: inline-block;
@@ -612,13 +629,15 @@
       background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
       float: left;
-      @media(max-width: 568px) {
-        background: none;
-      }
+
+
       .time {
         float: left;
         margin-top: 12px;
         position: relative;
+        @media(max-width: 1009px){
+          float: right;
+        }
         .timer{
           position: absolute;
           width: 270px;
@@ -660,7 +679,7 @@
           background-image: url('../img/sprite_header.png');
           background-position: 0px -64px;
           float: left;
-          @media(max-width: 752px) {
+          @media(max-width: 1009px) {
             display: none;
           }
         }
@@ -674,9 +693,7 @@
               font-size: 11px;
               font-weight: normal;
               margin: 0 4px;
-              @media(max-width: 423px) {
-                margin: 0px;
-              }
+
             }
             span {
               font-size: 11px;
@@ -690,6 +707,9 @@
             text-align: left;
             margin-left: 10px;
             cursor: pointer;
+            @media(max-width: 1009px){
+              float: right;
+            }
             &:hover{
               color: #074e23;
               text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52);
@@ -708,7 +728,7 @@
         position: relative;
         width: 128px;
         height: 32px;
-        @media(max-width: 636px) {
+        @media(max-width: 1009px) {
           display: none;
         }
         &_input {
@@ -743,7 +763,7 @@
         color: #024753;
         text-decoration: underline;
         float: left;
-        @media(max-width: 636px) {
+        @media(max-width: 1009px) {
           display: none;
         }
       }
@@ -760,7 +780,7 @@
         @media(max-width: 1170px) {
           padding-top: 30px;
         }
-        @media(max-width: 898px) {
+        @media(max-width: 1009px) {
           display: none;
         }
         &_select {
@@ -890,6 +910,12 @@
       width: auto;
       float: left;
       background: none;
+      @media (max-width: 1009px) {
+        .logo_mini{
+          display: none;
+        }
+
+      }
       @media(max-width: 405px){
         float: left;
         a{
@@ -905,7 +931,7 @@
       .header_nav_logo_line_logo {
 
 
-        a {
+        .logo_big {
           width: 26px;
           height: 25px;
           background-image: url("../img/sprite_header.png");

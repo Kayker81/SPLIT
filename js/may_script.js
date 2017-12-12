@@ -1107,27 +1107,21 @@ $(document).ready(function () {
                     // Масштабирование с помощью колесика мышки
                     myMap.behaviors.enable('scrollZoom');
                     // изменение масштаба
+                    var html  = '<div class="popup">';
+                    html +=     '<img src="img/foto.jpg" alt="" />';
+                    html +=     '<div class="popup-text">';
+                    html +=         '<h3>ВИМТЕХ</h3>';
+                    html +=         '<p>пр. Шолохова, д.101</p>'
+                    html +=     '</div>';
+                    html += '</div>';
+                    var myPlacemark = new ymaps.Placemark([47.24749835534764, 39.77342495767211],
+                        {balloonContent: html},
+                        { iconLayout: 'default#image',
+                            iconImageHref: 'http://blog.karmanov.ws/files/APIYaMaps1/min_marker.png',
+                            balloonShadow: false }
+                            )
 
-
-                    var mark = new ymaps.Placemark([47.24749835534764, 39.77342495767211], {//создание маркера
-                        iconContent: 'Метка',
-                        balloonContent: 'г. Ростов-на-Дону, пр. Шолохова, д. 101'
-                    }, {
-                        preset: 'twirl#blueStretchyIcon',
-                        // Опции.
-                        // Необходимо указать данный тип макета.
-                        iconLayout: 'default#image',
-                        // Своё изображение иконки метки.
-                        iconImageHref: 'img/map_m.png',
-                        // Размеры метки.
-                        iconImageSize: [20, 32],
-                        // Смещение левого верхнего угла иконки относительно
-                        // её "ножки" (точки привязки).
-                        iconImageOffset: [-5, -25]
-                    });
-
-
-                    myMap.geoObjects.add(mark);//добавление маркера
+                    myMap.geoObjects.add(myPlacemark);
 
 
                 })
