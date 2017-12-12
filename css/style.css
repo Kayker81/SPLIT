@@ -6163,7 +6163,11 @@ table {
                 text-align: center; } }
             .section_product_wrap__manufactures__factory_block__brend_link .no_link {
               width: 16%;
-              margin-right: 0px; }
+              margin-right: 0px;
+              text-align: right; }
+              @media (max-width: 480px) {
+                .section_product_wrap__manufactures__factory_block__brend_link .no_link {
+                  width: 33.33%; } }
               .section_product_wrap__manufactures__factory_block__brend_link .no_link li {
                 margin-bottom: 4px; }
             .section_product_wrap__manufactures__factory_block__brend_link .right {
@@ -6172,6 +6176,10 @@ table {
               float: left;
               width: 23.8%;
               margin-right: 8px; }
+              @media (max-width: 480px) {
+                .section_product_wrap__manufactures__factory_block__brend_link ul {
+                  width: 45%;
+                  min-height: 146px; } }
               .section_product_wrap__manufactures__factory_block__brend_link ul li {
                 width: 100%;
                 margin-bottom: 9px;
@@ -6308,6 +6316,10 @@ table {
       .section_buy_block h2 {
         width: 100%;
         margin-bottom: 41px; }
+        @media (max-width: 722px) {
+          .section_buy_block h2 {
+            line-height: 20px;
+            padding-top: 5px; } }
         .section_buy_block h2 span {
           color: #fe2020; }
       .section_buy_block_line {

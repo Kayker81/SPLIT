@@ -1342,6 +1342,10 @@
             .no_link {
               width: 16%;
               margin-right: 0px;
+              text-align: right;
+              @media(max-width: 480px){
+                width: 33.33%;
+              }
               li {
                 margin-bottom: 4px;
               }
@@ -1353,6 +1357,10 @@
               float: left;
               width: 23.8%;
               margin-right: 8px;
+              @media(max-width: 480px){
+                width: 45%;
+                min-height: 146px;
+              }
               li {
                 width: 100%;
                 margin-bottom: 9px;
@@ -1516,6 +1524,10 @@
       h2 {
         width: 100%;
         margin-bottom: 41px;
+        @media(max-width: 722px){
+          line-height: 20px;
+          padding-top: 5px;
+        }
         span {
           color: #fe2020;
         }
