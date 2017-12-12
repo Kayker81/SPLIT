@@ -111,6 +111,10 @@ table {
     @media (max-width: 770px) {
       .header .header_nav {
         width: 50%; } }
+    @media (max-width: 357px) {
+      .header .header_nav {
+        width: 100%;
+        text-align: center; } }
     .header .header_nav nav {
       float: right; }
       @media (max-width: 1009px) {
@@ -167,11 +171,19 @@ table {
       @media (max-width: 568px) {
         .header .header_nav_logo_line {
           background: none; } }
+      @media (max-width: 357px) {
+        .header .header_nav_logo_line {
+          width: 100%;
+          text-align: center; } }
       .header .header_nav_logo_line_logo {
         float: left; }
         @media (max-width: 568px) {
           .header .header_nav_logo_line_logo {
             margin-top: 5px; } }
+        @media (max-width: 357px) {
+          .header .header_nav_logo_line_logo {
+            float: none;
+            display: inline-block; } }
         .header .header_nav_logo_line_logo span {
           display: none; }
         .header .header_nav_logo_line_logo .logo_mini {
@@ -406,6 +418,13 @@ table {
             float: right;
             text-align: right;
             max-width: 180px; } }
+        @media (max-width: 357px) {
+          .header .header_kontakt_line .meil {
+            display: block;
+            margin: 5px auto;
+            width: 100%;
+            max-width: 180px;
+            float: none; } }
         .header .header_kontakt_line .meil p {
           width: 100%;
           font: 13px/20px Verdana;
@@ -455,6 +474,13 @@ table {
             max-width: 160px;
             font-size: 11px;
             cursor: pointer; } }
+        @media (max-width: 357px) {
+          .header .header_kontakt_line .ring {
+            display: block;
+            margin: 5px auto;
+            width: 100%;
+            max-width: 180px;
+            float: none; } }
         .header .header_kontakt_line .ring:hover i {
           background: url("../img/temp_hover/arow_hover.png"); }
         .header .header_kontakt_line .ring i {
@@ -529,6 +555,10 @@ table {
     @media (max-width: 770px) {
       .header__user_info {
         width: 50%; } }
+    @media (max-width: 357px) {
+      .header__user_info {
+        width: 100%;
+        text-align: center; } }
     .header__user_info_product_line {
       width: 100%;
       float: left; }
@@ -599,6 +629,10 @@ table {
         @media (max-width: 1009px) {
           .header__user_info_info .time {
             float: right; } }
+        @media (max-width: 357px) {
+          .header__user_info_info .time {
+            display: inline-block;
+            float: none; } }
         .header__user_info_info .time .timer {
           position: absolute;
           width: 270px;
@@ -772,16 +806,23 @@ table {
   top: 0px;
   left: 0px;
   z-index: 9999; }
+  @media (max-width: 375px) {
+    .header_mini {
+      height: 40px; } }
   .header_mini .header_nav {
     width: 35.5%;
     float: left; }
     @media (max-width: 1106px) {
       .header_mini .header_nav {
         width: 50%; } }
+    @media (max-width: 1007px) {
+      .header_mini .header_nav {
+        width: 100%; } }
     @media (max-width: 636px) {
       .header_mini .header_nav {
         width: 100%;
-        margin-left: 0px; } }
+        margin-left: 0px;
+        position: relative; } }
     .header_mini .header_nav nav {
       display: none; }
     .header_mini .header_nav .header_nav_sandwich {
@@ -834,6 +875,11 @@ table {
       width: auto;
       float: left;
       background: none; }
+      @media (max-width: 1007px) {
+        .header_mini .header_nav .header_nav_logo_line {
+          float: right; } }
+      .header_mini .header_nav .header_nav_logo_line .logo_mini {
+        display: none; }
       @media (max-width: 1009px) {
         .header_mini .header_nav .header_nav_logo_line .logo_mini {
           display: none; } }
@@ -894,6 +940,9 @@ table {
         padding-left: 7px;
         box-sizing: border-box;
         letter-spacing: 0.6px; }
+        @media (max-width: 1007px) {
+          .header_mini .header_nav .header_nav_katalog .all_mini {
+            display: none; } }
         .header_mini .header_nav .header_nav_katalog .all_mini:hover {
           color: #b80000; }
         .header_mini .header_nav .header_nav_katalog .all_mini:before {
@@ -944,6 +993,9 @@ table {
     @media (max-width: 405px) {
       .header_mini .header_kontakt_line {
         text-align: center; } }
+    @media (max-width: 375px) {
+      .header_mini .header_kontakt_line {
+        margin-top: -35px; } }
     .header_mini .header_kontakt_line .ring {
       float: left;
       width: auto;
@@ -977,6 +1029,9 @@ table {
         .header_mini .header_kontakt_line .meil {
           float: none;
           display: inline-block; } }
+      @media (max-width: 375px) {
+        .header_mini .header_kontakt_line .meil {
+          display: none; } }
       .header_mini .header_kontakt_line .meil p {
         display: none; }
       .header_mini .header_kontakt_line .meil .icon-mail_header {
@@ -996,6 +1051,9 @@ table {
       display: none; }
     .header_mini .header__user_info .basket {
       margin-right: 5px; }
+  @media (max-width: 1007px) {
+    .header_mini .header__user_info_product_line {
+      display: none; } }
 
 /***********************************************************************************************************************/
 /******************Стили модальных окон без тёмного фона начало**************************************/
@@ -5055,6 +5113,9 @@ table {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px; }
+    @media (max-width: 538px) {
+      .section h1 {
+        line-height: 20px; } }
   .section h2 {
     float: left;
     min-height: 49px;
@@ -5651,6 +5712,10 @@ table {
             width: 100%; } }
         .section_product_wrap_price_wrap_section_block h2 {
           width: 100%; }
+          @media (max-width: 538px) {
+            .section_product_wrap_price_wrap_section_block h2 {
+              line-height: 20px;
+              padding-top: 5px; } }
         .section_product_wrap_price_wrap_section_block_block_line {
           width: 100%; }
           @media (max-width: 758px) {

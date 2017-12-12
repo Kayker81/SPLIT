@@ -41,7 +41,10 @@
     @media(max-width: 770px){
       width: 50%;
     }
-
+    @media(max-width: 357px){
+      width: 100%;
+      text-align: center;
+    }
 
 
     nav {
@@ -114,12 +117,20 @@
       @media(max-width: 568px) {
         background: none;
       }
+      @media(max-width: 357px){
+        width: 100%;
+        text-align: center;
+      }
       &_logo {
         float: left;
 
         @media(max-width: 568px) {
           margin-top: 5px;
 
+        }
+        @media(max-width: 357px){
+          float: none;
+          display: inline-block;
         }
         span {
           display: none;
@@ -399,6 +410,13 @@
           text-align: right;
           max-width: 180px;
         }
+        @media(max-width: 357px){
+         display: block;
+          margin: 5px auto;
+          width: 100%;
+          max-width: 180px;
+          float: none;
+        }
 
 
         p {
@@ -453,6 +471,13 @@
           max-width: 160px;
           font-size: 11px;
           cursor: pointer;
+        }
+        @media(max-width: 357px){
+          display: block;
+          margin: 5px auto;
+          width: 100%;
+          max-width: 180px;
+          float: none;
         }
         &:hover{
           i{
@@ -549,6 +574,10 @@
     @media(max-width: 770px){
       width: 50%;
     }
+    @media(max-width: 357px){
+      width: 100%;
+      text-align: center;
+    }
     &_product_line {
       width: 100%;
       float: left;
@@ -637,6 +666,10 @@
         position: relative;
         @media(max-width: 1009px){
           float: right;
+        }
+        @media(max-width: 357px){
+         display: inline-block;
+          float: none;
         }
         .timer{
           position: absolute;
@@ -841,15 +874,22 @@
   top: 0px;
   left: 0px;
   z-index: 9999;
+  @media(max-width: 375px){
+    height: 40px;
+  }
   .header_nav {
     width: 35.5%;
     float: left;
     @media(max-width: 1106px) {
       width: 50%
     }
+    @media(max-width: 1007px){
+      width: 100%;
+    }
     @media(max-width: 636px) {
       width: 100%;
       margin-left: 0px;
+      position: relative;
     }
     nav {
       display: none;
@@ -910,6 +950,12 @@
       width: auto;
       float: left;
       background: none;
+      @media(max-width: 1007px){
+        float: right;
+      }
+      .logo_mini{
+        display: none;
+      }
       @media (max-width: 1009px) {
         .logo_mini{
           display: none;
@@ -987,6 +1033,9 @@
         padding-left: 7px;
         box-sizing: border-box;
         letter-spacing: 0.6px;
+        @media(max-width: 1007px){
+          display: none;
+        }
         &:hover{
           color: #b80000;
         }
@@ -1049,6 +1098,9 @@
     @media(max-width: 405px){
       text-align: center;
     }
+    @media(max-width: 375px){
+      margin-top: -35px;
+    }
     .ring {
       float: left;
       width: auto;
@@ -1061,6 +1113,7 @@
         float: none;
         display: inline-block;
       }
+
       span {
         font-size: 12px;
       }
@@ -1087,6 +1140,9 @@
         float: none;
         display: inline-block;
       }
+      @media(max-width: 375px){
+        display: none;
+      }
       p {
         display: none;
       }
@@ -1103,6 +1159,7 @@
     }
 
   }
+
   .header__user_info {
     width: 24.01%;
     @media(max-width: 1106px) {
@@ -1112,8 +1169,14 @@
     .header__user_info_info {
       display: none;
     }
+
     .basket {
       margin-right: 5px;
+    }
+  }
+  .header__user_info_product_line{
+    @media(max-width: 1007px){
+      display: none;
     }
   }
 }

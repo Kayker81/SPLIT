@@ -11,6 +11,9 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 10px; }
+    @media (max-width: 538px) {
+      .section h1 {
+        line-height: 20px; } }
   .section h2 {
     float: left;
     min-height: 49px;
@@ -607,6 +610,10 @@
             width: 100%; } }
         .section_product_wrap_price_wrap_section_block h2 {
           width: 100%; }
+          @media (max-width: 538px) {
+            .section_product_wrap_price_wrap_section_block h2 {
+              line-height: 20px;
+              padding-top: 5px; } }
         .section_product_wrap_price_wrap_section_block_block_line {
           width: 100%; }
           @media (max-width: 758px) {
