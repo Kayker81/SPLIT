@@ -91,7 +91,8 @@ table {
     z-index: 99;
     width: 30px;
     height: 14px;
-    background-image: url("../img/temp_sprite/help_arow_b.png"); }
+    background-image: url("../img/sprite_section.png");
+    background-position: -346px -103px; }
 
 .help {
   position: absolute;
@@ -167,7 +168,7 @@ table {
         background-size: cover;
         text-align: center;
         padding: 0px; } }
-    @media (max-height: 920px) {
+    @media (max-height: 550px) {
       .power_calculator_header {
         display: none; } }
     .power_calculator_header i {
@@ -225,7 +226,7 @@ table {
           border-bottom: 1px solid #dedede;
           float: left;
           margin-top: 1px; }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form_base_zag {
               line-height: 26px; } }
           @media (max-width: 406px) {
@@ -421,7 +422,7 @@ table {
           border: 1px solid #dedede;
           border-right: none;
           float: left; }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form_more_zag {
               line-height: 26px; } }
           @media (max-width: 535px) {
@@ -498,7 +499,7 @@ table {
         border-bottom: 1px solid #c3c3c3;
         padding: 0px 24px;
         box-sizing: border-box; }
-        @media (max-height: 920px) {
+        @media (max-height: 550px) {
           .power_calculator_coontent_form .button_line {
             min-height: 0px; } }
         .power_calculator_coontent_form .button_line a {
@@ -508,7 +509,7 @@ table {
           margin-top: 32px;
           float: left;
           padding: 3px; }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form .button_line a {
               margin-top: 10px; } }
           .power_calculator_coontent_form .button_line a:hover {
@@ -533,7 +534,7 @@ table {
           -moz-opacity: 0.5;
           opacity: 0.5;
           -khtml-opacity: 0.5; }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form .button_line .selected_block {
               line-height: 22px; } }
           @media (max-width: 703px) {
@@ -542,7 +543,7 @@ table {
               float: none; } }
           .power_calculator_coontent_form .button_line .selected_block p {
             float: left; }
-            @media (max-height: 920px) {
+            @media (max-height: 550px) {
               .power_calculator_coontent_form .button_line .selected_block p {
                 margin-top: 10px; } }
           .power_calculator_coontent_form .button_line .selected_block a {
@@ -556,7 +557,7 @@ table {
             margin-left: 5px;
             pointer-events: none;
             cursor: default; }
-            @media (max-height: 920px) {
+            @media (max-height: 550px) {
               .power_calculator_coontent_form .button_line .selected_block a {
                 margin-top: 10px;
                 line-height: 22px; } }
@@ -579,7 +580,7 @@ table {
             .power_calculator_coontent_form .button_line .power_calculator_coontent_form_base {
               width: 100%;
               text-align: center; } }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form .button_line .power_calculator_coontent_form_base {
               min-height: 0px; } }
         .power_calculator_coontent_form .button_line .power_calculator_coontent_form_more {
@@ -591,7 +592,7 @@ table {
             .power_calculator_coontent_form .button_line .power_calculator_coontent_form_more {
               width: 100%;
               text-align: center; } }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form .button_line .power_calculator_coontent_form_more {
               min-height: 0px; } }
     .power_calculator_coontent_rezult {
@@ -607,7 +608,7 @@ table {
       @media (max-width: 629px) {
         .power_calculator_coontent_rezult {
           padding-bottom: 20px; } }
-      @media (max-height: 920px) {
+      @media (max-height: 550px) {
         .power_calculator_coontent_rezult {
           min-height: 0;
           padding-bottom: 5px; } }
@@ -643,7 +644,7 @@ table {
               display: inline-block;
               float: none;
               margin-right: 0px; } }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_rezult_zag_block .logo {
               display: none; } }
         .power_calculator_coontent_rezult_zag_block h3 {
@@ -655,7 +656,7 @@ table {
             .power_calculator_coontent_rezult_zag_block h3 {
               display: inline-block;
               float: none; } }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_rezult_zag_block h3 {
               line-height: 26px; } }
       .power_calculator_coontent_rezult .power {
@@ -683,7 +684,7 @@ table {
           color: #212121;
           font-weight: bold;
           margin-bottom: 7px; }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_rezult_block h4 {
               line-height: 22px; } }
           .power_calculator_coontent_rezult_block h4 i {
@@ -705,7 +706,7 @@ table {
             line-height: 10px;
             font-weight: bold;
             cursor: pointer; }
-            @media (max-height: 920px) {
+            @media (max-height: 550px) {
               .power_calculator_coontent_rezult_block h4 i {
                 margin-top: 5px; } }
         .power_calculator_coontent_rezult_block_input_line {
@@ -716,7 +717,7 @@ table {
             display: inline-block;
             margin-top: 10px;
             display: none; }
-            @media (max-height: 920px) {
+            @media (max-height: 550px) {
               .power_calculator_coontent_rezult_block_input_line .power_block {
                 margin-top: 5px; } }
             .power_calculator_coontent_rezult_block_input_line .power_block .namber {
@@ -753,7 +754,7 @@ table {
             box-sizing: border-box;
             background: #f8f8f8;
             min-width: 153px; }
-            @media (max-height: 920px) {
+            @media (max-height: 550px) {
               .power_calculator_coontent_rezult_block_input_line p {
                 line-height: 30px; } }
             .power_calculator_coontent_rezult_block_input_line p span {
@@ -761,7 +762,7 @@ table {
               margin-top: 14px;
               color: #662211;
               display: none; }
-              @media (max-height: 920px) {
+              @media (max-height: 550px) {
                 .power_calculator_coontent_rezult_block_input_line p span {
                   margin-top: 8px; } }
             .power_calculator_coontent_rezult_block_input_line p .namber {
@@ -769,7 +770,7 @@ table {
               font-weight: bold;
               color: #662211;
               display: none; }
-              @media (max-height: 920px) {
+              @media (max-height: 550px) {
                 .power_calculator_coontent_rezult_block_input_line p .namber {
                   line-height: 30px; } }
             .power_calculator_coontent_rezult_block_input_line p .no_namber {

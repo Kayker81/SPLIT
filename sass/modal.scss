@@ -778,8 +778,8 @@
       img {
         float: left;
         margin-top: -20px;
-        margin-left: 22px;
-        margin-right: 20px;
+        margin-left: 12px;
+        margin-right: 10px;
       }
       a {
         float: left;
@@ -1236,10 +1236,10 @@ i{
         box-sizing: border-box;
       }
       .meil{
-        background: url("../img/temp_sprite/meil.png") left center no-repeat;
+        background: url("../img/meil.png") left center no-repeat;
       }
       .password{
-        background: url("../img/temp_sprite/look.png") left center no-repeat;
+        background: url("../img/look.png") left center no-repeat;
         margin-bottom: 0px;
       }
       .recall{
@@ -1381,7 +1381,7 @@ i{
           background:url("../img/tel.jpg") 17px center no-repeat,url("../img/star.jpg") right top no-repeat,#FFFFFF;
         }
         .emeil{
-          background:url("../img/temp_sprite/meil.png") left top no-repeat,url("../img/star.jpg") right top no-repeat,#FFFFFF;
+          background:url("../img/meil.png") left top no-repeat,url("../img/star.jpg") right top no-repeat,#FFFFFF;
         }
       }
       &_password{
@@ -1405,7 +1405,7 @@ i{
           padding-left: 46px;
           box-sizing: border-box;
           margin-bottom: 10px;
-          background:url("../img/temp_sprite/look.png") left top no-repeat,url("../img/star.jpg") right top no-repeat,#FFFFFF;
+          background:url("../img/look.png") left top no-repeat,url("../img/star.jpg") right top no-repeat,#FFFFFF;
           &:nth-child(even){
             float: right;
           }
@@ -1532,7 +1532,7 @@ i{
         margin-right: 12px;
         width: 13px;
         height: 18px;
-        background-image: url("../img/temp_sprite/marker.png");
+        background-image: url("../img/marker.png");
         background-position: center;
       }
     }

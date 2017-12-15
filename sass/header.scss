@@ -395,6 +395,7 @@
       .meil {
         font: 14px/40px Verdana;
         color: #024753;
+        text-decoration: underline;
         @media(max-width: 1009px) {
           display: block;
           width: 49%;
@@ -436,6 +437,7 @@
         }
         .icon-mail_header {
           display: inline-block;
+          margin-right: 5px;
           margin-top: 12px;
           background-image: url('../img/sprite_header.png');
           background-position: -25px -122px;
@@ -684,6 +686,11 @@
           -moz-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
           box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
           display: none;
+          @media(max-width: 770px){
+            left:auto;
+            top: 100%;
+            right: 0px;
+          }
           .zag{
             width: 100%;
             box-sizing: border-box;
@@ -691,7 +698,7 @@
             color: #2a2a2a;
             background: #FFFFFF;
             padding-left: 10px;
-          }
+           }
           .timer_line{
             width: 100%;
             text-align: center;
@@ -729,8 +736,8 @@
 
             }
             span {
-              font-size: 11px;
-              color: #ff0000;
+               color: #ff0000;
+              font-weight: bold;
             }
           }
           h3 {
@@ -761,6 +768,7 @@
         position: relative;
         width: 128px;
         height: 32px;
+        padding: 3px;
         @media(max-width: 1009px) {
           display: none;
         }
@@ -774,6 +782,7 @@
           text-align: center;
           box-sizing: border-box;
           background: #ffffff;
+          cursor: pointer;
           span {
             font-weight: normal;
             font-size: 20px;

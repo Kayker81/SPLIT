@@ -52,8 +52,8 @@
         width: 26px;
         height: 22px;
         display: inline-block;
-        background-image: url("../img/temp_sprite/commennt.png");
-        background-position: center;
+        background-image: url("../img/sprite_section.png");
+        background-position: -320px -103px;
         margin-right: 20px;
         margin-top: 5px; }
   .comment_block .individuals_block {
@@ -305,8 +305,8 @@
     .comment_block .entity_wrap .entity_icon {
       width: 32px;
       height: 26px;
-      background-image: url("../img/temp_sprite/comment_ur.png");
-      background-position: center;
+      background-image: url("../img/sprite_section.png");
+      background-position: -288px -103px;
       display: inline-block;
       margin-right: 15px; }
     .comment_block .entity_wrap .comment_block_header h3 span {

@@ -217,10 +217,7 @@ header {
       width: 19.57%;
       margin-left: 3.93%;
       @media(max-width: 1099px) {
-        width: 100%;
-        margin-left: 0px;
-        text-align: center;
-        border-bottom: 2px solid #990301;
+        display: none;
 
         i {
           display: none;

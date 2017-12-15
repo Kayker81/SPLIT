@@ -325,7 +325,8 @@
           background: none; } }
       .header .header_kontakt_line .meil {
         font: 14px/40px Verdana;
-        color: #024753; }
+        color: #024753;
+        text-decoration: underline; }
         @media (max-width: 1009px) {
           .header .header_kontakt_line .meil {
             display: block;
@@ -363,6 +364,7 @@
               letter-spacing: normal; } }
         .header .header_kontakt_line .meil .icon-mail_header {
           display: inline-block;
+          margin-right: 5px;
           margin-top: 12px;
           background-image: url("../img/sprite_header.png");
           background-position: -25px -122px;
@@ -569,6 +571,11 @@
           -moz-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
           box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
           display: none; }
+          @media (max-width: 770px) {
+            .header__user_info_info .time .timer {
+              left: auto;
+              top: 100%;
+              right: 0px; } }
           .header__user_info_info .time .timer .zag {
             width: 100%;
             box-sizing: border-box;
@@ -607,8 +614,8 @@
               font-weight: normal;
               margin: 0 4px; }
             .header__user_info_info .time_text p span {
-              font-size: 11px;
-              color: #ff0000; }
+              color: #ff0000;
+              font-weight: bold; }
           .header__user_info_info .time_text h3 {
             font: 14px/40px 'Georgia-BoldItalic';
             text-decoration: underline;
@@ -631,7 +638,8 @@
         float: right;
         position: relative;
         width: 128px;
-        height: 32px; }
+        height: 32px;
+        padding: 3px; }
         @media (max-width: 1009px) {
           .header__user_info_info_serch {
             display: none; } }
@@ -644,7 +652,8 @@
           font-weight: bold;
           text-align: center;
           box-sizing: border-box;
-          background: #ffffff; }
+          background: #ffffff;
+          cursor: pointer; }
           .header__user_info_info_serch_input span {
             font-weight: normal;
             font-size: 20px;

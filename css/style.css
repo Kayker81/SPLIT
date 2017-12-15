@@ -402,7 +402,8 @@ table {
           background: none; } }
       .header .header_kontakt_line .meil {
         font: 14px/40px Verdana;
-        color: #024753; }
+        color: #024753;
+        text-decoration: underline; }
         @media (max-width: 1009px) {
           .header .header_kontakt_line .meil {
             display: block;
@@ -440,6 +441,7 @@ table {
               letter-spacing: normal; } }
         .header .header_kontakt_line .meil .icon-mail_header {
           display: inline-block;
+          margin-right: 5px;
           margin-top: 12px;
           background-image: url("../img/sprite_header.png");
           background-position: -25px -122px;
@@ -646,6 +648,11 @@ table {
           -moz-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
           box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
           display: none; }
+          @media (max-width: 770px) {
+            .header__user_info_info .time .timer {
+              left: auto;
+              top: 100%;
+              right: 0px; } }
           .header__user_info_info .time .timer .zag {
             width: 100%;
             box-sizing: border-box;
@@ -684,8 +691,8 @@ table {
               font-weight: normal;
               margin: 0 4px; }
             .header__user_info_info .time_text p span {
-              font-size: 11px;
-              color: #ff0000; }
+              color: #ff0000;
+              font-weight: bold; }
           .header__user_info_info .time_text h3 {
             font: 14px/40px 'Georgia-BoldItalic';
             text-decoration: underline;
@@ -708,7 +715,8 @@ table {
         float: right;
         position: relative;
         width: 128px;
-        height: 32px; }
+        height: 32px;
+        padding: 3px; }
         @media (max-width: 1009px) {
           .header__user_info_info_serch {
             display: none; } }
@@ -721,7 +729,8 @@ table {
           font-weight: bold;
           text-align: center;
           box-sizing: border-box;
-          background: #ffffff; }
+          background: #ffffff;
+          cursor: pointer; }
           .header__user_info_info_serch_input span {
             font-weight: normal;
             font-size: 20px;
@@ -1697,8 +1706,8 @@ table {
     .multi_block_kaseta_washing img {
       float: left;
       margin-top: -20px;
-      margin-left: 22px;
-      margin-right: 20px; }
+      margin-left: 12px;
+      margin-right: 10px; }
     .multi_block_kaseta_washing a {
       float: left;
       font: 10px/18px Verdana;
@@ -2071,9 +2080,9 @@ table {
         padding-left: 46px;
         box-sizing: border-box; }
       .enter_block_enter_form .meil {
-        background: url("../img/temp_sprite/meil.png") left center no-repeat; }
+        background: url("../img/meil.png") left center no-repeat; }
       .enter_block_enter_form .password {
-        background: url("../img/temp_sprite/look.png") left center no-repeat;
+        background: url("../img/look.png") left center no-repeat;
         margin-bottom: 0px; }
       .enter_block_enter_form .recall {
         float: left;
@@ -2196,7 +2205,7 @@ table {
         .enter_block_reg_form_info .tel {
           background: url("../img/tel.jpg") 17px center no-repeat, url("../img/star.jpg") right top no-repeat, #FFFFFF; }
         .enter_block_reg_form_info .emeil {
-          background: url("../img/temp_sprite/meil.png") left top no-repeat, url("../img/star.jpg") right top no-repeat, #FFFFFF; }
+          background: url("../img/meil.png") left top no-repeat, url("../img/star.jpg") right top no-repeat, #FFFFFF; }
       .enter_block_reg_form_password {
         float: left;
         width: 100%; }
@@ -2219,7 +2228,7 @@ table {
           padding-left: 46px;
           box-sizing: border-box;
           margin-bottom: 10px;
-          background: url("../img/temp_sprite/look.png") left top no-repeat, url("../img/star.jpg") right top no-repeat, #FFFFFF; }
+          background: url("../img/look.png") left top no-repeat, url("../img/star.jpg") right top no-repeat, #FFFFFF; }
           .enter_block_reg_form_password input:nth-child(even) {
             float: right; }
       .enter_block_reg_form_chek_line {
@@ -2330,7 +2339,7 @@ table {
         margin-right: 12px;
         width: 13px;
         height: 18px;
-        background-image: url("../img/temp_sprite/marker.png");
+        background-image: url("../img/marker.png");
         background-position: center; }
   .thenk_block_logo {
     float: left;
@@ -2445,8 +2454,8 @@ table {
         width: 26px;
         height: 22px;
         display: inline-block;
-        background-image: url("../img/temp_sprite/commennt.png");
-        background-position: center;
+        background-image: url("../img/sprite_section.png");
+        background-position: -320px -103px;
         margin-right: 20px;
         margin-top: 5px; }
   .comment_block .individuals_block {
@@ -2698,8 +2707,8 @@ table {
     .comment_block .entity_wrap .entity_icon {
       width: 32px;
       height: 26px;
-      background-image: url("../img/temp_sprite/comment_ur.png");
-      background-position: center;
+      background-image: url("../img/sprite_section.png");
+      background-position: -288px -103px;
       display: inline-block;
       margin-right: 15px; }
     .comment_block .entity_wrap .comment_block_header h3 span {
@@ -3084,7 +3093,8 @@ table {
     z-index: 99;
     width: 30px;
     height: 14px;
-    background-image: url("../img/temp_sprite/help_arow_b.png"); }
+    background-image: url("../img/sprite_section.png");
+    background-position: -346px -103px; }
 
 .help {
   position: absolute;
@@ -3160,7 +3170,7 @@ table {
         background-size: cover;
         text-align: center;
         padding: 0px; } }
-    @media (max-height: 920px) {
+    @media (max-height: 550px) {
       .power_calculator_header {
         display: none; } }
     .power_calculator_header i {
@@ -3218,7 +3228,7 @@ table {
           border-bottom: 1px solid #dedede;
           float: left;
           margin-top: 1px; }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form_base_zag {
               line-height: 26px; } }
           @media (max-width: 406px) {
@@ -3414,7 +3424,7 @@ table {
           border: 1px solid #dedede;
           border-right: none;
           float: left; }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form_more_zag {
               line-height: 26px; } }
           @media (max-width: 535px) {
@@ -3491,7 +3501,7 @@ table {
         border-bottom: 1px solid #c3c3c3;
         padding: 0px 24px;
         box-sizing: border-box; }
-        @media (max-height: 920px) {
+        @media (max-height: 550px) {
           .power_calculator_coontent_form .button_line {
             min-height: 0px; } }
         .power_calculator_coontent_form .button_line a {
@@ -3501,7 +3511,7 @@ table {
           margin-top: 32px;
           float: left;
           padding: 3px; }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form .button_line a {
               margin-top: 10px; } }
           .power_calculator_coontent_form .button_line a:hover {
@@ -3526,7 +3536,7 @@ table {
           -moz-opacity: 0.5;
           opacity: 0.5;
           -khtml-opacity: 0.5; }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form .button_line .selected_block {
               line-height: 22px; } }
           @media (max-width: 703px) {
@@ -3535,7 +3545,7 @@ table {
               float: none; } }
           .power_calculator_coontent_form .button_line .selected_block p {
             float: left; }
-            @media (max-height: 920px) {
+            @media (max-height: 550px) {
               .power_calculator_coontent_form .button_line .selected_block p {
                 margin-top: 10px; } }
           .power_calculator_coontent_form .button_line .selected_block a {
@@ -3549,7 +3559,7 @@ table {
             margin-left: 5px;
             pointer-events: none;
             cursor: default; }
-            @media (max-height: 920px) {
+            @media (max-height: 550px) {
               .power_calculator_coontent_form .button_line .selected_block a {
                 margin-top: 10px;
                 line-height: 22px; } }
@@ -3572,7 +3582,7 @@ table {
             .power_calculator_coontent_form .button_line .power_calculator_coontent_form_base {
               width: 100%;
               text-align: center; } }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form .button_line .power_calculator_coontent_form_base {
               min-height: 0px; } }
         .power_calculator_coontent_form .button_line .power_calculator_coontent_form_more {
@@ -3584,7 +3594,7 @@ table {
             .power_calculator_coontent_form .button_line .power_calculator_coontent_form_more {
               width: 100%;
               text-align: center; } }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_form .button_line .power_calculator_coontent_form_more {
               min-height: 0px; } }
     .power_calculator_coontent_rezult {
@@ -3600,7 +3610,7 @@ table {
       @media (max-width: 629px) {
         .power_calculator_coontent_rezult {
           padding-bottom: 20px; } }
-      @media (max-height: 920px) {
+      @media (max-height: 550px) {
         .power_calculator_coontent_rezult {
           min-height: 0;
           padding-bottom: 5px; } }
@@ -3636,7 +3646,7 @@ table {
               display: inline-block;
               float: none;
               margin-right: 0px; } }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_rezult_zag_block .logo {
               display: none; } }
         .power_calculator_coontent_rezult_zag_block h3 {
@@ -3648,7 +3658,7 @@ table {
             .power_calculator_coontent_rezult_zag_block h3 {
               display: inline-block;
               float: none; } }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_rezult_zag_block h3 {
               line-height: 26px; } }
       .power_calculator_coontent_rezult .power {
@@ -3676,7 +3686,7 @@ table {
           color: #212121;
           font-weight: bold;
           margin-bottom: 7px; }
-          @media (max-height: 920px) {
+          @media (max-height: 550px) {
             .power_calculator_coontent_rezult_block h4 {
               line-height: 22px; } }
           .power_calculator_coontent_rezult_block h4 i {
@@ -3698,7 +3708,7 @@ table {
             line-height: 10px;
             font-weight: bold;
             cursor: pointer; }
-            @media (max-height: 920px) {
+            @media (max-height: 550px) {
               .power_calculator_coontent_rezult_block h4 i {
                 margin-top: 5px; } }
         .power_calculator_coontent_rezult_block_input_line {
@@ -3709,7 +3719,7 @@ table {
             display: inline-block;
             margin-top: 10px;
             display: none; }
-            @media (max-height: 920px) {
+            @media (max-height: 550px) {
               .power_calculator_coontent_rezult_block_input_line .power_block {
                 margin-top: 5px; } }
             .power_calculator_coontent_rezult_block_input_line .power_block .namber {
@@ -3746,7 +3756,7 @@ table {
             box-sizing: border-box;
             background: #f8f8f8;
             min-width: 153px; }
-            @media (max-height: 920px) {
+            @media (max-height: 550px) {
               .power_calculator_coontent_rezult_block_input_line p {
                 line-height: 30px; } }
             .power_calculator_coontent_rezult_block_input_line p span {
@@ -3754,7 +3764,7 @@ table {
               margin-top: 14px;
               color: #662211;
               display: none; }
-              @media (max-height: 920px) {
+              @media (max-height: 550px) {
                 .power_calculator_coontent_rezult_block_input_line p span {
                   margin-top: 8px; } }
             .power_calculator_coontent_rezult_block_input_line p .namber {
@@ -3762,7 +3772,7 @@ table {
               font-weight: bold;
               color: #662211;
               display: none; }
-              @media (max-height: 920px) {
+              @media (max-height: 550px) {
                 .power_calculator_coontent_rezult_block_input_line p .namber {
                   line-height: 30px; } }
             .power_calculator_coontent_rezult_block_input_line p .no_namber {
@@ -5198,7 +5208,7 @@ table {
   .section_product_wrap {
     width: 100%;
     min-height: 3292px;
-    background: url("../img/product_fon.png") center 80px no-repeat; }
+    background: url("../img/product_fon.jpg") center 80px no-repeat; }
     .section_product_wrap_slider {
       width: 100%;
       min-height: 433px;
@@ -7552,10 +7562,7 @@ header {
     margin-left: 3.93%; }
     @media (max-width: 1099px) {
       .section_crumbs_rez {
-        width: 100%;
-        margin-left: 0px;
-        text-align: center;
-        border-bottom: 2px solid #990301; }
+        display: none; }
         .section_crumbs_rez i {
           display: none; } }
     .section_crumbs_rez span {
