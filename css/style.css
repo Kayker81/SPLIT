@@ -79,7 +79,8 @@ table {
   width: 100%;
   min-height: 180px;
   border-bottom: 1px solid #e0e0e0;
-  background: url("../img/header.jpg") left top repeat-x, #f3fafa; }
+  background: url("../img/header.jpg") left top repeat-x, #f3fafa;
+  float: left; }
   @media (max-width: 1009px) {
     .header {
       min-height: 0px;
@@ -87,7 +88,6 @@ table {
       background: -webkit-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
       background: linear-gradient(to right, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e0f5f5', endColorstr='#e8f9f8', GradientType=1);
-      overflow: hidden;
       padding-bottom: 10px; } }
   .header .miniature_block {
     top: 20px; }
@@ -419,7 +419,7 @@ table {
             float: right;
             text-align: right;
             max-width: 180px; } }
-        @media (max-width: 357px) {
+        @media (max-width: 388px) {
           .header .header_kontakt_line .meil {
             display: block;
             margin: 5px auto;
@@ -450,73 +450,187 @@ table {
           @media (max-width: 1015px) {
             .header .header_kontakt_line .meil .icon-mail_header {
               display: none; } }
-      .header .header_kontakt_line .ring {
-        width: 100%;
-        font: 16px/25px Verdana;
-        font-weight: bold;
-        color: #840000; }
+      .header .header_kontakt_line .ring_wrap {
+        position: relative;
+        width: 100%; }
+        .header .header_kontakt_line .ring_wrap:hover .ring_wrap_block {
+          display: block; }
+        .header .header_kontakt_line .ring_wrap_block {
+          display: none;
+          width: 100%;
+          float: left;
+          position: absolute;
+          left: -51.5px;
+          top: 42px;
+          width: 283px;
+          background: #ffffff;
+          padding-left: 10px;
+          z-index: 999;
+          padding-top: 10px;
+          -webkit-box-shadow: -2px 9px 18px 0px rgba(0, 0, 0, 0.2);
+          -moz-box-shadow: -2px 9px 18px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: -2px 9px 18px 0px rgba(0, 0, 0, 0.2); }
+          @media (max-width: 770px) {
+            .header .header_kontakt_line .ring_wrap_block {
+              left: -51.5px;
+              /**/ } }
+          .header .header_kontakt_line .ring_wrap_block_sity {
+            float: left;
+            width: 50%; }
+            .header .header_kontakt_line .ring_wrap_block_sity p {
+              width: 100%;
+              font: 13px/13px Verdana;
+              font-weight: bold;
+              color: #2f2f2f;
+              margin-bottom: 5px;
+              letter-spacing: -0.2px; }
+              .header .header_kontakt_line .ring_wrap_block_sity p span {
+                font-weight: normal; }
+            .header .header_kontakt_line .ring_wrap_block_sity .whatsapp {
+              width: 100%;
+              margin-top: 20px; }
+              .header .header_kontakt_line .ring_wrap_block_sity .whatsapp .zag {
+                width: 100%; }
+                .header .header_kontakt_line .ring_wrap_block_sity .whatsapp .zag i {
+                  float: left;
+                  width: 35px;
+                  height: 39px;
+                  background-image: url("../img/sprite_footer.png");
+                  background-position: 0px -34px;
+                  margin-left: 6px; }
+                .header .header_kontakt_line .ring_wrap_block_sity .whatsapp .zag p {
+                  font: 13px/20px Verdana;
+                  margin-bottom: 0px; }
+                  .header .header_kontakt_line .ring_wrap_block_sity .whatsapp .zag p span {
+                    display: block;
+                    color: #6b6b6b;
+                    font-size: 9px; }
+                .header .header_kontakt_line .ring_wrap_block_sity .whatsapp .zag a {
+                  width: 100%;
+                  font: 11px/17px Verdana;
+                  font-weight: normal;
+                  font-weight: bold;
+                  color: #2f2f2f;
+                  letter-spacing: -0.5px; }
+          .header .header_kontakt_line .ring_wrap_block_mobile {
+            width: 50%;
+            float: left;
+            margin-top: -3px; }
+            .header .header_kontakt_line .ring_wrap_block_mobile p {
+              width: 100%;
+              font: 11px/17px Verdana;
+              font-weight: bold;
+              color: #2f2f2f;
+              margin-bottom: 7px;
+              letter-spacing: -0.5px; }
+              .header .header_kontakt_line .ring_wrap_block_mobile p i {
+                display: inline-block;
+                height: 17px;
+                width: 17px;
+                margin-right: 4px; }
+              .header .header_kontakt_line .ring_wrap_block_mobile p .tel1 {
+                width: 18px;
+                background-image: url("../img/sprite_footer.png");
+                background-position: -20px 0px; }
+              .header .header_kontakt_line .ring_wrap_block_mobile p .tel2 {
+                background-image: url("../img/sprite_footer.png");
+                background-position: 0px -17px; }
+              .header .header_kontakt_line .ring_wrap_block_mobile p .tel3 {
+                background-image: url("../img/sprite_footer.png");
+                background-position: -17px -17px; }
+              .header .header_kontakt_line .ring_wrap_block_mobile p .tel4 {
+                width: 20px;
+                background-image: url("../img/sprite_footer.png");
+                background-position: 0px 0px; }
+              .header .header_kontakt_line .ring_wrap_block_mobile p a {
+                color: #0151bd;
+                text-decoration: underline;
+                margin-left: 4px;
+                font-weight: bold; }
+                .header .header_kontakt_line .ring_wrap_block_mobile p a:hover {
+                  color: #25613c; }
         @media (max-width: 1009px) {
-          .header .header_kontakt_line .ring {
-            display: block;
-            width: 49%;
+          .header .header_kontakt_line .ring_wrap {
+            width: 180px;
             padding: 0px 11px;
             padding-left: 11px;
             padding-left: 11px;
-            color: #004191;
             border: 1px solid #004191;
-            box-sizing: border-box;
-            min-height: 48px;
-            line-height: 20px;
+            height: 48px;
             float: left;
-            text-align: left;
-            max-width: 180px;
-            font-size: 15px; } }
+            box-sizing: border-box; } }
         @media (max-width: 770px) {
-          .header .header_kontakt_line .ring {
-            max-width: 160px;
+          .header .header_kontakt_line .ring_wrap {
             font-size: 11px;
             cursor: pointer; } }
-        @media (max-width: 357px) {
-          .header .header_kontakt_line .ring {
+        @media (max-width: 388px) {
+          .header .header_kontakt_line .ring_wrap {
             display: block;
-            margin: 5px auto;
-            width: 100%;
             max-width: 180px;
-            float: none; } }
-        .header .header_kontakt_line .ring:hover i {
-          background: url("../img/temp_hover/arow_hover.png"); }
-        .header .header_kontakt_line .ring i {
-          display: inline-block;
-          width: 8px;
-          height: 6px;
-          background-image: url("../img/sprite_header.png");
-          background-position: -354px -70px;
-          margin-top: 9.5px;
-          margin-left: 10.1px; }
-          @media (max-width: 1070px) {
-            .header .header_kontakt_line .ring i {
-              display: none; } }
-        .header .header_kontakt_line .ring p {
-          font: 13px/20px Verdana;
+            width: 100%;
+            box-sizing: border-box;
+            float: none;
+            margin: 5px auto; } }
+        .header .header_kontakt_line .ring_wrap .ring {
+          width: 100%;
+          font: 16px/25px Verdana;
           font-weight: bold;
-          color: #363636; }
-          @media (max-width: 840px) {
-            .header .header_kontakt_line .ring p {
-              color: #840000; } }
-          @media (max-width: 423px) {
-            .header .header_kontakt_line .ring p {
-              letter-spacing: normal; } }
-          .header .header_kontakt_line .ring p span {
-            display: none; }
+          color: #840000; }
+          @media (max-width: 1009px) {
+            .header .header_kontakt_line .ring_wrap .ring {
+              display: block;
+              color: #004191;
+              line-height: 20px;
+              float: left;
+              text-align: left;
+              font-size: 15px; } }
+          @media (max-width: 770px) {
+            .header .header_kontakt_line .ring_wrap .ring {
+              max-width: 160px;
+              font-size: 11px;
+              cursor: pointer; } }
+          @media (max-width: 357px) {
+            .header .header_kontakt_line .ring_wrap .ring {
+              display: block;
+              margin: 5px auto;
+              width: 100%;
+              max-width: 180px;
+              float: none; } }
+          .header .header_kontakt_line .ring_wrap .ring:hover i {
+            background-image: url("../img/sprite_header.png");
+            background-position: -354px -70px; }
+          .header .header_kontakt_line .ring_wrap .ring i {
+            display: inline-block;
+            width: 8px;
+            height: 6px;
+            background-image: url("../img/sprite_header.png");
+            background-position: -354px -70px;
+            margin-top: 9.5px;
+            margin-left: 10.1px; }
+            @media (max-width: 1070px) {
+              .header .header_kontakt_line .ring_wrap .ring i {
+                display: none; } }
+          .header .header_kontakt_line .ring_wrap .ring p {
+            font: 13px/20px Verdana;
+            font-weight: bold;
+            color: #363636; }
             @media (max-width: 840px) {
-              .header .header_kontakt_line .ring p span {
-                display: inline; } }
-        .header .header_kontakt_line .ring span {
-          font-size: 13px;
-          font-weight: normal; }
-          @media (max-width: 423px) {
-            .header .header_kontakt_line .ring span {
-              font-weight: bold; } }
+              .header .header_kontakt_line .ring_wrap .ring p {
+                color: #840000; } }
+            @media (max-width: 423px) {
+              .header .header_kontakt_line .ring_wrap .ring p {
+                letter-spacing: normal; } }
+            .header .header_kontakt_line .ring_wrap .ring p span {
+              display: none; }
+              @media (max-width: 840px) {
+                .header .header_kontakt_line .ring_wrap .ring p span {
+                  display: inline; } }
+          .header .header_kontakt_line .ring_wrap .ring span {
+            font-size: 13px;
+            font-weight: normal; }
+            @media (max-width: 423px) {
+              .header .header_kontakt_line .ring_wrap .ring span {
+                font-weight: bold; } }
       .header .header_kontakt_line_button_line {
         width: 100%;
         padding-bottom: 3px;
@@ -815,6 +929,185 @@ table {
   top: 0px;
   left: 0px;
   z-index: 9999; }
+  .header_mini .ring_wrap {
+    position: relative;
+    width: auto;
+    float: left; }
+    .header_mini .ring_wrap:hover .ring_wrap_block {
+      display: block; }
+    .header_mini .ring_wrap_block {
+      display: none;
+      width: 100%;
+      float: left;
+      position: absolute;
+      left: -51.5px;
+      top: 38px;
+      width: 283px;
+      background: #ffffff;
+      padding-left: 10px;
+      z-index: 999;
+      padding-top: 10px;
+      -webkit-box-shadow: -2px 9px 18px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: -2px 9px 18px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: -2px 9px 18px 0px rgba(0, 0, 0, 0.2); }
+      @media (max-width: 770px) {
+        .header_mini .ring_wrap_block {
+          left: -51.5px;
+          /**/ } }
+      .header_mini .ring_wrap_block_sity {
+        float: left;
+        width: 50%; }
+        .header_mini .ring_wrap_block_sity p {
+          width: 100%;
+          font: 13px/13px Verdana;
+          font-weight: bold;
+          color: #2f2f2f;
+          margin-bottom: 5px;
+          letter-spacing: -0.2px; }
+          .header_mini .ring_wrap_block_sity p span {
+            font-weight: normal; }
+        .header_mini .ring_wrap_block_sity .whatsapp {
+          width: 100%;
+          margin-top: 20px; }
+          .header_mini .ring_wrap_block_sity .whatsapp .zag {
+            width: 100%; }
+            .header_mini .ring_wrap_block_sity .whatsapp .zag i {
+              float: left;
+              width: 35px;
+              height: 39px;
+              background-image: url("../img/sprite_footer.png");
+              background-position: 0px -34px;
+              margin-left: 6px; }
+            .header_mini .ring_wrap_block_sity .whatsapp .zag p {
+              font: 13px/20px Verdana;
+              margin-bottom: 0px; }
+              .header_mini .ring_wrap_block_sity .whatsapp .zag p span {
+                display: block;
+                color: #6b6b6b;
+                font-size: 9px; }
+            .header_mini .ring_wrap_block_sity .whatsapp .zag a {
+              width: 100%;
+              font: 11px/17px Verdana;
+              font-weight: normal;
+              font-weight: bold;
+              color: #2f2f2f;
+              letter-spacing: -0.5px; }
+      .header_mini .ring_wrap_block_mobile {
+        width: 50%;
+        float: left;
+        margin-top: -3px; }
+        .header_mini .ring_wrap_block_mobile p {
+          width: 100%;
+          font: 11px/17px Verdana;
+          font-weight: bold;
+          color: #2f2f2f;
+          margin-bottom: 7px;
+          letter-spacing: -0.5px; }
+          .header_mini .ring_wrap_block_mobile p i {
+            display: inline-block;
+            height: 17px;
+            width: 17px;
+            margin-right: 4px; }
+          .header_mini .ring_wrap_block_mobile p .tel1 {
+            width: 18px;
+            background-image: url("../img/sprite_footer.png");
+            background-position: -20px 0px; }
+          .header_mini .ring_wrap_block_mobile p .tel2 {
+            background-image: url("../img/sprite_footer.png");
+            background-position: 0px -17px; }
+          .header_mini .ring_wrap_block_mobile p .tel3 {
+            background-image: url("../img/sprite_footer.png");
+            background-position: -17px -17px; }
+          .header_mini .ring_wrap_block_mobile p .tel4 {
+            width: 20px;
+            background-image: url("../img/sprite_footer.png");
+            background-position: 0px 0px; }
+          .header_mini .ring_wrap_block_mobile p a {
+            color: #0151bd;
+            text-decoration: underline;
+            margin-left: 4px;
+            font-weight: bold; }
+            .header_mini .ring_wrap_block_mobile p a:hover {
+              color: #25613c; }
+    @media (max-width: 1009px) {
+      .header_mini .ring_wrap {
+        width: 180px;
+        padding: 0px 11px;
+        padding-left: 11px;
+        padding-left: 11px;
+        border: 1px solid #004191;
+        height: 48px;
+        float: left;
+        box-sizing: border-box; } }
+    @media (max-width: 770px) {
+      .header_mini .ring_wrap {
+        font-size: 11px;
+        cursor: pointer; } }
+    @media (max-width: 388px) {
+      .header_mini .ring_wrap {
+        display: block;
+        max-width: 180px;
+        width: 100%;
+        box-sizing: border-box;
+        float: none;
+        margin: 5px auto; } }
+    .header_mini .ring_wrap .ring {
+      width: 100%;
+      font: 16px/25px Verdana;
+      font-weight: bold;
+      color: #840000; }
+      @media (max-width: 1009px) {
+        .header_mini .ring_wrap .ring {
+          display: block;
+          color: #004191;
+          line-height: 20px;
+          float: left;
+          text-align: left;
+          font-size: 15px; } }
+      @media (max-width: 770px) {
+        .header_mini .ring_wrap .ring {
+          max-width: 160px;
+          font-size: 11px;
+          cursor: pointer; } }
+      @media (max-width: 357px) {
+        .header_mini .ring_wrap .ring {
+          display: block;
+          margin: 5px auto;
+          width: 100%;
+          max-width: 180px;
+          float: none; } }
+      .header_mini .ring_wrap .ring i {
+        display: inline-block;
+        width: 8px;
+        height: 6px;
+        background-image: url("../img/sprite_header.png");
+        background-position: -354px -70px;
+        margin-top: 9.5px;
+        margin-left: 10.1px; }
+        @media (max-width: 1070px) {
+          .header_mini .ring_wrap .ring i {
+            display: none; } }
+      .header_mini .ring_wrap .ring p {
+        font: 13px/20px Verdana;
+        font-weight: bold;
+        color: #363636; }
+        @media (max-width: 840px) {
+          .header_mini .ring_wrap .ring p {
+            color: #840000; } }
+        @media (max-width: 423px) {
+          .header_mini .ring_wrap .ring p {
+            letter-spacing: normal; } }
+        .header_mini .ring_wrap .ring p span {
+          display: none; }
+          @media (max-width: 840px) {
+            .header_mini .ring_wrap .ring p span {
+              display: inline; } }
+      .header_mini .ring_wrap .ring span {
+        font-size: 13px;
+        font-weight: normal; }
+        @media (max-width: 423px) {
+          .header_mini .ring_wrap .ring span {
+            font-weight: bold; } }
   @media (max-width: 375px) {
     .header_mini {
       height: 40px; } }
@@ -2102,6 +2395,8 @@ table {
         text-align: center;
         color: #024753;
         border: 1px solid #e3e3e3;
+        opacity: 0.5;
+        pointer-events: none;
         border-radius: 4px;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px; }
@@ -2112,6 +2407,9 @@ table {
             background: none; }
         .enter_block_enter_form .submit span {
           background: url("../img/dotted.png") left bottom repeat-x; }
+      .enter_block_enter_form .activ {
+        opacity: 1;
+        pointer-events: auto; }
     .enter_block_enter .or {
       width: 100%;
       margin-top: 9px;
@@ -2279,12 +2577,17 @@ table {
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
         background: #FFFFFF;
-        display: block; }
+        display: block;
+        opacity: 0.5;
+        pointer-events: none; }
         .enter_block_reg_form .submit span {
           background: url("../img/dotted.png") left bottom repeat-x; }
         .enter_block_reg_form .submit:hover {
           color: #620909;
           border-color: #003c95; }
+      .enter_block_reg_form .activ {
+        pointer-events: auto;
+        opacity: 1; }
 
 .thenk_block {
   position: absolute;
@@ -6790,7 +7093,7 @@ table {
                 font-weight: normal; }
             .footer_info__section_tel_block_sity .whatsapp {
               width: 100%;
-              margin-top: 18px; }
+              margin-top: 20px; }
               .footer_info__section_tel_block_sity .whatsapp .zag {
                 width: 100%; }
                 .footer_info__section_tel_block_sity .whatsapp .zag i {

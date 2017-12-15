@@ -1467,10 +1467,10 @@
             <div class="enter_block_enter">
                 <h3 class="enter_block_zag">Вход</h3>
                 <form method="post" action="javascript:void(0)" class="enter_block_enter_form">
-                    <input type="email" placeholder="Введите Ваш E-mail" class="meil">
-                    <input type="password" placeholder="Пароль" class="password">
+                    <input type="email" placeholder="Введите Ваш E-mail" class="meil" id="enter_mail">
+                    <input type="password" placeholder="Пароль" class="password" id="enter_password">
                     <a href="javascript:void(0)" class="recall" title="Востановление пароля">Напомнить пароль</a>
-                    <a href="javvascript:void(0)" class="submit"><span>Войти на сайт</span></a>
+                    <a href="javvascript:void(0)" class="submit" id="enter_submit"><span>Войти на сайт</span></a>
                     <p class="or">или</p>
                 </form>
                 <!--Вход через соцсети -->
@@ -1492,17 +1492,17 @@
                 <form method="post" action="javascript:void(0)" class="enter_block_reg_form">
                     <!--Данные пользователя -->
                     <div class="enter_block_reg_form_info">
-                        <input type="text" class="name" placeholder="Введите Ваше Имя">
+                        <input type="text" class="name" placeholder="Введите Ваше Имя" id="reg_name">
                         <input type="text" class="patronymic" placeholder="Отчество">
-                        <input type="tel" class="tel" placeholder="Телефон">
-                        <input type="email" class="emeil" placeholder="E-mail">
+                        <input type="tel" class="tel" placeholder="Телефон" id="tel_reg">
+                        <input type="email" class="emeil" placeholder="E-mail" id="mail_reg">
                     </div>
                     <!--/Данные пользователя -->
                     <!--Ввод пароля-->
                     <div class="enter_block_reg_form_password">
                         <h3 class="enter_block_reg_form_password_zag">Придумайте и напишите свой пароль:</h3>
-                        <input type="password" placeholder="Повторите пароль">
-                        <input type="password" placeholder="Пароль">
+                        <input type="password" placeholder="Повторите пароль" id="reg_password2">
+                        <input type="password" placeholder="Пароль" id="reg_password">
                     </div>
                     <!--/Ввод пароля-->
                     <!--Условия регистрации -->
@@ -1515,7 +1515,7 @@
                         </p>
                     </div>
                     <!--/Условия регистрации -->
-                    <a href="javvascript:void(0)" class="submit"><span>Зарегистрироваться</span></a>
+                    <a href="javvascript:void(0)" class="submit" id="reg_submit"><span>Зарегистрироваться</span></a>
                 </form>
             </div>
         </div>
@@ -3207,11 +3207,34 @@
                 <div class="header_kontakt_line">
                     <a href="mailto:zakaz@2211687.ru Менеджеру_ВИМТЕХ?subject=рассмотреть срочно(шифр ОВ-особой важности)" class="meil"><p>Пишите:</p><i
                             class="icon-mail_header"></i> zakaz@2211687.ru</a>
-                    <a href="javascript:void(0)" class="ring">
-                        <p>Звоните<span>:</span></p>
-                        <span>+7 (863)</span> 221-16-87<i></i>
+                   <div class="ring_wrap">
+                       <a href="javascript:void(0)" class="ring">
+                           <p>Звоните<span>:</span></p>
+                           <span>+7 (863)</span> 221-16-87<i></i>
+                       </a>
+                       <div class="ring_wrap_block">
+                           <div class="ring_wrap_block_sity"><p  itemprop="telephone">
+                               <span>8 (863)</span> 221-16-87</p>
+                               <p  itemprop="telephone"><span>8 (863)</span> 256-33-87</p>
+                               <div class="whatsapp">
+                                   <div class="zag">
+                                       <i></i><p>Whotsapp<span>(Вотсап)</span></p>
+                                       <a href="tel:7(918)5605556"><span>+7(918)</span>5605556</a>
+                                   </div>
 
-                    </a>
+                               </div>
+                           </div>
+                           <div class="ring_wrap_block_mobile"><p itemprop="telephone">
+                               <i class="tel1"></i><span>+7 (918)</span> 501 08 54</p>
+                               <p  itemprop="telephone"><i class="tel2"></i><span>+7 (903)</span> 406
+                                   33 87</p>
+                               <p  itemprop="telephone"><i class="tel3"></i><span>+7 (928)</span> 762
+                                   69 06</p>
+                               <p  itemprop="telephone"><i class="tel4"></i><span>+7 (904)</span> 348
+                                   59 21</p>
+                               <p><span>Skype:</span> <a href="javascript:void(0)">bogdan5749</a></p></div>
+                       </div>
+                   </div>
                 </div>
                 <div class="header_kontakt_line_button_line">
                     <a href="javascript:void(0)" class="button" title="Инверторные кондиционеры в климатическом магазине ВИМТЕХ - цены, новинки, отзывы, характеристики">Инверторные</a>

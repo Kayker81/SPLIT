@@ -1157,6 +1157,90 @@ $(document).ready(function () {
         })
     })
     /******************************************************************************************************************/
+    /******************************************Вход регистрация*********************************************************/
+    $('#enter_mail,#enter_password').keypress(function () {
+        var mail=$('#enter_mail').val();
+        var pass=$('#enter_password').val();
+        var pointer='pointer-events'
+        if(mail!==""&&pass!==""){
+            $('#enter_submit').addClass('activ')
+        }
+        else{
+            $('#enter_submit').removeClass('activ')
+        }
+    })
+    $('#reg_password2').keyup(function () {
+          var mail=$('#mail_reg').val();
+          var pass1=$('#reg_password').val();
+          var tel=$('#tel_reg').val();
+          var pass2=$('#reg_password2').val();
+          var name=$('#reg_name').val();
+
+
+          if(mail!==""&&pass1!==""&&tel!==''&&pass1===pass2&&pass2!==''&&name!==''){
+              $('#reg_submit').addClass('activ');
+              $('#reg_password2,#reg_password,#mail_reg,#tel_reg,#reg_name').css({
+                  'border':'1px solid #3b6e8b',
+              })
+
+              return
+          }
+          else{
+              $('#reg_submit').removeClass('activ')
+               var test=pass1.length;
+              if(pass1!==pass2||pass1.length<4){
+                  $('#reg_password2,#reg_password').css({
+                      'border':'2px solid red',
+                  })
+                  return false
+              }
+              else{
+                 $('#reg_password2,#reg_password').css({
+                      'border':'1px solid #3b6e8b',
+                  })
+              }
+              if(tel.length===0){
+                  $('#tel_reg').css({
+                      'border':'2px solid red'
+                  })
+                  $('#reg_password,#reg_password2').val('');
+              }
+              else{
+                  $('#tel_reg').css({
+                      'border':'1px solid #3b6e8b',
+                  })
+              }
+              if(mail.length===0){
+                  $('#mail_reg').css({
+                      'border':'2px solid red',
+                  })
+                  $('#reg_password,#reg_password2').val('');
+              }
+              else{
+                  $('#mail_reg').css({
+                      'border':'1px solid #3b6e8b',
+                  })
+              }
+              if(name.length===0){
+                  $('#reg_name').css({
+                      'border':'2px solid red',
+                  })
+                  $('#reg_password,#reg_password2').val('');
+              }
+              else{
+                  $('#reg_name').css({
+                      'border':'1px solid #3b6e8b',
+                  })
+              }
+          }
+          var mail=null;
+          var tel=null;
+          var pass1=null;
+          var pass2=null;
+          return
+
+    })
+    /*******************************************************************************************************************/
 
     /*******************************************Comment******************************************************************/
     $('.comment').click(function (e) {

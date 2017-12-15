@@ -1262,6 +1262,8 @@ i{
         text-align: center;
         color: #024753;
         border: 1px solid #e3e3e3;
+        opacity: 0.5;
+        pointer-events: none;
         @include radius(4px);
         &:hover{
           color: #620909;
@@ -1273,6 +1275,10 @@ i{
         span{
           background: url("../img/dotted.png") left bottom repeat-x;
         }
+      }
+      .activ{
+        opacity:1;
+        pointer-events: auto;
       }
     }
     .or{
@@ -1447,6 +1453,7 @@ i{
 
         }
       }
+
       .submit {
         clear: both;
         width: 100%;
@@ -1466,6 +1473,9 @@ i{
        @include radius(4px);
         background: #FFFFFF;
         display: block;
+        opacity: 0.5;
+        pointer-events: none;
+
         span {
           background: url("../img/dotted.png") left bottom repeat-x;
         }
@@ -1473,6 +1483,10 @@ i{
           color: #620909;
           border-color: #003c95;
         }
+      }
+      .activ{
+        pointer-events: auto;
+        opacity: 1;
       }
     }
   }

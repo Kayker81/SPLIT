@@ -1036,6 +1036,8 @@
         text-align: center;
         color: #024753;
         border: 1px solid #e3e3e3;
+        opacity: 0.5;
+        pointer-events: none;
         border-radius: 4px;
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px; }
@@ -1046,6 +1048,9 @@
             background: none; }
         .enter_block_enter_form .submit span {
           background: url("../img/dotted.png") left bottom repeat-x; }
+      .enter_block_enter_form .activ {
+        opacity: 1;
+        pointer-events: auto; }
     .enter_block_enter .or {
       width: 100%;
       margin-top: 9px;
@@ -1213,12 +1218,17 @@
         -moz-border-radius: 4px;
         -webkit-border-radius: 4px;
         background: #FFFFFF;
-        display: block; }
+        display: block;
+        opacity: 0.5;
+        pointer-events: none; }
         .enter_block_reg_form .submit span {
           background: url("../img/dotted.png") left bottom repeat-x; }
         .enter_block_reg_form .submit:hover {
           color: #620909;
           border-color: #003c95; }
+      .enter_block_reg_form .activ {
+        pointer-events: auto;
+        opacity: 1; }
 
 .thenk_block {
   position: absolute;
