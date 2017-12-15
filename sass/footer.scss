@@ -242,6 +242,40 @@
                 font-weight: normal;
               }
             }
+            .whatsapp{
+              width: 100%;
+              margin-top: 18px;
+              .zag{
+                width: 100%;
+                i{
+                  float: left;
+                  width: 35px;
+                  height: 39px;
+                  background-image: url("../img/sprite_footer.png");
+                  background-position: 0px -34px;
+                  margin-left: 6px;
+                }
+                p{
+                  font: 13px/20px Verdana;
+                  margin-bottom: 0px;
+                  span{
+                    display: block;
+                    color: #6b6b6b;
+                    font-size: 9px;
+
+                  }
+                }
+                a{
+                  width: 100%;
+                  font: 11px/17px Verdana;
+                  font-weight: normal;
+                  font-weight: bold;
+                  color: #2f2f2f;
+                  letter-spacing: -0.5px;
+
+                }
+              }
+            }
           }
           &_mobile {
             width: 50%;

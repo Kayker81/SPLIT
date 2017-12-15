@@ -5000,7 +5000,7 @@ table {
   top: 50%;
   left: 50%;
   width: 100%;
-  max-width: 700px;
+  max-width: 1083px;
   background: #FFFFFF;
   padding: 15px;
   box-sizing: border-box;
@@ -6788,6 +6788,32 @@ table {
               letter-spacing: -0.2px; }
               .footer_info__section_tel_block_sity p span {
                 font-weight: normal; }
+            .footer_info__section_tel_block_sity .whatsapp {
+              width: 100%;
+              margin-top: 18px; }
+              .footer_info__section_tel_block_sity .whatsapp .zag {
+                width: 100%; }
+                .footer_info__section_tel_block_sity .whatsapp .zag i {
+                  float: left;
+                  width: 35px;
+                  height: 39px;
+                  background-image: url("../img/sprite_footer.png");
+                  background-position: 0px -34px;
+                  margin-left: 6px; }
+                .footer_info__section_tel_block_sity .whatsapp .zag p {
+                  font: 13px/20px Verdana;
+                  margin-bottom: 0px; }
+                  .footer_info__section_tel_block_sity .whatsapp .zag p span {
+                    display: block;
+                    color: #6b6b6b;
+                    font-size: 9px; }
+                .footer_info__section_tel_block_sity .whatsapp .zag a {
+                  width: 100%;
+                  font: 11px/17px Verdana;
+                  font-weight: normal;
+                  font-weight: bold;
+                  color: #2f2f2f;
+                  letter-spacing: -0.5px; }
           .footer_info__section_tel_block_mobile {
             width: 50%;
             float: left;
