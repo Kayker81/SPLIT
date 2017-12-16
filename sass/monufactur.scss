@@ -63,6 +63,10 @@
     @media(max-width: 458px) {
       width: 100%;
     }
+    .adres{
+      font-size: 14px;
+      line-height:16px ;
+    }
     &_info {
       width: 100%;
       background: #dbe8ce;
@@ -356,6 +360,7 @@
       padding-left: 15px;
       padding-right: 14px;
       box-sizing: border-box;
+      min-height: 76px;
       @media(max-width: 398px) {
         width: 100%;
         margin-bottom: 5px;
@@ -451,6 +456,10 @@
 
     }
   }
+  .adres{
+    line-height: 14px;
+    font-size: 12px;
+  }
   &_info_line {
     width: 100%;
     p {
@@ -465,6 +474,7 @@
       padding-left: 15px;
       padding-right: 14px;
       box-sizing: border-box;
+      min-height: 88px;
       @media(max-width: 398px) {
         width: 100%;
         margin-bottom: 5px;
@@ -625,7 +635,10 @@
   }
   &_info_line {
     width: 100%;
-
+.adres{
+  font-size: 14px;
+  line-height: 16px;
+}
     p {
       float: left;
       width: 49.25%;
@@ -638,6 +651,7 @@
       padding-left: 15px;
       padding-right: 14px;
       box-sizing: border-box;
+      min-height: 84px;
       @media(max-width: 398px) {
         width: 100%;
         margin-bottom: 5px;

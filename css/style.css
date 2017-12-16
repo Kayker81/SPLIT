@@ -4242,6 +4242,9 @@ table {
     @media (max-width: 458px) {
       .midea_text {
         width: 100%; } }
+    .midea_text .adres {
+      font-size: 14px;
+      line-height: 16px; }
     .midea_text_info {
       width: 100%;
       background: #dbe8ce;
@@ -4492,7 +4495,8 @@ table {
       margin-bottom: 19px;
       padding-left: 15px;
       padding-right: 14px;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      min-height: 76px; }
       @media (max-width: 398px) {
         .gree_info_line p {
           width: 100%;
@@ -4572,6 +4576,9 @@ table {
     .hisense_img img {
       float: left;
       width: 100%; }
+  .hisense .adres {
+    line-height: 14px;
+    font-size: 12px; }
   .hisense_info_line {
     width: 100%; }
     .hisense_info_line p {
@@ -4585,7 +4592,8 @@ table {
       margin-bottom: 19px;
       padding-left: 15px;
       padding-right: 14px;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      min-height: 88px; }
       @media (max-width: 398px) {
         .hisense_info_line p {
           width: 100%;
@@ -4717,6 +4725,9 @@ table {
       width: 100%; }
   .tcl_info_line {
     width: 100%; }
+    .tcl_info_line .adres {
+      font-size: 14px;
+      line-height: 16px; }
     .tcl_info_line p {
       float: left;
       width: 49.25%;
@@ -4728,7 +4739,8 @@ table {
       margin-bottom: 19px;
       padding-left: 15px;
       padding-right: 14px;
-      box-sizing: border-box; }
+      box-sizing: border-box;
+      min-height: 84px; }
       @media (max-width: 398px) {
         .tcl_info_line p {
           width: 100%;
