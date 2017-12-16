@@ -36,7 +36,7 @@
     border: 1px solid #cdcdcd;
     box-sizing: border-box;
     padding-left: 22px; }
-    @media (max-height: 550px) {
+    @media (max-height: 750px) {
       .comment_block_header {
         min-height: 47px; } }
     .comment_block_header h3 {
@@ -45,7 +45,7 @@
       font: 18px/30px 'Roboto-Medium';
       color: #024753;
       margin-top: 17px; }
-      @media (max-height: 550px) {
+      @media (max-height: 750px) {
         .comment_block_header h3 {
           margin-top: 8.5px; } }
       .comment_block_header h3 .comment_icon {
@@ -60,8 +60,8 @@
     width: 100%;
     float: left;
     position: relative;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border: 1px solid #cdcdcd;
     border-top: none; }
     .comment_block .individuals_block .slick-arrow {
@@ -81,7 +81,8 @@
       float: left;
       padding: 0px 30px;
       box-sizing: border-box;
-      position: relative; }
+      position: relative;
+      cursor: auto; }
       .comment_block .individuals_block_slide .help_baner {
         position: absolute;
         padding: 15px 22px;
@@ -116,7 +117,7 @@
       .comment_block .individuals_block_slide_header {
         width: 100%;
         min-height: 110px; }
-        @media (max-height: 550px) {
+        @media (max-height: 750px) {
           .comment_block .individuals_block_slide_header {
             min-height: 0px; } }
         .comment_block .individuals_block_slide_header_men {
@@ -135,9 +136,9 @@
               width: 100%; } }
           .comment_block .individuals_block_slide_header_men_foto {
             float: left; }
-            @media (max-height: 550px) {
+            @media (max-height: 750px) {
               .comment_block .individuals_block_slide_header_men_foto {
-                height: 95px; }
+                height: 101px; }
                 .comment_block .individuals_block_slide_header_men_foto img {
                   max-height: 100%; } }
           .comment_block .individuals_block_slide_header_men_info_block {
@@ -151,7 +152,7 @@
               width: 100%;
               height: 17px;
               margin-top: 22px; }
-              @media (max-height: 550px) {
+              @media (max-height: 750px) {
                 .comment_block .individuals_block_slide_header_men_info_block .star_line {
                   margin-top: 12px; } }
               .comment_block .individuals_block_slide_header_men_info_block .star_line a {
@@ -168,7 +169,7 @@
               font: 12px/24px 'robotoregular';
               color: #888888;
               margin-top: 10px; }
-              @media (max-height: 550px) {
+              @media (max-height: 750px) {
                 .comment_block .individuals_block_slide_header_men_info_block .data {
                   margin-top: 15px; } }
         .comment_block .individuals_block_slide_header_yandex_block {
@@ -177,7 +178,7 @@
           border: 2px solid #024753;
           box-sizing: border-box;
           min-height: 110px; }
-          @media (max-height: 550px) {
+          @media (max-height: 750px) {
             .comment_block .individuals_block_slide_header_yandex_block {
               min-height: 0px; }
               .comment_block .individuals_block_slide_header_yandex_block img {
@@ -201,7 +202,7 @@
             width: 40%;
             margin-top: 15.5px;
             margin-right: 5%; }
-            @media (max-height: 550px) {
+            @media (max-height: 750px) {
               .comment_block .individuals_block_slide_header_yandex_block_baner_yandex {
                 margin-top: 5.5px; } }
             .comment_block .individuals_block_slide_header_yandex_block_baner_yandex img {
@@ -240,7 +241,7 @@
             display: block; }
         .comment_block .individuals_block_slide_content .main_wrap {
           height: 54px; }
-          @media (max-height: 550px) {
+          @media (max-height: 750px) {
             .comment_block .individuals_block_slide_content .main_wrap {
               height: 34px; } }
         .comment_block .individuals_block_slide_content_main {
@@ -258,7 +259,7 @@
             width: 90%; }
           .comment_block .individuals_block_slide_content_detail .detail_wrap {
             height: 72px; }
-            @media (max-height: 550px) {
+            @media (max-height: 750px) {
               .comment_block .individuals_block_slide_content_detail .detail_wrap {
                 height: 52px; } }
           .comment_block .individuals_block_slide_content_detail_worth {

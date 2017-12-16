@@ -845,7 +845,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 700px;
+  max-width: 700px !important;
   background: #FFFFFF;
   border: 1px solid #014366;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -857,6 +857,7 @@
   display: none;
   img{
     width: 100%;
+    max-width: 700px;
   }
 .close_foto{
   display: block;

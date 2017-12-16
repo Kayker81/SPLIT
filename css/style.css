@@ -2059,7 +2059,7 @@ table {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 700px;
+  max-width: 700px !important;
   background: #FFFFFF;
   border: 1px solid #014366;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -2070,7 +2070,8 @@ table {
   z-index: 99999;
   display: none; }
   .foto_block img {
-    width: 100%; }
+    width: 100%;
+    max-width: 700px; }
   .foto_block .close_foto {
     display: block;
     position: absolute;
@@ -2754,7 +2755,7 @@ table {
     border: 1px solid #cdcdcd;
     box-sizing: border-box;
     padding-left: 22px; }
-    @media (max-height: 550px) {
+    @media (max-height: 750px) {
       .comment_block_header {
         min-height: 47px; } }
     .comment_block_header h3 {
@@ -2763,7 +2764,7 @@ table {
       font: 18px/30px 'Roboto-Medium';
       color: #024753;
       margin-top: 17px; }
-      @media (max-height: 550px) {
+      @media (max-height: 750px) {
         .comment_block_header h3 {
           margin-top: 8.5px; } }
       .comment_block_header h3 .comment_icon {
@@ -2778,8 +2779,8 @@ table {
     width: 100%;
     float: left;
     position: relative;
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     border: 1px solid #cdcdcd;
     border-top: none; }
     .comment_block .individuals_block .slick-arrow {
@@ -2799,7 +2800,8 @@ table {
       float: left;
       padding: 0px 30px;
       box-sizing: border-box;
-      position: relative; }
+      position: relative;
+      cursor: auto; }
       .comment_block .individuals_block_slide .help_baner {
         position: absolute;
         padding: 15px 22px;
@@ -2834,7 +2836,7 @@ table {
       .comment_block .individuals_block_slide_header {
         width: 100%;
         min-height: 110px; }
-        @media (max-height: 550px) {
+        @media (max-height: 750px) {
           .comment_block .individuals_block_slide_header {
             min-height: 0px; } }
         .comment_block .individuals_block_slide_header_men {
@@ -2853,9 +2855,9 @@ table {
               width: 100%; } }
           .comment_block .individuals_block_slide_header_men_foto {
             float: left; }
-            @media (max-height: 550px) {
+            @media (max-height: 750px) {
               .comment_block .individuals_block_slide_header_men_foto {
-                height: 95px; }
+                height: 101px; }
                 .comment_block .individuals_block_slide_header_men_foto img {
                   max-height: 100%; } }
           .comment_block .individuals_block_slide_header_men_info_block {
@@ -2869,7 +2871,7 @@ table {
               width: 100%;
               height: 17px;
               margin-top: 22px; }
-              @media (max-height: 550px) {
+              @media (max-height: 750px) {
                 .comment_block .individuals_block_slide_header_men_info_block .star_line {
                   margin-top: 12px; } }
               .comment_block .individuals_block_slide_header_men_info_block .star_line a {
@@ -2886,7 +2888,7 @@ table {
               font: 12px/24px 'robotoregular';
               color: #888888;
               margin-top: 10px; }
-              @media (max-height: 550px) {
+              @media (max-height: 750px) {
                 .comment_block .individuals_block_slide_header_men_info_block .data {
                   margin-top: 15px; } }
         .comment_block .individuals_block_slide_header_yandex_block {
@@ -2895,7 +2897,7 @@ table {
           border: 2px solid #024753;
           box-sizing: border-box;
           min-height: 110px; }
-          @media (max-height: 550px) {
+          @media (max-height: 750px) {
             .comment_block .individuals_block_slide_header_yandex_block {
               min-height: 0px; }
               .comment_block .individuals_block_slide_header_yandex_block img {
@@ -2919,7 +2921,7 @@ table {
             width: 40%;
             margin-top: 15.5px;
             margin-right: 5%; }
-            @media (max-height: 550px) {
+            @media (max-height: 750px) {
               .comment_block .individuals_block_slide_header_yandex_block_baner_yandex {
                 margin-top: 5.5px; } }
             .comment_block .individuals_block_slide_header_yandex_block_baner_yandex img {
@@ -2958,7 +2960,7 @@ table {
             display: block; }
         .comment_block .individuals_block_slide_content .main_wrap {
           height: 54px; }
-          @media (max-height: 550px) {
+          @media (max-height: 750px) {
             .comment_block .individuals_block_slide_content .main_wrap {
               height: 34px; } }
         .comment_block .individuals_block_slide_content_main {
@@ -2976,7 +2978,7 @@ table {
             width: 90%; }
           .comment_block .individuals_block_slide_content_detail .detail_wrap {
             height: 72px; }
-            @media (max-height: 550px) {
+            @media (max-height: 750px) {
               .comment_block .individuals_block_slide_content_detail .detail_wrap {
                 height: 52px; } }
           .comment_block .individuals_block_slide_content_detail_worth {
