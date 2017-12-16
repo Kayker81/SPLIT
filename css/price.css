@@ -774,7 +774,11 @@
           max-width: 100%; }
     .section_product_wrap_rig {
       float: right;
-      width: 100%; }
+      width: 100%;
+      margin-top: 40px; }
+      .section_product_wrap_rig h2 {
+        float: right;
+        width: 80%; }
       @media (max-width: 502px) {
         .section_product_wrap_rig h2 {
           line-height: 20px;
