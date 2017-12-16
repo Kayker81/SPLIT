@@ -30,10 +30,7 @@ $(document).ready(function () {
                     $('.modal_fon').fadeOut(500)
                 }, 700)
             }
-            if ($('.black_panel').is(":visible") && $('.modal').is(":hidden")) {
-                $('.black_panel').animated({left:-350},1000);
-                return false
-            }
+
             if ($('.black_panel').is(":visible") && $('.serch_modal').is(':visible')) {
                 $('.serch_modal').hide(500);
                 return false
@@ -59,7 +56,7 @@ $(document).ready(function () {
 
         return;
     })
-    $('.modal').click(function (e) {
+    $('.modal,.black_panel').click(function (e) {
         e.stopPropagation();
     })
     $('.header_nav_sandwich').click(function () {
@@ -74,7 +71,10 @@ $(document).ready(function () {
             }
         })
         setTimeout(function () {
-            $('.black_panel').animate({left:0},600)
+            $('.black_panel').animate({left:0},600);
+            $('body').css({
+                'overflow':'hidden'
+            })
 
 
         })
@@ -86,6 +86,9 @@ $(document).ready(function () {
         $('.black_panel').animate({left:-350},600)
         setTimeout(function () {
             $('.modal_fon').fadeOut(300);
+            $('body').css({
+                'overflow':'auto'
+            })
 
         }, 700)
     })
