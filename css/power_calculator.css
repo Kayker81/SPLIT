@@ -126,7 +126,7 @@ table {
   top: 0px;
   left: 0px;
   box-sizing: border-box;
-  z-index: 999;
+  z-index: 9999;
   background: #FFFFFF; }
   .power_calculator .close {
     display: block;

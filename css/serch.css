@@ -6,7 +6,7 @@
   max-width: 920px;
   min-height: 289px;
   background: #FFFFFF;
-  z-index: 99;
+  z-index: 9999;
   display: none;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);

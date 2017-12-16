@@ -18,16 +18,21 @@ $(document).ready(function () {
     $('.modal_fon').click(function () {
         if ($('.black_panel').is(":visible")) {
             if ($('.black_panel').is(":visible") && $('.serch_modal').is(":hidden") && $('#power_calcul').is(":hidden")) {
-                $('.black_panel').hide(300);
+                $('.black_panel').animated({left:-350},1000);
                 setTimeout(function () {
                     $('.modal_fon').fadeOut(500)
                 }, 700)
             }
+
             if ($('.black_panel').is(":hidden") && $('.serch_modal').is(":visible")) {
                 $('.serch_modal').hide(300);
                 setTimeout(function () {
                     $('.modal_fon').fadeOut(500)
                 }, 700)
+            }
+            if ($('.black_panel').is(":visible") && $('.modal').is(":hidden")) {
+                $('.black_panel').animated({left:-350},1000);
+                return false
             }
             if ($('.black_panel').is(":visible") && $('.serch_modal').is(':visible')) {
                 $('.serch_modal').hide(500);
@@ -39,6 +44,7 @@ $(document).ready(function () {
             }
 
         }
+
         else {
             if($('.miniature_block').is(':visible')&&$('.schem_big_block').is(':visible')){
                 $('.schem_big_block').hide(500);
@@ -59,29 +65,29 @@ $(document).ready(function () {
     $('.header_nav_sandwich').click(function () {
         $('.modal_fon').fadeIn(300);
         setTimeout(function () {
-            $('.black_panel').slideDown(300);
-            setTimeout(function () {
+            if(!$('.black_panel').hasClass('mCustomScrollbar')) {
                 $(".black_panel").mCustomScrollbar({
                     scrollButtons: {
                         enable: true
                     },
-                })
-            }, 500);
+                }, 600)
+            }
+        })
+        setTimeout(function () {
+            $('.black_panel').animate({left:0},600)
+
 
         })
     })
+
     $('.black_panel_header_close').click(function () {
-        $('.black_panel_wrap').unwrap();
-        $('.black_panel_wrap').unwrap();
-        $('.black_panel').removeClass('mCustomScrollbar _mCS_1');
-        $('.mCSB_scrollTools').detach();
-        $('.black_panel').slideUp(500);
+
+
+        $('.black_panel').animate({left:-350},600)
         setTimeout(function () {
             $('.modal_fon').fadeOut(300);
-            setTimeout(function () {
 
-            }, 300)
-        }, 500)
+        }, 700)
     })
     $('#brend_button').click(function () {
         if (!$(this).hasClass('open')) {
@@ -1335,6 +1341,40 @@ $(document).ready(function () {
             $('.comment_block').show(500);
         }, 400);
     })
+$('.question_ur').hover(
+    function () {
+        $('.top_help_ur').css({
+            'display':'block',
+            opacity:0
+        })
+        var slide=$(this).parents('.entity_wrap_slider_slide')
+        var left_help=$(this).parents('.entity_wrap_slider_slide').find('.top_help_ur').offset().left
+        var left_q=$(this).offset().left
+        var left=left_q-left_help-3.5
+        var top=($(this).offset().top-$('.entity_wrap_slider_slide').offset().top)-$('.top_help_ur').outerHeight()-14;
+        $('.top_help_ur').css({
+            'display':'none',
+            opacity:1,
+            'top':top,
+        })
+        $(slide).find('.top_help_ur').find('.arow_help').css('left',left)
+
+        $(slide).find('.top_help_ur').slideDown(300);
+    },
+    function () {
+        var slide=$(this).parents('.entity_wrap_slider_slide')
+        $(slide).find('.top_help_ur').slideUp(300);
+    }
+)
+    /*Привязка слайдера отзывы юр лиц к блокку с заголовком*/
+    $('.entity_wrap_slider').on('beforeChange', function(){
+        $('.slide_name').find('span').fadeOut(400);
+    })
+    $('.entity_wrap_slider').on('afterChange', function(){
+        var name=$(this).find('.slick-active').attr('data-name');
+        $('.slide_name').find('span').html(name);
+        $('.slide_name').find('span').fadeIn(400)
+    });
     /***********************************************Регистрация/вход***************************************************/
     $('.enter_block_reg_form_chek_line').click(function () {
         if ($(this).find('.check_form').hasClass('activ')) {
@@ -1411,6 +1451,7 @@ $(document).ready(function () {
             }
         ]
     });
+
 
     /******************************************************************************************************************/
 });

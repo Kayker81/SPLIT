@@ -50,12 +50,23 @@
     @media(max-height: 750px){
       min-height: 47px;
     }
+    .slide_name{
+      float: right;
+      width: 50%;
+      font: 16px/30px 'Roboto-Medium';
+      margin-top: 17px;
+      padding-right: 80px;
+      text-align: right;
+      @media(max-height: 750px){
+        margin-top: 8.5px;
+      }
+    }
     h3{
       float: left;
-      width: 100%;
       font: 18px/30px 'Roboto-Medium';
       color: #024753;
       margin-top: 17px;
+
       @media(max-height: 750px){
         margin-top: 8.5px;
       }
@@ -405,6 +416,35 @@
         width: 100%;
         padding: 0px 66.5px;
         box-sizing: border-box;
+        position: relative;
+        .top_help_ur {
+          position: absolute;
+          padding: 15px 22px;
+          font: 14px/20px 'Roboto-Medium';
+          background: #FFFFFF;
+          border: 1px solid #ff0000;
+          border-radius: 5px;
+          -moz-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          width: 50%;
+          left: 30.2%;
+          top:30px;
+          z-index: 999;
+          display: none;
+          box-sizing: border-box;
+          span{
+            text-decoration: underline;
+          }
+          .arow_help {
+            bottom: -14px;
+            position: absolute;
+            z-index: 99;
+            width: 30px;
+            height: 14px;
+            background-image: url("../img/sprite_section.png");
+            background-position: -346px -103px;
+          }
+        }
         img{
           float: left;
           margin-right:22px;
@@ -421,6 +461,48 @@
           float: left;
           position: relative;
           margin-top: 15px;
+          .attention{
+            float: left;
+            width: 100%;
+            font: 14px/22px Verdana;
+            padding-left: 21px;
+            padding-top: 12px;
+            box-sizing: border-box;
+            padding-bottom: 12px;
+            .icon{
+              display: inline-block;
+              width: 21px;
+              height: 21px;
+              background-image: url("../img/sprite_section.png");
+              background-position: -25px -170px;
+              margin-right: 7px;
+            }
+            b{
+              display: inline-block;
+              font: 16px/22px 'robotoBlack';
+              color: #e81e1e;
+              margin-right: 6px;
+            }
+            .question_ur{
+              display: inline-block;
+              font: 18px/22px Verdana;
+              width: 22px;
+              height: 22px;
+              text-align: center;
+              color: #034753;
+              border: 1px solid #034753;
+              @include radius(50%);
+              margin-left: 4px;
+              margin-top: -5px;
+            }
+            span{
+              font-weight: bold;
+              i{
+                color: #b80000;
+                font-weight: bold;
+              }
+            }
+          }
           .all_read {
             font: 10px/20px 'Georgia-BoldItalic';
             font-style: normal;
@@ -441,7 +523,7 @@
           float: left;
           overflow: hidden;
           box-sizing: border-box;
-          height: 87px;
+          height: 150px;
           p{
             width: 100%;
             float: left;
