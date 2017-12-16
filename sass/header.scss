@@ -815,7 +815,6 @@
         .timer{
           position: absolute;
           width: 270px;
-          height: 78px;
           float: left;
           top: 0px;
           left:100%;
@@ -838,6 +837,17 @@
             background: #FFFFFF;
             padding-left: 10px;
            }
+          &_name_line{
+            width: 100%;
+            text-align: center;
+            background: #ffffff;
+            font: 13px/15px Verdana;
+            color: #2a2a2a;
+            span{
+              display: inline-block;
+              width: 52px;
+            }
+          }
           .timer_line{
             width: 100%;
             text-align: center;

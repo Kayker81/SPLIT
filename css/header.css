@@ -675,7 +675,6 @@
         .header__user_info_info .time .timer {
           position: absolute;
           width: 270px;
-          height: 78px;
           float: left;
           top: 0px;
           left: 100%;
@@ -697,6 +696,15 @@
             color: #2a2a2a;
             background: #FFFFFF;
             padding-left: 10px; }
+          .header__user_info_info .time .timer_name_line {
+            width: 100%;
+            text-align: center;
+            background: #ffffff;
+            font: 13px/15px Verdana;
+            color: #2a2a2a; }
+            .header__user_info_info .time .timer_name_line span {
+              display: inline-block;
+              width: 52px; }
           .header__user_info_info .time .timer .timer_line {
             width: 100%;
             text-align: center; }

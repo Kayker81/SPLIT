@@ -89,6 +89,15 @@
   .mini_footer_timer_wrap {
     float: left;
     width: 100%; }
+    .mini_footer_timer_wrap_name_line {
+      width: 100%;
+      text-align: center;
+      background: #ffffff;
+      font: 13px/15px Verdana;
+      color: #2a2a2a; }
+      .mini_footer_timer_wrap_name_line span {
+        display: inline-block;
+        width: 52px; }
     .mini_footer_timer_wrap_zag {
       width: 100%;
       box-sizing: border-box;

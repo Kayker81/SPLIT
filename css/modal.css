@@ -167,6 +167,11 @@
         text-align: center; }
         .brend_block_box_logo_block a img {
           max-width: 100%; }
+      .brend_block_box_logo_block .big {
+        width: 70%;
+        float: left; }
+        .brend_block_box_logo_block .big img {
+          width: 100%; }
   .brend_block_footer {
     float: right;
     width: 100%;

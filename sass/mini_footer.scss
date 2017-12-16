@@ -102,6 +102,17 @@
   &_timer_wrap{
     float: left;
     width: 100%;
+    &_name_line{
+      width: 100%;
+      text-align: center;
+      background: #ffffff;
+      font: 13px/15px Verdana;
+      color: #2a2a2a;
+      span{
+        display: inline-block;
+        width: 52px;
+      }
+    }
     &_zag{
       width: 100%;
       box-sizing: border-box;
