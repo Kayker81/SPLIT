@@ -484,7 +484,7 @@
        -moz-box-shadow: -2px 9px 18px 0px rgba(0, 0, 0, 0.2);
        box-shadow: -2px 9px 18px 0px rgba(0, 0, 0, 0.2);
        @media(max-width: 770px){
-         left: -51.5px;/**/
+         left: 0px;
        }
        &_sity {
          float: left;
@@ -827,8 +827,8 @@
           position: absolute;
           width: 270px;
           float: left;
-          top: 0px;
-          left:100%;
+          top: 100%;
+          left:0;
           z-index: 99;
           background: #252525;
           -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -837,9 +837,9 @@
           display: none;
           @media(max-width: 770px){
             left:auto;
-            top: 100%;
             right: 0px;
           }
+
           .zag{
             width: 100%;
             box-sizing: border-box;
