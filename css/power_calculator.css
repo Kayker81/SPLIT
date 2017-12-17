@@ -764,7 +764,7 @@ table {
               display: none; }
               @media (max-height: 800px) {
                 .power_calculator_coontent_rezult_block_input_line p span {
-                  margin-top: 8px; } }
+                  margin-top: 6px; } }
             .power_calculator_coontent_rezult_block_input_line p .namber {
               font: 18px/44px Arial;
               font-weight: bold;

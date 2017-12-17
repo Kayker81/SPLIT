@@ -986,8 +986,8 @@ i{
   .close {
     display: block;
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 2px;
+    right: 2px;
     width: 33px;
     height: 33px;
     border-radius: 50%;
@@ -995,6 +995,9 @@ i{
     -webkit-border-radius: 50%;
     background: #FFFFFF;
     text-align: center;
+    -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
     i {
       display: inline-block;
       width: 15px;
@@ -1778,6 +1781,7 @@ i{
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
+    position: absolute;
   }
 
 

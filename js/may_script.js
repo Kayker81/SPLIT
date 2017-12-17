@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('body').css('overflow','auto')
         $(this).parents('.modal').hide(500);
         if (!$('.comment_block').is(":visible")) {
-            if($('.black_panel').is(":hidden")){
+            if($('.black_panel').css('left')<0){
                 setTimeout(function () {
                     $('.modal_fon').fadeOut(500);
                     $('body').css('overflow','auto')
@@ -300,12 +300,14 @@ $(document).ready(function () {
         var button = '#' + $(this).attr('id') + '_button'
         $(this).hide(400)
         $(button).removeClass('open');
+        $('.all_mini').removeClass('open')
 
     })
     $('.close_podmenu').click(function () {
         var button = '#' + $(this).attr('id') + '_button'
         $(this).parent('.podmenu').hide(300);
         $(button).removeClass('open');
+        $('.all_mini').removeClass('open')
     })
     $('.price_block_nav').find('a').hover(
         function (e) {
@@ -508,6 +510,7 @@ $(document).ready(function () {
         $(this).parents('.select').find('input').val(val);
     })
     $('#power_block,.calcul_footer,.black_panel_header_kalkul').click(function () {
+        $('body').css('overflow','hidden')
         var win_widtch = $(window).width();
         var win_height = $(window).height();
         if(!$('.modal_fon').is(':visible')){
@@ -557,7 +560,7 @@ $(document).ready(function () {
     })
     $('#close_power').click(function () {
         $('#power_calcul').hide(500);
-        if ($('.black_panel').is(":visible")) {
+        if ($('.black_panel').css('left')<0) {
             return false
         }
         else {
@@ -818,7 +821,7 @@ $(document).ready(function () {
 
     })
     $('.close_search').click(function () {
-        if ($('.black_panel').is(":visible")) {
+        if ($('.black_panel').css('left')>=0) {
             $('.serch_modal').hide(300);
             return false
         }
@@ -1085,6 +1088,9 @@ $(document).ready(function () {
         }
 
 
+    })
+    $('.close_foto').click(function () {
+        $(this).parents('.modal').hide(500)
     })
     $('.miniature_block').find('.close_mini').click(function () {
         $('.miniature_block').hide(500);
