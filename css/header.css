@@ -149,7 +149,8 @@
             .header .header_nav_logo_line_logo p {
               display: none; } }
           .header .header_nav_logo_line_logo p b {
-            font-size: 11px; }
+            font-size: 11px;
+            font-weight: bold; }
       .header .header_nav_logo_line_sity {
         float: right;
         font: 11px/40px Verdana;
@@ -733,7 +734,7 @@
             font-weight: bold; }
             .header__user_info_info .time_text p i {
               font-size: 11px;
-              font-weight: normal;
+              font-weight: bold;
               margin: 0 4px; }
             .header__user_info_info .time_text p span {
               color: #ff0000;

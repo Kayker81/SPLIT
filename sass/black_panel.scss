@@ -64,6 +64,11 @@
       background: #1b1b1b;
       text-align: center;
       @include radius(5px);
+      &:hover{
+        i{
+          background-position: 0px -241px;
+        }
+      }
       i {
         display: inline-block;
         width: 51px;

@@ -70,3 +70,5 @@
         display: block;
         letter-spacing: 0.6px;
         margin-top: 15px; }
+        .serch_modal_popular_block a:hover {
+          color: #620909; }

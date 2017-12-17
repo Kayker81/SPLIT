@@ -226,7 +226,8 @@ table {
             .header .header_nav_logo_line_logo p {
               display: none; } }
           .header .header_nav_logo_line_logo p b {
-            font-size: 11px; }
+            font-size: 11px;
+            font-weight: bold; }
       .header .header_nav_logo_line_sity {
         float: right;
         font: 11px/40px Verdana;
@@ -810,7 +811,7 @@ table {
             font-weight: bold; }
             .header__user_info_info .time_text p i {
               font-size: 11px;
-              font-weight: normal;
+              font-weight: bold;
               margin: 0 4px; }
             .header__user_info_info .time_text p span {
               color: #ff0000;
@@ -3206,6 +3207,8 @@ table {
       border-radius: 5px;
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px; }
+      .black_panel_header_close:hover i {
+        background-position: 0px -241px; }
       .black_panel_header_close i {
         display: inline-block;
         width: 51px;
@@ -3391,8 +3394,6 @@ table {
   display: none;
   overflow-y: auto;
   overflow-x: hidden; }
-  .modal_fon .modal {
-    cursor: pointer; }
 
 /**********************************************************************************************************************/
 /**************************************************Калькулятор мощности************************************************/
@@ -5361,6 +5362,8 @@ table {
         display: block;
         letter-spacing: 0.6px;
         margin-top: 15px; }
+        .serch_modal_popular_block a:hover {
+          color: #620909; }
 
 /***********************************************************************************************************************/
 /****************************************************Schem modal********************************************************/
@@ -7118,7 +7121,7 @@ table {
             font-weight: bold; }
           .footer_info__section_time_namber i {
             font: 14px/20px Verdana;
-            font-weight: normal; }
+            font-weight: bold; }
         .footer_info__section_time_ps {
           width: 100%;
           font: 14px/20px Verdana;

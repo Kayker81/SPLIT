@@ -5,11 +5,15 @@ $(document).ready(function () {
     $('.close').click(function (e) {
         e.preventDefault();
         $(this).parents('.modal').hide(500);
-        if (!$('.comment_block').is(':visible')) {
-            setTimeout(function () {
-                $('.modal_fon').fadeOut(500)
-            }, 700)
+        if (!$('.comment_block').is(":visible")) {
+            if($('.black_panel').is(":hidden")){
+                setTimeout(function () {
+                    $('.modal_fon').fadeOut(500);
+                    $('body').css('overflow','auto')
+                }, 700)
+            }
         }
+
         else {
             return;
         }
@@ -778,6 +782,7 @@ $(document).ready(function () {
     $('.close_search').click(function () {
         if ($('.black_panel').is(":visible")) {
             $('.serch_modal').hide(300);
+            return false
         }
         else {
             $('.modal_fon').fadeOut(500)

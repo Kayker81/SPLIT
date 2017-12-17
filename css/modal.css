@@ -1839,6 +1839,8 @@
       border-radius: 5px;
       -moz-border-radius: 5px;
       -webkit-border-radius: 5px; }
+      .black_panel_header_close:hover i {
+        background-position: 0px -241px; }
       .black_panel_header_close i {
         display: inline-block;
         width: 51px;
@@ -2024,5 +2026,3 @@
   display: none;
   overflow-y: auto;
   overflow-x: hidden; }
-  .modal_fon .modal {
-    cursor: pointer; }
