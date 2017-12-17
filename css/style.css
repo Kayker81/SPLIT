@@ -1201,9 +1201,8 @@ table {
       width: auto;
       float: left;
       background: none; }
-      @media (max-width: 1009px) {
-        .header_mini .header_nav .header_nav_logo_line .logo_mini {
-          display: none; } }
+      .header_mini .header_nav .header_nav_logo_line .logo_mini {
+        display: none; }
       @media (max-width: 1007px) {
         .header_mini .header_nav .header_nav_logo_line {
           float: right; } }
@@ -1507,6 +1506,25 @@ table {
   border: 1px solid #687178;
   box-sizing: border-box;
   display: none; }
+  .brend_block .close {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center; }
+    .brend_block .close i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px; }
   .brend_block_box_line {
     float: left;
     width: 100%; }
@@ -1640,6 +1658,25 @@ table {
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
   box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2); }
+  .area_block .close {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center; }
+    .area_block .close i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px; }
   .area_block_power_line {
     width: 100%;
     float: left; }
@@ -1838,6 +1875,25 @@ table {
   padding: 0px 21px;
   box-sizing: border-box;
   display: none; }
+  .price_block .close {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center; }
+    .price_block .close i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px; }
   .price_block_link {
     float: left;
     width: 25.28%; }
@@ -1937,6 +1993,25 @@ table {
   box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
   padding-left: 3.3%;
   box-sizing: border-box; }
+  .multi_block .close {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center; }
+    .multi_block .close i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px; }
   @media (max-width: 1175px) {
     .multi_block {
       right: 0px; } }
@@ -2140,6 +2215,25 @@ table {
   box-sizing: border-box;
   display: none;
   z-index: 9; }
+  .services_block .close {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center; }
+    .services_block .close i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px; }
   @media (max-width: 800px) {
     .services_block {
       min-width: 0;
@@ -2265,6 +2359,25 @@ table {
   -moz-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
   box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
   display: none; }
+  .question_block .close {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center; }
+    .question_block .close i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px; }
   @media (max-width: 1170px) {
     .question_block {
       left: auto;
@@ -2824,7 +2937,7 @@ table {
     border-top: none; }
     .comment_block .individuals_block .slick-arrow {
       margin-top: 0px;
-      top: 60px;
+      top: 41px;
       background-color: transparent; }
     .comment_block .individuals_block .slick-prev {
       left: -5px; }
@@ -3415,14 +3528,18 @@ table {
 .modal_fon {
   width: 100%;
   height: 100%;
+  max-height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   position: fixed;
   top: 0px;
   left: 0px;
   z-index: 99;
-  display: none;
-  overflow-y: auto;
-  overflow-x: hidden; }
+  display: none; }
+  .modal_fon .modal_wrap {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto; }
 
 /**********************************************************************************************************************/
 /**************************************************Калькулятор мощности************************************************/

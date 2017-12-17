@@ -266,9 +266,8 @@
       width: auto;
       float: left;
       background: none; }
-      @media (max-width: 1009px) {
-        .header_mini .header_nav .header_nav_logo_line .logo_mini {
-          display: none; } }
+      .header_mini .header_nav .header_nav_logo_line .logo_mini {
+        display: none; }
       @media (max-width: 1007px) {
         .header_mini .header_nav .header_nav_logo_line {
           float: right; } }

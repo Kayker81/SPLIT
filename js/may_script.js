@@ -4,6 +4,7 @@ $(document).ready(function () {
     }
     $('.close').click(function (e) {
         e.preventDefault();
+        $('body').css('overflow','auto')
         $(this).parents('.modal').hide(500);
         if (!$('.comment_block').is(":visible")) {
             if($('.black_panel').is(":hidden")){
@@ -20,6 +21,7 @@ $(document).ready(function () {
 
     })
     $('.modal_fon').click(function () {
+        $('body').css('overflow','auto')
  var left_panel=parseInt($('.black_panel').css('left'))
         if (left_panel>=0) {
             if (left_panel>=0 && $('.serch_modal').is(':visible')) {
@@ -135,6 +137,7 @@ $(document).ready(function () {
                 display: 'block',
                 opacity: 0,
             })
+            $('#brend').addClass('fixed')
 
             var top = 42
             var left = $(this).offset().left - $('.content').offset().left;
@@ -299,6 +302,11 @@ $(document).ready(function () {
         $(button).removeClass('open');
 
     })
+    $('.close_podmenu').click(function () {
+        var button = '#' + $(this).attr('id') + '_button'
+        $(this).parent('.podmenu').hide(300);
+        $(button).removeClass('open');
+    })
     $('.price_block_nav').find('a').hover(
         function (e) {
             $('.price_block_nav').find('.activ').removeClass('activ');
@@ -417,12 +425,18 @@ $(document).ready(function () {
         if (s_top > 270) {
             $('.header').removeClass('header')
             $('header').addClass('header_mini');
+            if (s_top < 500){
+                $('.podmenu:not(".fixed")').css('display','none')
+            }
+
         }
         else {
             $('.header_mini').removeClass('header_mini')
             $('header').addClass('header');
-            return
+            $('.fixed').hide(300);
+
         }
+        return
     })
     $('.question_button').hover(
         function () {
@@ -676,6 +690,7 @@ $(document).ready(function () {
         var id = $(this).attr('href');
         var win_widtch = $(window).width();
         var win_height = $(window).height();
+        $('body').css('overflow','hidden')
         $('.modal_fon').css({
             display: 'block',
             opacity: 0,

@@ -328,11 +328,11 @@
       width: auto;
       float: left;
       background: none;
-      @media (max-width: 1009px) {
+
         .logo_mini{
           display: none;
         }
-      }
+
       @media(max-width: 1007px){
         float: right;
       }
