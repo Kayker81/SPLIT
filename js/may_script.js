@@ -20,28 +20,33 @@ $(document).ready(function () {
 
     })
     $('.modal_fon').click(function () {
-        if ($('.black_panel').is(":visible")) {
-            if ($('.black_panel').is(":visible") && $('.serch_modal').is(":hidden") && $('#power_calcul').is(":hidden")) {
-                $('.black_panel').animated({left:-350},1000);
-                setTimeout(function () {
-                    $('.modal_fon').fadeOut(500)
-                }, 700)
-            }
-
-            if ($('.black_panel').is(":hidden") && $('.serch_modal').is(":visible")) {
-                $('.serch_modal').hide(300);
-                setTimeout(function () {
-                    $('.modal_fon').fadeOut(500)
-                }, 700)
-            }
-
-            if ($('.black_panel').is(":visible") && $('.serch_modal').is(':visible')) {
+ var left_panel=parseInt($('.black_panel').css('left'))
+        if (left_panel>=0) {
+            if (left_panel>=0 && $('.serch_modal').is(':visible')) {
                 $('.serch_modal').hide(500);
                 return false
             }
-            if ($('.black_panel').is(":visible") && $('#power_calcul').is(':visible')) {
+            if (left_panel>=0&&$('.modal').is(':visible') ) {
+                $('.modal').hide(500);
+                return false
+            }
+            if (left_panel>=0&&$('.modal').is(':hidden') ) {
+                $('.black_panel').animate({left:-350},1000);
+                setTimeout(function () {
+                    $('.modal_fon').fadeOut(500)
+                }, 1100);
+                $('body').css('overflow','auto')
+                return false
+            }
+            if( $('#power_calcul').is(':visible') &&left_panel>=0) {
                 $('#power_calcul').hide(500);
                 return false
+            }
+            else{
+                $('#power_calcul').hide(500);
+                setTimeout(function () {
+                    $('.modal_fon').fadeOut(500)
+                }, 700)
             }
 
         }
@@ -51,6 +56,7 @@ $(document).ready(function () {
                 $('.schem_big_block').hide(500);
                 return false
             }
+
             $(this).children('.modal').hide(500);
             setTimeout(function () {
                 $('.modal_fon').fadeOut(500)
@@ -490,7 +496,13 @@ $(document).ready(function () {
     $('#power_block,.calcul_footer,.black_panel_header_kalkul').click(function () {
         var win_widtch = $(window).width();
         var win_height = $(window).height();
-        $('.modal_fon,#power_calcul').css({
+        if(!$('.modal_fon').is(':visible')){
+            $('.modal_fon').css({
+                display: 'block',
+                opacity: 0,
+            })
+        }
+        $('#power_calcul').css({
             display: 'block',
             opacity: 0,
         })
@@ -503,8 +515,8 @@ $(document).ready(function () {
             var left = 0
         }
         $('.modal_fon').css({
-            opacity: 1,
             display: 'none',
+            opacity: 1,
         })
         $('#power_calcul').css({
             opacity: 1,
@@ -512,10 +524,21 @@ $(document).ready(function () {
             left: left,
             top: top
         })
-        $('.modal_fon').fadeIn(500);
-        setTimeout(function () {
+        if($('.modal_fon').is(':visible')){
+
             $('#power_calcul').show(500)
-        }, 700)
+
+        }
+        else{
+
+            $('.modal_fon').fadeIn(500);
+            setTimeout(function () {
+                $('#power_calcul').show(500)
+            }, 700)
+        }
+
+
+
 
     })
     $('#close_power').click(function () {

@@ -1215,7 +1215,8 @@
         text-align: center; }
         .header_mini .header_kontakt .ring {
           display: inline-block;
-          float: none; } }
+          float: none;
+          cursor: auto; } }
   .header_mini .header_kontakt_action {
     display: none; }
   .header_mini .header_kontakt_line_button_line {
@@ -1237,11 +1238,13 @@
       font: 16px/38px Verdana;
       font-weight: normal;
       font-weight: bold;
-      color: #840000; }
+      color: #840000;
+      cursor: auto; }
       @media (max-width: 405px) {
         .header_mini .header_kontakt_line .ring {
           float: none;
-          display: inline-block; } }
+          display: inline-block;
+          cursor: pointer; } }
       .header_mini .header_kontakt_line .ring span {
         font-size: 12px; }
       .header_mini .header_kontakt_line .ring p {

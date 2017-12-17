@@ -1458,6 +1458,7 @@
       .ring {
         display: inline-block;
         float: none;
+        cursor: auto;
       }
     }
   }
@@ -1485,9 +1486,11 @@
       font-weight: normal;
       font-weight: bold;
       color: #840000;
+      cursor: auto;
       @media(max-width: 405px){
         float: none;
         display: inline-block;
+        cursor: pointer;
       }
 
       span {
