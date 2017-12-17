@@ -527,6 +527,7 @@
       float: right;
       font: 14px/38px Verdana;
       color: #024753;
+      margin-right: 10px;
       @media(max-width: 405px){
         float: none;
         display: inline-block;
@@ -556,7 +557,7 @@
     width: 24.01%;
     @media(max-width: 1170px) {
       width: 15%;
-      .compare{
+      .basket{
         display: none;
       }
 

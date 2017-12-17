@@ -396,7 +396,14 @@
       .meil {
         font: 14px/40px Verdana;
         color: #024753;
-        text-decoration: underline;
+        &:hover{
+          span{
+            color: #620909;
+          }
+        }
+        span{
+          text-decoration: underline;
+        }
         @media(max-width: 1009px) {
           display: block;
           width: 49%;
@@ -444,6 +451,9 @@
           background-position: -25px -122px;
           width: 24px;
           height: 16px;
+          @media(max-width: 1035px) {
+            margin-right: 0;
+          }
           @media(max-width: 1015px) {
             display: none;
           }
@@ -1027,5 +1037,5 @@
   }
 }
 /*************************************************header_mini**********************************************************/
-@import "header_mini";
+@import "header_mini";/**/
 /**********************************************************************************************************************/

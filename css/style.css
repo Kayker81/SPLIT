@@ -403,8 +403,11 @@ table {
           background: none; } }
       .header .header_kontakt_line .meil {
         font: 14px/40px Verdana;
-        color: #024753;
-        text-decoration: underline; }
+        color: #024753; }
+        .header .header_kontakt_line .meil:hover span {
+          color: #620909; }
+        .header .header_kontakt_line .meil span {
+          text-decoration: underline; }
         @media (max-width: 1009px) {
           .header .header_kontakt_line .meil {
             display: block;
@@ -448,6 +451,9 @@ table {
           background-position: -25px -122px;
           width: 24px;
           height: 16px; }
+          @media (max-width: 1035px) {
+            .header .header_kontakt_line .meil .icon-mail_header {
+              margin-right: 0; } }
           @media (max-width: 1015px) {
             .header .header_kontakt_line .meil .icon-mail_header {
               display: none; } }
@@ -1359,7 +1365,8 @@ table {
     .header_mini .header_kontakt_line .meil {
       float: right;
       font: 14px/38px Verdana;
-      color: #024753; }
+      color: #024753;
+      margin-right: 10px; }
       @media (max-width: 405px) {
         .header_mini .header_kontakt_line .meil {
           float: none;
@@ -1383,7 +1390,7 @@ table {
     @media (max-width: 1170px) {
       .header_mini .header__user_info {
         width: 15%; }
-        .header_mini .header__user_info .compare {
+        .header_mini .header__user_info .basket {
           display: none; } }
     .header_mini .header__user_info .header__user_info_info {
       display: none; }
@@ -1393,6 +1400,7 @@ table {
     .header_mini .header__user_info_product_line {
       display: none; } }
 
+/**/
 /**********************************************************************************************************************/
 /***********************************************************************************************************************/
 /******************Стили модальных окон без тёмного фона начало**************************************/
