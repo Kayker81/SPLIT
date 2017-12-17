@@ -376,6 +376,8 @@
    box-sizing: border-box;
     .slick-arrow{
       background-color: transparent;
+      margin-top: 0px;
+      top:100px;
     }
     .slick-prev{
       left: -5px;
@@ -494,6 +496,11 @@
               @include radius(50%);
               margin-left: 4px;
               margin-top: -5px;
+              cursor: pointer;
+              &:hover{
+                color: #620909;
+                border-color: #620909;
+              }
             }
             span{
               font-weight: bold;

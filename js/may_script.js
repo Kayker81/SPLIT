@@ -536,7 +536,7 @@ $(document).ready(function () {
                 display: 'none',
                 opacity: 1,
             })
-          
+
         }
         else{
             $('#power_calcul').css({

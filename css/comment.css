@@ -303,7 +303,9 @@
     margin-top: 15px;
     box-sizing: border-box; }
     .comment_block .entity_wrap .slick-arrow {
-      background-color: transparent; }
+      background-color: transparent;
+      margin-top: 0px;
+      top: 100px; }
     .comment_block .entity_wrap .slick-prev {
       left: -5px; }
       .comment_block .entity_wrap .slick-prev:hover {
@@ -402,7 +404,11 @@
               -moz-border-radius: 50%;
               -webkit-border-radius: 50%;
               margin-left: 4px;
-              margin-top: -5px; }
+              margin-top: -5px;
+              cursor: pointer; }
+              .comment_block .entity_wrap_slider_slide .text_block .attention .question_ur:hover {
+                color: #620909;
+                border-color: #620909; }
             .comment_block .entity_wrap_slider_slide .text_block .attention span {
               font-weight: bold; }
               .comment_block .entity_wrap_slider_slide .text_block .attention span i {
