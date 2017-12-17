@@ -523,10 +523,20 @@ $(document).ready(function () {
                 opacity: 0,
 
             })
+
+            var top = (win_height - $('#power_calcul').height()) / 2
+            if (top < 0) {
+                var top = 0;
+            }
+            var left = (win_widtch - $('#power_calcul').width()) / 2
+            if (left < 0) {
+                var left = 0
+            }
             $('.modal_fon').css({
                 display: 'none',
                 opacity: 1,
             })
+          
         }
         else{
             $('#power_calcul').css({
