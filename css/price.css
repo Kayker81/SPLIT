@@ -1046,13 +1046,13 @@
                 background-position: 0px -192px;
                 float: left;
                 margin-right: 1%; }
-              .section_product_wrap__manufactures__factory_block__brend_text .adres a {
+              .section_product_wrap__manufactures__factory_block__brend_text .adres p {
                 display: inline-block;
                 float: left;
                 width: 94.52%;
                 font: 14px/18px Verdana;
                 letter-spacing: 0.2px; }
-                .section_product_wrap__manufactures__factory_block__brend_text .adres a span {
+                .section_product_wrap__manufactures__factory_block__brend_text .adres p span {
                   font: 11px/18px Verdana;
                   font-style: italic;
                   color: #808080; }

@@ -32,7 +32,7 @@ $(document).ready(function () {
                 $('.modal').hide(500);
                 return false
             }
-            if (left_panel>=0&&$('.modal').is(':hidden') ) {
+            if (left_panel>=0&&$('.modal').is(':hidden')&&$('.miniature_block').is(':visible') ) {
                 $('.black_panel').animate({left:-350},1000);
                 setTimeout(function () {
                     $('.modal_fon').fadeOut(500)
@@ -59,7 +59,7 @@ $(document).ready(function () {
                 return false
             }
 
-            $(this).children('.modal').hide(500);
+            $(this).find('.modal,.monufactur_bkock').hide(500);
             setTimeout(function () {
                 $('.modal_fon').fadeOut(500)
             }, 700)
@@ -518,23 +518,33 @@ $(document).ready(function () {
                 display: 'block',
                 opacity: 0,
             })
+            $('#power_calcul').css({
+                display: 'block',
+                opacity: 0,
+
+            })
+            $('.modal_fon').css({
+                display: 'none',
+                opacity: 1,
+            })
         }
-        $('#power_calcul').css({
-            display: 'block',
-            opacity: 0,
-        })
-        var top = (win_height - $('#power_calcul').height()) / 2
-        if (top < 0) {
-            var top = 0;
+        else{
+            $('#power_calcul').css({
+                display: 'block',
+                opacity: 0,
+            })
+            var top = (win_height - $('#power_calcul').height()) / 2
+            if (top < 0) {
+                var top = 0;
+            }
+            var left = (win_widtch - $('#power_calcul').width()) / 2
+            if (left < 0) {
+                var left = 0
+            }
         }
-        var left = (win_widtch - $('#power_calcul').width()) / 2
-        if (left < 0) {
-            var left = 0
-        }
-        $('.modal_fon').css({
-            display: 'none',
-            opacity: 1,
-        })
+
+
+
         $('#power_calcul').css({
             opacity: 1,
             display: 'none',
@@ -560,7 +570,7 @@ $(document).ready(function () {
     })
     $('#close_power').click(function () {
         $('#power_calcul').hide(500);
-        if ($('.black_panel').css('left')<0) {
+        if (parseInt($('.black_panel').css('left'))>=0) {
             return false
         }
         else {
