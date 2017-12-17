@@ -610,6 +610,20 @@
        font: 16px/25px Verdana;
        font-weight: bold;
        color: #840000;
+       @media(max-width: 1070px){
+         position: relative;
+         display: block;
+         &:before{
+          content: '';
+           position: absolute;
+           width: 8px;
+           height: 6px;
+           background-image: url("../img/sprite_header.png");
+           background-position: -354px -70px;
+           right: -4px;
+           bottom: 10px;
+         }
+       }
        @media(max-width: 1009px){
          display: block;
          color: #004191;
@@ -617,6 +631,9 @@
          float: left;
          text-align: left;
         font-size: 15px;
+         &:before{
+           display: none;
+         }
        }
        @media(max-width: 770px){
          max-width: 160px;
@@ -642,7 +659,6 @@
          height: 6px;
          background-image: url("../img/sprite_header.png");
          background-position: -354px -70px;
-
          margin-top: 9.5px;
          margin-left: 10.1px;
          @media(max-width: 1070px) {

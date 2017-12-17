@@ -505,6 +505,19 @@
           font: 16px/25px Verdana;
           font-weight: bold;
           color: #840000; }
+          @media (max-width: 1070px) {
+            .header .header_kontakt_line .ring_wrap .ring {
+              position: relative;
+              display: block; }
+              .header .header_kontakt_line .ring_wrap .ring:before {
+                content: '';
+                position: absolute;
+                width: 8px;
+                height: 6px;
+                background-image: url("../img/sprite_header.png");
+                background-position: -354px -70px;
+                right: -4px;
+                bottom: 10px; } }
           @media (max-width: 1009px) {
             .header .header_kontakt_line .ring_wrap .ring {
               display: block;
@@ -512,7 +525,9 @@
               line-height: 20px;
               float: left;
               text-align: left;
-              font-size: 15px; } }
+              font-size: 15px; }
+              .header .header_kontakt_line .ring_wrap .ring:before {
+                display: none; } }
           @media (max-width: 770px) {
             .header .header_kontakt_line .ring_wrap .ring {
               max-width: 160px;

@@ -7,7 +7,7 @@ $(document).ready(function () {
         $('body').css('overflow','auto')
         $(this).parents('.modal').hide(500);
         if (!$('.comment_block').is(":visible")) {
-            if($('.black_panel').css('left')<0){
+            if(parseInt($('.black_panel').css('left'))<0){
                 setTimeout(function () {
                     $('.modal_fon').fadeOut(500);
                     $('body').css('overflow','auto')
@@ -1053,6 +1053,32 @@ $(document).ready(function () {
     /******************************************************************************************************************/
     /********************************************SHEMA*****************************************************************/
     $('#schem_time').click(function () {
+        var widtch_win = $(window).width();
+        var height_win = $(window).height();
+        $('.modal_fon,#schem_big').css({
+            'display':'block',
+            'opacity':0
+        })
+        var widtch_block = $('#schem_big').outerWidth();
+        var height_block = $('#schem_big').outerHeight();
+        var left = (widtch_win - widtch_block) / 2;
+        var top = (height_win - height_block) / 2;
+        if(top<0){
+            var top=0
+        }
+        if(left<0){
+            var left=0
+        }
+        $('.modal_fon').css({
+            'display':'none',
+            'opacity':1
+        })
+        $('#schem_big').css({
+            'display':'none',
+            'opacity':1,
+            'left':left,
+            'top':top
+        })
         $('.modal_fon').fadeIn(500)
         setTimeout(function () {
             $('#schem_big').show(500);
