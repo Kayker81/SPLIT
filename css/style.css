@@ -104,9 +104,15 @@ table {
   .header .header_nav {
     display: inline-block;
     width: 36.06%; }
-    @media (max-width: 1009px) {
+    @media (max-width: 1110px) {
       .header .header_nav {
         float: left;
+        width: 40%; } }
+    @media (max-width: 1009px) {
+      .header .header_nav {
+        width: 30%; } }
+    @media (max-width: 916px) {
+      .header .header_nav {
         width: 20%; } }
     @media (max-width: 770px) {
       .header .header_nav {
@@ -216,7 +222,8 @@ table {
             background-image: url("../img/sprite_header.png");
             background-position: 0px -155px; }
         .header .header_nav_logo_line_logo i {
-          color: #ff0000; }
+          color: #ff0000;
+          font-weight: bold; }
         .header .header_nav_logo_line_logo p {
           display: block;
           font: 16px/10px Verdana;
@@ -368,11 +375,18 @@ table {
     margin-left: 6.6%;
     padding-left: 4px;
     box-sizing: border-box; }
+    @media (max-width: 1110px) {
+      .header .header_kontakt {
+        width: 17%;
+        margin-left: 1.2%; } }
     @media (max-width: 1009px) {
       .header .header_kontakt {
         float: right;
         margin-left: 0px;
-        width: 52%; } }
+        width: 40%; } }
+    @media (max-width: 916px) {
+      .header .header_kontakt {
+        width: 50%; } }
     @media (max-width: 770px) {
       .header .header_kontakt {
         width: 100%; } }
@@ -684,11 +698,17 @@ table {
   .header__user_info {
     float: right;
     width: 34.18%; }
+    @media (max-width: 1110px) {
+      .header__user_info {
+        width: 41.5%; } }
     @media (max-width: 1009px) {
       .header__user_info {
         float: left;
-        width: 25%;
+        width: 20%;
         text-align: right; } }
+    @media (max-width: 916px) {
+      .header__user_info {
+        width: 25%; } }
     @media (max-width: 770px) {
       .header__user_info {
         width: 50%; } }
@@ -728,6 +748,10 @@ table {
       .header__user_info_product_line .basket {
         float: right;
         margin-right: 18px; }
+        @media (max-width: 1110px) {
+          .header__user_info_product_line .basket {
+            width: 31%;
+            margin-right: 0px; } }
         .header__user_info_product_line .basket:hover a {
           color: #b80000; }
         .header__user_info_product_line .basket:hover span {
@@ -858,7 +882,11 @@ table {
         position: relative;
         width: 128px;
         height: 32px;
-        padding: 3px; }
+        padding: 3px;
+        margin-top: 15px; }
+        @media (max-width: 1110px) {
+          .header__user_info_info_serch {
+            width: 31%; } }
         @media (max-width: 1009px) {
           .header__user_info_info_serch {
             display: none; } }
@@ -883,14 +911,19 @@ table {
           height: 32px;
           background-image: url("../img/sprite_header.png");
           background-position: -223px -64px;
-          top: 0px;
-          right: 23px;
+          top: 3px;
+          right: 25px;
           position: absolute; }
+          @media (max-width: 1110px) {
+            .header__user_info_info_serch_lupa {
+              right: 25%;
+              top: 2px; } }
       .header__user_info_info_check {
         font: 14px/40px Verdana;
         color: #024753;
         text-decoration: underline;
-        float: left; }
+        float: left;
+        margin-top: 10px; }
         @media (max-width: 1009px) {
           .header__user_info_info_check {
             display: none; } }
@@ -907,6 +940,9 @@ table {
         @media (max-width: 1170px) {
           .header__user_info_info_select_line {
             padding-top: 30px; } }
+        @media (max-width: 1110px) {
+          .header__user_info_info_select_line {
+            padding-top: 18px; } }
         @media (max-width: 1009px) {
           .header__user_info_info_select_line {
             display: none; } }
@@ -926,7 +962,8 @@ table {
           text-align: center; }
           @media (max-width: 1171px) {
             .header__user_info_info_select_line_select {
-              width: 31%; } }
+              width: 31%;
+              margin-right: 3.3%; } }
           .header__user_info_info_select_line_select:hover {
             color: #074e23;
             border-color: #620909; }
@@ -969,15 +1006,13 @@ table {
       .header_mini .ring_wrap {
         border: none;
         width: auto; } }
-    @media (max-width: 432px) {
-      .header_mini .ring_wrap .ring_wrap_block {
-        left: 0px; } }
-  @media (max-width: 432px) and (max-width: 396px) {
-    .header_mini .ring_wrap .ring_wrap_block {
-      left: -51.5px; } }
-    @media (max-width: 396px) {
+    @media (max-width: 558px) {
       .header_mini .ring_wrap {
-        max-width: 200px; } }
+        margin-right: 10px;
+        float: right; }
+        .header_mini .ring_wrap .ring_wrap_block {
+          left: auto;
+          right: 0px; } }
     .header_mini .ring_wrap:hover .ring_wrap_block {
       display: block; }
     .header_mini .ring_wrap_block {
@@ -1078,13 +1113,6 @@ table {
       .header_mini .ring_wrap {
         font-size: 11px;
         cursor: pointer; } }
-    @media (max-width: 388px) {
-      .header_mini .ring_wrap {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        float: none;
-        margin: 5px auto; } }
     .header_mini .ring_wrap .ring {
       width: 100%;
       font: 16px/25px Verdana;
@@ -1116,12 +1144,9 @@ table {
         .header_mini .ring_wrap .ring {
           font-size: 11px;
           cursor: pointer; } }
-      @media (max-width: 357px) {
+      @media (max-width: 558px) {
         .header_mini .ring_wrap .ring {
-          display: block;
-          margin: 5px auto;
-          width: 100%;
-          float: none; } }
+          float: right; } }
       .header_mini .ring_wrap .ring i {
         display: inline-block;
         width: 8px;
@@ -1156,18 +1181,11 @@ table {
     float: left; }
     @media (max-width: 1106px) {
       .header_mini .header_nav {
-        width: 40%; } }
-    @media (max-width: 1007px) {
-      .header_mini .header_nav {
-        width: 100%; } }
+        width: 30%; } }
     @media (max-width: 770px) {
       .header_mini .header_nav {
         float: left;
         width: auto; } }
-    @media (max-width: 546px) {
-      .header_mini .header_nav {
-        width: 100%;
-        text-align: center; } }
     .header_mini .header_nav nav {
       display: none; }
     .header_mini .header_nav .header_nav_sandwich {
@@ -1250,7 +1268,8 @@ table {
         margin-left: 27px; }
         @media (max-width: 770px) {
           .header_mini .header_nav .header_nav_logo_line .header_nav_logo_line_logo .logo_big {
-            margin-left: 0px; } }
+            margin-left: 0px;
+            margin-top: 12px; } }
         .header_mini .header_nav .header_nav_logo_line .header_nav_logo_line_logo .logo_big:hover {
           background-image: url("../img/sprite_header.png");
           background-position: -31px -175px; }
@@ -1317,26 +1336,15 @@ table {
         float: right;
         width: 42%;
         margin-left: 0px; } }
-    @media (max-width: 1008px) {
+    @media (max-width: 1006px) {
       .header_mini .header_kontakt {
-        float: left;
-        margin-left: 0px;
-        margin: 0px 10%;
-        width: 80%; } }
+        float: right;
+        width: 60%; } }
     @media (max-width: 770px) {
       .header_mini .header_kontakt {
         width: 70%;
         margin-left: 0px;
         float: right; } }
-    @media (max-width: 546px) {
-      .header_mini .header_kontakt {
-        width: 90%;
-        margin: 0px 5%; } }
-    @media (max-width: 432px) {
-      .header_mini .header_kontakt {
-        width: 100%;
-        text-align: center;
-        margin: 0; } }
   .header_mini .header_kontakt_action {
     display: none; }
   .header_mini .header_kontakt_line_button_line {
@@ -1357,11 +1365,9 @@ table {
       font-weight: bold;
       color: #840000;
       cursor: auto; }
-      @media (max-width: 405px) {
+      @media (max-width: 558px) {
         .header_mini .header_kontakt_line .ring {
-          float: none;
-          display: inline-block;
-          cursor: pointer; } }
+          float: right; } }
       .header_mini .header_kontakt_line .ring span {
         font-size: 12px; }
       .header_mini .header_kontakt_line .ring p {
@@ -1380,14 +1386,9 @@ table {
       font: 14px/38px Verdana;
       color: #024753;
       margin-right: 10px; }
-      @media (max-width: 405px) {
+      @media (max-width: 558px) {
         .header_mini .header_kontakt_line .meil {
-          float: none;
-          display: inline-block; } }
-      @media (max-width: 396px) {
-        .header_mini .header_kontakt_line .meil {
-          display: block;
-          margin: 5px auto; } }
+          display: none; } }
       .header_mini .header_kontakt_line .meil p {
         display: none; }
       .header_mini .header_kontakt_line .meil .icon-mail_header {
@@ -2138,8 +2139,8 @@ table {
     .multi_block_kaseta_washing img {
       float: left;
       margin-top: -20px;
-      margin-left: 12px;
-      margin-right: 10px; }
+      margin-left: 10px;
+      margin-right: 8px; }
     .multi_block_kaseta_washing a {
       float: left;
       font: 10px/18px Verdana;
@@ -7199,7 +7200,6 @@ table {
   min-height: 500px;
   background: url("../img/footer_fon.jpg") center top no-repeat;
   background-size: cover;
-  margin-top: 40px;
   padding-top: 23px; }
   @media (max-width: 770px) {
     .footer {

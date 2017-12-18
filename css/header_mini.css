@@ -15,15 +15,13 @@
       .header_mini .ring_wrap {
         border: none;
         width: auto; } }
-    @media (max-width: 432px) {
-      .header_mini .ring_wrap .ring_wrap_block {
-        left: 0px; } }
-  @media (max-width: 432px) and (max-width: 396px) {
-    .header_mini .ring_wrap .ring_wrap_block {
-      left: -51.5px; } }
-    @media (max-width: 396px) {
+    @media (max-width: 558px) {
       .header_mini .ring_wrap {
-        max-width: 200px; } }
+        margin-right: 10px;
+        float: right; }
+        .header_mini .ring_wrap .ring_wrap_block {
+          left: auto;
+          right: 0px; } }
     .header_mini .ring_wrap:hover .ring_wrap_block {
       display: block; }
     .header_mini .ring_wrap_block {
@@ -124,13 +122,6 @@
       .header_mini .ring_wrap {
         font-size: 11px;
         cursor: pointer; } }
-    @media (max-width: 388px) {
-      .header_mini .ring_wrap {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        float: none;
-        margin: 5px auto; } }
     .header_mini .ring_wrap .ring {
       width: 100%;
       font: 16px/25px Verdana;
@@ -162,12 +153,9 @@
         .header_mini .ring_wrap .ring {
           font-size: 11px;
           cursor: pointer; } }
-      @media (max-width: 357px) {
+      @media (max-width: 558px) {
         .header_mini .ring_wrap .ring {
-          display: block;
-          margin: 5px auto;
-          width: 100%;
-          float: none; } }
+          float: right; } }
       .header_mini .ring_wrap .ring i {
         display: inline-block;
         width: 8px;
@@ -202,18 +190,11 @@
     float: left; }
     @media (max-width: 1106px) {
       .header_mini .header_nav {
-        width: 40%; } }
-    @media (max-width: 1007px) {
-      .header_mini .header_nav {
-        width: 100%; } }
+        width: 30%; } }
     @media (max-width: 770px) {
       .header_mini .header_nav {
         float: left;
         width: auto; } }
-    @media (max-width: 546px) {
-      .header_mini .header_nav {
-        width: 100%;
-        text-align: center; } }
     .header_mini .header_nav nav {
       display: none; }
     .header_mini .header_nav .header_nav_sandwich {
@@ -296,7 +277,8 @@
         margin-left: 27px; }
         @media (max-width: 770px) {
           .header_mini .header_nav .header_nav_logo_line .header_nav_logo_line_logo .logo_big {
-            margin-left: 0px; } }
+            margin-left: 0px;
+            margin-top: 12px; } }
         .header_mini .header_nav .header_nav_logo_line .header_nav_logo_line_logo .logo_big:hover {
           background-image: url("../img/sprite_header.png");
           background-position: -31px -175px; }
@@ -363,26 +345,15 @@
         float: right;
         width: 42%;
         margin-left: 0px; } }
-    @media (max-width: 1008px) {
+    @media (max-width: 1006px) {
       .header_mini .header_kontakt {
-        float: left;
-        margin-left: 0px;
-        margin: 0px 10%;
-        width: 80%; } }
+        float: right;
+        width: 60%; } }
     @media (max-width: 770px) {
       .header_mini .header_kontakt {
         width: 70%;
         margin-left: 0px;
         float: right; } }
-    @media (max-width: 546px) {
-      .header_mini .header_kontakt {
-        width: 90%;
-        margin: 0px 5%; } }
-    @media (max-width: 432px) {
-      .header_mini .header_kontakt {
-        width: 100%;
-        text-align: center;
-        margin: 0; } }
   .header_mini .header_kontakt_action {
     display: none; }
   .header_mini .header_kontakt_line_button_line {
@@ -403,11 +374,9 @@
       font-weight: bold;
       color: #840000;
       cursor: auto; }
-      @media (max-width: 405px) {
+      @media (max-width: 558px) {
         .header_mini .header_kontakt_line .ring {
-          float: none;
-          display: inline-block;
-          cursor: pointer; } }
+          float: right; } }
       .header_mini .header_kontakt_line .ring span {
         font-size: 12px; }
       .header_mini .header_kontakt_line .ring p {
@@ -426,14 +395,9 @@
       font: 14px/38px Verdana;
       color: #024753;
       margin-right: 10px; }
-      @media (max-width: 405px) {
+      @media (max-width: 558px) {
         .header_mini .header_kontakt_line .meil {
-          float: none;
-          display: inline-block; } }
-      @media (max-width: 396px) {
-        .header_mini .header_kontakt_line .meil {
-          display: block;
-          margin: 5px auto; } }
+          display: none; } }
       .header_mini .header_kontakt_line .meil p {
         display: none; }
       .header_mini .header_kontakt_line .meil .icon-mail_header {

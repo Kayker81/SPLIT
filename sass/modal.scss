@@ -868,8 +868,8 @@
       img {
         float: left;
         margin-top: -20px;
-        margin-left: 12px;
-        margin-right: 10px;
+        margin-left: 10px;
+        margin-right: 8px;
       }
       a {
         float: left;
@@ -1102,6 +1102,7 @@ i{
     width: 28.25%;
     float: left;
     padding-top: 18px;
+
     @media(max-width: 762px) {
       width: 33%;
     }

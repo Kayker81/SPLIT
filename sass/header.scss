@@ -34,8 +34,14 @@
   .header_nav {
     display: inline-block;
     width: 36.06%;
-    @media(max-width: 1009px) {
+    @media(max-width: 1110px) {
       float: left;
+      width: 40%;
+    }
+    @media(max-width: 1009px){
+      width: 30%;
+    }
+    @media(max-width: 916px){
       width: 20%;
     }
     @media(max-width: 770px){
@@ -173,6 +179,7 @@
         }
         i {
           color: #ff0000;
+          font-weight: bold;
         }
         p {
           display: block;
@@ -351,10 +358,17 @@
     margin-left: 6.6%;
     padding-left: 4px;
     box-sizing: border-box;
+    @media(max-width: 1110px){
+      width: 17%;
+      margin-left: 1.2%;
+    }
     @media(max-width: 1009px){
       float: right;
       margin-left: 0px;
-      width: 52%;
+      width: 40%;
+    }
+    @media(max-width: 916px){
+      width: 50%;
     }
     @media(max-width: 770px){
       width: 100%;
@@ -734,10 +748,16 @@
   &__user_info {
     float: right;
     width: 34.18%;
+    @media(max-width: 1110px){
+      width: 41.5%;
+    }
     @media(max-width: 1009px) {
       float: left;
-      width: 25%;
+      width: 20%;
       text-align: right;
+    }
+    @media(max-width: 916px){
+      width: 25%;
     }
     @media(max-width: 770px){
       width: 50%;
@@ -785,6 +805,10 @@
       .basket {
         float: right;
         margin-right: 18px;
+        @media(max-width: 1110px){
+          width: 31%;
+          margin-right: 0px;
+        }
         &:hover{
           a{
             color: #b80000;
@@ -945,6 +969,10 @@
         width: 128px;
         height: 32px;
         padding: 3px;
+        margin-top: 15px;
+        @media(max-width: 1110px){
+          width: 31%;
+        }
         @media(max-width: 1009px) {
           display: none;
         }
@@ -971,9 +999,13 @@
           height: 32px;
           background-image: url("../img/sprite_header.png");
           background-position: -223px -64px;
-          top: 0px;
-          right: 23px;
+          top: 3px;
+          right: 25px;
           position: absolute;
+          @media(max-width: 1110px){
+            right: 25%;
+            top:2px;
+          }
         }
       }
       &_check {
@@ -981,6 +1013,7 @@
         color: #024753;
         text-decoration: underline;
         float: left;
+        margin-top: 10px;
         @media(max-width: 1009px) {
           display: none;
         }
@@ -997,6 +1030,9 @@
         padding-top: 20px;
         @media(max-width: 1170px) {
           padding-top: 30px;
+        }
+        @media(max-width: 1110px){
+          padding-top: 18px;
         }
         @media(max-width: 1009px) {
           display: none;
@@ -1015,6 +1051,7 @@
           text-align: center;
           @media(max-width: 1171px){
             width: 31%;
+            margin-right: 3.3%;
           }
           &:hover{
             color: #074e23;

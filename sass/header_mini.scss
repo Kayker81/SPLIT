@@ -26,16 +26,14 @@
       border: none;
       width: auto;
     }
-    @media(max-width: 432px){
+
+    @media(max-width: 558px){
+      margin-right: 10px;
+      float: right;
       .ring_wrap_block{
-        left:0px;
-        @media(max-width: 396px){
-          left:-51.5px;
-        }
+        left:auto;
+        right: 0px;
       }
-    }
-    @media(max-width: 396px){
-      max-width: 200px;
     }
     &:hover{
 
@@ -163,13 +161,7 @@
       font-size: 11px;
       cursor: pointer;
     }
-    @media(max-width: 388px){
-      display: block;
-      width: 100%;
-      box-sizing: border-box;
-      float: none;
-      margin: 5px auto;
-    }
+
     .ring {
       width: 100%;
       font: 16px/25px Verdana;
@@ -202,11 +194,8 @@
         font-size: 11px;
         cursor: pointer;
       }
-      @media(max-width: 357px){
-        display: block;
-        margin: 5px auto;
-        width: 100%;
-        float: none;
+      @media(max-width: 558px){
+        float: right;
       }
       i {
         display: inline-block;
@@ -253,22 +242,15 @@
     width: 35.5%;
     float: left;
     @media(max-width: 1106px) {
-      width: 40%
+      width: 30%
     }
-    @media(max-width: 1007px){
-      width: 100%;
-    }
+
     @media(max-width: 770px) {
       float: left;
       width: auto;
 
     }
-    @media(max-width: 546px) {
-      width: 100%;
-      text-align: center;
 
-
-    }
     nav {
       display: none;
     }
@@ -368,6 +350,7 @@
           margin-left: 27px;
           @media(max-width: 770px){
             margin-left: 0px;
+            margin-top: 12px;
 
           }
           &:hover{
@@ -453,28 +436,16 @@
       width: 42%;
       margin-left: 0px;
     }
-    @media(max-width: 1008px) {
-      float: left;
-      margin-left: 0px;
-      margin: 0px 10%;
-      width: 80%;
+    @media(max-width: 1006px) {
+      float: right;
+      width: 60%;
     }
     @media(max-width: 770px) {
       width: 70%;
       margin-left: 0px;
       float: right;
     }
-    @media(max-width: 546px) {
-      width: 90%;
-      margin: 0px 5%;
 
-    }
-    @media(max-width: 432px) {
-      width: 100%;
-      text-align: center;
-      margin: 0;
-
-    }
   }
   .header_kontakt_action {
     display: none;
@@ -499,10 +470,8 @@
       font-weight: bold;
       color: #840000;
       cursor: auto;
-      @media(max-width: 405px){
-        float: none;
-        display: inline-block;
-        cursor: pointer;
+      @media(max-width: 558px){
+        float: right;
       }
 
       span {
@@ -528,14 +497,10 @@
       font: 14px/38px Verdana;
       color: #024753;
       margin-right: 10px;
-      @media(max-width: 405px){
-        float: none;
-        display: inline-block;
+      @media(max-width: 558px){
+       display: none;
       }
-      @media(max-width: 396px){
-        display: block;
-        margin: 5px auto;
-      }
+
       p {
         display: none;
       }
