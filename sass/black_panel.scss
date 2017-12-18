@@ -180,6 +180,60 @@
           }
         }
       }
+      .spec_wrap{
+        position: relative;
+        &:hover{
+          .spec_block{
+            display: block;
+          }
+        }
+        .spec_block{
+          position: absolute;
+          width: 327px;
+          height: 94px;
+          outline: 2px solid #620909;
+          box-sizing: border-box;
+          text-align: left;
+          background: #ffffff;
+          top: -34px;
+          left:-19px;
+          display: none;
+          &:hover{
+            color: #000000;
+          }
+          &_img{
+            float: left;
+            width: 90px;
+            height: 94px;
+            text-align: center;
+            img{
+              margin-top: 19.5px;
+            }
+          }
+          &_text{
+            float: left;
+            width: 236px;
+            height: 94px;
+            h3{
+              width: 100%;
+              font: 14px/20px Verdana;
+              margin-top: 2px;
+              font-weight: bold;
+            }
+            p{
+              font: 10px/11px Verdana;
+              letter-spacing: -0.2px;
+              width: 100%;
+              span{
+                color: #c60000;
+              }
+              b{
+                color: #620909;
+              }
+            }
+          }
+        }
+      }
     }
   }
   &_actions {

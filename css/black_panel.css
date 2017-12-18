@@ -140,6 +140,47 @@
             color: #ffff20; }
           .black_panel_servises ul li a:visited {
             color: #7a0505; }
+      .black_panel_servises ul .spec_wrap {
+        position: relative; }
+        .black_panel_servises ul .spec_wrap:hover .spec_block {
+          display: block; }
+        .black_panel_servises ul .spec_wrap .spec_block {
+          position: absolute;
+          width: 327px;
+          height: 94px;
+          outline: 2px solid #620909;
+          box-sizing: border-box;
+          text-align: left;
+          background: #ffffff;
+          top: -34px;
+          left: -19px;
+          display: none; }
+          .black_panel_servises ul .spec_wrap .spec_block:hover {
+            color: #000000; }
+          .black_panel_servises ul .spec_wrap .spec_block_img {
+            float: left;
+            width: 90px;
+            height: 94px;
+            text-align: center; }
+            .black_panel_servises ul .spec_wrap .spec_block_img img {
+              margin-top: 19.5px; }
+          .black_panel_servises ul .spec_wrap .spec_block_text {
+            float: left;
+            width: 236px;
+            height: 94px; }
+            .black_panel_servises ul .spec_wrap .spec_block_text h3 {
+              width: 100%;
+              font: 14px/20px Verdana;
+              margin-top: 2px;
+              font-weight: bold; }
+            .black_panel_servises ul .spec_wrap .spec_block_text p {
+              font: 10px/11px Verdana;
+              letter-spacing: -0.2px;
+              width: 100%; }
+              .black_panel_servises ul .spec_wrap .spec_block_text p span {
+                color: #c60000; }
+              .black_panel_servises ul .spec_wrap .spec_block_text p b {
+                color: #620909; }
   .black_panel_actions {
     float: left;
     width: 100%; }

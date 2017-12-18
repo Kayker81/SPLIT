@@ -29,6 +29,8 @@
     color: #267fae;
     text-decoration: underline;
     margin-top: 20px; }
+    .product_zag:hover {
+      color: #620909; }
   .product_img_line {
     float: left;
     width: 100%;
@@ -163,6 +165,8 @@
         margin-left: 5px;
         margin-bottom: 11px;
         text-decoration: underline; }
+        .product__all_info_header_zag:hover {
+          color: #620909; }
     .product__all_info__price_line {
       float: left;
       width: 100%;
@@ -336,7 +340,8 @@
           .product__all_info_info_line_row .info .art {
             float: left;
             font: 14px/27px 'Roboto-Medium';
-            color: #919191; }
+            color: #919191;
+            font-style: italic; }
         .product__all_info_info_line_row:nth-child(even) {
           background-color: #f9f9f9; }
     .product__all_info_footer {

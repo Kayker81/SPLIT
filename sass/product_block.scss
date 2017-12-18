@@ -35,6 +35,9 @@
     color: #267fae;
     text-decoration: underline;
     margin-top: 20px;
+    &:hover{
+      color: #620909;
+    }
   }
   &_img_line {
     float: left;
@@ -193,6 +196,9 @@
         margin-left: 5px;
         margin-bottom: 11px;
         text-decoration: underline;
+        &:hover{
+          color: #620909;
+        }
       }
     }
     &__price_line {
@@ -416,6 +422,7 @@
             float: left;
             font: 14px/27px 'Roboto-Medium';
             color: #919191;
+            font-style: italic;
           }
         }
         &:nth-child(even) {

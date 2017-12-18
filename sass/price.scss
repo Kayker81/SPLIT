@@ -219,6 +219,9 @@
             color: #267fae;
             text-decoration: underline;
             margin-top: 20px;
+            &:hover{
+              color: #620909;
+            }
           }
           &_img_line {
             float: left;
@@ -595,6 +598,7 @@
                     float: left;
                     font: 14px/27px 'Roboto-Medium';
                     color: #919191;
+                    font-style: italic;
                   }
                 }
                 &:nth-child(even) {
@@ -735,11 +739,16 @@
             li {
               width: 100%;
               margin-bottom: 12px;
+              &:hover{
+                color: #003c95;
+                outline: 1px solid #003c95;
+                a{
+                  text-decoration: underline;
+                }
+              }
               a {
                 font: 12px/15px Verdana;
-                &:hover {
-                  color: #074e23;
-                }
+
                 sup {
                   font-size: 8px;
                   vertical-align: super;

@@ -16,7 +16,7 @@
   width: 100%;
   max-width: 1170px;
   min-height: 550px;
-  background: #ffffff;
+  background: url("../img/comment_fon.jpg") center top no-repeat;
   z-index: 99;
   -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
   -moz-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
@@ -29,6 +29,13 @@
     right: -16.5px;
     width: 33px;
     height: 33px;
+    @media(max-height: 900px){
+      top:6.5px;
+      right:6.5px;
+      -webkit-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+      -moz-box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+      box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.24);
+    }
    @include radius(50%);
     background: #FFFFFF;
     text-align: center;
@@ -47,6 +54,7 @@
     border: 1px solid #cdcdcd;
     box-sizing: border-box;
     padding-left: 22px;
+    background: #ffffff;
     @media(max-height: 750px){
       min-height: 47px;
     }
@@ -89,6 +97,7 @@
     padding-bottom: 8px;
     border: 1px solid #cdcdcd;
     border-top: none;
+    background: rgba(255,255,255,0.5);
     .slick-arrow{
       margin-top: 0px;
       top:41px;
@@ -223,6 +232,7 @@
           border:2px solid rgba(2,71,83,1);
           box-sizing: border-box;
           min-height: 110px;
+          background: #ffffff;
           @media(max-height: 750px){
             min-height: 0px;
             img{
@@ -372,8 +382,8 @@
   .entity_wrap{
     float: left;
     width: 100%;
-    margin-top: 15px;
-   box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(255,255,255,0.6);
     .slick-arrow{
       background-color: transparent;
       margin-top: 0px;
@@ -401,6 +411,7 @@
       margin-right: 15px;
     }
     .comment_block_header{
+      background: #ffffff;
       h3{
         span{
           color: #e81e1e;

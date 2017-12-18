@@ -331,6 +331,8 @@ table {
               float: left;
               box-sizing: border-box;
               min-width: 100px; }
+              .power_calculator_coontent_form_base_line .input_block .select:hover .arow {
+                background: url("../img/temp_hover/hover_calcul.png") center no-repeat; }
               .power_calculator_coontent_form_base_line .input_block .select input[type='text'] {
                 border: none;
                 float: left;
@@ -394,7 +396,14 @@ table {
                     font-size: 11px;
                     line-height: 14px;
                     color: #9a9a9a; }
+              .power_calculator_coontent_form_base_line .input_block .select .option_big {
+                width: 420%;
+                left: -160%;
+                border-top: 1px solid #3b6e8b; }
             .power_calculator_coontent_form_base_line .input_block .open .arow {
+              background-image: url("../img/sprite_section.png");
+              background-position: -133px -96px; }
+            .power_calculator_coontent_form_base_line .input_block .open:hover .arow {
               background-image: url("../img/sprite_section.png");
               background-position: -133px -96px; }
             .power_calculator_coontent_form_base_line .input_block .unit {
@@ -513,7 +522,10 @@ table {
             .power_calculator_coontent_form .button_line a {
               margin-top: 10px; } }
           .power_calculator_coontent_form .button_line a:hover {
-            outline: 1px solid #b80000; }
+            outline: 1px solid #b80000;
+            color: #000000; }
+            .power_calculator_coontent_form .button_line a:hover span {
+              background: none; }
           @media (max-width: 703px) {
             .power_calculator_coontent_form .button_line a {
               display: inline-block;
@@ -805,6 +817,9 @@ table {
       .power_calculator_footer {
         padding-bottom: 20px;
         overflow: hidden; } }
+    @media (max-height: 800px) {
+      .power_calculator_footer {
+        display: none; } }
     .power_calculator_footer_block {
       float: left;
       width: 50%;

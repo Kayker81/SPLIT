@@ -38,6 +38,8 @@ html, body {
   width: 100%;
   min-height: 100%;
   overflow: hidden;
+  position: relative;
+
   .slick-arrow {
     position: absolute;
     top: 50%;

@@ -157,7 +157,9 @@
               display: none; } }
           .header .header_nav_logo_line_logo p b {
             font-size: 11px;
-            font-weight: bold; }
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 2px; }
       .header .header_nav_logo_line_sity {
         float: right;
         font: 11px/40px Verdana;
@@ -847,6 +849,8 @@
         text-decoration: underline;
         float: left;
         margin-top: 10px; }
+        .header__user_info_info_check:hover {
+          color: #620909; }
         @media (max-width: 1009px) {
           .header__user_info_info_check {
             display: none; } }

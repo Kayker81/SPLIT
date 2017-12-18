@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    var  height_header=$('.header').outerHeight()
     if (/Android|AppleWebKit|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('.ring').find('a').attr('href', 'tel:+7 (863) 221 16 87')
     }
@@ -425,6 +426,7 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var s_top = $(window).scrollTop();
         if (s_top > 270) {
+            $('.wraper').css('top',height_header)
             $('.header').removeClass('header')
             $('header').addClass('header_mini');
             if (s_top < 500){
@@ -433,6 +435,7 @@ $(document).ready(function () {
 
         }
         else {
+            $('.wraper').css('top',0)
             $('.header_mini').removeClass('header_mini')
             $('header').addClass('header');
             $('.fixed').hide(300);
@@ -605,7 +608,8 @@ $(document).ready(function () {
         $('#P_d').val(P_D);
         $('#K').val(K);
         $('.power_calculator_coontent_form_more').find('.activ').removeClass('activ');
-        $('#B').addClass('activ');
+         $('#rez_block').removeClass('active');
+         $('.selected_block').removeClass('selected_activ')
     })
     $('#submit1').click(function () {
         var S = parseInt($('#S').val());
@@ -670,7 +674,7 @@ $(document).ready(function () {
             var G = 1;
         }
 
-        var power = ((((S * H / 26.251) + ((S * H / 26.251) / 100 * I) + (P * 0.21 + P_d / 1000) + (T * 0.16) + ((S * H / 26.251) / 100 * K) + B + ((S * H / 26.251) * Hei)) * G)).toFixed(2)
+        var power = ((((S * H / 32.311) + ((S * H / 32.311) / 100 * I) + (P * 0.21 + P_d / 1000) + (T * 0.16) + ((S * H / 32.311) / 100 * K) + B + ((S * H /32.311 ) * Hei)) * G)).toFixed(2)
         $('#rez_block').addClass('active');
         $('.selected_block').addClass('selected_activ')
         $('#power').find('.namber').html(power);
@@ -701,6 +705,11 @@ $(document).ready(function () {
             var d = '5.8-6.9'
             var nam = '24'
             var text = '(двадцатьчетвёртые)'
+        }
+        if(power>6.9){
+            var d = ' более 6.9 '
+            var nam = '24'
+            var text = 'Мощнее'
         }
         $('#dia').find('.namber').html(d);
         $('.power_block').find('.namber').html(nam);
