@@ -502,6 +502,9 @@
        @media(max-width: 770px){
          left: 0px;
        }
+       @media(max-width: 388px){
+         left: -51.5px;
+       }
        &_sity {
          float: left;
          width: 50%;
@@ -1007,6 +1010,10 @@
           @media(max-width: 1110px){
             right: 25%;
             top:2px;
+          }
+          @media(max-width: 1024px){
+            right: 21%;
+            top:4x;
           }
         }
       }

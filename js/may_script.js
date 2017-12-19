@@ -384,6 +384,10 @@ $(document).ready(function () {
             if (top < 0 || $('header').hasClass('header_mini')) {
                 var top = 0;
             }
+            if(win_widtch<554|| $('header').hasClass('header')){
+                var left=-20;
+                var top=60
+            }
             $('.logo_modal').css({
                 'display': 'block',
                 'opacity': 0
@@ -1510,6 +1514,14 @@ $('.question_ur').hover(
         $('.slide_name').find('span').html(name);
         $('.slide_name').find('span').fadeIn(400)
     });
+    $('.close_comment').click(function (e) {
+        e.preventDefault();
+        $('.comment_block').hide(500);
+        setTimeout(function () {
+            $('.modal_fon').fadeOut(400);
+        },600)
+
+    })
     /***********************************************Регистрация/вход***************************************************/
     $('.enter_block_reg_form_chek_line').click(function () {
         if ($(this).find('.check_form').hasClass('activ')) {

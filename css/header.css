@@ -419,6 +419,9 @@
           @media (max-width: 770px) {
             .header .header_kontakt_line .ring_wrap_block {
               left: 0px; } }
+          @media (max-width: 388px) {
+            .header .header_kontakt_line .ring_wrap_block {
+              left: -51.5px; } }
           .header .header_kontakt_line .ring_wrap_block_sity {
             float: left;
             width: 50%; }
@@ -843,6 +846,10 @@
             .header__user_info_info_serch_lupa {
               right: 25%;
               top: 2px; } }
+          @media (max-width: 1024px) {
+            .header__user_info_info_serch_lupa {
+              right: 21%;
+              top: 4x; } }
       .header__user_info_info_check {
         font: 14px/40px Verdana;
         color: #024753;

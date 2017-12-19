@@ -7,7 +7,8 @@
   background: #ffffff;
   z-index: 99;
   left: 0px;
-  top: 40px; }
+  top: 40px;
+  display: none; }
   .garant_block_header {
     float: left;
     width: 100%;
@@ -20,11 +21,14 @@
       float: left;
       width: 110px;
       height: 135px;
-      background-image: url("../img/temp_sprite/garant_icon.png");
-      background-position: center;
+      background-image: url("../img/sprite_section.png");
+      background-position: 0px -257px;
       margin-left: 27.5px;
       margin-top: -30px;
       margin-right: 22.8px; }
+      @media (max-width: 1121px) {
+        .garant_block_header .icon {
+          display: none; } }
     .garant_block_header h3 {
       float: left;
       font: 26px/103px 'Roboto-Medium'; }
@@ -155,6 +159,10 @@
   box-sizing: border-box;
   display: none;
   z-index: 99; }
+  @media (max-width: 554px) {
+    .logo_modal {
+      left: -20%;
+      top: 100%; } }
   .logo_modal_logo_block {
     float: left;
     margin-right: 13px; }

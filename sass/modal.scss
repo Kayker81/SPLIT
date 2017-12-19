@@ -19,6 +19,7 @@
   z-index: 99;
   left:0px;
   top:40px;
+  display: none;
   &_header{
     float: left;
     width: 100%;
@@ -31,11 +32,14 @@
       float: left;
       width: 110px;
       height: 135px;
-      background-image: url("../img/temp_sprite/garant_icon.png");
-      background-position: center;
+      background-image: url("../img/sprite_section.png");
+      background-position: 0px -257px;
       margin-left: 27.5px;
       margin-top: -30px;
       margin-right: 22.8px;
+      @media(max-width: 1121px){
+        display: none;
+      }
     }
     h3{
       float: left;
@@ -189,6 +193,10 @@
   box-sizing: border-box;
   display: none;
   z-index: 99;
+  @media(max-width: 554px){
+    left:-20%;
+    top: 100%;
+  }
   &_logo_block {
     float: left;
     margin-right: 13px;
