@@ -41,6 +41,13 @@ $(document).ready(function () {
                 $('body').css('overflow','auto')
                 return false
             }
+            if (left_panel>=0&&$('.modal').is(':hidden')){
+                $('.black_panel').animate({left:-350},1000);
+                setTimeout(function () {
+                    $('.modal_fon').fadeOut(500)
+                }, 1100);
+                return false
+            }
             if( $('#power_calcul').is(':visible') &&left_panel>=0) {
                 $('#power_calcul').hide(500);
                 return false
@@ -706,11 +713,27 @@ $(document).ready(function () {
             var nam = '24'
             var text = '(двадцатьчетвёртые)'
         }
-        if(power>6.9){
-            var d = ' более 6.9 '
-            var nam = '24'
-            var text = 'Мощнее'
+        if (power > 6.9 && power < 8) {
+            var d = '6.9-8'
+            var nam = '30'
+            var text = '(тридцатые)'
         }
+        if (power > 8 && power < 10) {
+            var d = '8-10'
+            var nam = '36'
+            var text = '(тридцатьшестые)'
+        }
+        if (power > 10 && power < 13) {
+            var d = '10-13'
+            var nam = '48'
+            var text = '(сороквосьмые)'
+        }
+        if (power > 13) {
+            var d = 'более 13'
+            var nam = '30'
+            var text = '(мощьнее)'
+        }
+
         $('#dia').find('.namber').html(d);
         $('.power_block').find('.namber').html(nam);
         $('.power_block').find('.text').html(text)
@@ -791,7 +814,7 @@ $(document).ready(function () {
     })
     /****************************************************************************************************************/
     /*******************************************SERCH*******************************************************************/
-    $('.header__user_info_info_serch_input,.black_panel_header_serch').click(function () {
+    $('.header__user_info_info_serch_input,.black_panel_header_serch,.mini_footer_act_serch_input').click(function () {
         var win_widtch = $(window).width();
         var scroll_top = $(window).scrollTop();
         var top = $(this).offset().top - scroll_top;
@@ -803,6 +826,11 @@ $(document).ready(function () {
         else {
             var right = 'auto';
             var left = 20;
+        }
+        var test= $(this);
+        if($(this).hasClass('mini_footer_act_serch_input')){
+            var right='auto';
+            var left=0
         }
         if ($('.modal_fon').is(":visible")) {
             $('.serch_modal').css({
@@ -902,7 +930,7 @@ $(document).ready(function () {
             'display': 'block',
             'opacity': 0
         })
-        var width_block = $('.thenk_block').width()
+        var width_block = $('.thenk_block').outerWidth()
         var left = ($(window).width() - width_block) / 2
         var top = ($(window).height() - $('.thenk_block').height()) / 2
         $('#tel_thenks').html(nambe);
@@ -1521,6 +1549,64 @@ $('.question_ur').hover(
             $('.enter_block').show(500);
         }, 600)
 
+    })
+    /******************************************************************************************************************/
+
+    /****************************************GARANT********************************************************************/
+    $('#garant_button').click(function (e) {
+        e.preventDefault();
+        $('body').css('overflow','hidden')
+        var win_widtch=$(window).width();
+        var win_height=$(window).height();
+        $('.modal_fon,.garant_block').css({
+            'display':'block',
+            'opacity':0
+        })
+        setTimeout(function () {
+            if (!$('.garant_block_section_text').hasClass('mCustomScrollbar')) {
+                $('.garant_block_section_text').mCustomScrollbar({
+                    scrollButtons: {
+                        enable: true
+                    },
+                })
+            }
+        }, 1500);
+        var top=(win_height-$('.garant_block').outerHeight())/2
+        var left=(win_widtch-$('.garant_block').outerWidth())/2;
+        if(top<0){
+            var top=0
+        }
+        if(left<0){
+            var left=0
+        }
+        $('.modal_fon').css({
+            'display':'none',
+            'opacity':1
+        })
+        $('.garant_block').css({
+            'display':'none',
+            'opacity':1,
+            'left':left,
+            'top':top
+        })
+        $('.modal_fon').fadeIn(400);
+        setTimeout(function () {
+            $('.garant_block').show(500)
+        },600)
+    })
+    /*******************************************************************************************************************/
+
+
+    /**********************************************all_brend_footer****************************************************/
+    $('#open_all_brend').click(function (e) {
+        e.preventDefault();
+        $(this).css('display','none')
+        $('.all_brend').slideDown(600);
+    })
+    $('#close_all_brend').click(function (e) {
+        e.preventDefault();
+        $('#open_all_brend').slideDown(300);
+        $('.all_brend').slideUp(600)
     })
     /******************************************************************************************************************/
 

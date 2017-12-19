@@ -1,4 +1,107 @@
 @charset "UTF-8";
+.garant_block {
+  position: absolute;
+  width: 100%;
+  max-width: 1160px;
+  height: 637px;
+  background: #ffffff;
+  z-index: 99;
+  left: 0px;
+  top: 40px; }
+  .garant_block_header {
+    float: left;
+    width: 100%;
+    min-height: 103px;
+    background: #ffffaa;
+    border: 1px solid #ffffff;
+    box-sizing: border-box; }
+    .garant_block_header .icon {
+      display: inline-block;
+      float: left;
+      width: 110px;
+      height: 135px;
+      background-image: url("../img/temp_sprite/garant_icon.png");
+      background-position: center;
+      margin-left: 27.5px;
+      margin-top: -30px;
+      margin-right: 22.8px; }
+    .garant_block_header h3 {
+      float: left;
+      font: 26px/103px 'Roboto-Medium'; }
+      .garant_block_header h3 span {
+        text-transform: uppercase; }
+        .garant_block_header h3 span i {
+          color: #f80b0b; }
+  .garant_block .close {
+    display: block;
+    position: absolute;
+    top: -16.5px;
+    right: -16.5px;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    background: #FFFFFF;
+    text-align: center; }
+    @media (max-width: 1160px) {
+      .garant_block .close {
+        right: 10px;
+        top: 10px;
+        border: 1px solid #620909; } }
+    .garant_block .close i {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      margin-top: 9px;
+      background-image: url("../img/sprite_section.png");
+      background-position: -85px -192px; }
+  .garant_block_section {
+    float: left;
+    width: 100%;
+    padding: 29px 30px;
+    box-sizing: border-box;
+    padding-right: 15px; }
+    .garant_block_section_img {
+      float: left;
+      width: 29%; }
+      .garant_block_section_img img {
+        max-width: 100%; }
+    .garant_block_section_text {
+      float: left;
+      height: 475px;
+      width: 71%;
+      padding-left: 30px;
+      box-sizing: border-box; }
+      .garant_block_section_text h2 {
+        width: 100%;
+        font: 16px/41px Verdana;
+        font-weight: bold;
+        color: #074e23;
+        text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52);
+        text-align: center; }
+      .garant_block_section_text h3 {
+        width: 100%;
+        text-align: center;
+        border: 1px solid #024753;
+        background: #f2f2f2;
+        font: 16px/81px Verdana;
+        font-weight: bold;
+        color: #1b1b1b;
+        box-sizing: border-box;
+        margin: 20px 0px; }
+        .garant_block_section_text h3 span {
+          color: #b80000;
+          font-weight: bold; }
+      .garant_block_section_text p {
+        width: 100%;
+        font: 14px/22px 'robotoregular';
+        padding-right: 10px;
+        box-sizing: border-box; }
+        .garant_block_section_text p span {
+          color: #b80000;
+          font-weight: bold; }
+
 /******************Стили модальных окон без тёмного фона начало**************************************/
 .big_text {
   position: absolute;
@@ -618,6 +721,11 @@
     -webkit-border-radius: 50%;
     background: #FFFFFF;
     text-align: center; }
+    @media (max-width: 1175px) {
+      .multi_block .close {
+        top: 10px;
+        right: 10px;
+        border: 1px solid #620909; } }
     .multi_block .close i {
       display: inline-block;
       width: 15px;
@@ -989,6 +1097,11 @@
     -webkit-border-radius: 50%;
     background: #FFFFFF;
     text-align: center; }
+    @media (max-width: 1175px) {
+      .question_block .close {
+        top: 10px;
+        right: 10px;
+        border: 1px solid #620909; } }
     .question_block .close i {
       display: inline-block;
       width: 15px;
@@ -1388,6 +1501,11 @@
     -webkit-border-radius: 50%;
     background: #FFFFFF;
     text-align: center; }
+    @media (max-width: 1029px) {
+      .thenk_block .close {
+        top: 10px;
+        right: 10px;
+        border: 1px solid #620909; } }
     .thenk_block .close i {
       display: inline-block;
       width: 15px;

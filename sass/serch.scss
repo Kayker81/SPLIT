@@ -26,6 +26,11 @@
     @include radius(50%);
     background: #FFFFFF;
     text-align: center;
+    @media(max-width: 920px){
+      top: 10px;
+      right:10px;
+      border: 1px solid #620909;
+    }
     i {
       display: inline-block;
       width: 15px;

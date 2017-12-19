@@ -125,6 +125,11 @@
     background: #FFFFFF;
     text-align: center;
     z-index: 999; }
+    @media (max-width: 1083px) {
+      .schem_big_block .scheme_close, .schem_big_block .map_close {
+        top: 10px;
+        right: 10px;
+        border: 1px solid #620909; } }
     .schem_big_block .scheme_close i, .schem_big_block .map_close i {
       display: inline-block;
       width: 15px;

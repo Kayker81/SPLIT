@@ -339,6 +339,19 @@
                 left: -20px;
                 top: 50%;
                 margin-top: -10px; }
+              @media (max-width: 1128px) {
+                .footer_info__section_tel_form_block .input_wrap .popup-left-corner {
+                  top: 40px;
+                  left: 0px;
+                  z-index: 99; }
+                  .footer_info__section_tel_form_block .input_wrap .popup-left-corner:before {
+                    content: '';
+                    position: absolute;
+                    border-left: 10px solid transparent;
+                    border-right: 10px solid transparent;
+                    border-bottom: 10px solid #fc0000;
+                    left: 20px;
+                    top: -10px; } }
           .footer_info__section_tel_form_block .submit {
             display: block;
             width: 100%;

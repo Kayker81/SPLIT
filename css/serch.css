@@ -23,6 +23,11 @@
     -webkit-border-radius: 50%;
     background: #FFFFFF;
     text-align: center; }
+    @media (max-width: 920px) {
+      .serch_modal .close {
+        top: 10px;
+        right: 10px;
+        border: 1px solid #620909; } }
     .serch_modal .close i {
       display: inline-block;
       width: 15px;

@@ -1316,12 +1316,19 @@
               width: 100%;
               font: 12px/18px Verdana;
               color: #212121;
+              text-align: left;
+              @media(max-width: 768px){
+                margin-bottom: 10px;
+              }
               .read_m {
                 display: inline-block;
                 width: 100%;
                 text-align: right;
                 font-size: 10px;
                 color: #82000c;
+                @media(max-width: 768px){
+                  display: none;
+                }
                 &:hover {
                   color: #25613c;
                 }

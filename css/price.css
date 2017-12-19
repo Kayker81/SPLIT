@@ -1041,13 +1041,20 @@
             .section_product_wrap__manufactures__factory_block__brend_text .description {
               width: 100%;
               font: 12px/18px Verdana;
-              color: #212121; }
+              color: #212121;
+              text-align: left; }
+              @media (max-width: 768px) {
+                .section_product_wrap__manufactures__factory_block__brend_text .description {
+                  margin-bottom: 10px; } }
               .section_product_wrap__manufactures__factory_block__brend_text .description .read_m {
                 display: inline-block;
                 width: 100%;
                 text-align: right;
                 font-size: 10px;
                 color: #82000c; }
+                @media (max-width: 768px) {
+                  .section_product_wrap__manufactures__factory_block__brend_text .description .read_m {
+                    display: none; } }
                 .section_product_wrap__manufactures__factory_block__brend_text .description .read_m:hover {
                   color: #25613c; }
             .section_product_wrap__manufactures__factory_block__brend_text .adres {
