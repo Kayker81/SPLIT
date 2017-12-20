@@ -1386,7 +1386,48 @@ $(document).ready(function () {
 
     })
     /*******************************************************************************************************************/
+    /*****************************************PRICE_BLOCK**************************************************************/
+    $('.job_block').find('.question').hover(
+        function () {
+            var help_text=$(this).attr('data-help')
+            $(this).parents('.wrap_info').find('.help').css({
+                'display':'block',
+                'opacity':0
+            })
+            $(this).parents('.wrap_info').find('.help').addClass('activ_help');
+            $('.activ_help').find('i').html(help_text);
+            var help_height=$('.activ_help').outerHeight()
 
+            var top=($(this).offset().top-$('.wrap_info').offset().top)-18;
+            $('.activ_help').css({
+                'display':'none',
+                'opacity':1
+            })
+            var  height_block=$('.price_wrap').outerHeight();
+            var top_wrap_info= $('.wrap_info').offset().top-$('.price_wrap').offset().top
+            if(top_wrap_info+top+help_height+27>height_block){
+                $('.activ_help').removeClass('help');
+                $('.activ_help').addClass('top_help');
+
+                var top=($(this).offset().top-$('.wrap_info').offset().top)-(help_height+58)
+            }
+            $('.activ_help').css('top',top);
+
+            $('.activ_help').show(300)
+        },
+        function () {
+
+            $('.activ_help').hide(300);
+            setTimeout(function () {
+                $('.activ_help').removeAttr('style')
+                $('.top_help').addClass('help')
+                $('.top_help').removeClass('top_help');
+
+            },300)
+        }
+
+    )
+    /******************************************************************************************************************/
     /*******************************************Comment******************************************************************/
     $('.comment').click(function (e) {
         e.preventDefault();

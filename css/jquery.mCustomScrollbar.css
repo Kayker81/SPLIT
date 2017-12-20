@@ -25,7 +25,7 @@
 	right:0; 
 	height:auto;
 	width: 13px;
-	background: #FFFFFF;
+	background: url("../img/v_line.jpg") center top repeat-y,#ffffff;
 }
 .mCSB_scrollTools a+.mCSB_draggerContainer{
 	margin:20px 0;

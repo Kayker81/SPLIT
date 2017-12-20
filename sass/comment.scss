@@ -69,7 +69,7 @@
         margin-top: 8.5px;
       }
     }
-    h3{
+    h4{
       float: left;
       font: 18px/30px 'Roboto-Medium';
       color: #024753;
@@ -191,7 +191,7 @@
           &_info_block{
             float: right;
             width: 75%;
-            h3{
+            h4{
               width: 100%;
               font: 20px/30px 'robotobold';
               color: #2d2d2d;
@@ -325,7 +325,7 @@
           padding: 20px 0px;
           background: url("../img/line2.png") left bottom repeat-x;
           float: left;
-          h3{
+          h4{
             float: left;
             font:14px/18px 'robotoBlack';
             }
@@ -343,7 +343,7 @@
           &_worth{
             float: left;
             width: 100%;
-            h3{
+            h4{
               color: #1c7d09;
             }
           }
@@ -351,7 +351,7 @@
             float: left;
             width: 100%;
             margin-top: 20px;
-            h3{
+            h4{
               color: #e81e1e;
             }
           }
@@ -362,7 +362,7 @@
           &_zag{
             width: 100%;
             float: left;
-            h3{
+            h4{
               float: left;
               width: 100%;
               font: 20px/40px 'robotobold';
@@ -412,7 +412,7 @@
     }
     .comment_block_header{
       background: #ffffff;
-      h3{
+      h4{
         span{
           color: #e81e1e;
         }

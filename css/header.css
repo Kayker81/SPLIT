@@ -787,7 +787,7 @@
             .header__user_info_info .time_text p span {
               color: #ff0000;
               font-weight: bold; }
-          .header__user_info_info .time_text h3 {
+          .header__user_info_info .time_text h4 {
             font: 14px/40px 'Georgia-BoldItalic';
             text-decoration: underline;
             color: #5d7489;
@@ -795,13 +795,13 @@
             margin-left: 10px;
             cursor: pointer; }
             @media (max-width: 1009px) {
-              .header__user_info_info .time_text h3 {
+              .header__user_info_info .time_text h4 {
                 float: right; } }
-            .header__user_info_info .time_text h3:hover {
+            .header__user_info_info .time_text h4:hover {
               color: #074e23;
               text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52); }
             @media (max-width: 636px) {
-              .header__user_info_info .time_text h3 {
+              .header__user_info_info .time_text h4 {
                 font-size: 12px;
                 line-height: 20px;
                 text-align: right; } }

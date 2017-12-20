@@ -80,6 +80,7 @@
     float: left;
     width: 100%; }
     .black_panel_coneiner_menu_zag {
+      float: left;
       width: 100%;
       font: 15px/16px Verdana;
       font-weight: bold;

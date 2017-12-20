@@ -1,28 +1,6 @@
 .section {
   width: 100%;
   float: left; }
-  .section h1 {
-    float: left;
-    width: 100%;
-    font: 16px/40px Verdana;
-    font-weight: bold;
-    color: #074e23;
-    text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52);
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 10px; }
-    @media (max-width: 538px) {
-      .section h1 {
-        line-height: 20px; } }
-  .section h2 {
-    float: left;
-    min-height: 49px;
-    background-color: #014366;
-    font: 16px/49px Verdana;
-    font-weight: bold;
-    color: #FFFFFF;
-    padding-left: 23px;
-    box-sizing: border-box; }
   .section_description_shadow {
     width: 100%;
     min-height: 75px;
@@ -1002,7 +980,7 @@
                 width: 100%;
                 text-align: center;
                 padding-bottom: 15px; } }
-            .section_product_wrap__manufactures__factory_block_zag_text_block h3 {
+            .section_product_wrap__manufactures__factory_block_zag_text_block h4 {
               width: 100%;
               font: 14px/20px Verdana;
               font-weight: bold;
@@ -1029,13 +1007,13 @@
             @media (max-width: 1062px) {
               .section_product_wrap__manufactures__factory_block__brend_text {
                 width: 100%; } }
-            .section_product_wrap__manufactures__factory_block__brend_text h3 {
+            .section_product_wrap__manufactures__factory_block__brend_text h4 {
               width: 100%;
               font: 20px/20px 'Georgia-Bold';
               color: #82000c;
               margin-top: 20px;
               margin-bottom: 10px; }
-              .section_product_wrap__manufactures__factory_block__brend_text h3 span {
+              .section_product_wrap__manufactures__factory_block__brend_text h4 span {
                 font: 14px/20px Verdana;
                 color: #747474; }
             .section_product_wrap__manufactures__factory_block__brend_text .description {
@@ -1318,7 +1296,7 @@
                   background-image: url("../img/sprite_section.png");
                   background-position: -183px -123px;
                   margin-top: 38px; }
-            .section_buy_block_line_block .img h3 {
+            .section_buy_block_line_block .img h4 {
               width: 100%;
               font: 18px/22px Verdana;
               font-weight: bold;
