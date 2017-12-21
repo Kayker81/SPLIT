@@ -252,13 +252,13 @@ table {
         font-style: italic;
         color: #5d7489;
         float: right;
-        margin-right: 5px; }
+        padding: 0px 5px; }
         @media (max-width: 1009px) {
           .header .header_nav_logo_line_schem {
             display: none; } }
         .header .header_nav_logo_line_schem:hover {
-          color: #074e23;
-          text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52); }
+          outline: 1px solid #b80000;
+          color: #000000; }
         .header .header_nav_logo_line_schem span {
           text-decoration: underline; }
     .header .header_nav_katalog_line {
@@ -420,8 +420,11 @@ table {
       .header .header_kontakt_line .meil {
         font: 14px/40px Verdana;
         color: #024753; }
-        .header .header_kontakt_line .meil:hover span {
-          color: #620909; }
+        .header .header_kontakt_line .meil:hover {
+          outline: 1px solid #b80000; }
+          .header .header_kontakt_line .meil:hover span {
+            color: #000000;
+            text-decoration: none; }
         .header .header_kontakt_line .meil span {
           text-decoration: underline; }
         @media (max-width: 1009px) {
@@ -865,18 +868,22 @@ table {
               color: #ff0000;
               font-weight: bold; }
           .header__user_info_info .time_text h4 {
-            font: 14px/40px 'Georgia-BoldItalic';
+            font: 14px/20px 'Georgia-BoldItalic';
+            margin-top: 20px;
             text-decoration: underline;
             color: #5d7489;
             text-align: left;
             margin-left: 10px;
-            cursor: pointer; }
+            cursor: pointer;
+            float: left; }
             @media (max-width: 1009px) {
               .header__user_info_info .time_text h4 {
                 float: right; } }
             .header__user_info_info .time_text h4:hover {
-              color: #074e23;
-              text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52); }
+              outline: 1px solid #b80000;
+              color: #000000;
+              text-decoration: none;
+              font-weight: bold; }
             @media (max-width: 636px) {
               .header__user_info_info .time_text h4 {
                 font-size: 12px;
@@ -928,13 +935,16 @@ table {
               right: 21%;
               top: 4x; } }
       .header__user_info_info_check {
-        font: 14px/40px Verdana;
+        font: 14px/20px Verdana;
         color: #024753;
         text-decoration: underline;
         float: left;
-        margin-top: 10px; }
+        margin-top: 20px; }
         .header__user_info_info_check:hover {
-          color: #620909; }
+          outline: 1px solid #b80000;
+          color: #000000;
+          text-decoration: none;
+          font-weight: bold; }
         @media (max-width: 1009px) {
           .header__user_info_info_check {
             display: none; } }

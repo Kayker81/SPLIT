@@ -215,13 +215,13 @@
         font-style: italic;
         color: #5d7489;
         float: right;
-        margin-right: 5px;
+        padding: 0px 5px;
         @media(max-width: 1009px){
           display: none;
         }
         &:hover{
-          color: #074e23;
-          text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52);
+          outline: 1px solid #b80000;
+          color: #000000;
         }
         span {
           text-decoration: underline;
@@ -413,8 +413,10 @@
         font: 14px/40px Verdana;
         color: #024753;
         &:hover{
+          outline: 1px solid #b80000;
           span{
-            color: #620909;
+            color: #000000;
+            text-decoration: none;
           }
         }
         span{
@@ -946,18 +948,22 @@
             }
           }
           h4 {
-            font: 14px/40px 'Georgia-BoldItalic';
+            font: 14px/20px 'Georgia-BoldItalic';
+            margin-top: 20px;
             text-decoration: underline;
             color: #5d7489;
             text-align: left;
             margin-left: 10px;
             cursor: pointer;
+            float: left;
             @media(max-width: 1009px){
               float: right;
             }
             &:hover{
-              color: #074e23;
-              text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52);
+              outline: 1px solid #b80000;
+              color: #000000;
+              text-decoration: none;
+              font-weight: bold;
             }
             @media(max-width: 636px) {
               font-size: 12px;
@@ -1018,13 +1024,16 @@
         }
       }
       &_check {
-        font: 14px/40px Verdana;
+        font: 14px/20px Verdana;
         color: #024753;
         text-decoration: underline;
         float: left;
-        margin-top: 10px;
+        margin-top: 20px;
         &:hover{
-          color: #620909;
+          outline: 1px solid #b80000;
+          color: #000000;
+          text-decoration: none;
+          font-weight: bold;
         }
         @media(max-width: 1009px) {
           display: none;
