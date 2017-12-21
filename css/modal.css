@@ -1810,6 +1810,10 @@
       color: #003c95;
       float: left;
       margin-left: 30px; }
+      .thenk_block__adres a:hover {
+        color: #000000;
+        text-decoration: none;
+        outline: 1px solid #b80000; }
       .thenk_block__adres a i {
         float: left;
         margin-right: 12px;
@@ -1842,7 +1846,7 @@
     font-family: 'robotoBlack';
     color: #393939;
     min-height: 164px; }
-    .thenk_block_thenk_box h3 {
+    .thenk_block_thenk_box h4 {
       font-size: 42px;
       line-height: 42px;
       margin-top: 70px; }

@@ -104,8 +104,13 @@
             font-style: italic;
             color: #003c95;
             text-decoration: underline;
+            float: left;
+            padding: 0px 5px;
+            margin-left: -5px;
             &:hover {
-              color: #25613c;
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000;
             }
           }
         }
@@ -214,15 +219,17 @@
           background: url("../img/schem.png") left top no-repeat;
           margin-top: 20px;
           a {
-            width: 100%;
-            text-align: right;
+             text-align: right;
             font: 14px/28px Verdana;
             font-weight: bold;
             color: #003c95;
             text-decoration: underline;
             display: block;
+            float: right;
             &:hover {
-              color: #25613c;
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000;
             }
           }
         }
@@ -456,7 +463,9 @@
             pointer-events: auto;
             cursor: pointer;
             &:hover {
-              color: #25613c;
+              color: #000000;
+              font-weight: bold;
+              border-color: #b80000;
               span {
                 background: none;
               }
@@ -516,7 +525,9 @@
         display: block;
         margin-bottom: 15px;
         &:hover {
-          color: #25613c;
+          color: #620909;
+          font-weight: 600;
+          letter-spacing: -0.6px;
           span {
             background: none;
             color: #b80000;
@@ -533,10 +544,28 @@
           float: left;
           width: 100%;
           margin-top: 68px;
+          .button{
+            display: block;
+            float: left;
+            &:hover{
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000;
+              letter-spacing: normal;
+              b{
+                text-decoration: none;
+              }
+            }
+          }
           a {
             font-style: normal;
             font-weight: bold;
             text-decoration: none;
+            float: left;
+            width: auto;
+            &:hover{
+              letter-spacing: normal;
+            }
             b {
               text-decoration: underline;
               font-weight: bold;
@@ -566,14 +595,34 @@
             text-decoration: none;
           }
         }
+
         &_bottom {
           float: left;
           width: 100%;
           margin-top: 80px;
+          #garant_button{
+            display: block;
+            float: left;
+            width: auto;
+            &:hover{
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000;
+              letter-spacing: normal;
+              b{
+                text-decoration: none;
+              }
+            }
+          }
           a {
             font-style: normal;
             font-weight: bold;
             text-decoration: none;
+            float: left;
+            width: auto;
+            &:hover{
+              letter-spacing: normal;
+            }
             b {
               text-decoration: underline;
               font-weight: bold;

@@ -197,7 +197,8 @@
             text-decoration: underline;
             margin-top: 20px;
             &:hover{
-              color: #620909;
+              color: #003C95;
+              font-weight: bold;
             }
           }
           &_img_line {
@@ -1778,7 +1779,8 @@
           color: #024753;
           margin-left: 42px;
           &:hover {
-            color: #25613c;
+            color: #000000;
+            outline:1px solid #b80000;
             span {
               background: none;
             }
@@ -1799,7 +1801,9 @@
           margin-right: 30px;
           margin-top: 35px;
           &:hover {
-            color: #25613c;
+            color: #000000;
+            outline: 1px solid #b80000;
+            text-decoration: none;
           }
           &:nth-child(1) {
             margin-right: 0px;

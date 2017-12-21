@@ -3249,6 +3249,10 @@ table {
       color: #003c95;
       float: left;
       margin-left: 30px; }
+      .thenk_block__adres a:hover {
+        color: #000000;
+        text-decoration: none;
+        outline: 1px solid #b80000; }
       .thenk_block__adres a i {
         float: left;
         margin-right: 12px;
@@ -3281,7 +3285,7 @@ table {
     font-family: 'robotoBlack';
     color: #393939;
     min-height: 164px; }
-    .thenk_block_thenk_box h3 {
+    .thenk_block_thenk_box h4 {
       font-size: 42px;
       line-height: 42px;
       margin-top: 70px; }
@@ -6370,7 +6374,8 @@ table {
             text-decoration: underline;
             margin-top: 20px; }
             .section_product_wrap_slider_block .slide_zag:hover {
-              color: #620909; }
+              color: #003C95;
+              font-weight: bold; }
           .section_product_wrap_slider_block .slide_img_line {
             float: left;
             width: 100%;
@@ -7644,7 +7649,8 @@ table {
           color: #024753;
           margin-left: 42px; }
           .section__recommended_header_zag .mail:hover {
-            color: #25613c; }
+            color: #000000;
+            outline: 1px solid #b80000; }
             .section__recommended_header_zag .mail:hover span {
               background: none; }
           .section__recommended_header_zag .mail span {
@@ -7660,7 +7666,9 @@ table {
           margin-right: 30px;
           margin-top: 35px; }
           .section__recommended_header_info a:hover {
-            color: #25613c; }
+            color: #000000;
+            outline: 1px solid #b80000;
+            text-decoration: none; }
           .section__recommended_header_info a:nth-child(1) {
             margin-right: 0px; }
           .section__recommended_header_info a .see {
@@ -7790,9 +7798,14 @@ table {
             font-weight: bold;
             font-style: italic;
             color: #003c95;
-            text-decoration: underline; }
+            text-decoration: underline;
+            float: left;
+            padding: 0px 5px;
+            margin-left: -5px; }
             .footer_info_header_logo_block_logo .comment:hover {
-              color: #25613c; }
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000; }
     .footer_info__section {
       width: 100%;
       float: left; }
@@ -7879,15 +7892,17 @@ table {
           background: url("../img/schem.png") left top no-repeat;
           margin-top: 20px; }
           .footer_info__section_parcing_schem a {
-            width: 100%;
             text-align: right;
             font: 14px/28px Verdana;
             font-weight: bold;
             color: #003c95;
             text-decoration: underline;
-            display: block; }
+            display: block;
+            float: right; }
             .footer_info__section_parcing_schem a:hover {
-              color: #25613c; }
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000; }
       .footer_info__section_tel {
         float: left;
         width: 51%;
@@ -8089,7 +8104,9 @@ table {
             pointer-events: auto;
             cursor: pointer; }
             .footer_info__section_tel_form_block .active:hover {
-              color: #25613c; }
+              color: #000000;
+              font-weight: bold;
+              border-color: #b80000; }
               .footer_info__section_tel_form_block .active:hover span {
                 background: none; }
           .footer_info__section_tel_form_block span {
@@ -8139,7 +8156,9 @@ table {
         display: block;
         margin-bottom: 15px; }
         .footer_help_link_line a:hover {
-          color: #25613c; }
+          color: #620909;
+          font-weight: 600;
+          letter-spacing: -0.6px; }
           .footer_help_link_line a:hover span {
             background: none;
             color: #b80000; }
@@ -8153,10 +8172,24 @@ table {
           float: left;
           width: 100%;
           margin-top: 68px; }
+          .footer_help_link_line_left_bottom .button {
+            display: block;
+            float: left; }
+            .footer_help_link_line_left_bottom .button:hover {
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000;
+              letter-spacing: normal; }
+              .footer_help_link_line_left_bottom .button:hover b {
+                text-decoration: none; }
           .footer_help_link_line_left_bottom a {
             font-style: normal;
             font-weight: bold;
-            text-decoration: none; }
+            text-decoration: none;
+            float: left;
+            width: auto; }
+            .footer_help_link_line_left_bottom a:hover {
+              letter-spacing: normal; }
             .footer_help_link_line_left_bottom a b {
               text-decoration: underline;
               font-weight: bold; }
@@ -8182,10 +8215,25 @@ table {
           float: left;
           width: 100%;
           margin-top: 80px; }
+          .footer_help_link_line_right_bottom #garant_button {
+            display: block;
+            float: left;
+            width: auto; }
+            .footer_help_link_line_right_bottom #garant_button:hover {
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000;
+              letter-spacing: normal; }
+              .footer_help_link_line_right_bottom #garant_button:hover b {
+                text-decoration: none; }
           .footer_help_link_line_right_bottom a {
             font-style: normal;
             font-weight: bold;
-            text-decoration: none; }
+            text-decoration: none;
+            float: left;
+            width: auto; }
+            .footer_help_link_line_right_bottom a:hover {
+              letter-spacing: normal; }
             .footer_help_link_line_right_bottom a b {
               text-decoration: underline;
               font-weight: bold; }

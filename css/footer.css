@@ -82,9 +82,14 @@
             font-weight: bold;
             font-style: italic;
             color: #003c95;
-            text-decoration: underline; }
+            text-decoration: underline;
+            float: left;
+            padding: 0px 5px;
+            margin-left: -5px; }
             .footer_info_header_logo_block_logo .comment:hover {
-              color: #25613c; }
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000; }
     .footer_info__section {
       width: 100%;
       float: left; }
@@ -171,15 +176,17 @@
           background: url("../img/schem.png") left top no-repeat;
           margin-top: 20px; }
           .footer_info__section_parcing_schem a {
-            width: 100%;
             text-align: right;
             font: 14px/28px Verdana;
             font-weight: bold;
             color: #003c95;
             text-decoration: underline;
-            display: block; }
+            display: block;
+            float: right; }
             .footer_info__section_parcing_schem a:hover {
-              color: #25613c; }
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000; }
       .footer_info__section_tel {
         float: left;
         width: 51%;
@@ -381,7 +388,9 @@
             pointer-events: auto;
             cursor: pointer; }
             .footer_info__section_tel_form_block .active:hover {
-              color: #25613c; }
+              color: #000000;
+              font-weight: bold;
+              border-color: #b80000; }
               .footer_info__section_tel_form_block .active:hover span {
                 background: none; }
           .footer_info__section_tel_form_block span {
@@ -431,7 +440,9 @@
         display: block;
         margin-bottom: 15px; }
         .footer_help_link_line a:hover {
-          color: #25613c; }
+          color: #620909;
+          font-weight: 600;
+          letter-spacing: -0.6px; }
           .footer_help_link_line a:hover span {
             background: none;
             color: #b80000; }
@@ -445,10 +456,24 @@
           float: left;
           width: 100%;
           margin-top: 68px; }
+          .footer_help_link_line_left_bottom .button {
+            display: block;
+            float: left; }
+            .footer_help_link_line_left_bottom .button:hover {
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000;
+              letter-spacing: normal; }
+              .footer_help_link_line_left_bottom .button:hover b {
+                text-decoration: none; }
           .footer_help_link_line_left_bottom a {
             font-style: normal;
             font-weight: bold;
-            text-decoration: none; }
+            text-decoration: none;
+            float: left;
+            width: auto; }
+            .footer_help_link_line_left_bottom a:hover {
+              letter-spacing: normal; }
             .footer_help_link_line_left_bottom a b {
               text-decoration: underline;
               font-weight: bold; }
@@ -474,10 +499,25 @@
           float: left;
           width: 100%;
           margin-top: 80px; }
+          .footer_help_link_line_right_bottom #garant_button {
+            display: block;
+            float: left;
+            width: auto; }
+            .footer_help_link_line_right_bottom #garant_button:hover {
+              color: #000000;
+              text-decoration: none;
+              outline: 1px solid #b80000;
+              letter-spacing: normal; }
+              .footer_help_link_line_right_bottom #garant_button:hover b {
+                text-decoration: none; }
           .footer_help_link_line_right_bottom a {
             font-style: normal;
             font-weight: bold;
-            text-decoration: none; }
+            text-decoration: none;
+            float: left;
+            width: auto; }
+            .footer_help_link_line_right_bottom a:hover {
+              letter-spacing: normal; }
             .footer_help_link_line_right_bottom a b {
               text-decoration: underline;
               font-weight: bold; }

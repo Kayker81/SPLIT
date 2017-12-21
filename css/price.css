@@ -151,7 +151,8 @@
             text-decoration: underline;
             margin-top: 20px; }
             .section_product_wrap_slider_block .slide_zag:hover {
-              color: #620909; }
+              color: #003C95;
+              font-weight: bold; }
           .section_product_wrap_slider_block .slide_img_line {
             float: left;
             width: 100%;
@@ -1425,7 +1426,8 @@
           color: #024753;
           margin-left: 42px; }
           .section__recommended_header_zag .mail:hover {
-            color: #25613c; }
+            color: #000000;
+            outline: 1px solid #b80000; }
             .section__recommended_header_zag .mail:hover span {
               background: none; }
           .section__recommended_header_zag .mail span {
@@ -1441,7 +1443,9 @@
           margin-right: 30px;
           margin-top: 35px; }
           .section__recommended_header_info a:hover {
-            color: #25613c; }
+            color: #000000;
+            outline: 1px solid #b80000;
+            text-decoration: none; }
           .section__recommended_header_info a:nth-child(1) {
             margin-right: 0px; }
           .section__recommended_header_info a .see {
