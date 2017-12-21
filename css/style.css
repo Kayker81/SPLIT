@@ -4730,17 +4730,17 @@ table {
           @media (max-height: 800px) {
             .power_calculator_coontent_rezult_zag_block .logo {
               display: none; } }
-        .power_calculator_coontent_rezult_zag_block h3 {
+        .power_calculator_coontent_rezult_zag_block h4 {
           float: left;
           font: 14px/66px Verdana;
           color: #f30808;
           font-weight: bold; }
           @media (max-width: 703px) {
-            .power_calculator_coontent_rezult_zag_block h3 {
+            .power_calculator_coontent_rezult_zag_block h4 {
               display: inline-block;
               float: none; } }
           @media (max-height: 800px) {
-            .power_calculator_coontent_rezult_zag_block h3 {
+            .power_calculator_coontent_rezult_zag_block h4 {
               line-height: 26px; } }
       .power_calculator_coontent_rezult .power {
         text-align: left; }
@@ -5845,6 +5845,11 @@ table {
         box-sizing: border-box;
         padding-left: 14px;
         padding-right: 15px; }
+        .product__all_info_info_line_row .art {
+          float: left;
+          font: 14px/27px  'Roboto-BoldItalic';
+          color: #919191;
+          font-style: italic; }
         .product__all_info_info_line_row .name {
           float: left;
           width: 52.81%;
@@ -8329,7 +8334,7 @@ table {
       pointer-events: none; }
       @media (max-width: 770px) {
         .mini_footer_act .ring {
-          pointer-events: au; } }
+          pointer-events: auto; } }
       .mini_footer_act .ring p {
         font: 13px/20px Verdana;
         font-weight: normal;
@@ -8411,6 +8416,9 @@ table {
         font-weight: normal;
         font-weight: bold;
         text-decoration: underline; }
+        .mini_footer .all_brend .close_block a:hover {
+          color: #620909;
+          border-color: #620909; }
   .mini_footer_brends {
     float: left;
     width: 100%;

@@ -659,17 +659,17 @@ table {
           @media (max-height: 800px) {
             .power_calculator_coontent_rezult_zag_block .logo {
               display: none; } }
-        .power_calculator_coontent_rezult_zag_block h3 {
+        .power_calculator_coontent_rezult_zag_block h4 {
           float: left;
           font: 14px/66px Verdana;
           color: #f30808;
           font-weight: bold; }
           @media (max-width: 703px) {
-            .power_calculator_coontent_rezult_zag_block h3 {
+            .power_calculator_coontent_rezult_zag_block h4 {
               display: inline-block;
               float: none; } }
           @media (max-height: 800px) {
-            .power_calculator_coontent_rezult_zag_block h3 {
+            .power_calculator_coontent_rezult_zag_block h4 {
               line-height: 26px; } }
       .power_calculator_coontent_rezult .power {
         text-align: left; }

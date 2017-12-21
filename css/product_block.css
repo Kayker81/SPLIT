@@ -264,6 +264,11 @@
         box-sizing: border-box;
         padding-left: 14px;
         padding-right: 15px; }
+        .product__all_info_info_line_row .art {
+          float: left;
+          font: 14px/27px  'Roboto-BoldItalic';
+          color: #919191;
+          font-style: italic; }
         .product__all_info_info_line_row .name {
           float: left;
           width: 52.81%;

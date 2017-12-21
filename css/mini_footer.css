@@ -82,7 +82,7 @@
       pointer-events: none; }
       @media (max-width: 770px) {
         .mini_footer_act .ring {
-          pointer-events: au; } }
+          pointer-events: auto; } }
       .mini_footer_act .ring p {
         font: 13px/20px Verdana;
         font-weight: normal;
@@ -164,6 +164,9 @@
         font-weight: normal;
         font-weight: bold;
         text-decoration: underline; }
+        .mini_footer .all_brend .close_block a:hover {
+          color: #620909;
+          border-color: #620909; }
   .mini_footer_brends {
     float: left;
     width: 100%;

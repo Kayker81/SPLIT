@@ -90,7 +90,7 @@
       font-weight: bold;
       pointer-events: none;
       @media (max-width: 770px) {
-        pointer-events: au
+        pointer-events: auto;
       }
       p {
         font: 13px/20px Verdana;
@@ -186,6 +186,10 @@
         font-weight: normal;
         font-weight: bold;
         text-decoration: underline;
+        &:hover{
+          color: #620909;
+          border-color: #620909;
+        }
       }
     }
   }
