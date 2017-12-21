@@ -894,12 +894,22 @@
         color: #620909; }
     .price_block_link_retail {
       display: block; }
-      .price_block_link_retail img {
-        margin-top: -27px; }
+      .price_block_link_retail .icon {
+        margin-top: -27px;
+        width: 73px;
+        height: 73px;
+        background: url("../img/sprite_header.png");
+        background-position: -362px -80px;
+        display: inline-block; }
     .price_block_link_gross {
       display: block; }
-      .price_block_link_gross img {
-        margin-top: -36px; }
+      .price_block_link_gross .icon {
+        margin-top: -36px;
+        width: 91px;
+        height: 80px;
+        background-image: url("../img/sprite_header.png");
+        background-position: -362px -0;
+        display: inline-block; }
       .price_block_link_gross p {
         margin-top: 5px; }
   .price_block_img_line {
@@ -1264,13 +1274,23 @@
       min-height: 126px; }
       .services_block_link_box_price:hover a {
         color: #620909; }
-      .services_block_link_box_price img {
-        margin-top: -24px; }
+      .services_block_link_box_price .icon {
+        margin-top: -24px;
+        display: inline-block;
+        width: 48px;
+        height: 51px;
+        background: url("../img/sprite_header.png") -362px -208px;
+        margin-left: -12px; }
     .services_block_link_box_spec {
       display: block;
       min-height: 77px; }
-      .services_block_link_box_spec img {
-        margin-top: -25px; }
+      .services_block_link_box_spec .icon {
+        margin-top: -25px;
+        display: inline-block;
+        width: 55px;
+        height: 55px;
+        background: url("../img/sprite_header.png") -362px -153px;
+        margin-left: -12px; }
   .services_block_img_table {
     width: 38.25%;
     display: table;
@@ -2480,13 +2500,17 @@
             width: 90px;
             height: 94px;
             text-align: center; }
-            .black_panel_servises ul .spec_wrap .spec_block_img img {
-              margin-top: 19.5px; }
+            .black_panel_servises ul .spec_wrap .spec_block_img .icon {
+              margin-top: 19.5px;
+              display: inline-block;
+              width: 55px;
+              height: 55px;
+              background: url("../img/sprite_header.png") -362px -153px; }
           .black_panel_servises ul .spec_wrap .spec_block_text {
             float: left;
             width: 236px;
             height: 94px; }
-            .black_panel_servises ul .spec_wrap .spec_block_text h3 {
+            .black_panel_servises ul .spec_wrap .spec_block_text h4 {
               width: 100%;
               font: 14px/20px Verdana;
               margin-top: 2px;

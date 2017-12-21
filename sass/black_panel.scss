@@ -207,15 +207,19 @@
             width: 90px;
             height: 94px;
             text-align: center;
-            img{
+            .icon{
               margin-top: 19.5px;
+              display: inline-block;
+              width: 55px; height: 55px;
+              background: url('../img/sprite_header.png') -362px -153px;
+
             }
           }
           &_text{
             float: left;
             width: 236px;
             height: 94px;
-            h3{
+            h4{
               width: 100%;
               font: 14px/20px Verdana;
               margin-top: 2px;
