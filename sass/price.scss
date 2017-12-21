@@ -1300,15 +1300,15 @@
               }
               .read_m {
                 display: inline-block;
-                width: 100%;
-                text-align: right;
+                float: right;
                 font-size: 10px;
                 color: #82000c;
                 @media(max-width: 768px){
                   display: none;
                 }
                 &:hover {
-                  color: #25613c;
+                  color: #003C95;
+                  outline: 1px solid #003C95;
                 }
 
               }

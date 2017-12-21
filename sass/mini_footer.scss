@@ -265,8 +265,12 @@
       width: 100%;
       font: 15px/20px 'Georgia-BoldItalic';
       color: #646464;
-      margin: 5px 0px;
+      margin: 30px 0px;
       text-decoration: underline;
+      &:hover{
+        color: #620909;
+        text-decoration: none;
+      }
       span{
         font: 15px/20px Verdana;
         font-weight: bold;

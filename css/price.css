@@ -1027,15 +1027,15 @@
                   margin-bottom: 10px; } }
               .section_product_wrap__manufactures__factory_block__brend_text .description .read_m {
                 display: inline-block;
-                width: 100%;
-                text-align: right;
+                float: right;
                 font-size: 10px;
                 color: #82000c; }
                 @media (max-width: 768px) {
                   .section_product_wrap__manufactures__factory_block__brend_text .description .read_m {
                     display: none; } }
                 .section_product_wrap__manufactures__factory_block__brend_text .description .read_m:hover {
-                  color: #25613c; }
+                  color: #003C95;
+                  outline: 1px solid #003C95; }
             .section_product_wrap__manufactures__factory_block__brend_text .adres {
               width: 100%;
               margin-bottom: 15px; }
