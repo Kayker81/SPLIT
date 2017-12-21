@@ -237,7 +237,9 @@
         .comment_block .individuals_block_slide_content .text_block {
           width: 100%;
           float: left;
-          position: relative; }
+          position: relative;
+          min-height: 54px;
+          box-sizing: border-box; }
           .comment_block .individuals_block_slide_content .text_block .all_read {
             font: 10px/20px 'Georgia-BoldItalic';
             font-style: italic;

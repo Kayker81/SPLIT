@@ -339,7 +339,7 @@
             color: #131313; }
           .product__all_info_info_line_row .info .art {
             float: left;
-            font: 14px/27px 'Roboto-Medium';
+            font: 14px/27px  'Roboto-BoldItalic';
             color: #919191;
             font-style: italic; }
         .product__all_info_info_line_row:nth-child(even) {

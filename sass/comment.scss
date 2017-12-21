@@ -282,6 +282,8 @@
           width: 100%;
           float: left;
           position: relative;
+          min-height: 54px;
+          box-sizing: border-box;
           .all_read{
             font: 10px/20px 'Georgia-BoldItalic';
             font-style: italic;
