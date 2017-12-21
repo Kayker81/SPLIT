@@ -2441,7 +2441,7 @@
           color: #ffff20;
           text-decoration: underline; }
           .black_panel_coneiner_menu ul li a:hover {
-            color: #b80000; }
+            color: #620909; }
           .black_panel_coneiner_menu ul li a:visited {
             color: #7a0505; }
         .black_panel_coneiner_menu ul li p {
@@ -2475,7 +2475,7 @@
           color: #FFFFFF;
           text-decoration: underline; }
           .black_panel_servises ul li a:hover {
-            color: #ffff20; }
+            color: #620909; }
           .black_panel_servises ul li a:visited {
             color: #7a0505; }
       .black_panel_servises ul .spec_wrap {
@@ -2537,7 +2537,7 @@
       box-sizing: border-box;
       margin-top: 10px; }
       .black_panel_actions_zag:hover {
-        color: #074e23;
+        color: #620909;
         text-shadow: -1px 3px 5px rgba(75, 75, 75, 0.52); }
     .black_panel_actions_pod_zag {
       width: 100%;
@@ -2565,7 +2565,7 @@
           text-decoration: underline;
           color: #ffff20; }
           .black_panel_actions ul li a:hover {
-            color: #b80000; }
+            color: #620909; }
           .black_panel_actions ul li a:visited {
             color: #7a0505; }
         .black_panel_actions ul li p {
@@ -2599,7 +2599,7 @@
           color: #ffff20;
           display: inline-block; }
           .black_panel_kategories ul li a:hover {
-            color: #b80000; }
+            color: #620909; }
         .black_panel_kategories ul li p {
           font: 14px/36px 'Georgia-BoldItalic';
           color: #afafaf;

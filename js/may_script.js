@@ -384,7 +384,7 @@ $(document).ready(function () {
             if (top < 0 || $('header').hasClass('header_mini')) {
                 var top = 0;
             }
-            if(win_widtch<554|| $('header').hasClass('header')){
+            if(win_widtch<554 && $('header').hasClass('header')){
                 var left=-20;
                 var top=60
             }
