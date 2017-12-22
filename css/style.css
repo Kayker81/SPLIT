@@ -805,6 +805,7 @@ table {
         .header__user_info_info .time .timer {
           position: absolute;
           width: 270px;
+          overflow: hidden;
           float: left;
           top: 100%;
           left: 0;
@@ -816,8 +817,7 @@ table {
           display: none; }
           @media (max-width: 770px) {
             .header__user_info_info .time .timer {
-              left: auto;
-              right: 0px; } }
+              left: auto; } }
           .header__user_info_info .time .timer .zag {
             width: 100%;
             box-sizing: border-box;

@@ -3,6 +3,17 @@
   -moz-border-radius: $r;
   -webkit-border-radius: $r;
 }
+@mixin transit($s) {
+  transition: $s;
+  -moz-transition: $s;
+  -webkit-transition: $s;
+  -o-transition: $s;
+}
+@mixin opacity($r){
+  -moz-opacity: $r;
+  opacity: $r;
+  -khtml-opacity: $r
+}
 
 .header {
   width: 100%;
@@ -863,6 +874,9 @@
         float: left;
         margin-top: 12px;
         position: relative;
+        &:hover{
+
+        }
         @media(max-width: 1009px){
           float: right;
         }
@@ -873,6 +887,7 @@
         .timer{
           position: absolute;
           width: 270px;
+          overflow: hidden;
           float: left;
           top: 100%;
           left:0;
@@ -883,8 +898,11 @@
           box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
           display: none;
           @media(max-width: 770px){
-            left:auto;
-            right: 0px;
+          left:auto;
+
+
+
+
           }
 
           .zag{
