@@ -317,6 +317,7 @@ $(document).ready(function () {
         $(button).removeClass('open');
         $('.all_mini').removeClass('open')
     })
+    /**Слайдер меню по цене**/
     $('.price_block_nav').find('a').mouseenter(function (e) {
         e.preventDefault();
         $('.price_block_nav').find('.activ').removeClass('activ');
@@ -335,34 +336,25 @@ $(document).ready(function () {
             $('.open').show(300)
         },300)
     })
-    $('.services_block_nav').find('li').hover(
-        function (e) {
-            $('.services_block_nav').find('.activ').removeClass('activ');
-            var id = $(this).find('a').attr('href');
-            $('.services_block_nav').find('activ').removeClass('activ');
-            $(this).addClass('activ')
-            $('.services_block_img_wrap').find('.action').hide(400).removeClass('action');
-            $('.services_block_img_wrap').find('img').first().hide(300);
-            setTimeout(function () {
-                $('.first').hide(100);
-                $(id).slideDown(800)
-                $(id).addClass('action')
-            }, 200)
-
-        },
-        function () {
-            var id = $(this).find('a').attr('href');
-            $(id).hide(500).removeClass('action')
-            var test = $('.services_block_img_wrap').find('.action').length
-            setTimeout(function () {
-                if (!$('.services_block_img_wrap').find('.action').length > 0) {
-                    $('.services_block_img_wrap').find('img').first().show(300);
-                    $('.services_block_img_wrap').find('img').first().addClass('first')
-                }
-            }, 1000)
-
+    /**Слайдер меню по цене**/
+    $('.services_block_nav').find('li').mouseenter(function (e) {
+        e.preventDefault();
+        $('.services_block_nav').find('.activ').removeClass('activ');
+        $(this).addClass('activ')
+        $('.services_block_img_wrap').find('img').css('display','none');
+        $('.services_block_img_wrap').find('img').removeClass('open')
+        var id=$(this).find('a').attr('href');
+        if ($('.services_block_img_wrap').find('.open').length>1){
+            $('.services_block_img_wrap').find('img').css('display','none');
+            $('.services_block_img_wrap').find('img').first().show(300)
+            $('.services_block_img_wrap').find('img').stop();
         }
-    )
+        $('.services_block_img_wrap').find('img').hide(300);
+        $(id).addClass('open')
+        setTimeout(function () {
+            $('.open').show(300)
+        },300)
+    })
     $('.header_nav_logo_line_logo').hover(
         function (e) {
             if ($('.logo_modal').queue().length>0){
@@ -1519,9 +1511,9 @@ $(document).ready(function () {
             $('.big_text').show(500);
 
         })
-        $('.baner_tel').hover(
+        $('.yandex_help').hover(
             function () {
-                var top = ($(this).offset().top + $(this).height()) - $('.individuals_block').offset().top - 30;
+                var top = ($('.baner_tel').offset().top + $('.baner_tel').height()) - $('.individuals_block').offset().top -10;
 
                 $('.help_baner').css({
                     'top': top,
