@@ -558,10 +558,9 @@ table {
             @media (max-height: 800px) {
               .power_calculator_coontent_form .button_line .selected_block p {
                 margin-top: 10px; } }
-          .power_calculator_coontent_form .button_line .selected_block a {
+          .power_calculator_coontent_form .button_line .selected_block p {
             float: left;
             padding: 0px;
-            text-decoration: underline;
             color: #2f61a8;
             margin-top: 0px;
             line-height: 81px;
@@ -569,18 +568,21 @@ table {
             margin-left: 5px;
             pointer-events: none;
             cursor: default; }
+            .power_calculator_coontent_form .button_line .selected_block p span {
+              display: inline-block;
+              text-decoration: underline; }
+              .power_calculator_coontent_form .button_line .selected_block p span:hover {
+                color: #620909;
+                outline: none; }
             @media (max-height: 800px) {
-              .power_calculator_coontent_form .button_line .selected_block a {
+              .power_calculator_coontent_form .button_line .selected_block p {
                 margin-top: 10px;
                 line-height: 22px; } }
-            .power_calculator_coontent_form .button_line .selected_block a:hover {
-              color: #620909;
-              outline: none; }
         .power_calculator_coontent_form .button_line .selected_activ {
           -moz-opacity: 1;
           opacity: 1;
           -khtml-opacity: 1; }
-          .power_calculator_coontent_form .button_line .selected_activ a {
+          .power_calculator_coontent_form .button_line .selected_activ span {
             pointer-events: auto;
             cursor: pointer; }
         .power_calculator_coontent_form .button_line .power_calculator_coontent_form_base {

@@ -21,6 +21,9 @@
   box-sizing: border-box;
   position: relative;
   max-width: 320px; }
+  .product:hover .product__all_info {
+    height: 440px;
+    opacity: 1; }
   .product_zag {
     float: left;
     width: 100%;
@@ -130,7 +133,13 @@
     left: -5%;
     box-sizing: border-box;
     border: 2px solid #beccd9;
-    display: none; }
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    opacity: 0; }
     .product__all_info_header {
       width: 100%;
       float: left;

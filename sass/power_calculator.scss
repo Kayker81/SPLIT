@@ -557,10 +557,9 @@
             }
 
           }
-          a{
+          p{
             float: left;
             padding: 0px;
-            text-decoration: underline;
             color: #2f61a8;
             margin-top: 0px;
             line-height: 81px;
@@ -568,20 +567,25 @@
             margin-left: 5px;
             pointer-events: none;
             cursor: default;
+            span{
+              display: inline-block;
+              text-decoration: underline;
+              &:hover{
+                color: #620909;
+                outline: none;
+              }
+            }
             @media(max-height: 800px){
               margin-top: 10px;
               line-height: 22px;
             }
-&:hover{
-  color: #620909;
-  outline: none;
-}
+
 
           }
         }
         .selected_activ{
           @include opacity(1);
-          a{
+        span{
             pointer-events: auto;
             cursor: pointer;
           }

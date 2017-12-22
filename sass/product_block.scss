@@ -3,6 +3,12 @@
   -moz-border-radius: $r;
   -webkit-border-radius: $r;
 }
+@mixin transit($s) {
+  transition: $s;
+  -moz-transition: $s;
+  -webkit-transition: $s;
+  -o-transition: $s;
+}
 .product {
   display: inline-block;
   text-align: left;
@@ -25,7 +31,13 @@
   position: relative;
   max-width: 320px;
 
+&:hover{
+  .product__all_info{
+    height: 440px;
+    opacity: 1;
 
+  }
+}
 
   &_zag {
     float: left;
@@ -156,7 +168,10 @@
     left: -5%;
     box-sizing: border-box;
     border: 2px solid #beccd9;
- display: none;
+    height:0;
+    overflow: hidden;
+    @include  transit(1s);
+    opacity: 0;
     &_header {
       width: 100%;
       float: left;

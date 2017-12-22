@@ -2201,7 +2201,11 @@ table {
           .area_block_power_line_block_price_net span {
             font: 12px/14px Arial;
             color: #023d98;
-            text-decoration: underline; }
+            text-decoration: underline;
+            cursor: pointer; }
+            .area_block_power_line_block_price_net span:hover {
+              color: #620909;
+              font-weight: bold; }
           .area_block_power_line_block_price_net i {
             font: 9px/14px 'Georgia-BoldItalic';
             color: #662211; }
@@ -2212,7 +2216,11 @@ table {
           .area_block_power_line_block_price_hollow span {
             font: 12px/14px Arial;
             color: #023d98;
-            text-decoration: underline; }
+            text-decoration: underline;
+            cursor: pointer; }
+            .area_block_power_line_block_price_hollow span:hover {
+              color: #620909;
+              font-weight: bold; }
           .area_block_power_line_block_price_hollow i {
             font: 11px/14px 'Georgia-BoldItalic';
             color: #662211; }
@@ -2265,6 +2273,9 @@ table {
             font: 12px/14px Arial;
             color: #023d98;
             text-decoration: underline; }
+            .area_block_inverter_block_price_net span:hover {
+              color: #620909;
+              font-weight: bold; }
           .area_block_inverter_block_price_net i {
             font: 9px/14px 'Georgia-BoldItalic';
             color: #662211; }
@@ -2276,6 +2287,9 @@ table {
             font: 12px/14px Arial;
             color: #023d98;
             text-decoration: underline; }
+            .area_block_inverter_block_price_hollow span:hover {
+              color: #620909;
+              font-weight: bold; }
           .area_block_inverter_block_price_hollow i {
             font: 11px/14px 'Georgia-BoldItalic';
             color: #662211; }
@@ -4637,10 +4651,9 @@ table {
             @media (max-height: 800px) {
               .power_calculator_coontent_form .button_line .selected_block p {
                 margin-top: 10px; } }
-          .power_calculator_coontent_form .button_line .selected_block a {
+          .power_calculator_coontent_form .button_line .selected_block p {
             float: left;
             padding: 0px;
-            text-decoration: underline;
             color: #2f61a8;
             margin-top: 0px;
             line-height: 81px;
@@ -4648,18 +4661,21 @@ table {
             margin-left: 5px;
             pointer-events: none;
             cursor: default; }
+            .power_calculator_coontent_form .button_line .selected_block p span {
+              display: inline-block;
+              text-decoration: underline; }
+              .power_calculator_coontent_form .button_line .selected_block p span:hover {
+                color: #620909;
+                outline: none; }
             @media (max-height: 800px) {
-              .power_calculator_coontent_form .button_line .selected_block a {
+              .power_calculator_coontent_form .button_line .selected_block p {
                 margin-top: 10px;
                 line-height: 22px; } }
-            .power_calculator_coontent_form .button_line .selected_block a:hover {
-              color: #620909;
-              outline: none; }
         .power_calculator_coontent_form .button_line .selected_activ {
           -moz-opacity: 1;
           opacity: 1;
           -khtml-opacity: 1; }
-          .power_calculator_coontent_form .button_line .selected_activ a {
+          .power_calculator_coontent_form .button_line .selected_activ span {
             pointer-events: auto;
             cursor: pointer; }
         .power_calculator_coontent_form .button_line .power_calculator_coontent_form_base {
@@ -5610,6 +5626,9 @@ table {
   box-sizing: border-box;
   position: relative;
   max-width: 320px; }
+  .product:hover .product__all_info {
+    height: 440px;
+    opacity: 1; }
   .product_zag {
     float: left;
     width: 100%;
@@ -5719,7 +5738,13 @@ table {
     left: -5%;
     box-sizing: border-box;
     border: 2px solid #beccd9;
-    display: none; }
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    opacity: 0; }
     .product__all_info_header {
       width: 100%;
       float: left;
@@ -7793,12 +7818,12 @@ table {
           float: left; }
           .footer_info_header_logo_block_logo .name {
             display: none; }
-          .footer_info_header_logo_block_logo a {
+          .footer_info_header_logo_block_logo .logo {
             display: block;
             font: 26px/26px Verdana;
             font-weight: bold;
             color: #2b2f30; }
-            .footer_info_header_logo_block_logo a span {
+            .footer_info_header_logo_block_logo .logo span {
               color: #f10d0d;
               font-weight: bold; }
           .footer_info_header_logo_block_logo p {

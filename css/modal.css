@@ -759,7 +759,11 @@
           .area_block_power_line_block_price_net span {
             font: 12px/14px Arial;
             color: #023d98;
-            text-decoration: underline; }
+            text-decoration: underline;
+            cursor: pointer; }
+            .area_block_power_line_block_price_net span:hover {
+              color: #620909;
+              font-weight: bold; }
           .area_block_power_line_block_price_net i {
             font: 9px/14px 'Georgia-BoldItalic';
             color: #662211; }
@@ -770,7 +774,11 @@
           .area_block_power_line_block_price_hollow span {
             font: 12px/14px Arial;
             color: #023d98;
-            text-decoration: underline; }
+            text-decoration: underline;
+            cursor: pointer; }
+            .area_block_power_line_block_price_hollow span:hover {
+              color: #620909;
+              font-weight: bold; }
           .area_block_power_line_block_price_hollow i {
             font: 11px/14px 'Georgia-BoldItalic';
             color: #662211; }
@@ -823,6 +831,9 @@
             font: 12px/14px Arial;
             color: #023d98;
             text-decoration: underline; }
+            .area_block_inverter_block_price_net span:hover {
+              color: #620909;
+              font-weight: bold; }
           .area_block_inverter_block_price_net i {
             font: 9px/14px 'Georgia-BoldItalic';
             color: #662211; }
@@ -834,6 +845,9 @@
             font: 12px/14px Arial;
             color: #023d98;
             text-decoration: underline; }
+            .area_block_inverter_block_price_hollow span:hover {
+              color: #620909;
+              font-weight: bold; }
           .area_block_inverter_block_price_hollow i {
             font: 11px/14px 'Georgia-BoldItalic';
             color: #662211; }

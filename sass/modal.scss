@@ -892,6 +892,11 @@
             font: 12px/14px Arial;
             color: #023d98;
             text-decoration: underline;
+            cursor: pointer;
+            &:hover{
+              color: #620909;
+              font-weight: bold;
+            }
           }
           i {
             font: 9px/14px 'Georgia-BoldItalic';
@@ -906,6 +911,11 @@
             font: 12px/14px Arial;
             color: #023d98;
             text-decoration: underline;
+            cursor: pointer;
+            &:hover{
+              color: #620909;
+              font-weight: bold;
+            }
           }
           i {
             font: 11px/14px 'Georgia-BoldItalic';
@@ -972,6 +982,10 @@
             font: 12px/14px Arial;
             color: #023d98;
             text-decoration: underline;
+            &:hover{
+              color: #620909;
+              font-weight: bold;
+            }
           }
           i {
             font: 9px/14px 'Georgia-BoldItalic';
@@ -986,6 +1000,10 @@
             font: 12px/14px Arial;
             color: #023d98;
             text-decoration: underline;
+            &:hover{
+              color: #620909;
+              font-weight: bold;
+            }
           }
           i {
             font: 11px/14px 'Georgia-BoldItalic';

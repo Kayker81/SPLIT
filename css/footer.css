@@ -64,12 +64,12 @@
           float: left; }
           .footer_info_header_logo_block_logo .name {
             display: none; }
-          .footer_info_header_logo_block_logo a {
+          .footer_info_header_logo_block_logo .logo {
             display: block;
             font: 26px/26px Verdana;
             font-weight: bold;
             color: #2b2f30; }
-            .footer_info_header_logo_block_logo a span {
+            .footer_info_header_logo_block_logo .logo span {
               color: #f10d0d;
               font-weight: bold; }
           .footer_info_header_logo_block_logo p {
