@@ -2709,7 +2709,7 @@ table {
   position: absolute;
   top: 0;
   left: 0;
-  max-width: 700px !important;
+  max-width: 730px !important;
   background: #FFFFFF;
   border: 1px solid #014366;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -6358,13 +6358,37 @@ table {
         text-align: center; } }
     .miniature_block .img:nth-last-child(1) {
       margin-right: 0px; }
+  .miniature_block .bg-schema {
+    display: inline-block;
+    width: 194px;
+    height: 143px;
+    background: url("../img/sprite_footer.png") -1182px -493px;
+    -webkit-box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14); }
+  .miniature_block .bg-foto {
+    display: inline-block;
+    width: 194px;
+    height: 143px;
+    background: url("../img/sprite_footer.png") -988px -493px;
+    -webkit-box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14); }
+  .miniature_block .bg-map {
+    display: inline-block;
+    width: 196px;
+    height: 143px;
+    background: url("../img/sprite_footer.png") -792px -493px;
+    -webkit-box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px -3px 7px 0px rgba(0, 0, 0, 0.14); }
 
 .schem_big_block {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100%;
-  max-width: 1083px;
+  max-width: 1113px;
   background: #FFFFFF;
   padding: 15px;
   box-sizing: border-box;
@@ -6429,11 +6453,18 @@ table {
       text-align: center;
       height: 500px; }
       .schem_big_block__schem_block_img_block #schem1 {
+        display: inline-block;
+        width: 800px;
+        height: 424px;
+        background: url("../img/sprite_footer.png") 0 -725px; }
+      .schem_big_block__schem_block_img_block #schem2 {
+        display: inline-block;
+        width: 1083px;
+        height: 493px;
+        background: url("../img/sprite_footer.png") -792px 0;
+        display: none; }
+      .schem_big_block__schem_block_img_block .schem_img {
         display: inline-block; }
-      .schem_big_block__schem_block_img_block img {
-        max-width: 100%;
-        display: none;
-        max-height: 90vh; }
   .schem_big_block .scheme_close, .schem_big_block .map_close {
     display: block;
     position: absolute;
@@ -6465,6 +6496,12 @@ table {
     @media (max-height: 600px) {
       .schem_big_block .scheme_close, .schem_big_block .map_close {
         top: 15px; } }
+
+.foto_block .bg-Vimtex {
+  display: inline-block;
+  width: 700px;
+  height: 447px;
+  background: url("../img/sprite_footer.png") 0 -1149px; }
 
 .map_block {
   width: 700px;
