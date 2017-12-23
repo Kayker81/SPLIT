@@ -3423,9 +3423,11 @@ table {
     margin-top: 10px; }
     .thenk_block_logo a {
       float: left; }
-      .thenk_block_logo a img {
-        float: left;
-        max-width: 100%; }
+      .thenk_block_logo a span {
+        display: inline-block;
+        width: 566px;
+        height: 103px;
+        background: url("../img/sprite_footer.png") -2215px -502px; }
       .thenk_block_logo a p {
         float: left;
         width: 100%;

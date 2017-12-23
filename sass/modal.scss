@@ -2327,10 +2327,11 @@
     margin-top: 10px;
     a {
       float: left;
-      img {
-        float: left;
-        max-width: 100%;
-      }
+     span{
+       display: inline-block;
+       width: 566px; height: 103px;
+       background: url('../img/sprite_footer.png') -2215px -502px;
+     }
       p {
         float: left;
         width: 100%;
