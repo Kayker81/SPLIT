@@ -181,6 +181,38 @@
           }
           &_foto{
             float: left;
+            .bg-w_man1 {
+              width: 108px; height: 101px;
+              background: url('../img/sprite_footer.png') -0 -73px;/**/
+            }
+            .bg-w_man2 {
+              width: 68px; height: 101px;
+              background: url('../img/sprite_footer.png') -362px -0;
+            }
+            .bg-w_man3 {
+              width: 91px; height: 101px;
+              background: url('../img/sprite_footer.png') -95px -174px;
+            }
+            .bg-w_man4 {
+              width: 104px; height: 101px;
+              background: url('../img/sprite_footer.png') -258px -0;
+            }
+            .bg-w_man5 {
+              width: 108px; height: 101px;
+              background: url('../img/sprite_footer.png') -150px -0;
+            }
+            .bg-w_man6 {
+              width: 86px; height: 101px;
+              background: url('../img/sprite_footer.png') -186px -174px;
+            }
+            .bg-w_man7 {
+              width: 95px; height: 101px;
+              background: url('../img/sprite_footer.png') -0 -174px;
+            }
+            .bg-w_man8 {
+              width: 71px; height: 101px;
+              background: url('../img/sprite_footer.png') -272px -174px;
+            }
             @media(max-height: 750px){
               height: 101px;
               img{
@@ -273,8 +305,9 @@
             }
 
 
-            img{
-              max-width: 100%;
+            .bg-yandex_baner {
+              width: 274px; height: 105px;
+              background: url('../img/sprite_footer.png') -430px -300px;
             }
           }
         }
@@ -385,10 +418,10 @@
               font: 20px/40px 'robotobold';
               color: #2d2d2d;
               margin: 22px 0px;
-              a{
+              .bg-logo_comment {
                 display: inline-block;
-                margin-right: 12px;
-
+                width: 103px; height: 40px;
+                background: url('../img/sprite_footer.png') -650px -300px;
               }
             }
           }
