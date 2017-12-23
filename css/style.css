@@ -3744,8 +3744,8 @@ table {
               width: 20px;
               height: 20px; }
             .comment_block .individuals_block_slide_header_yandex_block_baner_yandex .bg-yandex_baner {
-              width: 274px;
-              height: 105px;
+              width: 220px;
+              height: 91px;
               background: url("../img/sprite_footer.png") -430px -300px; }
       .comment_block .individuals_block_slide_content {
         float: left;
@@ -3980,8 +3980,39 @@ table {
             font: 14px/18px "RobotoSlab-Light";
             color: #282828;
             padding-top: 10px; }
-            .comment_block .entity_wrap_slider_slide .text_wrap p img {
-              margin-top: -10px; }
+            .comment_block .entity_wrap_slider_slide .text_wrap p .img {
+              margin-top: -10px;
+              display: inline-block;
+              float: left;
+              margin-right: 22px; }
+            .comment_block .entity_wrap_slider_slide .text_wrap p .bg-ur1 {
+              width: 245px;
+              height: 150px;
+              background: url("../img/sprite_footer.png") -248px -425px; }
+            .comment_block .entity_wrap_slider_slide .text_wrap p .bg-ur2 {
+              width: 306px;
+              height: 150px;
+              background: url("../img/sprite_footer.png") -430px -150px; }
+            .comment_block .entity_wrap_slider_slide .text_wrap p .bg-ur3 {
+              width: 362px;
+              height: 150px;
+              background: url("../img/sprite_footer.png") -430px 0; }
+            .comment_block .entity_wrap_slider_slide .text_wrap p .bg-ur4 {
+              width: 409px;
+              height: 150px;
+              background: url("../img/sprite_footer.png") 0 -275px; }
+            .comment_block .entity_wrap_slider_slide .text_wrap p .bg-ur5 {
+              width: 171px;
+              height: 150px;
+              background: url("../img/sprite_footer.png") -493px -425px; }
+            .comment_block .entity_wrap_slider_slide .text_wrap p .bg-ur6 {
+              width: 248px;
+              height: 150px;
+              background: url("../img/sprite_footer.png") 0 -425px; }
+            .comment_block .entity_wrap_slider_slide .text_wrap p .bg-ur7 {
+              width: 163px;
+              height: 150px;
+              background: url("../img/sprite_footer.png") 0 -575px; }
 
 /*****************************************************************************************/
 /**********************************Боковая панель******************************************/

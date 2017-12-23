@@ -306,7 +306,7 @@
 
 
             .bg-yandex_baner {
-              width: 274px; height: 105px;
+              width: 220px; height: 91px;
               background: url('../img/sprite_footer.png') -430px -300px;
             }
           }
@@ -599,8 +599,40 @@
             font: 14px/18px "RobotoSlab-Light";
             color: #282828;
             padding-top: 10px;
-            img{
+
+            .img{
               margin-top: -10px;
+              display: inline-block;
+              float: left;
+              margin-right: 22px;
+            }
+            .bg-ur1 {
+              width: 245px; height: 150px;
+              background: url('../img/sprite_footer.png') -248px -425px;
+            }
+            .bg-ur2 {
+              width: 306px; height: 150px;
+              background: url('../img/sprite_footer.png') -430px -150px;
+            }
+            .bg-ur3 {
+              width: 362px; height: 150px;
+              background: url('../img/sprite_footer.png') -430px -0;
+            }
+            .bg-ur4 {
+              width: 409px; height: 150px;
+              background: url('../img/sprite_footer.png') -0 -275px;
+            }
+            .bg-ur5 {
+              width: 171px; height: 150px;
+              background: url('../img/sprite_footer.png') -493px -425px;
+            }
+            .bg-ur6 {
+              width: 248px; height: 150px;
+              background: url('../img/sprite_footer.png') -0 -425px;
+            }
+            .bg-ur7 {
+              width: 163px; height: 150px;
+              background: url('../img/sprite_footer.png') -0 -575px;
             }
           }
         }
