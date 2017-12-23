@@ -322,18 +322,20 @@ $(document).ready(function () {
         e.preventDefault();
         $('.price_block_nav').find('.activ').removeClass('activ');
         $(this).addClass('activ')
-        $('.price_block_img_block').find('img').css('display','none');
-        $('.price_block_img_block').find('img').removeClass('open')
+        $('.price_block_img_block').find('.img').css('display','none');
+        $('.price_block_img_block').find('.img').removeClass('open')
         var id=$(this).attr('href');
         if ($('.price_block_img_block').find('.open').length>1){
-            $('.price_block_img_block').find('img').css('display','none');
-            $('.price_block_img_block').find('img').first().show(300)
-            $('.price_block_img_block').find('img').stop();
+            $('.price_block_img_block').find('.img').css('display','none');
+            $('.price_block_img_block').find('.img').first().slideDown(300)
+            $('.price_block_img_block').find('.img').stop();
         }
-        $('.price_block_img_block').find('img').hide(300);
+        $('.price_block_img_block').find('img').slideUp(300);
         $(id).addClass('open')
+
         setTimeout(function () {
-            $('.open').show(300)
+            $('.open').slideDown(300)
+
         },300)
     })
     /**Слайдер меню по цене**/
@@ -341,15 +343,15 @@ $(document).ready(function () {
         e.preventDefault();
         $('.services_block_nav').find('.activ').removeClass('activ');
         $(this).addClass('activ')
-        $('.services_block_img_wrap').find('img').css('display','none');
-        $('.services_block_img_wrap').find('img').removeClass('open')
+        $('.services_block_img_wrap').find('.img').css('display','none');
+        $('.services_block_img_wrap').find('.img').removeClass('open')
         var id=$(this).find('a').attr('href');
         if ($('.services_block_img_wrap').find('.open').length>1){
-            $('.services_block_img_wrap').find('img').css('display','none');
-            $('.services_block_img_wrap').find('img').first().show(300)
-            $('.services_block_img_wrap').find('img').stop();
+            $('.services_block_img_wrap').find('.img').css('display','none');
+            $('.services_block_img_wrap').find('.img').first().show(300)
+            $('.services_block_img_wrap').find('.img').stop();
         }
-        $('.services_block_img_wrap').find('img').hide(300);
+        $('.services_block_img_wrap').find('.img').hide(300);
         $(id).addClass('open')
         setTimeout(function () {
             $('.open').show(300)
