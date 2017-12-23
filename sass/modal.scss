@@ -355,8 +355,10 @@
     &_img{
       float: left;
       width: 29%;
-      img{
-        max-width: 100%;
+      .bg-garant {
+        display: block;
+        width: 340px; height: 480px;
+        background: url('../img/sprite_footer.png') -1875px -502px;
       }
     }
     &_text{

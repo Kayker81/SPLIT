@@ -300,8 +300,11 @@
     .garant_block_section_img {
       float: left;
       width: 29%; }
-      .garant_block_section_img img {
-        max-width: 100%; }
+      .garant_block_section_img .bg-garant {
+        display: block;
+        width: 340px;
+        height: 480px;
+        background: url("../img/sprite_footer.png") -1875px -502px; }
     .garant_block_section_text {
       float: left;
       height: 475px;
