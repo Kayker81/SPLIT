@@ -2125,7 +2125,7 @@ table {
   width: 100%;
   max-width: 816px;
   min-height: 299px;
-  background: url("../img/area.jpg") center top no-repeat;
+  background: url("../img/sprite_header.png") 0 -1694px;
   top: 0px;
   left: 0px;
   padding: 22px 0px 0px 12px;
@@ -2521,8 +2521,7 @@ table {
   top: 0px;
   left: 0px;
   display: none;
-  background: url("../img/multi_fon.jpg") center top no-repeat;
-  background-size: cover;
+  background: url("../img/sprite_header.png") -816px -1694px;
   z-index: 9;
   border: 1px solid #014366;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -2636,8 +2635,6 @@ table {
           color: #840000;
           border-color: #840000;
           background: rgba(241, 240, 221, 0.9); }
-  .multi_block_roof {
-    background: url("../img/roof.png") center 23px no-repeat; }
   .multi_block_kaseta .multi_block_box_link_power a {
     padding-left: 10px;
     width: 48.4%;
@@ -2656,11 +2653,15 @@ table {
       border-color: #840000; }
       .multi_block_kaseta_washing:hover a {
         color: #840000; }
-    .multi_block_kaseta_washing img {
+    .multi_block_kaseta_washing .icon-washing {
       float: left;
       margin-top: -20px;
       margin-left: 10px;
-      margin-right: 8px; }
+      margin-right: 8px;
+      background-image: url("../img/sprite_header.png");
+      background-position: -2138px -291px;
+      width: 47px;
+      height: 80px; }
     .multi_block_kaseta_washing a {
       float: left;
       font: 10px/18px Verdana;
@@ -2671,36 +2672,38 @@ table {
       .multi_block_kaseta_washing a span {
         display: block;
         font-weight: bold; }
-  .multi_block_multi {
-    background: url("../img/multi.png") center 26px no-repeat; }
-    .multi_block_multi_kalcul {
-      width: 100%;
+  .multi_block_multi_kalcul {
+    width: 100%;
+    float: left;
+    margin-top: 33px;
+    background: rgba(241, 240, 221, 0.75);
+    border: 1px solid #7696bd;
+    min-height: 67px;
+    box-sizing: border-box; }
+    .multi_block_multi_kalcul .icon-kalcul2 {
       float: left;
-      margin-top: 33px;
-      background: rgba(241, 240, 221, 0.75);
-      border: 1px solid #7696bd;
-      min-height: 67px;
-      box-sizing: border-box; }
-      .multi_block_multi_kalcul img {
-        float: left;
-        margin-top: -6px;
-        margin-left: 12px;
-        margin-right: 11px; }
-      .multi_block_multi_kalcul a {
-        float: left;
-        font: 10px/18px Verdana;
-        font-weight: bold;
-        text-decoration: underline;
-        color: #023d98;
-        margin-top: 4px; }
-        .multi_block_multi_kalcul a span {
-          display: block;
-          font-weight: bold; }
-      .multi_block_multi_kalcul:hover {
-        background: rgba(241, 240, 221, 0.9);
-        border-color: #840000; }
-        .multi_block_multi_kalcul:hover a {
-          color: #840000; }
+      margin-top: -6px;
+      margin-left: 12px;
+      margin-right: 11px;
+      background-image: url("../img/sprite_header.png");
+      background-position: -2138px -225px;
+      width: 67px;
+      height: 66px; }
+    .multi_block_multi_kalcul a {
+      float: left;
+      font: 10px/18px Verdana;
+      font-weight: bold;
+      text-decoration: underline;
+      color: #023d98;
+      margin-top: 4px; }
+      .multi_block_multi_kalcul a span {
+        display: block;
+        font-weight: bold; }
+    .multi_block_multi_kalcul:hover {
+      background: rgba(241, 240, 221, 0.9);
+      border-color: #840000; }
+      .multi_block_multi_kalcul:hover a {
+        color: #840000; }
 
 .foto_block {
   position: absolute;
@@ -2933,7 +2936,8 @@ table {
   position: absolute;
   top: 0px;
   left: 0px;
-  background: url("../img/question_fon.jpg") center top no-repeat;
+  background-image: url("../img/sprite_header.png");
+  background-position: 0px -1993px;
   z-index: 9;
   border: 1px solid #044654;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -3028,7 +3032,10 @@ table {
               display: block;
               font-weight: bold; }
       .question_block_slider_wrap_slider_block .slide1 {
-        background: url("../img/slide1.jpg") center top no-repeat; }
+        width: 527px;
+        height: 225px;
+        background-image: url("../img/sprite_header.png");
+        background-position: -2138px 0px; }
       .question_block_slider_wrap_slider_block .slide2 {
         width: 527px;
         height: 225px;

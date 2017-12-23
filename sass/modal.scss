@@ -799,7 +799,7 @@
   width: 100%;
   max-width: 816px;
   min-height: 299px;
-  background: url("../img/area.jpg") center top no-repeat;
+  background: url('../img/sprite_header.png') -0 -1694px;
   top: 0px;
   left: 0px;
   padding: 22px 0px 0px 12px;
@@ -1268,8 +1268,7 @@
   top: 0px;
   left: 0px;
   display: none;
-  background: url("../img/multi_fon.jpg") center top no-repeat;
-  background-size: cover;
+  background: url('../img/sprite_header.png') -816px -1694px;
   z-index: 9;
   border: 1px solid #014366;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -1399,7 +1398,7 @@
     }
   }
   &_roof {
-    background: url("../img/roof.png") center 23px no-repeat;
+
   }
   &_kaseta {
     .multi_block_box_link_power {
@@ -1425,11 +1424,15 @@
           color: #840000;
         }
       }
-      img {
+      .icon-washing{
         float: left;
         margin-top: -20px;
         margin-left: 10px;
         margin-right: 8px;
+        background-image: url('../img/sprite_header.png');
+        background-position: -2138px -291px;
+        width: 47px;
+        height: 80px;
       }
       a {
         float: left;
@@ -1446,7 +1449,7 @@
     }
   }
   &_multi {
-    background: url("../img/multi.png") center 26px no-repeat;
+
     &_kalcul {
       width: 100%;
       float: left;
@@ -1455,11 +1458,15 @@
       border: 1px solid #7696bd;
       min-height: 67px;
       box-sizing: border-box;
-      img {
+      .icon-kalcul2 {
         float: left;
         margin-top: -6px;
         margin-left: 12px;
         margin-right: 11px;
+        background-image: url('../img/sprite_header.png');
+        background-position: -2138px -225px;
+        width: 67px;
+        height: 66px;
       }
       a {
         float: left;
@@ -1761,7 +1768,8 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  background: url("../img/question_fon.jpg") center top no-repeat;
+  background-image: url('../img/sprite_header.png');
+  background-position: 0px -1993px;
   z-index: 9;
   border: 1px solid #044654;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -1870,7 +1878,10 @@
 
       }
       .slide1 {
-        background: url("../img/slide1.jpg") center top no-repeat;
+        width: 527px;
+        height: 225px;
+        background-image: url('../img/sprite_header.png');
+        background-position: -2138px 0px;
       }
       .slide2 {
         width: 527px; height: 225px;
