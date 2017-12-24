@@ -481,7 +481,7 @@
   left: 0px;
   width: 303px;
   height: 47px;
-  background-image: url("../img/logo_modal.png");
+  background: url('../img/sprite_header.png') -240px -2301px;
   padding-left: 21px;
   box-sizing: border-box;
   display: none;
@@ -1540,8 +1540,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 68.37%;
-  min-width: 800px;
+  width: 67.37%;
   height: 310px;
   overflow: hidden;
   background: #FFFFFF;
@@ -1549,7 +1548,7 @@
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
   box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
-  padding-left: 1.7%;
+  padding: 00px 1.7%;
   box-sizing: border-box;
   display: none;
   z-index: 9;
@@ -1596,7 +1595,7 @@
       text-align: center;
       padding-left: 12px;
       box-sizing: border-box;
-      margin-top: 38px;
+      margin-top: 45px;
       &:hover{
         a{
           color: #620909;
@@ -1661,7 +1660,7 @@
     }
   }
   &_img_table {
-    width: 38.25%;
+    width: 42.8%;
     display: table;
     float: left;
   }
@@ -1707,7 +1706,7 @@
   }
   &_nav {
     width: 28.25%;
-    float: left;
+    float: right;
     padding-top: 18px;
 
     @media(max-width: 762px) {

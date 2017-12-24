@@ -102,8 +102,11 @@
         float: left;
         margin-top: 28px;
         width: 53.81%; }
-        .product_minimum_info__name_price .logo img {
-          max-width: 100%; }
+        .product_minimum_info__name_price .logo .bg-slide_logo {
+          display: block;
+          width: 113px;
+          height: 33px;
+          background: url("../img/sprite_section.png") 0px -1791px; }
       .product_minimum_info__name_price .price {
         float: right;
         margin-top: 10px;
@@ -163,8 +166,11 @@
           .product__all_info_header_logo p span {
             font-family: 'robotoregular';
             color: #e62c0e; }
-        .product__all_info_header_logo img {
-          display: block; }
+        .product__all_info_header_logo .bg-slide_logo_all {
+          display: block;
+          width: 111px;
+          height: 33px;
+          background: url("../img/sprite_section.png") 0 -1791px; }
       .product__all_info_header_zag {
         float: left;
         width: 100%;

@@ -46,7 +46,7 @@
 .midea {
   max-width: 716px;
   min-height: 569px;
-  background: url("../img/midea.jpg") center top;
+ background: url('../img/sprite_section.png') -0 -1222px;
   padding-top: 25px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -102,7 +102,7 @@
 .kelon {
   max-width: 716px;
   min-height: 569px;
-  background: url("../img/kelon.jpg") center top;
+  background: url('../img/sprite_section.png') -716px -653px;
   padding-top: 25px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -162,9 +162,19 @@
     width: 100%;
     margin-bottom: 20px;
     overflow: hidden;
-    img {
+    .img {
       float: left;
       width: 49.25%;
+      .bg-aux1 {
+        display: inline-block;
+        width: 331px; height: 233px;
+        background: url('../img/sprite_section.png') -1833px -183px;
+      }
+      .bg-aux2 {
+        display: inline-block;
+        width: 331px; height: 233px;
+        background: url('../img/sprite_section.png') -2164px -183px;
+      }
       @media(max-width: 398px) {
         width: 100%;
         margin-bottom: 5px;
@@ -227,9 +237,19 @@
     width: 100%;
     margin-bottom: 20px;
     overflow: hidden;
-    img {
+    .img {
       float: left;
       width: 49.25%;
+      .bg-chigo1 {
+        display: inline-block;
+        width: 332px; height: 179px;
+        background: url('../img/sprite_section.png') -2166px -416px;
+      }
+      .bg-chigo2 {
+        display: inline-block;
+        width: 333px; height: 179px;
+        background: url('../img/sprite_section.png') -1833px -416px;
+      }
       @media(max-width: 398px) {
         width: 100%;
         margin-bottom: 5px;
@@ -338,14 +358,11 @@
   background: #FFFFFF;
   display: none;
   &_img {
-    width: 100%;
+    width: 673px; height: 263px;
+    background: url('../img/sprite_section.png') -716px -1222px;
     margin-bottom: 20px;
     overflow: hidden;
-    img {
-      float: left;
-      width: 100%;
 
-    }
   }
   &_info_line {
     width: 100%;
@@ -393,7 +410,7 @@
 .haier {
   max-width: 716px;
   min-height: 569px;
-  background: url("../img/haier.jpg") center top;
+  background: url('../img/sprite_section.png') -0 -653px;
   padding-top: 25px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -450,14 +467,11 @@
   background: #FFFFFF;
   display: none;
   &_img {
-    width: 100%;
+    width: 673px; height: 183px;
+    background: url('../img/sprite_section.png') -716px -1485px;
     margin-bottom: 20px;
     overflow: hidden;
-    img {
-      float: left;
-      width: 100%;
 
-    }
   }
   .adres{
     line-height: 14px;
@@ -630,11 +644,8 @@
     width: 100%;
     margin-bottom: 20px;
     overflow: hidden;
-    img {
-      float: left;
-      width: 100%;
-
-    }
+    width: 673px; height: 183px;
+    background: url('../img/sprite_section.png') -1833px -183px;
   }
   &_info_line {
     width: 100%;

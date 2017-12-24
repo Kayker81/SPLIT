@@ -36,7 +36,7 @@
 .midea {
   max-width: 716px;
   min-height: 569px;
-  background: url("../img/midea.jpg") center top;
+  background: url("../img/sprite_section.png") 0 -1222px;
   padding-top: 25px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -85,7 +85,7 @@
 .kelon {
   max-width: 716px;
   min-height: 569px;
-  background: url("../img/kelon.jpg") center top;
+  background: url("../img/sprite_section.png") -716px -653px;
   padding-top: 25px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -138,14 +138,24 @@
     width: 100%;
     margin-bottom: 20px;
     overflow: hidden; }
-    .aux_img img {
+    .aux_img .img {
       float: left;
       width: 49.25%; }
+      .aux_img .img .bg-aux1 {
+        display: inline-block;
+        width: 331px;
+        height: 233px;
+        background: url("../img/sprite_section.png") -1833px -183px; }
+      .aux_img .img .bg-aux2 {
+        display: inline-block;
+        width: 331px;
+        height: 233px;
+        background: url("../img/sprite_section.png") -2164px -183px; }
       @media (max-width: 398px) {
-        .aux_img img {
+        .aux_img .img {
           width: 100%;
           margin-bottom: 5px; } }
-      .aux_img img:nth-child(even) {
+      .aux_img .img:nth-child(even) {
         float: right; }
   .aux_info_line {
     width: 100%; }
@@ -193,14 +203,24 @@
     width: 100%;
     margin-bottom: 20px;
     overflow: hidden; }
-    .chigo_img img {
+    .chigo_img .img {
       float: left;
       width: 49.25%; }
+      .chigo_img .img .bg-chigo1 {
+        display: inline-block;
+        width: 332px;
+        height: 179px;
+        background: url("../img/sprite_section.png") -2166px -416px; }
+      .chigo_img .img .bg-chigo2 {
+        display: inline-block;
+        width: 333px;
+        height: 179px;
+        background: url("../img/sprite_section.png") -1833px -416px; }
       @media (max-width: 398px) {
-        .chigo_img img {
+        .chigo_img .img {
           width: 100%;
           margin-bottom: 5px; } }
-      .chigo_img img:nth-child(even) {
+      .chigo_img .img:nth-child(even) {
         float: right; }
   .chigo_info_line {
     width: 100%; }
@@ -288,12 +308,11 @@
   background: #FFFFFF;
   display: none; }
   .gree_img {
-    width: 100%;
+    width: 673px;
+    height: 263px;
+    background: url("../img/sprite_section.png") -716px -1222px;
     margin-bottom: 20px;
     overflow: hidden; }
-    .gree_img img {
-      float: left;
-      width: 100%; }
   .gree_info_line {
     width: 100%; }
     .gree_info_line p {
@@ -333,7 +352,7 @@
 .haier {
   max-width: 716px;
   min-height: 569px;
-  background: url("../img/haier.jpg") center top;
+  background: url("../img/sprite_section.png") 0 -653px;
   padding-top: 25px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -383,12 +402,11 @@
   background: #FFFFFF;
   display: none; }
   .hisense_img {
-    width: 100%;
+    width: 673px;
+    height: 183px;
+    background: url("../img/sprite_section.png") -716px -1485px;
     margin-bottom: 20px;
     overflow: hidden; }
-    .hisense_img img {
-      float: left;
-      width: 100%; }
   .hisense .adres {
     line-height: 14px;
     font-size: 12px; }
@@ -532,10 +550,10 @@
   .tcl_img {
     width: 100%;
     margin-bottom: 20px;
-    overflow: hidden; }
-    .tcl_img img {
-      float: left;
-      width: 100%; }
+    overflow: hidden;
+    width: 673px;
+    height: 183px;
+    background: url("../img/sprite_section.png") -1833px -183px; }
   .tcl_info_line {
     width: 100%; }
     .tcl_info_line .adres {

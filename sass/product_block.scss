@@ -127,8 +127,10 @@
         float: left;
         margin-top: 28px;
         width: 53.81%;
-        img {
-          max-width: 100%;
+        .bg-slide_logo {
+          display: block;
+          width: 113px; height: 33px;
+          background: url('../img/sprite_section.png') 0px -1791px;
         }
       }
       .price {
@@ -198,8 +200,10 @@
             color: #e62c0e;
           }
         }
-        img {
+        .bg-slide_logo_all {
           display: block;
+          width: 111px; height: 33px;
+          background: url('../img/sprite_section.png') -0 -1791px;
         }
       }
       &_zag {
