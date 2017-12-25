@@ -192,7 +192,9 @@
     .black_panel_actions_zag {
       float: left;
       width: 100%;
-      font: 18px/49px 'Georgia-BoldItalic';
+      font: 18px/49px Georgia;
+      font-style: italic;
+      font-weight: bold;
       color: #ff0000;
       text-decoration: underline;
       background: #FFFFFF;
@@ -264,6 +266,8 @@
           .black_panel_kategories ul li a:hover {
             color: #620909; }
         .black_panel_kategories ul li p {
-          font: 14px/36px 'Georgia-BoldItalic';
+          font: 14px/36px Georgia;
+          font-weight: bold;
+          font-style: italic;
           color: #afafaf;
           display: inline-block; }

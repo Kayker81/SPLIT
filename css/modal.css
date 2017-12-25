@@ -208,7 +208,9 @@
             color: #b41600; }
             .price_wrap_section .job_block_line .price p span {
               font-size: 13px;
-              font-family: 'Georgia-BoldItalic';
+              font-family: Georgia;
+              font-style: italic;
+              font-weight: bold;
               color: #662211;
               margin-left: 5px; }
       .price_wrap_section .job_block .big .name p {
@@ -304,7 +306,7 @@
         display: block;
         width: 340px;
         height: 480px;
-        background: url("../img/sprite_footer.png") -1875px -502px; }
+        background: url("../img/sprite_footer.png") -785px -636px; }
     .garant_block_section_text {
       float: left;
       height: 475px;
@@ -377,7 +379,8 @@
   display: none; }
   .big_text p {
     width: 100%;
-    font: 20px/22px 'Georgia-Italic';
+    font: 20px/22px Georgia;
+    font-style: italic;
     color: #1b1b1b; }
     .big_text p img {
       float: left;
@@ -409,7 +412,7 @@
   left: 0px;
   width: 303px;
   height: 47px;
-  background: url("../img/sprite_header.png") -240px -2301px;
+  background: url("../img/sprite_header.png") 0px -625px;
   padding-left: 21px;
   box-sizing: border-box;
   display: none;
@@ -639,7 +642,9 @@
         float: left; }
         .brend_block_footer_winner_text h5 {
           width: 100%;
-          font: 14px/18px 'Georgia-BoldItalic';
+          font: 14px/18px Georgia;
+          font-style: italic;
+          font-weight: bold;
           color: #FFFFFF;
           margin-top: 5px; }
         .brend_block_footer_winner_text p {
@@ -685,7 +690,7 @@
   width: 100%;
   max-width: 816px;
   min-height: 299px;
-  background: url("../img/sprite_header.png") 0 -1694px;
+  background: url("../img/sprite_header.png") -936px -1506px;
   top: 0px;
   left: 0px;
   padding: 22px 0px 0px 12px;
@@ -792,7 +797,9 @@
             font: 11px/12px Verdana;
             color: #6b6b6b; }
             .area_block_power_line_block_info_area_name i {
-              font-family: 'Georgia-BoldItalic'; }
+              font-family: Georgia;
+              font-style: italic;
+              font-weight: bold; }
           .area_block_power_line_block_info_area_namber {
             float: right; }
             .area_block_power_line_block_info_area_namber span {
@@ -802,7 +809,9 @@
               font-weight: bold;
               color: #881101; }
             .area_block_power_line_block_info_area_namber i {
-              font: 11px/12px 'Georgia-BoldItalic';
+              font: 11px/12px Georgia;
+              font-style: italic;
+              font-weight: bold;
               color: #662211; }
               .area_block_power_line_block_info_area_namber i sup {
                 vertical-align: super;
@@ -825,7 +834,9 @@
               color: #620909;
               font-weight: bold; }
           .area_block_power_line_block_price_net i {
-            font: 9px/14px 'Georgia-BoldItalic';
+            font: 9px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
         .area_block_power_line_block_price_hollow {
           float: right;
@@ -840,7 +851,9 @@
               color: #620909;
               font-weight: bold; }
           .area_block_power_line_block_price_hollow i {
-            font: 11px/14px 'Georgia-BoldItalic';
+            font: 11px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
       .area_block_power_line_block:hover {
         border-color: #620909;
@@ -894,7 +907,9 @@
               color: #620909;
               font-weight: bold; }
           .area_block_inverter_block_price_net i {
-            font: 9px/14px 'Georgia-BoldItalic';
+            font: 9px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
         .area_block_inverter_block_price_hollow {
           float: right;
@@ -908,7 +923,9 @@
               color: #620909;
               font-weight: bold; }
           .area_block_inverter_block_price_hollow i {
-            font: 11px/14px 'Georgia-BoldItalic';
+            font: 11px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
 
 .price_block {
@@ -1079,7 +1096,7 @@
   top: 0px;
   left: 0px;
   display: none;
-  background: url("../img/sprite_header.png") -816px -1694px;
+  background: url("../img/sprite_header.png") -936px -1207px;
   z-index: 9;
   border: 1px solid #014366;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -1217,7 +1234,7 @@
       margin-left: 10px;
       margin-right: 8px;
       background-image: url("../img/sprite_header.png");
-      background-position: -2138px -291px;
+      background-position: -450px -115px;
       width: 47px;
       height: 80px; }
     .multi_block_kaseta_washing a {
@@ -1244,7 +1261,7 @@
       margin-left: 12px;
       margin-right: 11px;
       background-image: url("../img/sprite_header.png");
-      background-position: -2138px -225px;
+      background-position: -450px -43px;
       width: 67px;
       height: 66px; }
     .multi_block_multi_kalcul a {
@@ -1483,7 +1500,9 @@
             font: 11px/12px Verdana;
             color: #7f7f7f; }
           .services_block_nav ul li .price i {
-            font: 11px/12px 'Georgia-BoldItalic';
+            font: 11px/12px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #650707; }
 
 .question_block {
@@ -1494,7 +1513,7 @@
   top: 0px;
   left: 0px;
   background-image: url("../img/sprite_header.png");
-  background-position: 0px -1993px;
+  background-position: -936px -899px;
   z-index: 9;
   border: 1px solid #044654;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -1592,11 +1611,11 @@
         width: 527px;
         height: 225px;
         background-image: url("../img/sprite_header.png");
-        background-position: -2138px 0px; }
+        background-position: 0px -1694px; }
       .question_block_slider_wrap_slider_block .slide2 {
         width: 527px;
         height: 225px;
-        background: url("../img/sprite_header.png") 0 -447px; }
+        background: url("../img/sprite_header.png") -518px -225px; }
         .question_block_slider_wrap_slider_block .slide2 a {
           margin-top: 85px; }
       .question_block_slider_wrap_slider_block .slide3 {
@@ -1630,7 +1649,7 @@
       .question_block_slider_wrap_slider_block .slide8 {
         width: 527px;
         height: 225px;
-        background: url("../img/sprite_header.png") -527px -897px; }
+        background: url("../img/sprite_header.png") -518px -225px; }
         .question_block_slider_wrap_slider_block .slide8 a {
           margin-top: 85px; }
 
@@ -1972,8 +1991,8 @@
         margin-right: 12px;
         width: 13px;
         height: 18px;
-        background-image: url("../img/marker.png");
-        background-position: center; }
+        background-image: url("../img/sprite_footer.png");
+        background-position: -53px 0px; }
   .thenk_block_logo {
     float: left;
     width: 100%;
@@ -1984,7 +2003,7 @@
         display: inline-block;
         width: 566px;
         height: 103px;
-        background: url("../img/sprite_footer.png") -2215px -502px; }
+        background: url("../img/sprite_footer.png") -163px -575px; }
       .thenk_block_logo a p {
         float: left;
         width: 100%;
@@ -2321,7 +2340,8 @@
           min-height: 54px;
           box-sizing: border-box; }
           .comment_block .individuals_block_slide_content .text_block .all_read {
-            font: 10px/20px 'Georgia-BoldItalic';
+            font: 10px/20px Georgia;
+            font-weight: bold;
             font-style: italic;
             position: absolute;
             right: 20px;
@@ -2515,8 +2535,8 @@
                 color: #b80000;
                 font-weight: bold; }
           .comment_block .entity_wrap_slider_slide .text_block .all_read {
-            font: 10px/20px 'Georgia-BoldItalic';
-            font-style: normal;
+            font: 10px/20px Georgia;
+            font-weight: bold;
             font-style: italic;
             position: absolute;
             right: 20px;
@@ -2769,7 +2789,9 @@
     .black_panel_actions_zag {
       float: left;
       width: 100%;
-      font: 18px/49px 'Georgia-BoldItalic';
+      font: 18px/49px Georgia;
+      font-style: italic;
+      font-weight: bold;
       color: #ff0000;
       text-decoration: underline;
       background: #FFFFFF;
@@ -2841,7 +2863,9 @@
           .black_panel_kategories ul li a:hover {
             color: #620909; }
         .black_panel_kategories ul li p {
-          font: 14px/36px 'Georgia-BoldItalic';
+          font: 14px/36px Georgia;
+          font-weight: bold;
+          font-style: italic;
           color: #afafaf;
           display: inline-block; }
 

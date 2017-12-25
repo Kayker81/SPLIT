@@ -125,7 +125,8 @@
         .header .header_nav_logo_line_logo .logo_big {
           display: block;
           position: relative;
-          font: 28px/40px 'Georgia-Bold';
+          font: 28px/40px Georgia;
+          font-weight: bold;
           padding-left: 15px;
           margin-top: 15px;
           letter-spacing: 0.7px; }
@@ -168,7 +169,7 @@
             display: none; } }
       .header .header_nav_logo_line_schem {
         display: block;
-        font: 14px/30px 'Georgia-BoldItalic';
+        font: 14px/30px Georgia;
         font-weight: bold;
         font-style: italic;
         color: #5d7489;
@@ -181,7 +182,9 @@
           outline: 1px solid #b80000;
           color: #000000; }
         .header .header_nav_logo_line_schem span {
-          text-decoration: underline; }
+          text-decoration: underline;
+          font-weight: bold;
+          font-style: italic; }
     .header .header_nav_katalog_line {
       width: 100%;
       background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
@@ -650,7 +653,8 @@
           display: none; } }
       .header__user_info_product_line .compare {
         float: left;
-        font: 13px/35px 'Georgia-Italic';
+        font: 13px/35px Georgia;
+        font-style: italic;
         color: #5d7489; }
         .header__user_info_product_line .compare:hover {
           color: #b80000; }
@@ -700,7 +704,8 @@
           color: #003c95;
           text-decoration: underline; }
         .header__user_info_product_line .basket span {
-          font: 14px/35px 'Georgia-Italic';
+          font: 14px/35px Georgia;
+          font-style: italic;
           color: #662211; }
     .header__user_info_info {
       width: 100%;
@@ -785,7 +790,9 @@
               color: #ff0000;
               font-weight: bold; }
           .header__user_info_info .time_text h4 {
-            font: 14px/20px 'Georgia-BoldItalic';
+            font: 14px/20px Georgia;
+            font-weight: bold;
+            font-style: italic;
             margin-top: 20px;
             text-decoration: underline;
             color: #5d7489;

@@ -242,7 +242,9 @@
             color: #b41600;
             span{
               font-size: 13px;
-              font-family: 'Georgia-BoldItalic';
+              font-family: Georgia;
+              font-style: italic;
+              font-weight: bold;
               color: #662211;
               margin-left: 5px;
             }
@@ -358,7 +360,7 @@
       .bg-garant {
         display: block;
         width: 340px; height: 480px;
-        background: url('../img/sprite_footer.png') -1875px -502px;
+        background: url('../img/sprite_footer.png') -785px -636px;
       }
     }
     &_text{
@@ -444,7 +446,8 @@
   display: none;
   p {
     width: 100%;
-    font: 20px/22px 'Georgia-Italic';
+    font: 20px/22px Georgia;
+    font-style: italic;
     color: #1b1b1b;
     img {
       float: left;
@@ -481,7 +484,7 @@
   left: 0px;
   width: 303px;
   height: 47px;
-  background: url('../img/sprite_header.png') -240px -2301px;
+  background: url('../img/sprite_header.png') 0px -625px;
   padding-left: 21px;
   box-sizing: border-box;
   display: none;
@@ -743,7 +746,9 @@
         float: left;
         h5 {
           width: 100%;
-          font: 14px/18px 'Georgia-BoldItalic';
+          font: 14px/18px Georgia;
+          font-style: italic;
+          font-weight: bold;
           color: #FFFFFF;
           margin-top: 5px;
         }
@@ -800,7 +805,7 @@
   width: 100%;
   max-width: 816px;
   min-height: 299px;
-  background: url('../img/sprite_header.png') -0 -1694px;
+  background: url('../img/sprite_header.png') -936px -1506px;
   top: 0px;
   left: 0px;
   padding: 22px 0px 0px 12px;
@@ -912,7 +917,9 @@
             font: 11px/12px Verdana;
             color: #6b6b6b;
             i {
-              font-family: 'Georgia-BoldItalic';
+              font-family: Georgia;
+              font-style: italic;
+              font-weight: bold;
             }
 
           }
@@ -927,7 +934,9 @@
               color: #881101;
             }
             i {
-              font: 11px/12px 'Georgia-BoldItalic';
+              font: 11px/12px Georgia;
+              font-style: italic;
+              font-weight: bold;
               color: #662211;
               sup {
                 vertical-align: super;
@@ -958,7 +967,9 @@
             }
           }
           i {
-            font: 9px/14px 'Georgia-BoldItalic';
+            font: 9px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211;
           }
         }
@@ -977,7 +988,9 @@
             }
           }
           i {
-            font: 11px/14px 'Georgia-BoldItalic';
+            font: 11px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211;
           }
         }
@@ -1046,7 +1059,9 @@
             }
           }
           i {
-            font: 9px/14px 'Georgia-BoldItalic';
+            font: 9px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211;
           }
         }
@@ -1064,7 +1079,9 @@
             }
           }
           i {
-            font: 11px/14px 'Georgia-BoldItalic';
+            font: 11px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211;
           }
         }
@@ -1267,7 +1284,7 @@
   top: 0px;
   left: 0px;
   display: none;
-  background: url('../img/sprite_header.png') -816px -1694px;
+  background: url('../img/sprite_header.png') -936px -1207px;
   z-index: 9;
   border: 1px solid #014366;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -1429,7 +1446,7 @@
         margin-left: 10px;
         margin-right: 8px;
         background-image: url('../img/sprite_header.png');
-        background-position: -2138px -291px;
+        background-position: -450px -115px;
         width: 47px;
         height: 80px;
       }
@@ -1463,7 +1480,7 @@
         margin-left: 12px;
         margin-right: 11px;
         background-image: url('../img/sprite_header.png');
-        background-position: -2138px -225px;
+        background-position: -450px -43px;
         width: 67px;
         height: 66px;
       }
@@ -1749,7 +1766,9 @@
             color: #7f7f7f;
           }
           i {
-            font: 11px/12px 'Georgia-BoldItalic';
+            font: 11px/12px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #650707;
           }
         }
@@ -1767,7 +1786,7 @@
   top: 0px;
   left: 0px;
   background-image: url('../img/sprite_header.png');
-  background-position: 0px -1993px;
+  background-position: -936px -899px;
   z-index: 9;
   border: 1px solid #044654;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -1879,11 +1898,11 @@
         width: 527px;
         height: 225px;
         background-image: url('../img/sprite_header.png');
-        background-position: -2138px 0px;
+        background-position: 0px -1694px;
       }
       .slide2 {
         width: 527px; height: 225px;
-        background: url('../img/sprite_header.png') -0 -447px;
+        background: url('../img/sprite_header.png') -518px -225px;
         a {
           margin-top: 85px;
         }
@@ -1922,7 +1941,7 @@
       }
       .slide8 {
         width: 527px; height: 225px;
-        background: url('../img/sprite_header.png') -527px -897px;
+        background: url('../img/sprite_header.png') -518px -225px;
         a {
           margin-top: 85px;
         }
@@ -2314,8 +2333,8 @@
         margin-right: 12px;
         width: 13px;
         height: 18px;
-        background-image: url("../img/marker.png");
-        background-position: center;
+        background-image: url("../img/sprite_footer.png");
+        background-position: -53px 0px;
       }
     }
   }
@@ -2328,7 +2347,7 @@
      span{
        display: inline-block;
        width: 566px; height: 103px;
-       background: url('../img/sprite_footer.png') -2215px -502px;
+       background: url('../img/sprite_footer.png') -163px -575px;
      }
       p {
         float: left;

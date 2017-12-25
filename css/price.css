@@ -178,7 +178,9 @@
                   color: #662211;
                   margin-top: 3px; }
                   .section_product_wrap_slider_block .slide_minimum_info__area_power .area h4 span {
-                    font: 12px/16px 'Georgia-BoldItalic'; }
+                    font: 12px/16px Georgia;
+                    font-style: italic;
+                    font-weight: bold; }
               .section_product_wrap_slider_block .slide_minimum_info__area_power .power {
                 float: left;
                 width: 26px;
@@ -239,7 +241,9 @@
                   font: 19px/16px 'robotoBlack';
                   color: #b41600; }
                   .section_product_wrap_slider_block .slide_minimum_info__name_price .price h4 span {
-                    font: 13px/16px 'Georgia-BoldItalic';
+                    font: 13px/16px Georgia;
+                    font-style: italic;
+                    font-weight: bold;
                     color: #662211; }
                 .section_product_wrap_slider_block .slide_minimum_info__name_price .price h5 {
                   font: 14px/16px 'robotoregular';
@@ -432,7 +436,9 @@
                     margin-left: 8px; }
                   .section_product_wrap_slider_block .slide__all_info_info_line_row .info .guarantee {
                     float: left;
-                    font: 16px/27px 'Georgia-BoldItalic';
+                    font: 16px/27px Georgia;
+                    font-style: italic;
+                    font-weight: bold;
                     color: #662211; }
                     .section_product_wrap_slider_block .slide__all_info_info_line_row .info .guarantee span {
                       font-size: 13px;
@@ -551,7 +557,8 @@
                 display: none; } }
           .section_product_wrap_price_wrap .aside_zag p {
             float: left;
-            font: 12px/16px 'Georgia-Italic';
+            font: 12px/16px Georgia;
+            font-style: italic;
             color: #d80000;
             margin-top: 9px;
             margin-left: 11px; }
@@ -662,7 +669,9 @@
               bottom: 15px;
               letter-spacing: -0.8px; }
               .section_product_wrap_price_wrap_section_block_block_line .block p i {
-                font-family: 'Georgia-BoldItalic'; }
+                font-family: Georgia;
+                font-style: italic;
+                font-weight: bold; }
           .section_product_wrap_price_wrap_section_block_block_line .empty {
             display: block;
             border: none; }
@@ -819,7 +828,9 @@
             color: #a20303;
             font-weight: bold; }
             .section_product_wrap_rig .block p span i {
-              font-family: 'Georgia-BoldItalic';
+              font-family: Georgia;
+              font-style: italic;
+              font-weight: bold;
               color: #670101;
               text-transform: none; }
           .section_product_wrap_rig .block p strong {
@@ -1012,7 +1023,8 @@
                 width: 100%; } }
             .section_product_wrap__manufactures__factory_block__brend_text h4 {
               width: 100%;
-              font: 20px/20px 'Georgia-Bold';
+              font: 20px/20px Georgia;
+              font-weight: bold;
               color: #82000c;
               margin-top: 20px;
               margin-bottom: 10px; }

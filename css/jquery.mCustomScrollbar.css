@@ -157,7 +157,7 @@
 	background-position:0 0;
 	width: 13px;
 	height: 20px;
-	background: url('../img/sprite_header.png') -556px -2301px, #FFFFFF;
+	background: url('../img/sprite_header.png') -327px -625px, #FFFFFF;
 	opacity: 1;
 	/* 
 	sprites locations are 0 0/-16px 0/-32px 0/-48px 0 (light) and -80px 0/-96px 0/-112px 0/-128px 0 (dark) 
@@ -166,7 +166,7 @@
 .mCSB_scrollTools .mCSB_buttonDown{
 	width: 13px;
 	height: 20px;
-	background: url('../img/sprite_header.png')  -543px -2301px, #FFFFFF;
+	background: url('../img/sprite_header.png')  -314px -625px, #FFFFFF;
 	/* 
 	sprites locations are 0 -20px/-16px -20px/-32px -20px/-48px -20px (light) and -80px -20px/-96px -20px/-112px -20px/-128px -20px (dark) 
 	*/

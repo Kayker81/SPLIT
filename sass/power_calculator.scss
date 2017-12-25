@@ -383,7 +383,9 @@
             }
             .unit {
               float: left;
-              font: 12px/42px 'Georgia-BoldItalic';
+              font: 12px/42px Georgia;
+              font-style: italic;
+              font-weight: bold;
               color: #662211;
               margin-left: 8px;
               @media(max-width: 355px){
@@ -646,7 +648,8 @@
           float: right;
           display: block;
           position: relative;
-          font: 28px/40px 'Georgia-Bold';
+          font: 28px/40px Georgia;
+          font-weight: bold;
           padding-left: 15px;
           margin-top: 15px;
           letter-spacing: 0.7px;
@@ -796,7 +799,9 @@
             line-height: 30px;
            }
            span{
-             font: 14px/20px 'Georgia-BoldItalic';
+             font: 14px/20px Georgia;
+             font-style: italic;
+             font-weight: bold;
              margin-top: 14px;
              color: #662211;
              display: none;

@@ -79,7 +79,9 @@
           color: #662211;
           margin-top: 3px;
           span {
-            font: 12px/16px 'Georgia-BoldItalic';
+            font: 12px/16px Georgia;
+            font-style: italic;
+            font-weight: bold;
           }
         }
       }
@@ -147,7 +149,9 @@
           font: 19px/16px 'robotoBlack';
           color: #b41600;
           span {
-            font: 13px/16px 'Georgia-BoldItalic';
+            font: 13px/16px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211;
           }
         }
@@ -408,7 +412,9 @@
           }
           .guarantee {
             float: left;
-            font: 16px/27px 'Georgia-BoldItalic';
+            font: 16px/27px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211;
             span {
               font-size: 13px;

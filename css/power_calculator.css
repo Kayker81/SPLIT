@@ -408,7 +408,9 @@ table {
               background-position: -133px -96px; }
             .power_calculator_coontent_form_base_line .input_block .unit {
               float: left;
-              font: 12px/42px 'Georgia-BoldItalic';
+              font: 12px/42px Georgia;
+              font-style: italic;
+              font-weight: bold;
               color: #662211;
               margin-left: 8px; }
               @media (max-width: 355px) {
@@ -636,7 +638,8 @@ table {
           float: right;
           display: block;
           position: relative;
-          font: 28px/40px 'Georgia-Bold';
+          font: 28px/40px Georgia;
+          font-weight: bold;
           padding-left: 15px;
           margin-top: 15px;
           letter-spacing: 0.7px;
@@ -772,7 +775,9 @@ table {
               .power_calculator_coontent_rezult_block_input_line p {
                 line-height: 30px; } }
             .power_calculator_coontent_rezult_block_input_line p span {
-              font: 14px/20px 'Georgia-BoldItalic';
+              font: 14px/20px Georgia;
+              font-style: italic;
+              font-weight: bold;
               margin-top: 14px;
               color: #662211;
               display: none; }

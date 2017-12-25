@@ -202,7 +202,8 @@ table {
         .header .header_nav_logo_line_logo .logo_big {
           display: block;
           position: relative;
-          font: 28px/40px 'Georgia-Bold';
+          font: 28px/40px Georgia;
+          font-weight: bold;
           padding-left: 15px;
           margin-top: 15px;
           letter-spacing: 0.7px; }
@@ -245,7 +246,7 @@ table {
             display: none; } }
       .header .header_nav_logo_line_schem {
         display: block;
-        font: 14px/30px 'Georgia-BoldItalic';
+        font: 14px/30px Georgia;
         font-weight: bold;
         font-style: italic;
         color: #5d7489;
@@ -258,7 +259,9 @@ table {
           outline: 1px solid #b80000;
           color: #000000; }
         .header .header_nav_logo_line_schem span {
-          text-decoration: underline; }
+          text-decoration: underline;
+          font-weight: bold;
+          font-style: italic; }
     .header .header_nav_katalog_line {
       width: 100%;
       background: -moz-linear-gradient(left, rgba(224, 245, 245, 0.2) 0%, rgba(224, 245, 245, 0.7) 50%, rgba(232, 249, 248, 0.2) 100%);
@@ -727,7 +730,8 @@ table {
           display: none; } }
       .header__user_info_product_line .compare {
         float: left;
-        font: 13px/35px 'Georgia-Italic';
+        font: 13px/35px Georgia;
+        font-style: italic;
         color: #5d7489; }
         .header__user_info_product_line .compare:hover {
           color: #b80000; }
@@ -777,7 +781,8 @@ table {
           color: #003c95;
           text-decoration: underline; }
         .header__user_info_product_line .basket span {
-          font: 14px/35px 'Georgia-Italic';
+          font: 14px/35px Georgia;
+          font-style: italic;
           color: #662211; }
     .header__user_info_info {
       width: 100%;
@@ -862,7 +867,9 @@ table {
               color: #ff0000;
               font-weight: bold; }
           .header__user_info_info .time_text h4 {
-            font: 14px/20px 'Georgia-BoldItalic';
+            font: 14px/20px Georgia;
+            font-weight: bold;
+            font-style: italic;
             margin-top: 20px;
             text-decoration: underline;
             color: #5d7489;
@@ -1643,7 +1650,9 @@ table {
             color: #b41600; }
             .price_wrap_section .job_block_line .price p span {
               font-size: 13px;
-              font-family: 'Georgia-BoldItalic';
+              font-family: Georgia;
+              font-style: italic;
+              font-weight: bold;
               color: #662211;
               margin-left: 5px; }
       .price_wrap_section .job_block .big .name p {
@@ -1739,7 +1748,7 @@ table {
         display: block;
         width: 340px;
         height: 480px;
-        background: url("../img/sprite_footer.png") -1875px -502px; }
+        background: url("../img/sprite_footer.png") -785px -636px; }
     .garant_block_section_text {
       float: left;
       height: 475px;
@@ -1812,7 +1821,8 @@ table {
   display: none; }
   .big_text p {
     width: 100%;
-    font: 20px/22px 'Georgia-Italic';
+    font: 20px/22px Georgia;
+    font-style: italic;
     color: #1b1b1b; }
     .big_text p img {
       float: left;
@@ -1844,7 +1854,7 @@ table {
   left: 0px;
   width: 303px;
   height: 47px;
-  background: url("../img/sprite_header.png") -240px -2301px;
+  background: url("../img/sprite_header.png") 0px -625px;
   padding-left: 21px;
   box-sizing: border-box;
   display: none;
@@ -2074,7 +2084,9 @@ table {
         float: left; }
         .brend_block_footer_winner_text h5 {
           width: 100%;
-          font: 14px/18px 'Georgia-BoldItalic';
+          font: 14px/18px Georgia;
+          font-style: italic;
+          font-weight: bold;
           color: #FFFFFF;
           margin-top: 5px; }
         .brend_block_footer_winner_text p {
@@ -2120,7 +2132,7 @@ table {
   width: 100%;
   max-width: 816px;
   min-height: 299px;
-  background: url("../img/sprite_header.png") 0 -1694px;
+  background: url("../img/sprite_header.png") -936px -1506px;
   top: 0px;
   left: 0px;
   padding: 22px 0px 0px 12px;
@@ -2227,7 +2239,9 @@ table {
             font: 11px/12px Verdana;
             color: #6b6b6b; }
             .area_block_power_line_block_info_area_name i {
-              font-family: 'Georgia-BoldItalic'; }
+              font-family: Georgia;
+              font-style: italic;
+              font-weight: bold; }
           .area_block_power_line_block_info_area_namber {
             float: right; }
             .area_block_power_line_block_info_area_namber span {
@@ -2237,7 +2251,9 @@ table {
               font-weight: bold;
               color: #881101; }
             .area_block_power_line_block_info_area_namber i {
-              font: 11px/12px 'Georgia-BoldItalic';
+              font: 11px/12px Georgia;
+              font-style: italic;
+              font-weight: bold;
               color: #662211; }
               .area_block_power_line_block_info_area_namber i sup {
                 vertical-align: super;
@@ -2260,7 +2276,9 @@ table {
               color: #620909;
               font-weight: bold; }
           .area_block_power_line_block_price_net i {
-            font: 9px/14px 'Georgia-BoldItalic';
+            font: 9px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
         .area_block_power_line_block_price_hollow {
           float: right;
@@ -2275,7 +2293,9 @@ table {
               color: #620909;
               font-weight: bold; }
           .area_block_power_line_block_price_hollow i {
-            font: 11px/14px 'Georgia-BoldItalic';
+            font: 11px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
       .area_block_power_line_block:hover {
         border-color: #620909;
@@ -2329,7 +2349,9 @@ table {
               color: #620909;
               font-weight: bold; }
           .area_block_inverter_block_price_net i {
-            font: 9px/14px 'Georgia-BoldItalic';
+            font: 9px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
         .area_block_inverter_block_price_hollow {
           float: right;
@@ -2343,7 +2365,9 @@ table {
               color: #620909;
               font-weight: bold; }
           .area_block_inverter_block_price_hollow i {
-            font: 11px/14px 'Georgia-BoldItalic';
+            font: 11px/14px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
 
 .price_block {
@@ -2514,7 +2538,7 @@ table {
   top: 0px;
   left: 0px;
   display: none;
-  background: url("../img/sprite_header.png") -816px -1694px;
+  background: url("../img/sprite_header.png") -936px -1207px;
   z-index: 9;
   border: 1px solid #014366;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -2652,7 +2676,7 @@ table {
       margin-left: 10px;
       margin-right: 8px;
       background-image: url("../img/sprite_header.png");
-      background-position: -2138px -291px;
+      background-position: -450px -115px;
       width: 47px;
       height: 80px; }
     .multi_block_kaseta_washing a {
@@ -2679,7 +2703,7 @@ table {
       margin-left: 12px;
       margin-right: 11px;
       background-image: url("../img/sprite_header.png");
-      background-position: -2138px -225px;
+      background-position: -450px -43px;
       width: 67px;
       height: 66px; }
     .multi_block_multi_kalcul a {
@@ -2918,7 +2942,9 @@ table {
             font: 11px/12px Verdana;
             color: #7f7f7f; }
           .services_block_nav ul li .price i {
-            font: 11px/12px 'Georgia-BoldItalic';
+            font: 11px/12px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #650707; }
 
 .question_block {
@@ -2929,7 +2955,7 @@ table {
   top: 0px;
   left: 0px;
   background-image: url("../img/sprite_header.png");
-  background-position: 0px -1993px;
+  background-position: -936px -899px;
   z-index: 9;
   border: 1px solid #044654;
   -webkit-box-shadow: -2px 3px 18px 0px rgba(0, 0, 0, 0.2);
@@ -3027,11 +3053,11 @@ table {
         width: 527px;
         height: 225px;
         background-image: url("../img/sprite_header.png");
-        background-position: -2138px 0px; }
+        background-position: 0px -1694px; }
       .question_block_slider_wrap_slider_block .slide2 {
         width: 527px;
         height: 225px;
-        background: url("../img/sprite_header.png") 0 -447px; }
+        background: url("../img/sprite_header.png") -518px -225px; }
         .question_block_slider_wrap_slider_block .slide2 a {
           margin-top: 85px; }
       .question_block_slider_wrap_slider_block .slide3 {
@@ -3065,7 +3091,7 @@ table {
       .question_block_slider_wrap_slider_block .slide8 {
         width: 527px;
         height: 225px;
-        background: url("../img/sprite_header.png") -527px -897px; }
+        background: url("../img/sprite_header.png") -518px -225px; }
         .question_block_slider_wrap_slider_block .slide8 a {
           margin-top: 85px; }
 
@@ -3407,8 +3433,8 @@ table {
         margin-right: 12px;
         width: 13px;
         height: 18px;
-        background-image: url("../img/marker.png");
-        background-position: center; }
+        background-image: url("../img/sprite_footer.png");
+        background-position: -53px 0px; }
   .thenk_block_logo {
     float: left;
     width: 100%;
@@ -3419,7 +3445,7 @@ table {
         display: inline-block;
         width: 566px;
         height: 103px;
-        background: url("../img/sprite_footer.png") -2215px -502px; }
+        background: url("../img/sprite_footer.png") -163px -575px; }
       .thenk_block_logo a p {
         float: left;
         width: 100%;
@@ -3756,7 +3782,8 @@ table {
           min-height: 54px;
           box-sizing: border-box; }
           .comment_block .individuals_block_slide_content .text_block .all_read {
-            font: 10px/20px 'Georgia-BoldItalic';
+            font: 10px/20px Georgia;
+            font-weight: bold;
             font-style: italic;
             position: absolute;
             right: 20px;
@@ -3950,8 +3977,8 @@ table {
                 color: #b80000;
                 font-weight: bold; }
           .comment_block .entity_wrap_slider_slide .text_block .all_read {
-            font: 10px/20px 'Georgia-BoldItalic';
-            font-style: normal;
+            font: 10px/20px Georgia;
+            font-weight: bold;
             font-style: italic;
             position: absolute;
             right: 20px;
@@ -4204,7 +4231,9 @@ table {
     .black_panel_actions_zag {
       float: left;
       width: 100%;
-      font: 18px/49px 'Georgia-BoldItalic';
+      font: 18px/49px Georgia;
+      font-style: italic;
+      font-weight: bold;
       color: #ff0000;
       text-decoration: underline;
       background: #FFFFFF;
@@ -4276,7 +4305,9 @@ table {
           .black_panel_kategories ul li a:hover {
             color: #620909; }
         .black_panel_kategories ul li p {
-          font: 14px/36px 'Georgia-BoldItalic';
+          font: 14px/36px Georgia;
+          font-weight: bold;
+          font-style: italic;
           color: #afafaf;
           display: inline-block; }
 
@@ -4711,7 +4742,9 @@ table {
               background-position: -133px -96px; }
             .power_calculator_coontent_form_base_line .input_block .unit {
               float: left;
-              font: 12px/42px 'Georgia-BoldItalic';
+              font: 12px/42px Georgia;
+              font-style: italic;
+              font-weight: bold;
               color: #662211;
               margin-left: 8px; }
               @media (max-width: 355px) {
@@ -4939,7 +4972,8 @@ table {
           float: right;
           display: block;
           position: relative;
-          font: 28px/40px 'Georgia-Bold';
+          font: 28px/40px Georgia;
+          font-weight: bold;
           padding-left: 15px;
           margin-top: 15px;
           letter-spacing: 0.7px;
@@ -5075,7 +5109,9 @@ table {
               .power_calculator_coontent_rezult_block_input_line p {
                 line-height: 30px; } }
             .power_calculator_coontent_rezult_block_input_line p span {
-              font: 14px/20px 'Georgia-BoldItalic';
+              font: 14px/20px Georgia;
+              font-style: italic;
+              font-weight: bold;
               margin-top: 14px;
               color: #662211;
               display: none; }
@@ -5893,7 +5929,9 @@ table {
           color: #662211;
           margin-top: 3px; }
           .product_minimum_info__area_power .area h4 span {
-            font: 12px/16px 'Georgia-BoldItalic'; }
+            font: 12px/16px Georgia;
+            font-style: italic;
+            font-weight: bold; }
       .product_minimum_info__area_power .power {
         float: left;
         width: 26px;
@@ -5953,7 +5991,9 @@ table {
           font: 19px/16px 'robotoBlack';
           color: #b41600; }
           .product_minimum_info__name_price .price h4 span {
-            font: 13px/16px 'Georgia-BoldItalic';
+            font: 13px/16px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
         .product_minimum_info__name_price .price h5 {
           font: 14px/16px 'robotoregular';
@@ -6165,7 +6205,9 @@ table {
             margin-left: 8px; }
           .product__all_info_info_line_row .info .guarantee {
             float: left;
-            font: 16px/27px 'Georgia-BoldItalic';
+            font: 16px/27px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
             .product__all_info_info_line_row .info .guarantee span {
               font-size: 13px;
@@ -6519,7 +6561,7 @@ table {
   display: inline-block;
   width: 700px;
   height: 447px;
-  background: url("../img/sprite_footer.png") 0 -1149px; }
+  background: url("../img/sprite_footer.png") -1150px -636px; }
 
 .map_block {
   width: 700px;
@@ -6710,7 +6752,9 @@ table {
                   color: #662211;
                   margin-top: 3px; }
                   .section_product_wrap_slider_block .slide_minimum_info__area_power .area h4 span {
-                    font: 12px/16px 'Georgia-BoldItalic'; }
+                    font: 12px/16px Georgia;
+                    font-style: italic;
+                    font-weight: bold; }
               .section_product_wrap_slider_block .slide_minimum_info__area_power .power {
                 float: left;
                 width: 26px;
@@ -6771,7 +6815,9 @@ table {
                   font: 19px/16px 'robotoBlack';
                   color: #b41600; }
                   .section_product_wrap_slider_block .slide_minimum_info__name_price .price h4 span {
-                    font: 13px/16px 'Georgia-BoldItalic';
+                    font: 13px/16px Georgia;
+                    font-style: italic;
+                    font-weight: bold;
                     color: #662211; }
                 .section_product_wrap_slider_block .slide_minimum_info__name_price .price h5 {
                   font: 14px/16px 'robotoregular';
@@ -6964,7 +7010,9 @@ table {
                     margin-left: 8px; }
                   .section_product_wrap_slider_block .slide__all_info_info_line_row .info .guarantee {
                     float: left;
-                    font: 16px/27px 'Georgia-BoldItalic';
+                    font: 16px/27px Georgia;
+                    font-style: italic;
+                    font-weight: bold;
                     color: #662211; }
                     .section_product_wrap_slider_block .slide__all_info_info_line_row .info .guarantee span {
                       font-size: 13px;
@@ -7083,7 +7131,8 @@ table {
                 display: none; } }
           .section_product_wrap_price_wrap .aside_zag p {
             float: left;
-            font: 12px/16px 'Georgia-Italic';
+            font: 12px/16px Georgia;
+            font-style: italic;
             color: #d80000;
             margin-top: 9px;
             margin-left: 11px; }
@@ -7194,7 +7243,9 @@ table {
               bottom: 15px;
               letter-spacing: -0.8px; }
               .section_product_wrap_price_wrap_section_block_block_line .block p i {
-                font-family: 'Georgia-BoldItalic'; }
+                font-family: Georgia;
+                font-style: italic;
+                font-weight: bold; }
           .section_product_wrap_price_wrap_section_block_block_line .empty {
             display: block;
             border: none; }
@@ -7351,7 +7402,9 @@ table {
             color: #a20303;
             font-weight: bold; }
             .section_product_wrap_rig .block p span i {
-              font-family: 'Georgia-BoldItalic';
+              font-family: Georgia;
+              font-style: italic;
+              font-weight: bold;
               color: #670101;
               text-transform: none; }
           .section_product_wrap_rig .block p strong {
@@ -7544,7 +7597,8 @@ table {
                 width: 100%; } }
             .section_product_wrap__manufactures__factory_block__brend_text h4 {
               width: 100%;
-              font: 20px/20px 'Georgia-Bold';
+              font: 20px/20px Georgia;
+              font-weight: bold;
               color: #82000c;
               margin-top: 20px;
               margin-bottom: 10px; }
@@ -8194,7 +8248,8 @@ table {
           margin-top: 5px; }
         .footer_info__section_parcing_text {
           width: 100%;
-          font: 12px/17px 'Georgia-Italic';
+          font: 12px/17px Georgia;
+          font-style: italic;
           color: #7b7b7b;
           margin-top: 5px;
           letter-spacing: 0.6px; }
@@ -8780,13 +8835,17 @@ table {
         text-decoration: underline; }
       .mini_footer_brends .brend span {
         display: block;
-        font: 11px/16px 'Georgia-BoldItalic';
+        font: 11px/16px Georgia;
+        font-style: italic;
+        font-weight: bold;
         color: #646464;
         margin-bottom: 8.5px; }
     .mini_footer_brends_price {
       float: left;
       width: 100%;
-      font: 15px/20px 'Georgia-BoldItalic';
+      font: 15px/20px Georgia;
+      font-style: italic;
+      font-weight: bold;
       color: #646464;
       margin: 30px 0px;
       text-decoration: underline; }
@@ -8980,7 +9039,9 @@ table {
           background: #f2f2f1; }
         .mini_footer_actions .bascet_price_block span {
           float: left;
-          font: 13px/21px 'Georgia-BoldItalic';
+          font: 13px/21px Georgia;
+          font-style: italic;
+          font-weight: bold;
           color: #662211;
           margin-left: 5px;
           background: #f2f2f1; }

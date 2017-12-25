@@ -219,13 +219,17 @@
         text-decoration: underline; }
       .mini_footer_brends .brend span {
         display: block;
-        font: 11px/16px 'Georgia-BoldItalic';
+        font: 11px/16px Georgia;
+        font-style: italic;
+        font-weight: bold;
         color: #646464;
         margin-bottom: 8.5px; }
     .mini_footer_brends_price {
       float: left;
       width: 100%;
-      font: 15px/20px 'Georgia-BoldItalic';
+      font: 15px/20px Georgia;
+      font-style: italic;
+      font-weight: bold;
       color: #646464;
       margin: 30px 0px;
       text-decoration: underline; }
@@ -419,7 +423,9 @@
           background: #f2f2f1; }
         .mini_footer_actions .bascet_price_block span {
           float: left;
-          font: 13px/21px 'Georgia-BoldItalic';
+          font: 13px/21px Georgia;
+          font-style: italic;
+          font-weight: bold;
           color: #662211;
           margin-left: 5px;
           background: #f2f2f1; }

@@ -205,7 +205,8 @@
         }
         &_text {
           width: 100%;
-          font: 12px/17px 'Georgia-Italic';
+          font: 12px/17px Georgia;
+          font-style: italic;
           color: #7b7b7b;
           margin-top: 5px;
           letter-spacing: 0.6px;

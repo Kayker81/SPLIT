@@ -59,7 +59,9 @@
           color: #662211;
           margin-top: 3px; }
           .product_minimum_info__area_power .area h4 span {
-            font: 12px/16px 'Georgia-BoldItalic'; }
+            font: 12px/16px Georgia;
+            font-style: italic;
+            font-weight: bold; }
       .product_minimum_info__area_power .power {
         float: left;
         width: 26px;
@@ -119,7 +121,9 @@
           font: 19px/16px 'robotoBlack';
           color: #b41600; }
           .product_minimum_info__name_price .price h4 span {
-            font: 13px/16px 'Georgia-BoldItalic';
+            font: 13px/16px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
         .product_minimum_info__name_price .price h5 {
           font: 14px/16px 'robotoregular';
@@ -331,7 +335,9 @@
             margin-left: 8px; }
           .product__all_info_info_line_row .info .guarantee {
             float: left;
-            font: 16px/27px 'Georgia-BoldItalic';
+            font: 16px/27px Georgia;
+            font-style: italic;
+            font-weight: bold;
             color: #662211; }
             .product__all_info_info_line_row .info .guarantee span {
               font-size: 13px;

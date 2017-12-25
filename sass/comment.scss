@@ -328,7 +328,8 @@
           min-height: 54px;
           box-sizing: border-box;
           .all_read{
-            font: 10px/20px 'Georgia-BoldItalic';
+            font: 10px/20px Georgia;
+            font-weight: bold;
             font-style: italic;
             position: absolute;
             right:20px;
@@ -572,8 +573,8 @@
             }
           }
           .all_read {
-            font: 10px/20px 'Georgia-BoldItalic';
-            font-style: normal;
+            font: 10px/20px Georgia;
+            font-weight: bold;
             font-style: italic;
             position: absolute;
             right: 20px;

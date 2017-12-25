@@ -164,7 +164,8 @@
         .logo_big{
           display: block;
           position: relative;
-          font: 28px/40px 'Georgia-Bold';
+          font: 28px/40px Georgia;
+          font-weight: bold;
           padding-left: 15px;
           margin-top: 15px;
           letter-spacing: 0.7px;
@@ -219,7 +220,7 @@
       }
       &_schem {
         display: block;
-        font: 14px/30px 'Georgia-BoldItalic';
+        font: 14px/30px Georgia;
         font-weight: bold;
         font-style: italic;
         color: #5d7489;
@@ -234,6 +235,8 @@
         }
         span {
           text-decoration: underline;
+          font-weight: bold;
+          font-style: italic;
         }
 
 
@@ -787,7 +790,8 @@
       }
       .compare {
         float: left;
-        font: 13px/35px 'Georgia-Italic';
+        font: 13px/35px Georgia;
+        font-style: italic;
         color: #5d7489;
         &:hover{
           color: #b80000;
@@ -851,7 +855,8 @@
           text-decoration: underline;
         }
         span {
-          font: 14px/35px 'Georgia-Italic';
+          font: 14px/35px Georgia;
+          font-style: italic;
           color: #662211;
         }
       }
@@ -960,7 +965,9 @@
             }
           }
           h4 {
-            font: 14px/20px 'Georgia-BoldItalic';
+            font: 14px/20px Georgia;
+            font-weight: bold;
+            font-style: italic;
             margin-top: 20px;
             text-decoration: underline;
             color: #5d7489;
