@@ -49,16 +49,16 @@
       width: 100%; }
       .product_minimum_info__area_power .area {
         float: left; }
-        .product_minimum_info__area_power .area p {
+        .product_minimum_info__area_power .area .name {
           display: block;
           font: 10px/16px 'robotoregular';
           color: rgba(0, 0, 0, 0.7); }
-        .product_minimum_info__area_power .area h4 {
+        .product_minimum_info__area_power .area .namber {
           display: block;
           font: 16px/16px 'robotoBlack';
           color: #662211;
           margin-top: 3px; }
-          .product_minimum_info__area_power .area h4 span {
+          .product_minimum_info__area_power .area .namber span {
             font: 12px/16px Georgia;
             font-style: italic;
             font-weight: bold; }
@@ -114,18 +114,18 @@
         width: 45.76%; }
         .product_minimum_info__name_price .price .micro_plice {
           display: none; }
-        .product_minimum_info__name_price .price p {
+        .product_minimum_info__name_price .price .name {
           font: 10px/22px 'robotoregular';
           color: rgba(0, 0, 0, 0.7); }
-        .product_minimum_info__name_price .price h4 {
+        .product_minimum_info__name_price .price .rub {
           font: 19px/16px 'robotoBlack';
           color: #b41600; }
-          .product_minimum_info__name_price .price h4 span {
+          .product_minimum_info__name_price .price .rub span {
             font: 13px/16px Georgia;
             font-style: italic;
             font-weight: bold;
             color: #662211; }
-        .product_minimum_info__name_price .price h5 {
+        .product_minimum_info__name_price .price .dollar {
           font: 14px/16px 'robotoregular';
           color: #888888;
           margin-top: 5px; }

@@ -218,12 +218,12 @@
               width: 100%;
               .area {
                 float: left;
-                p {
+                .name {
                   display: block;
                   font: 10px/16px 'robotoregular';
                   color: rgba(0, 0, 0, 0.7);
                 }
-                h4 {
+                .namber {
                   display: block;
                   font: 16px/16px 'robotoBlack';
                   color: #662211;
@@ -291,11 +291,11 @@
                 .micro_plice {
                   display: none;
                 }
-                p {
+                .name {
                   font: 10px/22px 'robotoregular';
                   color: rgba(0, 0, 0, 0.7);
                 }
-                h4 {
+                .rub {
                   font: 19px/16px 'robotoBlack';
                   color: #b41600;
                   span {
@@ -305,7 +305,7 @@
                     color: #662211;
                   }
                 }
-                h5 {
+                .dollar{
                   font: 14px/16px 'robotoregular';
                   color: #888888;
                   margin-top: 5px;
