@@ -55,9 +55,9 @@
     width: 100%;
     min-height: 75px;
     position: relative;
-    webkit-box-shadow:0 0 10px 0 rgba(0, 0, 0, 0.13);
-    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
+    webkit-box-shadow:0px 0px 10px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.13);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.13);
     float: left;
     @include radius(5px);
     &:before {
@@ -170,7 +170,6 @@
           background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 67%, rgba(227, 227, 227, 1) 100%);
           background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 67%, rgba(227, 227, 227, 1) 100%);
           background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 67%, rgba(227, 227, 227, 1) 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e3e3e3', GradientType=0);
           border: 1px solid #e77f5f;
           margin: 0 22.5px;
           -webkit-box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.14);
@@ -1653,7 +1652,7 @@
               width: 100%;
               max-width: 235px;
               height: 85px;
-              background: url('../img/sprite_section.png')  -1833px -961px;
+              background: url('../img/sprite_section.png')  -696px -569px;
               p {
                 width: 100%;
                 font: 13px/22px Verdana;

@@ -5,9 +5,9 @@
     width: 100%;
     min-height: 75px;
     position: relative;
-    webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
-    -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.13);
+    webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.13);
     float: left;
     /**/
     border-radius: 5px;
@@ -124,7 +124,6 @@
           background: -moz-linear-gradient(top, white 0%, white 67%, #e3e3e3 100%);
           background: -webkit-linear-gradient(top, white 0%, white 67%, #e3e3e3 100%);
           background: linear-gradient(to bottom, white 0%, white 67%, #e3e3e3 100%);
-          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e3e3e3', GradientType=0);
           border: 1px solid #e77f5f;
           margin: 0 22.5px;
           -webkit-box-shadow: 0 -3px 7px 0 rgba(0, 0, 0, 0.14);
@@ -1325,7 +1324,7 @@
               width: 100%;
               max-width: 235px;
               height: 85px;
-              background: url("../img/sprite_section.png") -1833px -961px; }
+              background: url("../img/sprite_section.png") -696px -569px; }
               .section_buy_block_line_block_text_line .text p {
                 width: 100%;
                 font: 13px/22px Verdana;

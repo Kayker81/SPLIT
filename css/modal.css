@@ -469,7 +469,6 @@
   background: -moz-linear-gradient(top, #f5f6fa 0%, #f5e9cf 100%);
   background: -webkit-linear-gradient(top, #f5f6fa 0%, #f5e9cf 100%);
   background: linear-gradient(to bottom, #f5f6fa 0%, #f5e9cf 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f6fa', endColorstr='#f5e9cf', GradientType=0);
   min-height: 280px;
   z-index: 9;
   padding: 9px;
@@ -732,7 +731,6 @@
       background: -moz-linear-gradient(left, white 0%, #ceeace 100%);
       background: -webkit-linear-gradient(left, white 0%, #ceeace 100%);
       background: linear-gradient(to right, white 0%, #ceeace 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ceeace', GradientType=1);
       cursor: pointer;
       transition: 1s;
       -moz-transition: 1s;
@@ -849,8 +847,7 @@
         background: white;
         background: -moz-linear-gradient(left, white 0%, #f4ead0 100%);
         background: -webkit-linear-gradient(left, white 0%, #f4ead0 100%);
-        background: linear-gradient(to right, white 0%, #f4ead0 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#f4ead0', GradientType=1); }
+        background: linear-gradient(to right, white 0%, #f4ead0 100%); }
         .area_block_power_line_block:hover .area_block_power_line_block_namder p {
           color: #620909;
           border-color: #620909; }
